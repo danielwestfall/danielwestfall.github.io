@@ -10,6 +10,7 @@ ___
 
 Project Name | Date | Project Discription
 -------------|------|--------------------
+Shapes Exercises | Week 2 | Use CSS properties and HTML to replicate shapes displayed in the lesson.
 Ball Bounce | Week 3 | Create code to make a ball out of a div element and have it bounce around an area. 
 
 
@@ -23,10 +24,10 @@ More detailed synopsis of specific elements learned and used in projects. <br>
 
 ___
 
-Project Name | Date | Project Discription
+Project Name | Date | Update Discription
 -------------|------|--------------------
-Project | Date | Changes made
-
+Shapes Exercises | 1/22/2021 | Created a REPO and README for project.
+Ball Bounce Exercise | 1/22/20201 | Created a REPO and README for project.
 
 ### License information: 
 
