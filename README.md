@@ -8,8 +8,8 @@ that showcase the things I've learned to do for potential employers, as well as 
 
 ___
 
-###### Project Name | Repo Name | Project Discription
---------------------|-----------|--------------------
+Project Name | Repo Name | Project Discription
+-------------|-----------|--------------------
 Shapes Exercises | ShapesExercises | Use CSS properties and HTML to replicate shapes displayed in the lesson.
 Ball Bounce | MoveBallExercise | Create code to make a ball out of a div element and have it bounce around an area. 
 
@@ -24,8 +24,8 @@ More detailed synopsis of specific elements learned and used in projects. <br>
 
 ___
 
-###### Project Name | Date | Update Discription
---------------------|------|--------------------
+Project Name | Date | Update Discription
+-------------|------|--------------------
 Shapes Exercises | 1/22/2021 | Created a REPO and README for project.
 Ball Bounce Exercise | 1/22/2021 | Created a REPO and README for project.
 
