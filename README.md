@@ -28,6 +28,8 @@ Project Name | Date | Update Discription
 -------------|------|--------------------
 Shapes Exercises | 1/22/2021 | Created a REPO and README for project.
 Ball Bounce Exercise | 1/22/2021 | Created a REPO and README for project.
+PacMan Exercise | 1/24/2021 | Created a REPO and README for project.
+Portfolio 2.0 | 1/24/2021 | Updated!
 
 ### License information
 
