@@ -1,14 +1,9 @@
 /* Style the video: 100% width and height to cover the entire window */
 #myVideo {
-    position: fixed;
+    position: relative;
+    top: 0px;
+    left: 0px;
     z-index: -1;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    max-width: 100%;
-    min-height: 100%;
-    
   }
 
   @media (min-aspect-ratio: 16/9){
