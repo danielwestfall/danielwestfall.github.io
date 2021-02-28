@@ -1,8 +1,6 @@
-/* Style the video: 100% width and height to cover the entire window */
+
 #myVideo {
-    position: relative;
-    top: 0px;
-    left: 0px;
+    position: absolute;
     z-index: -10;
   }
 
