@@ -31,6 +31,7 @@ Ball Bounce Exercise | 1/22/2021 | Created a REPO and README for project.
 PacMan Exercise | 1/24/2021 | Created a REPO and README for project.
 Portfolio 2.0 | 1/24/2021 | Updated!
 Portfolio 2.0 | 2/23/2021 | Housecleaning - file structure.
+Portfolio 3.0 | 2/23/2021 | New bootstrap based template and project requirements.
 
 ### License information
 
