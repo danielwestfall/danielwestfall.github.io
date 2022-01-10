@@ -1,9 +1,7 @@
 /**
- * Template Name: MyResume - v4.0.1
- * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
- * Author: BootstrapMade.com
- * License: https://bootstrapmade.com/license/
+ * JS for the main page
  */
+
 (function () {
 	"use strict";
 
@@ -274,12 +272,3 @@
 		});
 	});
 })();
-
-function intergerDoubler(input) {
-	if (typeof input == number) {
-		let result = input * 2;
-		console.log(result);
-	} else {
-		console.log(input);
-	}
-}

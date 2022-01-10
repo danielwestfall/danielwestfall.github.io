@@ -1,4 +1,3 @@
-
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -16,7 +15,7 @@
     list-style: none;
   }
 
-  > ul > li {
+  >ul>li {
     position: relative;
     white-space: nowrap;
   }
@@ -28,7 +27,7 @@
     padding: 10px 18px;
     margin-bottom: 8px;
     transition: 0.3s;
-    font-size: 15px; 
+    font-size: 15px;
     border-radius: 50px;
     background: lighten($secondary, 64);
     height: 56px;
@@ -36,7 +35,7 @@
     overflow: hidden;
     transition: 0.3s;
 
-    i  {
+    i {
       font-size: 20px;
     }
 
@@ -47,6 +46,7 @@
 
     @media (min-width: 992px) {
       width: 56px;
+
       span {
         display: none;
         color: $white;
@@ -55,23 +55,28 @@
 
   }
 
-  a:hover, .active, li:hover > a {
+  a:hover,
+  .active,
+  li:hover>a {
     color: $white;
     background: $primary;
+
     span {
       color: $white;
     }
   }
-  
-  a:hover, li:hover > a {
+
+  a:hover,
+  li:hover>a {
     width: 100%;
     color: $white;
+
     span {
       display: block;
     }
-    
+
   }
-  
+
 }
 
 /**
@@ -91,6 +96,7 @@
   cursor: pointer;
   border-radius: 50px;
   padding: 5px;
+
   i {
     color: $secondary;
   }
