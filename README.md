@@ -1,10 +1,13 @@
 # Daniel Westfall's Portfolio
 ___
 
-Coming soon - Portfolio v2.0 - Check out my Figma Design file [here](https://www.figma.com/file/k49aOd0WWnTTtrfdmtDlWF/NewPortfolio?node-id=0%3A1)
+Coming soon - Portfolio v2.0 - The current site is my bootcamp projects, results of assignments and in the coming future will be updated with my current passion, creating accessible experiences using WCAG guidelines, Section 508 testing, and creative approaches and problem solving to make the web a better place for us all. 
 
-This is where I will catalog my projects and assignments for my classes in the MIT xPRO Full Stack Development Boot Camp. I will be adding projects 
-that showcase the things I've learned to do for potential employers, as well as creating a collection of code I have written and can continuously improve upon.<br>
+<br>
+
+Initially this site will be renovated and made accessible first, then the old project will be removed and replaced with my current projects. 
+
+<br>
 
 ### Table of Contents
 
