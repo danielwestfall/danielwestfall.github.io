@@ -1,422 +1,1106 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daniel Westfall - Resume</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=El+Messiri&family=Kameron&family=Lato&family=Play:wght@700&family=Raleway&family=Source+Code+Pro&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <style>
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Varela Round", sans-serif;
+      }
 
-  <title>Daniel Westfall's Portfolio </title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+      .navbar-brand {
+        font-family: "Play", sans-serif;
+        font-size: 2rem;
+      }
 
-  <!-- Favicons -->
+      .center-vertically {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: max-content;
+        text-align: center;
+      }
 
-<link rel="icon" type="image/png" href="assets/img/favicon-16x16.png" sizes="16x16">
-<link rel="icon" type="image/png" href="assets/img/favicon-32x32.png" sizes="32x32">
+      .header1 {
+        color: white;
+        position: absolute;
+        left: 4rem;
+        top: 8rem;
+        z-index: 10000;
+        font-size: large;
+      }
 
-<link rel="apple-touch-icon" href="apple-touch-icon-iphone.png" />
-<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-ipad.png" />
-<link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon.png" />
+      body {
+        font-family: sans-serif;
+      }
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      .a11y {
+        background-image: url("assets/computer-rate-rating-2-svgrepo-com.svg");
+        background-size: contain;
+        display: block;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        margin: 2rem;
+      }
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+      .rez {
+        background-image: url("assets/hero.png");
+        background-size: contain;
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin: 2rem;
+      }
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link href="assets/css/styles.css" rel="stylesheet">
+      .xray {
+        background-image: url("assets/radiation-svgrepo-com.svg");
+        background-size: contain;
+        display: block;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        margin: 2rem;
+      }
 
-</head>
+      .coffee {
+        background-image: url("assets/cafe-svgrepo-com.svg");
+        background-size: contain;
+        display: block;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        margin: 2rem;
+      }
 
-<body>
+      .field-tech {
+        background-image: url("assets/blueprint-svgrepo-com.svg");
+        background-size: contain;
+        display: block;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        margin: 2rem;
+      }
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center">
+      .casino {
+        background-image: url("assets/croupier-svgrepo-com.svg");
+        background-size: contain;
+        display: block;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        margin: 2rem;
+      }
 
-    <nav id="navbar" class="navbar nav-menu">
-      <ul>
-        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home" aria-label="Home section"></i> <span>Home</span></a></li>
-        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content" aria-label="Portfolio Section"></i> <span>Portfolio</span></a></li>
-        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user" aria-label="About Section"></i> <span>About</span></a></li>
-        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank" aria-label="Resume Section"></i> <span>Resume</span></a></li>
-      </ul>
-    </nav><!-- .nav-menu -->
+      .lab-tech-1 {
+        background-image: url("assets/lab-svgrepo-com.svg");
+        background-size: contain;
+        display: block;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        margin: 2rem;
+      }
 
-  </header><!-- End Header -->
+      .lab-tech-2 {
+        background-image: url("assets/chemistry-laboratory-svgrepo-com.svg");
+        background-size: contain;
+        display: block;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        margin: 2rem;
+      }
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Hello World</h1>
-      <p>I'm Daniel Westfall, an Accessibility Professional</p>
-      <div class="social-links">
-        <a href="https://twitter.com/danwestfall6" class="twitter" aria-label="Daniel on Twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="https://github.com/danielwestfall" class="github aria-label="Daniel on Github""><i class="bx bxl-github"></i></a>
-        <a href="https://www.instagram.com/DanielWWestfall/" class="instagram" aria-label="Daniel on Instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/danielwestfall/" class="linkedin" aria-label="Daniel on Linked In"><i class="bx bxl-linkedin"></i></a>
+      .lab-tech-3 {
+        background-image: url("assets/packing-warehouse-svgrepo-com.svg");
+        background-size: contain;
+        display: block;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        margin: 2rem;
+      }
+
+      .shim {
+        height: 4rem;
+        width: 100%;
+        background-color: black;
+        background-size: cover;
+        color: white;
+        background-position: center;
+        border: 3px;
+        border-color: darkgray;
+        border-style: solid;
+        margin: 5px;
+        border-radius: 25px 10px 25px 10px;
+        display: flex;
+        align-items: end;
+      }
+
+      .visually-hidden-focusable {
+        color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      section {
+        padding: 3rem;
+      }
+
+      .ally {
+        border-color: darkgray;
+        border-width: 5px;
+      }
+
+      .allycard {
+        border-color: darkgray;
+        border-width: 5px;
+      }
+
+      .card {
+        font-weight: 600;
+        font-size: 1em;
+      }
+
+      .navbar-light .navbar-nav .nav-link {
+        color: #000;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md bg-dark fixed-top" data-bs-theme="dark">
+      <a class="visually-hidden-focusable" href="#content"
+        >Skip to main content</a
+      >
+
+      
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        CERTREQ
+      </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+            <li class="nav-item mx-2">
+              <a class="nav-link active" aria-current="page" href="#about"
+                >About</a
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#projects">Placeholder</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="navbar-brand" href="#">CERTREQ</a>
+            </li>
+
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#resume">Resume</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="https://certreq.dev/blog/">Blog</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </section><!-- End Hero -->
+    </nav>
 
-  <main id="main">
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Portfolio</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-           <!-- <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-es6">Javascript</li>
-              <li data-filter=".filter-react">React</li>
-              <li data-filter=".filter-figma">FIGMA</li>
-            </ul> -->
-          </div>
-        </div>
-<!--
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-              
-          <div class="col-lg-4 col-md-6 portfolio-item filter-es6">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/Bus-TN.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Real Time Bus Tracker</h4>
-                <p>Real Time Bus Tracker</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/Bus.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Real Time Bus Tracker"><i class="bx bx-plus"></i></a>
-                  <a href="assets/common/bustracker.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Real Time Bus Tracker"><i class="bx bx-link"></i></a>
+    <main id="content">
+      <section id="home" aria-label="home" class="my-5">
+        <div class="row my-3">
+          <div class="col-lg-6">
+            <div class="card ally">
+              <div class="card-body">
+                <h1 class="card-title">CERTREQ</h1>
+                <div class="card-text">
+                  <p class="mb-0 pb-0">[NewRequest]</p>
+                  <h2 class="mt-0 pt-0">Daniel Westfall</h2>
+                  <p class="mb-0 pb-0">[Version]</p>
+                  <p>
+                    <a href="#projects" rel="noopener noreferrer">Link Here</a
+                    ><br /><em>October 9, 2023</em>
+                  </p>
+                  <span class="card-text">
+                    <p>
+                      Welcome to "CERTREQ," my platform dedicated to my journey
+                      toward acquiring the CPACC and WAS certifications. Just as
+                      the "certreq" command in the digital realm handles
+                      certificate requests, this site will serve as a space
+                      where I meticulously document the process of obtaining
+                      certifications that will expand my expertise in
+                      accessibility.
+                    </p>
+                    <p>
+                      Additionally, it will be a platform where I share the
+                      knowledge I gather and illustrate how this newfound
+                      understanding can be applied. "CERTREQ" is a versatile
+                      platform that encompasses my portfolio, resume, journal,
+                      and a playground for deepening my understanding of
+                      accessibility studies. In my role as an accessibility
+                      audit team lead, my resolute commitment revolves around
+                      improving online experiences to ensure maximum
+                      accessibility for all individuals.
+                    </p>
+                  </span>
                 </div>
               </div>
             </div>
           </div>
- -->
- Projects coming soon!
-
-    <br><br>
-
-        In the meantime check out <a href="https://danielwestfall.github.io/screenReaderAudit/"> my Screen Reader Interactive Audit Form </a> I built for a colleague. It's still in the works and more Accessibility tools as well! 
-
-      </div>
-    </section>
-    <!-- End Portfolio Section -->
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-
-    
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title"><br><br>
-          <h2>About Me</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-12 pt-4 pt-lg-0 content">
-            <p class="font-italic">
-              As a professional accessibility auditor, I bring a unique background to the table that spans construction quality assurance, customer service, entrepreneurship, and full-stack web development. With a detail-oriented and meticulous approach, I've honed my skills in ensuring high-quality results in every project I undertake.
-<br><br>
-My diverse experiences include running table games and dealing in annual baccarat tournaments, building and running an award-winning coffee shop from scratch, and developing my skills in full-stack web development and UX design through MIT xPro and Google certificates. With a focus on the user experience and user interface design, I've learned about the importance of conducting research, empathizing with users, and creating wireframes and prototypes with tools like Figma and Adobe XD.
-<br><br>
-In my work as an accessibility auditor, I bring my passion for ensuring that all users have equal access to technology and digital experiences. I'm well-versed in tools like ANDI, WCAG Color Contrast Checker, Section 508 Trusted Tester, WCAG 2.1, and WAI ARIA, and I'm experienced in manual and automated accessibility testing. I'm committed to making the digital world a more inclusive and accessible place for everyone.
-            </p>
+          <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card h-100 ally">
+              <div class="card-body rez">
+                <!--A11y Audit Team Lead-->
+              </div>
+            </div>
           </div>
         </div>
+      </section>
 
-      </div>
-    </section> 
-    
-    <!-- End Facts Section -->
-
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Resume</h2>
+      <section aria-label="about" id="about" class="my-5">
+        <div class="shim">
+          <h2 class="px-3">About Me</h2>
         </div>
 
-        <div class="row">
+        <div class="mx-3 px-3 my-3">
+          <p>
+            As a professional accessibility auditor, I bring a unique background
+            to the table that spans construction quality assurance, customer
+            service, entrepreneurship, and full-stack web development. With a
+            detail-oriented and meticulous approach, I've honed my skills in
+            ensuring high-quality results in every project I undertake.
+          </p>
+
+          <p>
+            My diverse experiences include running table games and dealing in
+            annual baccarat tournaments, building and running an award-winning
+            coffee shop from scratch, and developing my skills in full-stack web
+            development and UX design through MIT xPro and Google certificates.
+            With a focus on the user experience and user interface design, I've
+            learned about the importance of conducting research, empathizing
+            with users, and creating wireframes and prototypes with tools like
+            Figma and Adobe XD.
+          </p>
+
+          <p>
+            In my work as an accessibility auditor, I bring my passion for
+            ensuring that all users have equal access to technology and digital
+            experiences. I'm well-versed in tools like ANDI, WCAG Color Contrast
+            Checker, Section 508 Trusted Tester, WCAG 2.1, and WAI ARIA, and I'm
+            experienced in manual and automated accessibility testing. I'm
+            committed to making the digital world a more inclusive and
+            accessible place for everyone.
+          </p>
+        </div>
+      </section>
+
+      <section aria-label="projects" id="projects" class="my-5">
+        <div class="shim">
+          <h2 class="px-3">Daniel's Projects</h2>
+        </div>
+
+        <div class="mx-3 px-3 my-3">
+          <p>Project 1</p>
+
+          <p>Project 1</p>
+
+          <p>Project 1</p>
+        </div>
+      </section>
+
+      <section aria-label="certifications" id="certs" class="my-5">
+        <div class="shim">
+          <h2 class="px-3">Daniel's Certifications</h2>
+        </div>
+
+        <div class="mx-3 px-3 my-3">
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card mb-3 ally" style="max-width: 540px">
+                <div class="row g-0">
+                  <div class="col-md-4 center-vertically p-2">
+                    <img
+                      src="./assets/jawscert.jpg"
+                      class="img-fluid rounded-start"
+                      alt="JAWS logo"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h3 class="card-title">JAWS Certified Individual</h3>
+                      <p class="card-text">
+                        The JAWS Certified Individual certificate is a
+                        credential awarded to individuals who have demonstrated
+                        proficiency in using the JAWS screen reading software to
+                        enhance accessibility for individuals with visual
+                        impairments.
+                      </p>
+                      <p class="card-text">
+                        <small class="text-body-secondary"
+                          >Freedom Scientific - Issued Aug 2023</small
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card mb-3 ally" style="max-width: 540px">
+                <div class="row g-0">
+                  <div class="col-md-4 center-vertically p-2">
+                    <img
+                      src="./assets/242-2429040_nvda-certified-expert-logo-nv-access.png"
+                      class="img-fluid rounded-start"
+                      alt="JAWS logo"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h3 class="card-title">NVDA Expert Certification</h3>
+                      <p class="card-text">
+                        The NVDA Expert Certification is a credential awarded to
+                        individuals who have demonstrated proficiency in using
+                        the the NVDA screen reader to enhance accessibility for
+                        individuals with visual impairments.
+                      </p>
+                      <p class="card-text">
+                        <small class="text-body-secondary"
+                          >NV Access Limited - Issued Aug 2023</small
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card mb-3 ally" style="max-width: 540px">
+                <div class="row g-0">
+                  <div class="col-md-4 center-vertically p-2">
+                    <img
+                      src="./assets/TT_Trademark.jpg"
+                      class="img-fluid rounded-start"
+                      alt="JAWS logo"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h3 class="card-title">DHS Trusted Tester V5</h3>
+                      <p class="card-text">
+                        The DHS Trusted Tester V5 certification validates
+                        expertise in accessibility testing methodologies and
+                        compliance with U.S. Department of Homeland Security
+                        (DHS) accessibility standards.
+                      </p>
+                      <p class="card-text">
+                        <small class="text-body-secondary"
+                          >U.S DHS, Office of Accessible Systems & Technology -
+                          Credential ID TT-2204-02664 - Issued Apr 2022</small
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card mb-3 ally" style="max-width: 540px">
+                <div class="row g-0">
+                  <div class="col-md-4 center-vertically p-2">
+                    <img
+                      src="./assets/guxd.png"
+                      class="img-fluid rounded-start"
+                      alt="JAWS logo"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h3 class="card-title">
+                        Google UX Design Professional Certificate
+                      </h3>
+                      <p class="card-text">
+                        The Google UX Design Professional Certificate is a
+                        comprehensive program that equips learners with the
+                        skills and knowledge needed to excel in user experience
+                        (UX) design, offered by Google in partnership with
+                        Coursera.
+                      </p>
+                      <p class="card-text">
+                        <small class="text-body-secondary"
+                          >Google Career Certificates via Coursera - Issued Feb
+                          2022</small
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card mb-3 ally" style="max-width: 540px">
+                <div class="row g-0">
+                  <div class="col-md-4 center-vertically p-2">
+                    <img
+                      src="./assets/gaag.png"
+                      class="img-fluid rounded-start"
+                      alt="JAWS logo"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h3 class="card-title">Advanced Google Analytics</h3>
+                      <p class="card-text">
+                        Advanced Google Analytics is a comprehensive course that
+                        delves into advanced tracking, data analysis, and
+                        reporting techniques to help users gain deeper insights
+                        into website and app performance.
+                      </p>
+                      <p class="card-text">
+                        <small class="text-body-secondary"
+                          >Google Analytics Academy - Issued Apr 2021 · Expires
+                          Apr 2024</small
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section aria-label="resume" id="resume" class="my-5">
+        <div class="shim">
+          <h2 class="px-3">My Resume</h2>
+        </div>
+
+        <div class="row my-3">
+          <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card h-100 ally">
+              <div class="card-body a11y">
+                <!--A11y Audit Team Lead-->
+              </div>
+            </div>
+          </div>
           <div class="col-lg-6">
-            <h3 class="resume-title">Contact Information</h3>
-            <div class="resume-item pb-0">
-              <h4>Location</h4>
-              <ul>
-                <li>Nashville, TN area</li>
-                <li>Mobile: (404) 519-1101</li>
-              </ul>
+            <div class="card ally">
+              <div class="card-body">
+                <h3 class="card-title">Accessibility Audit Team Lead</h3>
+                <div class="card-text">
+                  <h4>QuaverEd</h4>
 
-              <h4>Online</h4>
-              <ul>
-                <li><a href="DWWestfall@Protonmail.com">Email:DWWestfall@Protonmail.com</a></li>
-                <li><a href="https://www.linkedin.com/in/danielwestfall/">LinkedIn</a></li>
-                <li><a href="https://github.com/danielwestfall">Github</a></li>
-              </ul>
+                  <em>AUGUST 2022 - Current</em>
 
-            </div>
-
-            <h3 class="resume-title">Education and Certifications</h3>
-
-            <div class="resume-item">
-
-              <a href="assets\img\portfolio\Aiadiploma.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Art Institute of Atlanta Diploma">
-                <h4>Associate of Arts in Multimedia and Web Design</h4>
-              </a>
-
-              <p>
-                <em>The Art Institute of Atlanta</em>
-              </p>
-              <p>Learned the design principles and the framework of Frontend Web Development to create attractive, fully functional, and impressive web presences</p>
-            </div>
-
-            <div class="resume-item">
-
-              <a href="https://certificates.emeritus.org/044f699c-06b8-4d2f-9eb5-ff63821d9db5" class="portfolio-details-lightbox" data-glightbox="type: external" title="MIT Full Stack Web Development Certificate"><h4>MIT xPro Professional Certificate in Coding: Full Stack Development with MERN </h4></a>
-
-              <p>
-                <em>Massachusetts Institute of Technology - MIT xPro</em>
-              </p>
-              <p>Updated my skills to the newest technologies from the world's foremost teachers of technologies</p>
-            </div>
-            
-            <div class="resume-item">
-              <h4>Certified Trusted Tester</h4>
-              <p>
-                <em>Department of Homeland Security - Office of Accessible Systems & Technology</em>
-              </p>
-              <p>Certified Trusted Tester id: TT-2204-02664</p>
-            </div>
-            <div class="resume-item">
-              <h4>JAWS Certified Individual </h4>
-              <p>
-                <em>Freedom Scientific</em>
-              </p>
-           
-            </div>            
-            <div class="resume-item">
-              <h4>NVDA Expert Certification </h4>
-              <p>
-                <em>NV Access</em>
-              </p>
-         
-            </div>  
-            
-            <div class="resume-item">
-
-              <a href="https://analytics.google.com/analytics/academy/certificate/MIOQYKSaSeGXxGNHokQ09Q" target="_blank" title="Advanced Google Analytics Certificate of Completion"><h4>Advanced Google Analytics Certificate of Completion </h4></a>
-
-              <p>
-                <em>Google Analytics Academy</em>
-              </p>
-              <p>Awarded for successfully completing the course "Advanced Google Analytics"</p>
-            </div>
-
-            <div class="resume-item">
-
-<a href="https://analytics.google.com/analytics/academy/certificate/bWAicKPrTmuBbx6gVgMxFw" target="_blank" title="Google Analytics for Beginners
-Certificate of Completion"><h4>Google Analytics for Beginners
-Certificate of Completion </h4></a>
-
-              <p><em>Google Analytics Academy</em></p>
-              <p>Awarded for successfully completing the course "Google Analytics for Beginners"</p>
-            </div>
-
-
-
-            <h3 class="resume-title">Skills</h3>
-            <div class="resume-item">
-              <ul>
-                  <li>Programming Languages:
-                    <ul>
-                      <li>HTML</li>
-                      <li>CSS</li>
-                      <li>JavaScript (ES6)</li>
-                    </ul>
-                  </li>
-                  <li>Web Technologies: 
-                    <ul>
-                      <li>RESTful APIs</li>
-                    </ul>
+                  <ul>
+                    <li>
+                      Conducted comprehensive accessibility audits of digital
+                      products, including reviewing over 900 lesson screens for
+                      a new accessible lesson framework.
                     </li>
-                  <li>Accessibility: 
-                    <ul>
-                      <li>WCAG</li>
-                      <li>WAI-ARIA</li>
-                    </ul> 
-                  </li>
-                  <li>Frameworks: 
-                    <ul>
-                      <li>React</li>
-                      <li>Next.js</li>
-                      <li>Bootstrap</li>
-                    </ul>
-                  </li>
-                  <li>Software/Tools: 
-                    <ul>
-                      <li>Git</li>
-                      <li>Docker</li>
-                      <li>Postman</li>
-                      <li>Google Suite</li>
-                      <li>GIMP (raster graphics)</li>
-                      <li>Inkscape (vector graphics)</li>
-                      <li>Microsoft Windows</li>
-                      <li>macOS</li>
-                      <li>Figma</li>
-                      <li>Github</li>
-                    </ul>
-                  </li>
-              </ul>
-            </div>
-
-          </div>
-          <div class="col-lg-6">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Coffee Talk</h4>
-              <h5>Entrepreneur, Owner</h5>
-              <p><em>Olathe, KS</em></p>
-              <ul>
-                <li>AUGUST 2022 - Current</li>
-                <p>
-                  <ul>
-                    <li>Conducted comprehensive accessibility audits of digital products, including reviewing over 900 lesson screens for a new accessible lesson framework.</li>
-                    <li>Provided guidance on changes needed to update existing user interfaces to comply with WCAG 2.1 and Section 508 guidelines, including detailed changes needed to semantic code and including WAI-ARIA.</li>
-                    <li>Performed thorough automated and manual testing of the Health & P.E. curriculum using assistive technologies such as JAWS, VoiceOver, NVDA, ChromeVox, and keyboard navigation.</li>
-                    <li>Collaborated effectively with cross-functional teams, including Content, Art, Production, and Development teams to solve accessibility issues and come up with creative solutions.</li>
-                    <li>Created detailed Accessibility Conformance Reports (ACRs) for internal products using ITI's Voluntary Product Accessibility Template (VPAT), effectively communicating accessibility compliance to stakeholders.</li>
-                    <li>Led a team of full-time employees and contractors including native users of assistive technologies.</li>
-                    
+                    <li>
+                      Provided guidance on changes needed to update existing
+                      user interfaces to comply with WCAG 2.1 and Section 508
+                      guidelines, including detailed changes needed to semantic
+                      code and including WAI-ARIA.
+                    </li>
+                    <li>
+                      Performed thorough automated and manual testing of the
+                      Health & P.E. curriculum using assistive technologies such
+                      as JAWS, VoiceOver, NVDA, ChromeVox, and keyboard
+                      navigation.
+                    </li>
+                    <li>
+                      Collaborated effectively with cross-functional teams,
+                      including Content, Art, Production, and Development teams
+                      to solve accessibility issues and come up with creative
+                      solutions.
+                    </li>
+                    <li>
+                      Created detailed Accessibility Conformance Reports (ACRs)
+                      for internal products using ITI's Voluntary Product
+                      Accessibility Template (VPAT), effectively communicating
+                      accessibility compliance to stakeholders.
+                    </li>
+                    <li>
+                      Led a team of full-time employees and contractors
+                      including native users of assistive technologies.
+                    </li>
                   </ul>
-                </p>
-              </ul>
-            </div>
-            
-            <div class="resume-item">
-              <h4>Coffee Talk</h4>
-              <h5>Entrepreneur, Owner</h5>
-              <p><em>Olathe, KS</em></p>
-              <ul>
-                <li>MARCH 2018 - JULY 2021</li>
-                <p>
-                  <ul>
-                    <li>Established a café from ground up and was awarded Nextdoor’s Neighborhood Favorite Coffee Shop annual award twice due to excellent service</li>
-                    <li>Running day-to-day operations such as monitoring daily cash flow, sales of the day, stock-taking inventory, communicating with vendors</li>
-                    <li>Acquiring the necessary permits from the state and facilitating inspections as well as manage taxes with IRS </li>
-                    <li>Social media marketing by designing posts, promotions to share via Facebook, Instagram and Twitter</li>
-                  </ul>
-                </p>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>Braun Intertec</h4>
-              <h5>MARCH 2015 - MARCH 2018</h5>
-              <p><em>Lenexa, KS</em></p>
-              <ul>
-                <li>Field Technician</li>
-                  <ul>
-                <p>
-                    <li>Ensure soundness and safety of the project at construction sites by determining if standards were upheld </li>
-                    <li>Perform inspections on site to check for accurate interpretation of work as specified by site plans</li>
-                    <li>Maintain written and verbal communication with site managers and engineers of inspection results</li>
-                  </ul>
-                </p>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>Kelinfelder</h4>
-              <h5>AUGUST 2014 - MARCH 2015</h5>
-              <p><em>Lenexa, KS</em></p>
-              <ul>
-                <li>Field Technician</li>
-                <p>
-                  <ul>
-                    <li>Coordinated and performed soil and aggregate testing in support of geotechnical and construction materials testing projects</li>
-                    <li>Multi-tasked and worked independently on tests 	</li>
-                    <li>Ensured project deadlines are met</li>
-                    <li>Created Standard Operating Procedures(SOPs) and worksheets for testing from ASTM standards for field laboratories</li>
-                  </ul>
-                </p>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>Kansas Star Casino</h4>
-              <h5>NOVEMBER 2012 - JULY 2014</h5>
-              <p><em>Mulvane, KS</em></p>
-              <ul>
-                <li>Table Games Dealer</li>
-                <p>
-                  <ul>
-                    <li>Provided excellent customer service and maintained a positive atmosphere </li>
-                    <li>Ensured games operated according to house rules and within security guidelines</li>
-                    <li>Chosen to deal in the annual Kansas State Casino Baccarat Tournament</li>
-                  </ul>
-                </p>
-              </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-      </div>
-    </section>
-    <!-- End Resume Section -->
+        <div class="card my-3 allycard">
+          <div class="card-header ally">
+            <strong>Takeaways from Accessibility Audit Team Lead</strong>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Skills</h5>
+            <span class="card-text"
+              >In my current role as the Accessibility Auditing Team Lead, I am
+              spearheading the development of a standardized approach for
+              auditing unique resources within an educational curriculum. While
+              actively pursuing the CPACC certification, I am leading a growing
+              team in the comprehensive evaluation of web-based software, PDFs,
+              and all other materials provided to our users. This involves a
+              deep understanding and interpretation of the WCAG guidelines,
+              fostering creative thinking and innovative solutions, and applying
+              meticulous attention to detail. Ensuring accessibility in
+              educational resources has become not just a role but a passion, as
+              I work towards making digital content inclusive for all
+              learners.</span
+            >
+          </div>
+        </div>
 
-  </main><!-- End #main -->
+        <div class="row my-3">
+          <div class="col-sm-6">
+            <div class="card ally">
+              <div class="card-body">
+                <h3 class="card-title">Calibration Technician</h3>
+                <div class="card-text">
+                  <h4>K&S Associates</h4>
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <h3>Daniel Westfall</h3>
-      <p>Thank you for stopping by, until next time... Goodbye World!</p>
-      <div class="social-links">
-        <a href="https://twitter.com/danwestfall6" class="twitter" aria-label="Daniel on Twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="https://github.com/danielwestfall" class="github" aria-label="Daniel on Github"><i class="bx bxl-github"></i></a>
-        <a href="https://www.instagram.com/DanielWWestfall/" class="instagram" aria-label="Daniel on Instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/danielwestfall/" class="linkedin" aria-label="Daniel on Linked In"><i class="bx bxl-linkedin"></i></a>
-      </div>
-      <div class="copyright">
-        &copy; Copyright <strong><span>Daniel W Westfall</span></strong>. All Rights Reserved
-      </div>
-      
-    </div>
-  </footer>
-  <!-- End Footer -->
+                  <em>JUNE - AUGUST 2022</em>
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+                  <ul>
+                    <li>
+                      Conducted a variety of calibrations, including NIST
+                      Traceable & AAPM accredited radiation therapy calibrations
+                      from Cs-137 and Co-60 gamma rays, LDR and HDR
+                      brachytherapy calibrations, and diagnostic X-ray
+                      calibrations, with a strong focus on accuracy and
+                      precision.
+                    </li>
+                    <li>
+                      Documented all calibration processes and prepared reports
+                      as required, ensuring compliance with relevant standards
+                      and regulations.
+                    </li>
+                    <li>
+                      Developed comprehensive reports and certificates about
+                      completed calibrations, ensuring that all relevant
+                      stakeholders had access to necessary information.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+          <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card h-100 ally">
+              <div class="card-body xray"></div>
+            </div>
+          </div>
+        </div>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+        <div class="card my-3  ally">
+          <div class="card-header ally">Takeaways from Radiation Lab Tech</div>
+          <div class="card-body">
+            <h5 class="card-title">Skills</h5>
+            <span class="card-text"
+              >Taking on the role of a calibration technician while concurrently
+              pursuing web development was a unique journey. Drawing from my
+              prior experience handling nuclear devices, I honed my skills in
+              meticulous attention to detail, precise inspections, and effective
+              troubleshooting. This background has equipped me with a valuable
+              set of qualities that I'm applied to both the world of calibration
+              and now the realm of web development, creating a dynamic blend of
+              technical expertise and problem-solving in my career path.</span
+            >
+          </div>
+        </div>
 
-</body>
+        <div class="row my-3">
+          <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card h-100 ally">
+              <div class="card-body coffee"></div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card ally">
+              <div class="card-body">
+                <h3 class="card-title">Manager and Co-Founder</h3>
+                <div class="card-text">
+                  <h4>CoffeeTalk</h4>
 
+                  <em>MARCH 2018 - JULY 2021</em>
+
+                  <ul>
+                    <li>
+                      Conceptualized and designed a customer-focused experience,
+                      including visual design and retail products, resulting in
+                      recognition as Nextdoor's Neighborhood Favorite Coffee
+                      Shop twice annually.
+                    </li>
+                    <li>
+                      Gathered valuable customer insights and feedback about
+                      attitudes, emotions, and behaviors, using this information
+                      to curate a fresh and well-received seasonal menu of
+                      products for customers, with a focus on maximizing
+                      consumer satisfaction and accessibility for all.
+                    </li>
+                    <li>
+                      Developed advertising and marketing strategies, including
+                      digital materials for social media, and coordinated
+                      promotions and events to engage customers and the
+                      community at large.
+                    </li>
+                    <li>
+                      Planned, organized, and led in-store promotions and
+                      events, and collaborated with local minority organizations
+                      to promote cultural awareness and inclusion, with a strong
+                      commitment to accessibility and inclusion for all
+                      customers.
+                    </li>
+                    <li>
+                      Designed the storefront layout to create an intuitive and
+                      well-organized flow from ordering to enjoying products,
+                      resulting in a smooth process with maximum efficiency and
+                      minimal wait time for all customers, including those with
+                      disabilities.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card my-3 ally">
+          <div class="card-header ally">Takeaways from Co-Owner</div>
+          <div class="card-body">
+            <h5 class="card-title">Skills</h5>
+            <span class="card-text">
+              <p>
+                Owning a business and interacting with a diverse group of
+                customers was a transformative experience in my life. It
+                provided me with a unique perspective on the needs, preferences,
+                and challenges faced by people from various backgrounds. The
+                interactions I had with customers highlighted the importance of
+                inclusivity and accessibility in our increasingly digital world.
+              </p>
+              <p>
+                As that chapter of my life in business ownership closed, I found
+                myself drawn to the world of coding and web accessibility. My
+                interactions with customers underscored the significance of
+                creating online experiences that cater to everyone, regardless
+                of their abilities. This realization led me to explore the field
+                of web development and accessibility, where I could contribute
+                to making the internet a more inclusive and user-friendly space
+                for all.
+              </p>
+              <p>
+                In pursuing coding and web accessibility, I've embarked on a
+                journey to bridge the digital divide and ensure that technology
+                is accessible to a broader and more diverse audience. This
+                transition represents a meaningful shift in my career and
+                personal goals, driven by a commitment to creating a more
+                inclusive digital landscape.
+              </p>
+            </span>
+          </div>
+        </div>
+
+        <div class="row my-3">
+          <div class="col-sm-6">
+            <div class="card ally">
+              <div class="card-body">
+                <h3 class="card-title">
+                  Laboratory Technician & Field Technician III
+                </h3>
+                <div class="card-text">
+                  <h4>Braun Intertec</h4>
+
+                  <em>AUGUST 2014 - MARCH 2018</em>
+
+                  <ul>
+                    <li>
+                      Ensured execution of project specifications and concepts
+                      to acceptable quality standards while any challenges or
+                      problems were defined and addressed to maintain project
+                      momentum and integrity by collaborating closely with
+                      engineers and teams on-site.
+                    </li>
+                    <li>
+                      Performed detail-oriented inspections and analytical
+                      problem-solving in fast-paced environments in up to six
+                      different sites per day.
+                    </li>
+                    <li>
+                      Effectively communicated all issues with relevant
+                      engineers and teams and collaborated on solutions,
+                      ultimately following through with the implementation and
+                      results.
+                    </li>
+                    <li>
+                      Responsible for maintaining a high level of quality and
+                      consistency while performing testing and iterative testing
+                      methods.
+                    </li>
+                    <li>
+                      Multitasked and effectively managed timely testing while
+                      delivering accurate results deadline-consciously.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card h-100 ally">
+              <div class="card-body field-tech"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card my-3 ally">
+          <div class="card-header ally">Takeaways from Lab and Field Tech</div>
+          <div class="card-body">
+            <h5 class="card-title">Skills</h5>
+            <span class="card-text">
+              Spending four years as a field inspector, conducting on-site
+              inspections on various construction sites, was a dynamic journey.
+              This role demanded a fusion of construction materials expertise
+              and a keen understanding of site-specific plans to complete
+              inspections in constantly evolving environments. It not only
+              enriched my technical skills but also instilled the ability to
+              adapt swiftly and think on my feet. This experience proved
+              invaluable, equipping me with the readiness to handle diverse
+              challenges and make informed decisions in the ever-changing
+              landscape of the construction industry.
+            </span>
+          </div>
+        </div>
+
+        <div class="row my-3">
+          <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card h-100 ally">
+              <div class="card-body casino"></div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card ally">
+              <div class="card-body">
+                <h3 class="card-title">Table Games Dealer</h3>
+                <div class="card-text">
+                  <h4>Kansas Star Casino</h4>
+
+                  <em>NOVEMBER 2012 - JULY 2014</em>
+
+                  <ul>
+                    <li>
+                      Facilitated games to provide customers with the highest
+                      quality gaming experience possible while upholding game
+                      security by adhering to state-regulated guidelines.
+                    </li>
+                    <li>
+                      Provided exceptional customer service with the property’s
+                      service standards and brand attitudes and was chosen to
+                      deal in the annual Lunar New Year Baccarat tournament
+                      twice due to the high level of customer focus and
+                      consistency.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card my-3 ally">
+          <div class="card-header ally">Takeaways from Table Games Dealer</div>
+          <div class="card-body">
+            <h5 class="card-title">Skills</h5>
+            <span class="card-text"
+              >Working as a table games dealer provided me with a unique skill
+              set. I had to think quickly, pay close attention to multiple
+              aspects of the game, and multitask efficiently, all while ensuring
+              that patrons had an enjoyable experience. This role not only
+              sharpened my ability to manage fast-paced, high-pressure
+              situations but also taught me the art of customer service and
+              creating a welcoming atmosphere, making it a truly enriching
+              experience.</span
+            >
+          </div>
+        </div>
+
+        <div class="row my-3">
+          <div class="col-sm-6">
+            <div class="card ally">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Field Equipment and Warehouse Supervisor
+                </h5>
+                <div class="card-text">
+                  <h6>Golder Associates, Inc.</h6>
+
+                  <em>MARCH 2005 - JULY 2012</em>
+
+                  <ul>
+                    <li>
+                      Maintained, prepared for use, and storage of field
+                      equipment.
+                    </li>
+                    <li>
+                      Managed inventory and sample storage at an off-site
+                      warehouse.
+                    </li>
+                    <li>
+                      Supervised the proper storage and disposal of samples,
+                      including contaminated and foreign soils.
+                    </li>
+                    <li>
+                      Preformed interface shear testing of soils and/or
+                      geosyntetic interfaces. Concrete testing including mix
+                      studies, sample creation, curing, and strength testing of
+                      samples.
+                    </li>
+                    <li>
+                      Preformed field work including air quality monitoring on a
+                      potentially hazardous construction site, and assisted in
+                      the relocation of an endangered plant species.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card h-100 ally">
+              <div class="card-body lab-tech-3"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card my-3 ally">
+          <div class="card-header ally">
+            Takeaways from Field Equipment and Warehouse Supervisor
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Skills</h5>
+            <span class="card-text"
+              >As a warehouse and field equipment manager, I was responsible for
+              complex lab testing, sample storage, and managing the distribution
+              and tracking the location and usage of field equipment. This role
+              demanded qualities like precision, attention to detail, excellent
+              organizational skills, and the ability to maintain a systematic
+              approach in a dynamic environment. These attributes closely align
+              with the qualities needed for a proficient web accessibility
+              auditor, ensuring an inclusive online experience for all
+              users.</span
+            >
+          </div>
+        </div>
+
+        <div class="row my-3">
+          <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card h-100 ally">
+              <div class="card-body lab-tech-2"></div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card ally">
+              <div class="card-body">
+                <h3 class="card-title">Laboratory Technician I & II</h3>
+                <div class="card-text">
+                  <h4>Golder Associates, Inc.</h4>
+
+                  <em>JUNE 1998 - MARCH 2005</em>
+
+                  <ul>
+                    <li>
+                      Prepared and performed various tests on synthetics
+                      implementing standards from ASTM, AASHTO, Geosynthetic
+                      Accreditation Institute (GAI), and Corps of Engineers.
+                    </li>
+                    <li>
+                      Duties include ensuring the calibration and maintenance of
+                      laboratory equipment and log in/out procedures.
+                    </li>
+                    <li>
+                      Prepare and perform various tests on soils implementing
+                      standards from ASTM, AASHTO, GAI, and Corps of Engineers.
+                    </li>
+                    <li>
+                      Prepared and performed various tests on synthetics
+                      implementing standards from ASTM, AASHTO, Geosynthetic
+                      Accreditation Institute (GAI), and Corps of Engineers.
+                    </li>
+                    <li>
+                      Duties include ensuring the calibration and maintenance of
+                      laboratory equipment and log in/out procedures.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card my-3 ally">
+          <div class="card-header ally">Takeaways from Laboratory Technician</div>
+          <div class="card-body">
+            <h5 class="card-title">Skills</h5>
+            <span class="card-text"
+              >My journey as a lab tech began with the most fundamental tasks
+              and evolved into handling the most intricate of tests. In this
+              role, I learned the art of conducting tests with precision, keenly
+              observing details, and ensuring the consistency of testing methods
+              and environmental conditions to achieve nothing short of accurate
+              and precise results. This experience instilled in me the value of
+              methodical work and meticulous attention to detail, skills that
+              are fundamental not just in the lab but in any field that demands
+              accuracy and reliability.</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <section aria-label="contact" id="contact" class="my-5">
+        <div class="shim">
+          <h2 class="px-3">Contact</h2>
+        </div>
+
+        <div class="mx-3 px-3 my-3">
+          <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+              <div class="card h-100 ally">
+                <img
+                  src="./assets/icons/mail-svgrepo-com.svg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Email Me</h5>
+                  <p class="card-text">
+                    Let's collaborate on something amazing! Reach out to me via
+                    email to start the conversation.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 ally">
+                <img
+                  src="./assets/icons/linkedin-svgrepo-com.svg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">LinkedIn</h5>
+                  <p class="card-text">
+                    Interested in connecting or discussing opportunities? Don't
+                    hesitate to reach out on LinkedIn. Let's connect and explore
+                    possibilities together.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 ally">
+                <img
+                  src="./assets/icons/instagram-svgrepo-com.svg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Instagram</h5>
+                  <p class="card-text">
+                    Stay updated with my latest content and behind-the-scenes
+                    moments on Instagram! Feel free to follow me and send me a
+                    direct message. Let's engage and share our passions!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 ally">
+                <img
+                  src="./assets/icons/youtube-svgrepo-com.svg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">YouTube</h5>
+                  <p class="card-text">
+                    Join the conversation on YouTube! Subscribe to my channel
+                    for exciting videos, tutorials, and discussions. Leave a
+                    comment on my latest video or send me a message—your
+                    feedback and ideas are always welcome!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
