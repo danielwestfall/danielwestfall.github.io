@@ -1,263 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daniel Westfall - Resume</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=El+Messiri&family=Kameron&family=Lato&family=Play:wght@700&family=Raleway&family=Source+Code+Pro&family=Varela+Round&display=swap"
-      rel="stylesheet"
-    />
 
-    <style>
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        font-family: "Varela Round", sans-serif;
-      }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Westfall - Resume</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=El+Messiri&family=Kameron&family=Lato&family=Play:wght@700&family=Raleway&family=Source+Code+Pro&family=Varela+Round&display=swap"
+    rel="stylesheet">
 
-      .min-size-div {
-        min-width: 200px;
-        /* Set the minimum width here */
-        min-height: 200px;
-        /* Set the minimum height here */
-      }
+  <style>
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Varela Round", sans-serif;
+    }
 
-      .navbar-brand {
-        font-family: "Play", sans-serif;
-        font-size: 2rem;
-      }
+    .min-size-div {
+      min-width: 200px;
+      /* Set the minimum width here */
+      min-height: 200px;
+      /* Set the minimum height here */
+    }
 
-      .center-vertically {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: max-content;
-        text-align: center;
-      }
+    .navbar-brand {
+      font-family: "Play", sans-serif;
+      font-size: 2rem;
+    }
 
-      .header1 {
-        color: white;
-        position: absolute;
-        left: 4rem;
-        top: 8rem;
-        z-index: 10000;
-        font-size: large;
-      }
+    .center-vertically {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: max-content;
+      text-align: center;
+    }
 
-      body {
-        font-family: sans-serif;
-      }
+    .header1 {
+      color: white;
+      position: absolute;
+      left: 4rem;
+      top: 8rem;
+      z-index: 10000;
+      font-size: large;
+    }
 
-      .a11y {
-        background-image: url("assets/computer-rate-rating-2-svgrepo-com.svg");
-        background-size: contain;
-        display: block;
-        background-repeat: no-repeat;
-        background-position: center center;
-        margin: 2rem;
-      }
+    body {
+      font-family: sans-serif;
+    }
 
-      .rez {
-        background-image: url("assets/hero.png");
-        background-size: contain;
-        display: block;
-        background-repeat: no-repeat;
-        background-position: center center;
-        margin: 2rem;
-      }
+    .a11y {
+      background-image: url("assets/computer-rate-rating-2-svgrepo-com.svg");
+      background-size: contain;
+      display: block;
+      background-repeat: no-repeat;
+      background-position: center center;
+      margin: 2rem;
+    }
 
-      .xray {
-        background-image: url("assets/radiation-svgrepo-com.svg");
-        background-size: contain;
-        display: block;
-        background-repeat: no-repeat;
-        background-position: center center;
-        margin: 2rem;
-      }
+    .rez {
+      background-image: url("assets/hero.png");
+      background-size: contain;
+      display: block;
+      background-repeat: no-repeat;
+      background-position: center center;
+      margin: 2rem;
+    }
 
-      .coffee {
-        background-image: url("assets/cafe-svgrepo-com.svg");
-        background-size: contain;
-        display: block;
-        background-repeat: no-repeat;
-        background-position: center center;
-        margin: 2rem;
-      }
+    .shim {
+      height: 4rem;
+      width: 90%;
+      background-color: black;
+      background-size: cover;
+      color: white;
+      background-position: center;
+      border: 3px;
+      border-color: darkgray;
+      border-style: solid;
+      margin: auto;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      border-radius: 25px 10px 25px 10px;
+      display: flex;
+      align-items: end;
+    }
 
-      .field-tech {
-        background-image: url("assets/blueprint-svgrepo-com.svg");
-        background-size: contain;
-        display: block;
-        background-repeat: no-repeat;
-        background-position: center center;
-        margin: 2rem;
-      }
+    .visually-hidden-focusable {
+      color: white;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
 
-      .casino {
-        background-image: url("assets/croupier-svgrepo-com.svg");
-        background-size: contain;
-        display: block;
-        background-repeat: no-repeat;
-        background-position: center center;
-        margin: 2rem;
-      }
+    section {
+      padding: 3rem;
+    }
 
-      .lab-tech-1 {
-        background-image: url("assets/lab-svgrepo-com.svg");
-        background-size: contain;
-        display: block;
-        background-repeat: no-repeat;
-        background-position: center center;
-        margin: 2rem;
-      }
+    .ally {
+      border-color: darkgray;
+      border-width: 5px;
+    }
 
-      .lab-tech-2 {
-        background-image: url("assets/chemistry-laboratory-svgrepo-com.svg");
-        background-size: contain;
-        display: block;
-        background-repeat: no-repeat;
-        background-position: center center;
-        margin: 2rem;
-      }
+    .allycard {
+      border-color: darkgray;
+      border-width: 5px;
+    }
 
-      .lab-tech-3 {
-        background-image: url("assets/packing-warehouse-svgrepo-com.svg");
-        background-size: contain;
-        display: block;
-        background-repeat: no-repeat;
-        background-position: center center;
-        margin: 2rem;
-      }
+    .card {
+      font-weight: 600;
+      font-size: 1em;
+    }
 
-      .shim {
-        height: 4rem;
-        width: 100%;
-        background-color: black;
-        background-size: cover;
-        color: white;
-        background-position: center;
-        border: 3px;
-        border-color: darkgray;
-        border-style: solid;
-        margin: 5px;
-        border-radius: 25px 10px 25px 10px;
-        display: flex;
-        align-items: end;
-      }
+    .navbar-light .navbar-nav .nav-link {
+      color: #000;
+    }
+  </style>
+</head>
 
-      .visually-hidden-focusable {
-        color: white;
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
+<body>
+  <nav class="navbar navbar-expand-md bg-dark fixed-top" data-bs-theme="dark">
+    <a class="visually-hidden-focusable" href="#content">Skip to main content</a>
 
-      section {
-        padding: 3rem;
-      }
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-      .ally {
-        border-color: darkgray;
-        border-width: 5px;
-      }
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+          <li class="nav-item mx-2">
+            <a class="nav-link active" aria-current="page" href="#about">About</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#certs">Certifications</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="navbar-brand" href="#">CERTREQ</a>
+          </li>
 
-      .allycard {
-        border-color: darkgray;
-        border-width: 5px;
-      }
-
-      .card {
-        font-weight: 600;
-        font-size: 1em;
-      }
-
-      .navbar-light .navbar-nav .nav-link {
-        color: #000;
-      }
-    </style>
-  </head>
-
-  <body>
-    <nav class="navbar navbar-expand-md bg-dark fixed-top" data-bs-theme="dark">
-      <a class="visually-hidden-focusable" href="#content"
-        >Skip to main content</a
-      >
-
-      <div class="container-fluid">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarTogglerDemo01"
-          aria-controls="navbarTogglerDemo01"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-mdb-toggle="collapse"
-          data-mdb-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          CERTREQ
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
-            <li class="nav-item mx-2">
-              <a class="nav-link active" aria-current="page" href="#about"
-                >About</a
-              >
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="#certs">Certifications</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="navbar-brand" href="#">CERTREQ</a>
-            </li>
-
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="#resume">Resume</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="https://certreq.dev/blog/">Blog</a>
-            </li>
-          </ul>
-        </div>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#resume">Resume</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="https://certreq.dev/blog/">Blog</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <main id="content">
-      <section id="home" aria-label="home" class="my-5">
+  <main id="content">
+    <section id="home" aria-label="home" class="my-5">
+      <div class="container" style="width: 85%">
         <div class="row my-3">
           <div class="col-lg-6">
             <div class="card ally">
@@ -266,20 +177,21 @@
                 <div class="card-text">
                   <h2 class="mt-0 pt-0">Daniel Westfall</h2>
                   <p class="mb-0 pb-0">
-                    Version 0.5 - Still a work in progress <br /><br />
+                    Version 0.5 - Still a work in progress <br><br>
                     <em>October 14, 2023</em>
                   </p>
-                  <br />
-                  <span class="card-text">
+                  <br>
+                  <div class="card-text">
                     <p>
-                      Welcome to "CERTREQ," my platform dedicated to my journey
-                      toward acquiring the CPACC and WAS certifications. Just as
-                      the "certreq" command in the digital realm handles
-                      certificate requests, this site will serve as a space
-                      where I meticulously document the process of obtaining
-                      certifications that will expand my expertise in
-                      accessibility.
+                      Welcome to "CERTREQ," my platform dedicated to my
+                      journey toward acquiring the CPACC and WAS
+                      certifications. Just as the "certreq" command in the
+                      digital realm handles certificate requests, this site
+                      will serve as a space where I meticulously document the
+                      process of obtaining certifications that will expand my
+                      expertise in accessibility.
                     </p>
+
                     <p>
                       Additionally, it will be a platform where I share the
                       knowledge I gather and illustrate how this newfound
@@ -291,7 +203,7 @@
                       improving online experiences to ensure maximum
                       accessibility for all individuals.
                     </p>
-                  </span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -304,996 +216,856 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section aria-label="about" id="about" class="my-5">
-        <div class="shim">
-          <h2 class="px-3">About Me</h2>
-        </div>
-
+    <section aria-label="about" id="about" class="my-5">
+      <div class="shim">
+        <h2 class="px-3">About Me</h2>
+      </div>
+      <div class="container" style="width: 85%">
         <div class="mx-3 px-3 my-3">
           <p>
-            As a professional accessibility auditor, I bring a unique background
-            to the table that spans construction quality assurance, customer
-            service, entrepreneurship, and full-stack web development. With a
-            detail-oriented and meticulous approach, I've honed my skills in
-            ensuring high-quality results in every project I undertake.
+            As a professional accessibility auditor, I bring a unique
+            background to the table that spans construction quality assurance,
+            customer service, entrepreneurship, and full-stack web
+            development. With a detail-oriented and meticulous approach, I've
+            honed my skills in ensuring high-quality results in every project
+            I undertake.
           </p>
 
           <p>
             My diverse experiences include running table games and dealing in
             annual baccarat tournaments, building and running an award-winning
-            coffee shop from scratch, and developing my skills in full-stack web
-            development and UX design through MIT xPro and Google certificates.
-            With a focus on the user experience and user interface design, I've
-            learned about the importance of conducting research, empathizing
-            with users, and creating wireframes and prototypes with tools like
-            Figma and Adobe XD.
+            coffee shop from scratch, and developing my skills in full-stack
+            web development and UX design through MIT xPro and Google
+            certificates. With a focus on the user experience and user
+            interface design, I've learned about the importance of conducting
+            research, empathizing with users, and creating wireframes and
+            prototypes with tools like Figma and Adobe XD.
           </p>
 
           <p>
             In my work as an accessibility auditor, I bring my passion for
-            ensuring that all users have equal access to technology and digital
-            experiences. I'm well-versed in tools like ANDI, WCAG Color Contrast
-            Checker, Section 508 Trusted Tester, WCAG 2.1, and WAI ARIA, and I'm
-            experienced in manual and automated accessibility testing. I'm
-            committed to making the digital world a more inclusive and
-            accessible place for everyone.
+            ensuring that all users have equal access to technology and
+            digital experiences. I'm well-versed in tools like ANDI, WCAG
+            Color Contrast Checker, Section 508 Trusted Tester, WCAG 2.1, and
+            WAI ARIA, and I'm experienced in manual and automated
+            accessibility testing. I'm committed to making the digital world a
+            more inclusive and accessible place for everyone.
           </p>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section aria-label="projects" id="projects" class="my-5">
-        <div class="shim">
-          <h2 class="px-3">Daniel's Projects</h2>
-        </div>
-
+    <section aria-label="projects" id="projects" class="my-5">
+      <div class="shim">
+        <h2 class="px-3">Daniel's Projects</h2>
+      </div>
+      <div class="container" style="width: 85%">
         <div class="mx-3 px-3 my-3">
-           <p>Project Placeholder - PhaseThru</p>
+          <p>Project Placeholder - PhaseThru</p>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section aria-label="certifications" id="certs" class="my-5">
-        <div class="shim">
-          <h2 class="px-3">Daniel's Certifications</h2>
-        </div>
-
-        <div class="mx-3 px-3 my-3">
-          <div class="row row-cols-1 row-cols-md-2 g-4">
-            <div class="col">
-              <div class="card mb-3 ally h-100" style="max-width: 540px">
-                <div class="row g-0">
-                  <div class="col-md-4 center-vertically p-2">
-                    <img
-                      src="./assets/jawscert.jpg"
-                      class="img-fluid rounded-start"
-                      alt="JAWS Certified logo"
-                    />
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h3 class="card-title">JAWS Certified Individual</h3>
-                      <p class="card-text">
-                        The JAWS Certified Individual certificate is a
-                        credential awarded to individuals who have demonstrated
-                        proficiency in using the JAWS screen reading software to
-                        enhance accessibility for individuals with visual
-                        impairments.
-                      </p>
-                      <p class="card-text">
-                        <small class="text-body-secondary"
-                          >Freedom Scientific - Issued Aug 2023</small
-                        >
-                      </p>
-                    </div>
-                  </div>
-                </div>
+    <section aria-label="certifications" id="certs" class="my-5">
+      <div class="shim">
+        <h2 class="px-3">Daniel's Certifications</h2>
+      </div>
+      <div class="container" style="width: 85%">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card ally h-100">
+              <img src="./assets/jawscert.jpg" class="card-img-top" alt="JAWS Certified logo" style="padding: 1em">
+              <div class="card-body">
+                <h3 class="card-title">JAWS Certified Individual</h3>
+                <p class="card-text">
+                  The JAWS Certified Individual certificate is a credential
+                  awarded to individuals who have demonstrated proficiency in
+                  using the JAWS screen reading software to enhance
+                  accessibility for individuals with visual impairments.
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">Freedom Scientific - Issued Aug 2023</small>
               </div>
             </div>
-
-            <div class="col">
-              <div class="card mb-3 ally h-100" style="max-width: 540px">
-                <div class="row g-0">
-                  <div class="col-md-4 center-vertically p-2">
-                    <img
-                      src="./assets/242-2429040_nvda-certified-expert-logo-nv-access.png"
-                      class="img-fluid rounded-start"
-                      alt="NVDA Expert logo"
-                    />
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h3 class="card-title">NVDA Expert Certification</h3>
-                      <p class="card-text">
-                        The NVDA Expert Certification is a credential awarded to
-                        individuals who have demonstrated proficiency in using
-                        the the NVDA screen reader to enhance accessibility for
-                        individuals with visual impairments.
-                      </p>
-                      <p class="card-text">
-                        <small class="text-body-secondary"
-                          >NV Access Limited - Issued Aug 2023</small
-                        >
-                      </p>
-                    </div>
-                  </div>
-                </div>
+          </div>
+          <div class="col">
+            <div class="card ally h-100">
+              <img src="./assets/242-2429040_nvda-certified-expert-logo-nv-access.png" class="card-img-top"
+                alt="NVDA Expert logo" style="padding: 1em">
+              <div class="card-body">
+                <h3 class="card-title">NVDA Expert Certification</h3>
+                <p class="card-text">
+                  The NVDA Expert Certification is a credential awarded to
+                  individuals who have demonstrated proficiency in using the
+                  the NVDA screen reader to enhance accessibility for
+                  individuals with visual impairments.
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">NV Access Limited - Issued Aug 2023</small>
               </div>
             </div>
+          </div>
+          <div class="col">
+            <div class="card ally h-100">
+              <img src="./assets/TT_Trademark.jpg" class="card-img-top" alt="Trusted Tester logo" style="padding: 1em">
+              <div class="card-body">
+                <h3 class="card-title">DHS Trusted Tester V5</h3>
+                <p class="card-text">
+                  The DHS Trusted Tester V5 certification validates expertise
+                  in accessibility testing methodologies and compliance with
+                  U.S. Department of Homeland Security (DHS) accessibility
+                  standards.
+                </p>
 
-            <div class="col">
-              <div class="card mb-3 ally h-100" style="max-width: 540px">
-                <div class="row g-0">
-                  <div class="col-md-4 center-vertically p-2">
-                    <img
-                      src="./assets/TT_Trademark.jpg"
-                      class="img-fluid rounded-start"
-                      alt="Trusted Tester logo"
-                    />
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h3 class="card-title">DHS Trusted Tester V5</h3>
-                      <p class="card-text">
-                        The DHS Trusted Tester V5 certification validates
-                        expertise in accessibility testing methodologies and
-                        compliance with U.S. Department of Homeland Security
-                        (DHS) accessibility standards.
-                      </p>
-                      <p class="card-text">
-                        <small class="text-body-secondary"
-                          >U.S DHS, Office of Accessible Systems & Technology -
-                          Credential ID TT-2204-02664 - Issued Apr 2022</small
-                        >
-                      </p>
-                    </div>
-                  </div>
-                </div>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">U.S DHS, Office of Accessible Systems & Technology -
+                  Credential ID TT-2204-02664 - Issued Apr 2022</small>
               </div>
             </div>
+          </div>
+          <div class="col">
+            <div class="card ally h-100">
+              <img src="./assets/guxd.png" class="card-img-top" alt="Google UX Design Professional Certificate logo"
+                style="padding: 1em">
+              <div class="card-body">
+                <h3 class="card-title">
+                  Google UX Design Professional Certificate
+                </h3>
+                <p class="card-text">
+                  The Google UX Design Professional Certificate is a
+                  comprehensive program that equips learners with the skills
+                  and knowledge needed to excel in user experience (UX)
+                  design, offered by Google in partnership with Coursera.
+                </p>
 
-            <div class="col">
-              <div class="card mb-3 ally h-100" style="max-width: 540px">
-                <div class="row g-0">
-                  <div class="col-md-4 center-vertically p-2">
-                    <img
-                      src="./assets/guxd.png"
-                      class="img-fluid rounded-start"
-                      alt="Google UX Design Professional Certificate logo"
-                    />
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h3 class="card-title">
-                        Google UX Design Professional Certificate
-                      </h3>
-                      <p class="card-text">
-                        The Google UX Design Professional Certificate is a
-                        comprehensive program that equips learners with the
-                        skills and knowledge needed to excel in user experience
-                        (UX) design, offered by Google in partnership with
-                        Coursera.
-                      </p>
-                      <p class="card-text">
-                        <small class="text-body-secondary"
-                          >Google Career Certificates via Coursera - Issued Feb
-                          2022</small
-                        >
-                      </p>
-                    </div>
-                  </div>
-                </div>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">Google Career Certificates via Coursera - Issued Feb
+                  2022</small>
               </div>
             </div>
+          </div>
+          <div class="col">
+            <div class="card ally h-100">
+              <img src="./assets/gaag.png" class="card-img-top" alt="Advanced Google Analytics logo"
+                style="padding: 1em">
+              <div class="card-body">
+                <h3 class="card-title">Advanced Google Analytics</h3>
+                <p class="card-text">
+                  Advanced Google Analytics is a comprehensive course that
+                  delves into advanced tracking, data analysis, and reporting
+                  techniques to help users gain deeper insights into website
+                  and app performance.
+                </p>
 
-            <div class="col">
-              <div class="card mb-3 ally h-100" style="max-width: 540px">
-                <div class="row g-0">
-                  <div class="col-md-4 center-vertically p-2">
-                    <img
-                      src="./assets/gaag.png"
-                      class="img-fluid rounded-start"
-                      alt="Advanced Google Analytics logo"
-                    />
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h3 class="card-title">Advanced Google Analytics</h3>
-                      <p class="card-text">
-                        Advanced Google Analytics is a comprehensive course that
-                        delves into advanced tracking, data analysis, and
-                        reporting techniques to help users gain deeper insights
-                        into website and app performance.
-                      </p>
-                      <p class="card-text">
-                        <small class="text-body-secondary"
-                          >Google Analytics Academy - Issued Apr 2021 · Expires
-                          Apr 2024</small
-                        >
-                      </p>
-                    </div>
-                  </div>
-                </div>
               </div>
-            </div>
-
-<div class="col">
-              <div class="card mb-3 ally h-100" style="max-width: 540px">
-                <div class="row g-0">
-                  <div class="col-md-4 center-vertically p-2">
-                    Coming Soon!
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h3 class="card-title">Coming Soon</h3>
-                      <p class="card-text">
-                        This is just a placeholder for my next Certificate! Hopefully the CPACC...
-                      </p>
-                      <p class="card-text">
-                        <small class="text-body-secondary"
-                          >Coming Winter 2023</small
-                        >
-                      </p>
-                    </div>
-                  </div>
-                </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">Google Analytics Academy - Issued Apr 2021 · Expires Apr
+                  2024</small>
               </div>
-            </div>
 
-            
+            </div>
+          </div>
+          <div class="col">
+            <div class="card ally h-100">
+              <img src="./assets/image-frame-svgrepo-com.svg" class="card-img-top" alt="Placeholder Image"
+                style="padding: 1em">
+              <div class="card-body">
+                <h3 class="card-title">Coming Soon!</h3>
+                <p class="card-text">
+                  This is just a placeholder for my next Certificate!
+                  Hopefully the CPACC...
+                </p>
+
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">Winter 2023-24</small>
+              </div>
+
+            </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section aria-label="resume" id="resume" class="my-5">
-        <div class="shim">
-          <h2 class="px-3">My Resume</h2>
-        </div>
+    <section aria-label="resume" id="resume" class="my-5">
+      <div class="shim">
+        <h2 class="px-3">My Resume</h2>
+      </div>
 
-        <!--Ally Audit Team Lead-->
-        <div class="container" style="width: 85%">
-          <div class="card text-center ally">
-            <div class="card-header ally">
-              <div class="row align-items-center">
-                <div class="col">
-                  <h3>
-                    <img
-                      src="assets/computer-rate-rating-2-svgrepo-com.svg"
-                      alt=""
-                      style="height: 5rem"
-                      class="px-3"
-                    />Accessibility Audit Team Lead
-                  </h3>
-                </div>
+      <!--Ally Audit Team Lead-->
+      <div class="container" style="width: 85%">
+        <div class="card text-center ally">
+          <div class="card-header ally">
+            <div class="row align-items-center">
+              <div class="col">
+                <h3>
+                  <img src="assets/computer-rate-rating-2-svgrepo-com.svg" alt="" style="height: 5rem"
+                    class="px-3">Accessibility Audit Team Lead
+                </h3>
               </div>
             </div>
+          </div>
 
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <div class="card-body">
+                <h4 class="card-title">QuaverEd</h4>
+                <p class="card-text">
+                  <em>AUGUST 2022 - Current</em>
+                </p>
+
+                <ul style="text-align: left">
+                  <li>
+                    Conducted comprehensive accessibility audits of digital
+                    products, including reviewing over 900 lesson screens for
+                    a new accessible lesson framework.
+                  </li>
+                  <li>
+                    Provided guidance on changes needed to update existing
+                    user interfaces to comply with WCAG 2.1 and Section 508
+                    guidelines, including detailed changes needed to semantic
+                    code and including WAI-ARIA.
+                  </li>
+                  <li>
+                    Performed thorough automated and manual testing of the
+                    Health & P.E. curriculum using assistive technologies such
+                    as JAWS, VoiceOver, NVDA, ChromeVox, and keyboard
+                    navigation.
+                  </li>
+                  <li>
+                    Collaborated effectively with cross-functional teams,
+                    including Content, Art, Production, and Development teams
+                    to solve accessibility issues and come up with creative
+                    solutions.
+                  </li>
+                  <li>
+                    Created detailed Accessibility Conformance Reports (ACRs)
+                    for internal products using ITI's Voluntary Product
+                    Accessibility Template (VPAT), effectively communicating
+                    accessibility compliance to stakeholders.
+                  </li>
+                  <li>
+                    Led a team of full-time employees and contractors
+                    including native users of assistive technologies.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-footer text-body-secondary ally">
+            During this position I moved from Accessibility Auditor to leading
+            the whole team!
+          </div>
+        </div>
+      </div>
+
+      <!-- Takeaways - A11y Audit Team Lead-->
+      <div class="container" style="width: 85%">
+        <div class="card my-3 allycard">
+          <div class="card-header ally text-center">
+            <div class="row align-items-center">
+              <div class="col">
+                <h4>
+                  <img src="/assets/skills-svgrepo-com.svg" alt style="height: 5rem" class="px-3">
+                  Takeaways from Accessibility Audit Team Lead
+                </h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <div class="card-body">
+                <h5 class="card-title text-center">Skills</h5>
+                <span class="card-text">In my current role as the Accessibility Auditing Team Lead,
+                  I am spearheading the development of a standardized approach
+                  for auditing unique resources within an educational
+                  curriculum. While actively pursuing the CPACC certification,
+                  I am leading a growing team in the comprehensive evaluation
+                  of web-based software, PDFs, and all other materials
+                  provided to our users. This involves a deep understanding
+                  and interpretation of the WCAG guidelines, fostering
+                  creative thinking and innovative solutions, and applying
+                  meticulous attention to detail. Ensuring accessibility in
+                  educational resources has become not just a role but a
+                  passion, as I work towards making digital content inclusive
+                  for all learners.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Calibration Technician -->
+      <div class="container" style="width: 85%">
+        <div class="card text-center ally">
+          <div class="card-header ally">
+            <div class="row align-items-center">
+              <div class="col">
+                <h3>
+                  <img src="/assets/radiation-svgrepo-com.svg" alt="" style="height: 5rem" class="px-3">Calibration
+                  Technician
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="container" style="width: 85%">
             <div class="row justify-content-center">
               <div class="col-12">
                 <div class="card-body">
-                  <h4 class="card-title">QuaverEd</h4>
+                  <h4 class="card-title">K&S Associates</h4>
                   <p class="card-text">
-                    <em>AUGUST 2022 - Current</em>
+                    <em>JUNE - AUGUST 2022</em>
                   </p>
 
                   <ul style="text-align: left">
                     <li>
-                      Conducted comprehensive accessibility audits of digital
-                      products, including reviewing over 900 lesson screens for
-                      a new accessible lesson framework.
+                      Conducted a variety of calibrations, including NIST
+                      Traceable & AAPM accredited radiation therapy
+                      calibrations from Cs-137 and Co-60 gamma rays, LDR and
+                      HDR brachytherapy calibrations, and diagnostic X-ray
+                      calibrations, with a strong focus on accuracy and
+                      precision.
                     </li>
                     <li>
-                      Provided guidance on changes needed to update existing
-                      user interfaces to comply with WCAG 2.1 and Section 508
-                      guidelines, including detailed changes needed to semantic
-                      code and including WAI-ARIA.
+                      Documented all calibration processes and prepared
+                      reports as required, ensuring compliance with relevant
+                      standards and regulations.
                     </li>
                     <li>
-                      Performed thorough automated and manual testing of the
-                      Health & P.E. curriculum using assistive technologies such
-                      as JAWS, VoiceOver, NVDA, ChromeVox, and keyboard
-                      navigation.
-                    </li>
-                    <li>
-                      Collaborated effectively with cross-functional teams,
-                      including Content, Art, Production, and Development teams
-                      to solve accessibility issues and come up with creative
-                      solutions.
-                    </li>
-                    <li>
-                      Created detailed Accessibility Conformance Reports (ACRs)
-                      for internal products using ITI's Voluntary Product
-                      Accessibility Template (VPAT), effectively communicating
-                      accessibility compliance to stakeholders.
-                    </li>
-                    <li>
-                      Led a team of full-time employees and contractors
-                      including native users of assistive technologies.
+                      Developed comprehensive reports and certificates about
+                      completed calibrations, ensuring that all relevant
+                      stakeholders had access to necessary information.
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="card-footer text-body-secondary ally">
-              During this position I moved from Accessibility Auditor to leading
-              the whole team!
+          <div class="card-footer text-body-secondary ally">
+            Previous Position!
+          </div>
+        </div>
+      </div>
+
+      <!-- Takeaways - Calibration Technician -->
+      <div class="container" style="width: 85%">
+        <div class="card my-3 ally">
+          <div class="card-header ally text-center">
+            <div class="row align-items-center">
+              <div class="col">
+                <h4>
+                  <img src="/assets/skills-svgrepo-com.svg" alt style="height: 5rem" class="px-3">
+                  Takeaways from Radiation Laboratory Technician
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <div class="card-body">
+                <h5 class="card-title text-center">Skills</h5>
+                <span class="card-text">Taking on the role of a calibration technician while
+                  concurrently pursuing web development was a unique journey.
+                  Drawing from my prior experience handling nuclear devices, I
+                  honed my skills in meticulous attention to detail, precise
+                  inspections, and effective troubleshooting. This background
+                  has equipped me with a valuable set of qualities that I'm
+                  applied to both the world of calibration and now the realm
+                  of web development, creating a dynamic blend of technical
+                  expertise and problem-solving in my career path.</span>
+              </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- Takeaways - A11y Audit Team Lead-->
-        <div class="container" style="width: 85%">
-          <div class="card my-3 allycard">
-            <div class="card-header ally text-center">
-              <div class="row align-items-center">
-                <div class="col">
-                  <h4>
-                    <img
-                      src="/assets/skills-svgrepo-com.svg"
-                      alt
-                      style="height: 5rem"
-                      class="px-3"
-                    />
-                    Takeaways from Accessibility Audit Team Lead
-                  </h4>
-                </div>
+      <!-- Manager and Co-Founder -->
+      <div class="container" style="width: 85%">
+        <div class="card text-center ally">
+          <div class="card-header ally">
+            <div class="row align-items-center">
+              <div class="col">
+                <h3>
+                  <img src="/assets/cafe-svgrepo-com.svg" alt="" style="height: 5rem" class="px-3">Manager and
+                  Co-Founder
+                </h3>
               </div>
             </div>
-
+          </div>
+          <div class="container" style="width: 85%">
             <div class="row justify-content-center">
               <div class="col-12">
                 <div class="card-body">
-                  <h5 class="card-title text-center">Skills</h5>
-                  <span class="card-text"
-                    >In my current role as the Accessibility Auditing Team Lead,
-                    I am spearheading the development of a standardized approach
-                    for auditing unique resources within an educational
-                    curriculum. While actively pursuing the CPACC certification,
-                    I am leading a growing team in the comprehensive evaluation
-                    of web-based software, PDFs, and all other materials
-                    provided to our users. This involves a deep understanding
-                    and interpretation of the WCAG guidelines, fostering
-                    creative thinking and innovative solutions, and applying
-                    meticulous attention to detail. Ensuring accessibility in
-                    educational resources has become not just a role but a
-                    passion, as I work towards making digital content inclusive
-                    for all learners.</span
-                  >
+                  <h4 class="card-title">CoffeeTalk</h4>
+                  <p class="card-text">
+                    <em>MARCH 2018 - JULY 2021</em>
+                  </p>
+
+                  <ul style="text-align: left">
+                    <li>
+                      Conceptualized and designed a customer-focused
+                      experience, including visual design and retail products,
+                      resulting in recognition as Nextdoor's Neighborhood
+                      Favorite Coffee Shop twice annually.
+                    </li>
+                    <li>
+                      Gathered valuable customer insights and feedback about
+                      attitudes, emotions, and behaviors, using this
+                      information to curate a fresh and well-received seasonal
+                      menu of products for customers, with a focus on
+                      maximizing consumer satisfaction and accessibility for
+                      all.
+                    </li>
+                    <li>
+                      Developed advertising and marketing strategies,
+                      including digital materials for social media, and
+                      coordinated promotions and events to engage customers
+                      and the community at large.
+                    </li>
+                    <li>
+                      Planned, organized, and led in-store promotions and
+                      events, and collaborated with local minority
+                      organizations to promote cultural awareness and
+                      inclusion, with a strong commitment to accessibility and
+                      inclusion for all customers.
+                    </li>
+                    <li>
+                      Designed the storefront layout to create an intuitive
+                      and well-organized flow from ordering to enjoying
+                      products, resulting in a smooth process with maximum
+                      efficiency and minimal wait time for all customers,
+                      including those with disabilities.
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
+
+          <div class="card-footer text-body-secondary ally">
+            Previous Position!
+          </div>
         </div>
+      </div>
 
-        <!-- Calibration Technician -->
-        <div class="container" style="width: 85%">
-          <div class="card text-center ally">
-            <div class="card-header ally">
-              <div class="row align-items-center">
-                <div class="col">
-                  <h3>
-                    <img
-                      src="/assets/radiation-svgrepo-com.svg"
-                      alt=""
-                      style="height: 5rem"
-                      class="px-3"
-                    />Calibration Technician
-                  </h3>
-                </div>
+      <!-- Takeaways - Manager and Co-Founder -->
+      <div class="container" style="width: 85%">
+        <div class="card my-3 ally">
+          <div class="card-header ally text-center">
+            <div class="row align-items-center">
+              <div class="col">
+                <h4>
+                  <img src="/assets/skills-svgrepo-com.svg" alt style="height: 5rem" class="px-3">
+                  Takeaways from Co-owner
+                </h4>
               </div>
             </div>
-            <div class="container" style="width: 85%">
-              <div class="row justify-content-center">
-                <div class="col-12">
-                  <div class="card-body">
-                    <h4 class="card-title">K&S Associates</h4>
-                    <p class="card-text">
-                      <em>JUNE - AUGUST 2022</em>
-                    </p>
-
-                    <ul style="text-align: left">
-                      <li>
-                        Conducted a variety of calibrations, including NIST
-                        Traceable & AAPM accredited radiation therapy
-                        calibrations from Cs-137 and Co-60 gamma rays, LDR and
-                        HDR brachytherapy calibrations, and diagnostic X-ray
-                        calibrations, with a strong focus on accuracy and
-                        precision.
-                      </li>
-                      <li>
-                        Documented all calibration processes and prepared
-                        reports as required, ensuring compliance with relevant
-                        standards and regulations.
-                      </li>
-                      <li>
-                        Developed comprehensive reports and certificates about
-                        completed calibrations, ensuring that all relevant
-                        stakeholders had access to necessary information.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card-footer text-body-secondary ally">
-              Previous Position!
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Skills</h5>
+            <div class="card-text">
+              <p>
+                Owning a business and interacting with a diverse group of
+                customers was a transformative experience in my life. It
+                provided me with a unique perspective on the needs,
+                preferences, and challenges faced by people from various
+                backgrounds. The interactions I had with customers highlighted
+                the importance of inclusivity and accessibility in our
+                increasingly digital world.
+              </p>
+              <p>
+                As that chapter of my life in business ownership closed, I
+                found myself drawn to the world of coding and web
+                accessibility. My interactions with customers underscored the
+                significance of creating online experiences that cater to
+                everyone, regardless of their abilities. This realization led
+                me to explore the field of web development and accessibility,
+                where I could contribute to making the internet a more
+                inclusive and user-friendly space for all.
+              </p>
+              <p>
+                In pursuing coding and web accessibility, I've embarked on a
+                journey to bridge the digital divide and ensure that
+                technology is accessible to a broader and more diverse
+                audience. This transition represents a meaningful shift in my
+                career and personal goals, driven by a commitment to creating
+                a more inclusive digital landscape.
+              </p>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- Takeaways - Calibration Technician -->
-        <div class="container" style="width: 85%">
-          <div class="card my-3 ally">
-            <div class="card-header ally text-center">
-              <div class="row align-items-center">
-                <div class="col">
-                  <h4>
-                    <img
-                      src="/assets/skills-svgrepo-com.svg"
-                      alt
-                      style="height: 5rem"
-                      class="px-3"
-                    />
-                    Takeaways from Radiation Laboratory Technician
-                  </h4>
-                </div>
+      <!-- Lab and Field Tech -->
+      <div class="container" style="width: 85%">
+        <div class="card text-center ally">
+          <div class="card-header ally">
+            <div class="row align-items-center">
+              <div class="col">
+                <h3>
+                  <img src="/assets/blueprint-svgrepo-com.svg" alt="" style="height: 5rem" class="px-3">Laboratory
+                  Technician & Field Technician III
+                </h3>
               </div>
             </div>
+          </div>
+          <div class="container" style="width: 85%">
             <div class="row justify-content-center">
               <div class="col-12">
                 <div class="card-body">
-                  <h5 class="card-title text-center">Skills</h5>
-                  <span class="card-text"
-                    >Taking on the role of a calibration technician while
-                    concurrently pursuing web development was a unique journey.
-                    Drawing from my prior experience handling nuclear devices, I
-                    honed my skills in meticulous attention to detail, precise
-                    inspections, and effective troubleshooting. This background
-                    has equipped me with a valuable set of qualities that I'm
-                    applied to both the world of calibration and now the realm
-                    of web development, creating a dynamic blend of technical
-                    expertise and problem-solving in my career path.</span
-                  >
+                  <h4 class="card-title">Braun Intertec</h4>
+                  <p class="card-text">
+                    <em>AUGUST 2014 - MARCH 2018</em>
+                  </p>
+
+                  <ul style="text-align: left">
+                    <li>
+                      Ensured execution of project specifications and concepts
+                      to acceptable quality standards while any challenges or
+                      problems were defined and addressed to maintain project
+                      momentum and integrity by collaborating closely with
+                      engineers and teams on-site.
+                    </li>
+                    <li>
+                      Performed detail-oriented inspections and analytical
+                      problem-solving in fast-paced environments in up to six
+                      different sites per day.
+                    </li>
+                    <li>
+                      Effectively communicated all issues with relevant
+                      engineers and teams and collaborated on solutions,
+                      ultimately following through with the implementation and
+                      results.
+                    </li>
+                    <li>
+                      Responsible for maintaining a high level of quality and
+                      consistency while performing testing and iterative
+                      testing methods.
+                    </li>
+                    <li>
+                      Multitasked and effectively managed timely testing while
+                      delivering accurate results deadline-consciously.
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Manager and Co-Founder -->
-        <div class="container" style="width: 85%">
-          <div class="card text-center ally">
-            <div class="card-header ally">
-              <div class="row align-items-center">
-                <div class="col">
-                  <h3>
-                    <img
-                      src="/assets/cafe-svgrepo-com.svg"
-                      alt=""
-                      style="height: 5rem"
-                      class="px-3"
-                    />Manager and Co-Founder
-                  </h3>
-                </div>
-              </div>
-            </div>
-            <div class="container" style="width: 85%">
-              <div class="row justify-content-center">
-                <div class="col-12">
-                  <div class="card-body">
-                    <h4 class="card-title">CoffeeTalk</h4>
-                    <p class="card-text">
-                      <em>MARCH 2018 - JULY 2021</em>
-                    </p>
-
-                    <ul style="text-align: left">
-                      <li>
-                        Conceptualized and designed a customer-focused
-                        experience, including visual design and retail products,
-                        resulting in recognition as Nextdoor's Neighborhood
-                        Favorite Coffee Shop twice annually.
-                      </li>
-                      <li>
-                        Gathered valuable customer insights and feedback about
-                        attitudes, emotions, and behaviors, using this
-                        information to curate a fresh and well-received seasonal
-                        menu of products for customers, with a focus on
-                        maximizing consumer satisfaction and accessibility for
-                        all.
-                      </li>
-                      <li>
-                        Developed advertising and marketing strategies,
-                        including digital materials for social media, and
-                        coordinated promotions and events to engage customers
-                        and the community at large.
-                      </li>
-                      <li>
-                        Planned, organized, and led in-store promotions and
-                        events, and collaborated with local minority
-                        organizations to promote cultural awareness and
-                        inclusion, with a strong commitment to accessibility and
-                        inclusion for all customers.
-                      </li>
-                      <li>
-                        Designed the storefront layout to create an intuitive
-                        and well-organized flow from ordering to enjoying
-                        products, resulting in a smooth process with maximum
-                        efficiency and minimal wait time for all customers,
-                        including those with disabilities.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card-footer text-body-secondary ally">
-              Previous Position!
-            </div>
+          <div class="card-footer text-body-secondary ally">
+            Previous Position!
           </div>
         </div>
-
-        <!-- Takeaways - Manager and Co-Founder -->
-        <div class="container" style="width: 85%">
-          <div class="card my-3 ally">
-            <div class="card-header ally text-center">
-              <div class="row align-items-center">
-                <div class="col">
-                  <h4>
-                    <img
-                      src="/assets/skills-svgrepo-com.svg"
-                      alt
-                      style="height: 5rem"
-                      class="px-3"
-                    />
-                    Takeaways from Co-owner
-                  </h4>
-                </div>
+      </div>
+      <!-- Takeaways - Lab and Field Tech -->
+      <div class="container" style="width: 85%">
+        <div class="card my-3 ally">
+          <div class="card-header ally text-center">
+            <div class="row align-items-center">
+              <div class="col">
+                <h4>
+                  <img src="/assets/skills-svgrepo-com.svg" alt style="height: 5rem" class="px-3">
+                  Takeaways from Lab and Field Tech
+                </h4>
               </div>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Skills</h5>
-              <span class="card-text">
-                <p>
-                  Owning a business and interacting with a diverse group of
-                  customers was a transformative experience in my life. It
-                  provided me with a unique perspective on the needs,
-                  preferences, and challenges faced by people from various
-                  backgrounds. The interactions I had with customers highlighted
-                  the importance of inclusivity and accessibility in our
-                  increasingly digital world.
-                </p>
-                <p>
-                  As that chapter of my life in business ownership closed, I
-                  found myself drawn to the world of coding and web
-                  accessibility. My interactions with customers underscored the
-                  significance of creating online experiences that cater to
-                  everyone, regardless of their abilities. This realization led
-                  me to explore the field of web development and accessibility,
-                  where I could contribute to making the internet a more
-                  inclusive and user-friendly space for all.
-                </p>
-                <p>
-                  In pursuing coding and web accessibility, I've embarked on a
-                  journey to bridge the digital divide and ensure that
-                  technology is accessible to a broader and more diverse
-                  audience. This transition represents a meaningful shift in my
-                  career and personal goals, driven by a commitment to creating
-                  a more inclusive digital landscape.
-                </p>
-              </span>
             </div>
           </div>
-        </div>
 
-        <!-- Lab and Field Tech -->
-        <div class="container" style="width: 85%">
-          <div class="card text-center ally">
-            <div class="card-header ally">
-              <div class="row align-items-center">
-                <div class="col">
-                  <h3>
-                    <img
-                      src="/assets/blueprint-svgrepo-com.svg"
-                      alt=""
-                      style="height: 5rem"
-                      class="px-3"
-                    />Laboratory Technician & Field Technician III
-                  </h3>
-                </div>
-              </div>
-            </div>
-            <div class="container" style="width: 85%">
-              <div class="row justify-content-center">
-                <div class="col-12">
-                  <div class="card-body">
-                    <h4 class="card-title">Braun Intertec</h4>
-                    <p class="card-text">
-                      <em>AUGUST 2014 - MARCH 2018</em>
-                    </p>
-
-                    <ul style="text-align: left">
-                      <li>
-                        Ensured execution of project specifications and concepts
-                        to acceptable quality standards while any challenges or
-                        problems were defined and addressed to maintain project
-                        momentum and integrity by collaborating closely with
-                        engineers and teams on-site.
-                      </li>
-                      <li>
-                        Performed detail-oriented inspections and analytical
-                        problem-solving in fast-paced environments in up to six
-                        different sites per day.
-                      </li>
-                      <li>
-                        Effectively communicated all issues with relevant
-                        engineers and teams and collaborated on solutions,
-                        ultimately following through with the implementation and
-                        results.
-                      </li>
-                      <li>
-                        Responsible for maintaining a high level of quality and
-                        consistency while performing testing and iterative
-                        testing methods.
-                      </li>
-                      <li>
-                        Multitasked and effectively managed timely testing while
-                        delivering accurate results deadline-consciously.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card-footer text-body-secondary ally">
-              Previous Position!
-            </div>
+          <div class="card-body">
+            <h5 class="card-title">Skills</h5>
+            <span class="card-text">
+              Spending four years as a field inspector, conducting on-site
+              inspections on various construction sites, was a dynamic
+              journey. This role demanded a fusion of construction materials
+              expertise and a keen understanding of site-specific plans to
+              complete inspections in constantly evolving environments. It not
+              only enriched my technical skills but also instilled the ability
+              to adapt swiftly and think on my feet. This experience proved
+              invaluable, equipping me with the readiness to handle diverse
+              challenges and make informed decisions in the ever-changing
+              landscape of the construction industry.
+            </span>
           </div>
         </div>
-        <!-- Takeaways - Lab and Field Tech -->
-        <div class="container" style="width: 85%">
-          <div class="card my-3 ally">
-            <div class="card-header ally text-center">
-              <div class="row align-items-center">
-                <div class="col">
-                  <h4>
-                    <img
-                      src="/assets/skills-svgrepo-com.svg"
-                      alt
-                      style="height: 5rem"
-                      class="px-3"
-                    />
-                    Takeaways from Lab and Field Tech
-                  </h4>
-                </div>
-              </div>
-            </div>
+      </div>
 
-            <div class="card-body">
-              <h5 class="card-title">Skills</h5>
-              <span class="card-text">
-                Spending four years as a field inspector, conducting on-site
-                inspections on various construction sites, was a dynamic
-                journey. This role demanded a fusion of construction materials
-                expertise and a keen understanding of site-specific plans to
-                complete inspections in constantly evolving environments. It not
-                only enriched my technical skills but also instilled the ability
-                to adapt swiftly and think on my feet. This experience proved
-                invaluable, equipping me with the readiness to handle diverse
-                challenges and make informed decisions in the ever-changing
-                landscape of the construction industry.
-              </span>
+      <!-- Casino -->
+      <div class="container" style="width: 85%">
+        <div class="card text-center ally">
+          <div class="card-header ally">
+            <div class="row align-items-center">
+              <div class="col">
+                <h3>
+                  <img src="/assets/croupier-svgrepo-com.svg" alt="" style="height: 5rem" class="px-3">Table Games
+                  Dealer
+                </h3>
+              </div>
             </div>
           </div>
-        </div>
+          <div class="container" style="width: 85%">
+            <div class="row justify-content-center">
+              <div class="col-12">
+                <div class="card-body">
+                  <h4 class="card-title">Kansas Star Casino</h4>
+                  <p class="card-text">
+                    <em>NOVEMBER 2012 - JULY 2014</em>
+                  </p>
 
-        <!-- Casino -->
-        <div class="container" style="width: 85%">
-          <div class="card text-center ally">
-            <div class="card-header ally">
-              <div class="row align-items-center">
-                <div class="col">
-                  <h3>
-                    <img
-                      src="/assets/croupier-svgrepo-com.svg"
-                      alt=""
-                      style="height: 5rem"
-                      class="px-3"
-                    />Table Games Dealer
-                  </h3>
+                  <ul style="text-align: left">
+                    <li>
+                      Facilitated games to provide customers with the highest
+                      quality gaming experience possible while upholding game
+                      security by adhering to state-regulated guidelines.
+                    </li>
+                    <li>
+                      Provided exceptional customer service with the
+                      property’s service standards and brand attitudes and was
+                      chosen to deal in the annual Lunar New Year Baccarat
+                      tournament twice due to the high level of customer focus
+                      and consistency.
+                    </li>
+                  </ul>
                 </div>
               </div>
-            </div>
-            <div class="container" style="width: 85%">
-              <div class="row justify-content-center">
-                <div class="col-12">
-                  <div class="card-body">
-                    <h4 class="card-title">Kansas Star Casino</h4>
-                    <p class="card-text">
-                      <em>NOVEMBER 2012 - JULY 2014</em>
-                    </p>
-
-                    <ul style="text-align: left">
-                      <li>
-                        Facilitated games to provide customers with the highest
-                        quality gaming experience possible while upholding game
-                        security by adhering to state-regulated guidelines.
-                      </li>
-                      <li>
-                        Provided exceptional customer service with the
-                        property’s service standards and brand attitudes and was
-                        chosen to deal in the annual Lunar New Year Baccarat
-                        tournament twice due to the high level of customer focus
-                        and consistency.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card-footer text-body-secondary ally">
-              Previous Position!
             </div>
           </div>
-        </div>
 
-        <!-- Takeaways - Casino -->
-        <div class="container" style="width: 85%">
-          <div class="card my-3 ally">
-            <div class="card-header ally text-center">
-              <div class="row align-items-center">
-                <div class="col">
-                  <h4>
-                    <img
-                      src="/assets/skills-svgrepo-com.svg"
-                      alt
-                      style="height: 5rem"
-                      class="px-3"
-                    />
-                    Takeaways from Table Games Dealer
-                  </h4>
-                </div>
-              </div>
-            </div>
-
-            <div class="card-body">
-              <h5 class="card-title">Skills</h5>
-              <span class="card-text"
-                >Working as a table games dealer provided me with a unique skill
-                set. I had to think quickly, pay close attention to multiple
-                aspects of the game, and multitask efficiently, all while
-                ensuring that patrons had an enjoyable experience. This role not
-                only sharpened my ability to manage fast-paced, high-pressure
-                situations but also taught me the art of customer service and
-                creating a welcoming atmosphere, making it a truly enriching
-                experience.</span
-              >
-            </div>
+          <div class="card-footer text-body-secondary ally">
+            Previous Position!
           </div>
         </div>
+      </div>
 
-        <!-- Equipment Supervisor -->
-        <div class="container" style="width: 85%">
-          <div class="card text-center ally">
-            <div class="card-header ally">
-              <div class="row align-items-center">
-                <div class="col">
-                  <h3>
-                    <img
-                      src="/assets/packing-warehouse-svgrepo-com.svg"
-                      alt=""
-                      style="height: 5rem"
-                      class="px-3"
-                    />Field Equipment and Warehouse Supervisor
-                  </h3>
-                </div>
+      <!-- Takeaways - Casino -->
+      <div class="container" style="width: 85%">
+        <div class="card my-3 ally">
+          <div class="card-header ally text-center">
+            <div class="row align-items-center">
+              <div class="col">
+                <h4>
+                  <img src="/assets/skills-svgrepo-com.svg" alt style="height: 5rem" class="px-3">
+                  Takeaways from Table Games Dealer
+                </h4>
               </div>
-            </div>
-            <div class="container" style="width: 85%">
-              <div class="row justify-content-center">
-                <div class="col-12">
-                  <div class="card-body">
-                    <h4 class="card-title">Golder Associates, Inc.</h4>
-                    <p class="card-text">
-                      <em>MARCH 2005 - JULY 2012</em>
-                    </p>
-
-                    <ul style="text-align: left">
-                      <li>
-                        Maintained, prepared for use, and storage of field
-                        equipment.
-                      </li>
-                      <li>
-                        Managed inventory and sample storage at an off-site
-                        warehouse.
-                      </li>
-                      <li>
-                        Supervised the proper storage and disposal of samples,
-                        including contaminated and foreign soils.
-                      </li>
-                      <li>
-                        Preformed interface shear testing of soils and/or
-                        geosyntetic interfaces. Concrete testing including mix
-                        studies, sample creation, curing, and strength testing
-                        of samples.
-                      </li>
-                      <li>
-                        Preformed field work including air quality monitoring on
-                        a potentially hazardous construction site, and assisted
-                        in the relocation of an endangered plant species.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card-footer text-body-secondary ally">
-              Previous Position!
             </div>
           </div>
-        </div>
 
-        <!-- Takeaways - Golder 2 -->
-        <div class="container" style="width: 85%">
-          <div class="card my-3 ally">
-            <div class="card-header ally text-center">
-              <div class="row align-items-center">
-                <div class="col">
-                  <h4>
-                    <img
-                      src="/assets/skills-svgrepo-com.svg"
-                      alt
-                      style="height: 5rem"
-                      class="px-3"
-                    />
-                    Takeaways from Field Equipment and Warehouse Supervisor
-                  </h4>
-                </div>
-              </div>
-            </div>
-
-            <div class="card-body">
-              <h5 class="card-title">Skills</h5>
-              <span class="card-text"
-                >As a warehouse and field equipment manager, I was responsible
-                for complex lab testing, sample storage, and managing the
-                distribution and tracking the location and usage of field
-                equipment. This role demanded qualities like precision,
-                attention to detail, excellent organizational skills, and the
-                ability to maintain a systematic approach in a dynamic
-                environment. These attributes closely align with the qualities
-                needed for a proficient web accessibility auditor, ensuring an
-                inclusive online experience for all users.</span
-              >
-            </div>
+          <div class="card-body">
+            <h5 class="card-title">Skills</h5>
+            <span class="card-text">Working as a table games dealer provided me with a unique skill
+              set. I had to think quickly, pay close attention to multiple
+              aspects of the game, and multitask efficiently, all while
+              ensuring that patrons had an enjoyable experience. This role not
+              only sharpened my ability to manage fast-paced, high-pressure
+              situations but also taught me the art of customer service and
+              creating a welcoming atmosphere, making it a truly enriching
+              experience.</span>
           </div>
         </div>
+      </div>
 
-        <!-- Lab and Field Tech -->
-        <div class="container" style="width: 85%">
-          <div class="card text-center ally">
-            <div class="card-header ally">
-              <div class="row align-items-center">
-                <div class="col">
-                  <h3>
-                    <img
-                      src="/assets/chemistry-laboratory-svgrepo-com.svg"
-                      alt=""
-                      style="height: 5rem"
-                      class="px-3"
-                    />Laboratory Technician I & II
-                  </h3>
-                </div>
+      <!-- Equipment Supervisor -->
+      <div class="container" style="width: 85%">
+        <div class="card text-center ally">
+          <div class="card-header ally">
+            <div class="row align-items-center">
+              <div class="col">
+                <h3>
+                  <img src="/assets/packing-warehouse-svgrepo-com.svg" alt="" style="height: 5rem" class="px-3">Field
+                  Equipment and Warehouse Supervisor
+                </h3>
               </div>
-            </div>
-            <div class="container" style="width: 85%">
-              <div class="row justify-content-center">
-                <div class="col-12">
-                  <div class="card-body">
-                    <h4 class="card-title">Golder Associates, Inc.</h4>
-                    <p class="card-text">
-                      <em>JUNE 1998 - MARCH 2005</em>
-                    </p>
-
-                    <ul style="text-align: left">
-                      <li>
-                        Prepared and performed various tests on synthetics
-                        implementing standards from ASTM, AASHTO, Geosynthetic
-                        Accreditation Institute (GAI), and Corps of Engineers.
-                      </li>
-                      <li>
-                        Duties include ensuring the calibration and maintenance
-                        of laboratory equipment and log in/out procedures.
-                      </li>
-                      <li>
-                        Prepare and perform various tests on soils implementing
-                        standards from ASTM, AASHTO, GAI, and Corps of
-                        Engineers.
-                      </li>
-                      <li>
-                        Prepared and performed various tests on synthetics
-                        implementing standards from ASTM, AASHTO, Geosynthetic
-                        Accreditation Institute (GAI), and Corps of Engineers.
-                      </li>
-                      <li>
-                        Duties include ensuring the calibration and maintenance
-                        of laboratory equipment and log in/out procedures.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card-footer text-body-secondary ally">
-              Previous Position!
             </div>
           </div>
-        </div>
+          <div class="container" style="width: 85%">
+            <div class="row justify-content-center">
+              <div class="col-12">
+                <div class="card-body">
+                  <h4 class="card-title">Golder Associates, Inc.</h4>
+                  <p class="card-text">
+                    <em>MARCH 2005 - JULY 2012</em>
+                  </p>
 
-        <!-- Takeaways - Golder 1 -->
-        <div class="container" style="width: 85%">
-          <div class="card my-3 ally">
-            <div class="card-header ally text-center">
-              <div class="row align-items-center">
-                <div class="col">
-                  <h4>
-                    <img
-                      src="/assets/skills-svgrepo-com.svg"
-                      alt
-                      style="height: 5rem"
-                      class="px-3"
-                    />
-                    Takeaways from Laboratory Technician
-                  </h4>
+                  <ul style="text-align: left">
+                    <li>
+                      Maintained, prepared for use, and storage of field
+                      equipment.
+                    </li>
+                    <li>
+                      Managed inventory and sample storage at an off-site
+                      warehouse.
+                    </li>
+                    <li>
+                      Supervised the proper storage and disposal of samples,
+                      including contaminated and foreign soils.
+                    </li>
+                    <li>
+                      Preformed interface shear testing of soils and/or
+                      geosyntetic interfaces. Concrete testing including mix
+                      studies, sample creation, curing, and strength testing
+                      of samples.
+                    </li>
+                    <li>
+                      Preformed field work including air quality monitoring on
+                      a potentially hazardous construction site, and assisted
+                      in the relocation of an endangered plant species.
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="card-body">
-              <h5 class="card-title">Skills</h5>
-              <span class="card-text"
-                >My journey as a lab tech began with the most fundamental tasks
-                and evolved into handling the most intricate of tests. In this
-                role, I learned the art of conducting tests with precision,
-                keenly observing details, and ensuring the consistency of
-                testing methods and environmental conditions to achieve nothing
-                short of accurate and precise results. This experience instilled
-                in me the value of methodical work and meticulous attention to
-                detail, skills that are fundamental not just in the lab but in
-                any field that demands accuracy and reliability.</span
-              >
-            </div>
+          <div class="card-footer text-body-secondary ally">
+            Previous Position!
           </div>
         </div>
-      </section>
+      </div>
 
-      <section aria-label="contact" id="contact" class="my-5">
-        <div class="shim">
-          <h2 class="px-3">Contact</h2>
+      <!-- Takeaways - Golder 2 -->
+      <div class="container" style="width: 85%">
+        <div class="card my-3 ally">
+          <div class="card-header ally text-center">
+            <div class="row align-items-center">
+              <div class="col">
+                <h4>
+                  <img src="/assets/skills-svgrepo-com.svg" alt style="height: 5rem" class="px-3">
+                  Takeaways from Field Equipment and Warehouse Supervisor
+                </h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <h5 class="card-title">Skills</h5>
+            <span class="card-text">As a warehouse and field equipment manager, I was responsible
+              for complex lab testing, sample storage, and managing the
+              distribution and tracking the location and usage of field
+              equipment. This role demanded qualities like precision,
+              attention to detail, excellent organizational skills, and the
+              ability to maintain a systematic approach in a dynamic
+              environment. These attributes closely align with the qualities
+              needed for a proficient web accessibility auditor, ensuring an
+              inclusive online experience for all users.</span>
+          </div>
         </div>
+      </div>
 
+      <!-- Lab and Field Tech -->
+      <div class="container" style="width: 85%">
+        <div class="card text-center ally">
+          <div class="card-header ally">
+            <div class="row align-items-center">
+              <div class="col">
+                <h3>
+                  <img src="/assets/chemistry-laboratory-svgrepo-com.svg" alt="" style="height: 5rem"
+                    class="px-3">Laboratory Technician I & II
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="container" style="width: 85%">
+            <div class="row justify-content-center">
+              <div class="col-12">
+                <div class="card-body">
+                  <h4 class="card-title">Golder Associates, Inc.</h4>
+                  <p class="card-text">
+                    <em>JUNE 1998 - MARCH 2005</em>
+                  </p>
+
+                  <ul style="text-align: left">
+                    <li>
+                      Prepared and performed various tests on synthetics
+                      implementing standards from ASTM, AASHTO, Geosynthetic
+                      Accreditation Institute (GAI), and Corps of Engineers.
+                    </li>
+                    <li>
+                      Duties include ensuring the calibration and maintenance
+                      of laboratory equipment and log in/out procedures.
+                    </li>
+                    <li>
+                      Prepare and perform various tests on soils implementing
+                      standards from ASTM, AASHTO, GAI, and Corps of
+                      Engineers.
+                    </li>
+                    <li>
+                      Prepared and performed various tests on synthetics
+                      implementing standards from ASTM, AASHTO, Geosynthetic
+                      Accreditation Institute (GAI), and Corps of Engineers.
+                    </li>
+                    <li>
+                      Duties include ensuring the calibration and maintenance
+                      of laboratory equipment and log in/out procedures.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-footer text-body-secondary ally">
+            Previous Position!
+          </div>
+        </div>
+      </div>
+
+      <!-- Takeaways - Golder 1 -->
+      <div class="container" style="width: 85%">
+        <div class="card my-3 ally">
+          <div class="card-header ally text-center">
+            <div class="row align-items-center">
+              <div class="col">
+                <h4>
+                  <img src="/assets/skills-svgrepo-com.svg" alt style="height: 5rem" class="px-3">
+                  Takeaways from Laboratory Technician
+                </h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <h5 class="card-title">Skills</h5>
+            <span class="card-text">My journey as a lab tech began with the most fundamental tasks
+              and evolved into handling the most intricate of tests. In this
+              role, I learned the art of conducting tests with precision,
+              keenly observing details, and ensuring the consistency of
+              testing methods and environmental conditions to achieve nothing
+              short of accurate and precise results. This experience instilled
+              in me the value of methodical work and meticulous attention to
+              detail, skills that are fundamental not just in the lab but in
+              any field that demands accuracy and reliability.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-label="contact" id="contact" class="my-5">
+      <div class="shim">
+        <h2 class="px-3">Contact</h2>
+      </div>
+      <div class="container" style="width: 85%">
         <div class="mx-3 px-3 my-3">
           <div class="row row-cols-1 row-cols-md-4 g-4">
             <div class="col">
               <div class="card h-100 ally">
-                <a href="mailto: Dwwestfall@protonmail.com">
-                  <img
-                    src="./assets/icons/mail-svgrepo-com.svg"
-                    class="card-img-top"
-                    alt="Daniel's Email"
-                    style="height: 5rem"
-                /></a>
+                <a href="mailto:Dwwestfall@protonmail.com">
+                  <img src="./assets/icons/mail-svgrepo-com.svg" class="card-img-top" alt="Daniel's Email"
+                    style="height: 3rem"></a>
                 <div class="card-body">
                   <h3 class="card-title">Email Me</h3>
                   <p class="card-text">
-                    Let's collaborate on something amazing! Reach out to me via
-                    email to start the conversation.
+                    Let's collaborate on something amazing! Reach out to me
+                    via email to start the conversation.
                   </p>
                 </div>
               </div>
@@ -1301,18 +1073,14 @@
             <div class="col">
               <div class="card h-100 ally">
                 <a href="https://www.linkedin.com/in/danielwestfall/">
-                  <img
-                    src="./assets/icons/linkedin-svgrepo-com.svg"
-                    class="card-img-top"
-                    alt="Daniel's Linkedin"
-                    style="height: 5rem"
-                /></a>
+                  <img src="./assets/icons/linkedin-svgrepo-com.svg" class="card-img-top" alt="Daniel's Linkedin"
+                    style="height: 3rem"></a>
                 <div class="card-body">
                   <h3 class="card-title">LinkedIn</h3>
                   <p class="card-text">
-                    Interested in connecting or discussing opportunities? Don't
-                    hesitate to reach out on LinkedIn. Let's connect and explore
-                    possibilities together.
+                    Interested in connecting or discussing opportunities?
+                    Don't hesitate to reach out on LinkedIn. Let's connect and
+                    explore possibilities together.
                   </p>
                 </div>
               </div>
@@ -1320,12 +1088,8 @@
             <div class="col">
               <div class="card h-100 ally">
                 <a href="https://www.instagram.com/danielwwestfall/">
-                  <img
-                    src="./assets/icons/instagram-svgrepo-com.svg"
-                    class="card-img-top"
-                    alt="Daniel's Instagram"
-                    style="height: 5rem"
-                /></a>
+                  <img src="./assets/icons/instagram-svgrepo-com.svg" class="card-img-top" alt="Daniel's Instagram"
+                    style="height: 3rem"></a>
                 <div class="card-body">
                   <h3 class="card-title">Instagram</h3>
                   <p class="card-text">
@@ -1338,15 +1102,9 @@
             </div>
             <div class="col">
               <div class="card h-100 ally">
-                <a
-                  href="https://www.youtube.com/channel/UCckVablcameNsZHdwRlCQaA"
-                >
-                  <img
-                    src="./assets/icons/youtube-svgrepo-com.svg"
-                    class="card-img-top"
-                    alt="Daniel's Youtube channel"
-                    style="height: 5rem"
-                /></a>
+                <a href="https://www.youtube.com/channel/UCckVablcameNsZHdwRlCQaA">
+                  <img src="./assets/icons/youtube-svgrepo-com.svg" class="card-img-top" alt="Daniel's Youtube channel"
+                    style="height: 3rem"></a>
                 <div class="card-body">
                   <h3 class="card-title">YouTube</h3>
                   <p class="card-text">
@@ -1360,18 +1118,16 @@
             </div>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
