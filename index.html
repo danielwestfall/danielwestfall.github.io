@@ -2,19 +2,19 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Daniel Westfall - Resume</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=El+Messiri&family=Kameron&family=Lato&family=Play:wght@700&family=Raleway&family=Source+Code+Pro&family=Varela+Round&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" />
 
   <style>
     h1,
@@ -28,9 +28,7 @@
 
     .min-size-div {
       min-width: 200px;
-      /* Set the minimum width here */
       min-height: 200px;
-      /* Set the minimum height here */
     }
 
     .navbar-brand {
@@ -124,6 +122,27 @@
     .navbar-light .navbar-nav .nav-link {
       color: #000;
     }
+
+    .nav-link.active,
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    a img {
+      border: 2px solid transparent;
+    }
+
+    a:hover img,
+    *:focus,
+    .nav-link:focus-visible {
+      outline: 2px #f9f9f9 solid;
+      outline-offset: 0;
+      box-shadow: 0 0 0 4px #193146;
+    }
   </style>
 </head>
 
@@ -139,27 +158,27 @@
 
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
-          <li class="nav-item mx-2">
-            <a class="nav-link active" aria-current="page" href="#about">About</a>
+          <li class="nav-item mx-2 mt-2">
+            <a class="nav-link" id="about-link" href="#about">About</a>
+          </li>
+          <li class="nav-item mx-2 mt-2">
+            <a class="nav-link" id="projects-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item mx-2 mt-2">
+            <a class="nav-link" id="certs-link" href="#certs">Certifications</a>
           </li>
           <li class="nav-item mx-2">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="nav-link" href="#certs">Certifications</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="navbar-brand" href="#">CERTREQ</a>
+            <a class="navbar-brand" id="home-link" aria-current="page" href="#">CERTREQ</a>
           </li>
 
-          <li class="nav-item mx-2">
-            <a class="nav-link" href="#resume">Resume</a>
+          <li class="nav-item mx-2 mt-2">
+            <a class="nav-link" id="resume-link" href="#resume">Resume</a>
           </li>
-          <li class="nav-item mx-2">
-            <a class="nav-link" href="#contact">Contact</a>
+          <li class="nav-item mx-2 mt-2">
+            <a class="nav-link" id="contact-link" href="#contact">Contact</a>
           </li>
-          <li class="nav-item mx-2">
-            <a class="nav-link" href="https://certreq.dev/blog/">Blog</a>
+          <li class="nav-item mx-2 mt-2">
+            <a class="nav-link" id="blog-link" href="https://certreq.dev/blog/">Blog</a>
           </li>
         </ul>
       </div>
@@ -177,10 +196,10 @@
                 <div class="card-text">
                   <h2 class="mt-0 pt-0">Daniel Westfall</h2>
                   <p class="mb-0 pb-0">
-                    Version 0.5 - Still a work in progress <br><br>
+                    Version 0.5 - Still a work in progress <br /><br />
                     <em>October 14, 2023</em>
                   </p>
-                  <br>
+                  <br />
                   <div class="card-text">
                     <p>
                       Welcome to "CERTREQ," my platform dedicated to my
@@ -277,7 +296,7 @@
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
             <div class="card ally h-100">
-              <img src="./assets/jawscert.jpg" class="card-img-top" alt="JAWS Certified logo" style="padding: 1em">
+              <img src="./assets/jawscert.jpg" class="card-img-top" alt="JAWS Certified logo" style="padding: 1em" />
               <div class="card-body">
                 <h3 class="card-title">JAWS Certified Individual</h3>
                 <p class="card-text">
@@ -295,7 +314,7 @@
           <div class="col">
             <div class="card ally h-100">
               <img src="./assets/242-2429040_nvda-certified-expert-logo-nv-access.png" class="card-img-top"
-                alt="NVDA Expert logo" style="padding: 1em">
+                alt="NVDA Expert logo" style="padding: 1em" />
               <div class="card-body">
                 <h3 class="card-title">NVDA Expert Certification</h3>
                 <p class="card-text">
@@ -312,7 +331,8 @@
           </div>
           <div class="col">
             <div class="card ally h-100">
-              <img src="./assets/TT_Trademark.jpg" class="card-img-top" alt="Trusted Tester logo" style="padding: 1em">
+              <img src="./assets/TT_Trademark.jpg" class="card-img-top" alt="Trusted Tester logo"
+                style="padding: 1em" />
               <div class="card-body">
                 <h3 class="card-title">DHS Trusted Tester V5</h3>
                 <p class="card-text">
@@ -321,7 +341,6 @@
                   U.S. Department of Homeland Security (DHS) accessibility
                   standards.
                 </p>
-
               </div>
               <div class="card-footer">
                 <small class="text-body-secondary">U.S DHS, Office of Accessible Systems & Technology -
@@ -332,7 +351,7 @@
           <div class="col">
             <div class="card ally h-100">
               <img src="./assets/guxd.png" class="card-img-top" alt="Google UX Design Professional Certificate logo"
-                style="padding: 1em">
+                style="padding: 1em" />
               <div class="card-body">
                 <h3 class="card-title">
                   Google UX Design Professional Certificate
@@ -343,7 +362,6 @@
                   and knowledge needed to excel in user experience (UX)
                   design, offered by Google in partnership with Coursera.
                 </p>
-
               </div>
               <div class="card-footer">
                 <small class="text-body-secondary">Google Career Certificates via Coursera - Issued Feb
@@ -354,7 +372,7 @@
           <div class="col">
             <div class="card ally h-100">
               <img src="./assets/gaag.png" class="card-img-top" alt="Advanced Google Analytics logo"
-                style="padding: 1em">
+                style="padding: 1em" />
               <div class="card-body">
                 <h3 class="card-title">Advanced Google Analytics</h3>
                 <p class="card-text">
@@ -363,31 +381,27 @@
                   techniques to help users gain deeper insights into website
                   and app performance.
                 </p>
-
               </div>
               <div class="card-footer">
                 <small class="text-body-secondary">Google Analytics Academy - Issued Apr 2021 · Expires Apr
                   2024</small>
               </div>
-
             </div>
           </div>
           <div class="col">
             <div class="card ally h-100">
               <img src="./assets/image-frame-svgrepo-com.svg" class="card-img-top" alt="Placeholder Image"
-                style="padding: 1em">
+                style="padding: 1em" />
               <div class="card-body">
                 <h3 class="card-title">Coming Soon!</h3>
                 <p class="card-text">
                   This is just a placeholder for my next Certificate!
                   Hopefully the CPACC...
                 </p>
-
               </div>
               <div class="card-footer">
                 <small class="text-body-secondary">Winter 2023-24</small>
               </div>
-
             </div>
           </div>
         </div>
@@ -407,7 +421,7 @@
               <div class="col">
                 <h3>
                   <img src="assets/computer-rate-rating-2-svgrepo-com.svg" alt="" style="height: 5rem"
-                    class="px-3">Accessibility Audit Team Lead
+                    class="px-3" />Accessibility Audit Team Lead
                 </h3>
               </div>
             </div>
@@ -474,7 +488,7 @@
             <div class="row align-items-center">
               <div class="col">
                 <h4>
-                  <img src="/assets/skills-svgrepo-com.svg" alt style="height: 5rem" class="px-3">
+                  <img src="/assets/skills-svgrepo-com.svg" alt style="height: 5rem" class="px-3" />
                   Takeaways from Accessibility Audit Team Lead
                 </h4>
               </div>
@@ -511,7 +525,7 @@
             <div class="row align-items-center">
               <div class="col">
                 <h3>
-                  <img src="/assets/radiation-svgrepo-com.svg" alt="" style="height: 5rem" class="px-3">Calibration
+                  <img src="/assets/radiation-svgrepo-com.svg" alt="" style="height: 5rem" class="px-3" />Calibration
                   Technician
                 </h3>
               </div>
@@ -564,7 +578,7 @@
             <div class="row align-items-center">
               <div class="col">
                 <h4>
-                  <img src="/assets/skills-svgrepo-com.svg" alt style="height: 5rem" class="px-3">
+                  <img src="/assets/skills-svgrepo-com.svg" alt style="height: 5rem" class="px-3" />
                   Takeaways from Radiation Laboratory Technician
                 </h4>
               </div>
@@ -596,7 +610,7 @@
             <div class="row align-items-center">
               <div class="col">
                 <h3>
-                  <img src="/assets/cafe-svgrepo-com.svg" alt="" style="height: 5rem" class="px-3">Manager and
+                  <img src="/assets/cafe-svgrepo-com.svg" alt="" style="height: 5rem" class="px-3" />Manager and
                   Co-Founder
                 </h3>
               </div>
@@ -665,7 +679,7 @@
             <div class="row align-items-center">
               <div class="col">
                 <h4>
-                  <img src="/assets/skills-svgrepo-com.svg" alt style="height: 5rem" class="px-3">
+                  <img src="/assets/skills-svgrepo-com.svg" alt style="height: 5rem" class="px-3" />
                   Takeaways from Co-owner
                 </h4>
               </div>
@@ -713,7 +727,7 @@
             <div class="row align-items-center">
               <div class="col">
                 <h3>
-                  <img src="/assets/blueprint-svgrepo-com.svg" alt="" style="height: 5rem" class="px-3">Laboratory
+                  <img src="/assets/blueprint-svgrepo-com.svg" alt="" style="height: 5rem" class="px-3" />Laboratory
                   Technician & Field Technician III
                 </h3>
               </div>
@@ -774,7 +788,7 @@
             <div class="row align-items-center">
               <div class="col">
                 <h4>
-                  <img src="/assets/skills-svgrepo-com.svg" alt style="height: 5rem" class="px-3">
+                  <img src="/assets/skills-svgrepo-com.svg" alt style="height: 5rem" class="px-3" />
                   Takeaways from Lab and Field Tech
                 </h4>
               </div>
@@ -806,7 +820,7 @@
             <div class="row align-items-center">
               <div class="col">
                 <h3>
-                  <img src="/assets/croupier-svgrepo-com.svg" alt="" style="height: 5rem" class="px-3">Table Games
+                  <img src="/assets/croupier-svgrepo-com.svg" alt="" style="height: 5rem" class="px-3" />Table Games
                   Dealer
                 </h3>
               </div>
@@ -853,7 +867,7 @@
             <div class="row align-items-center">
               <div class="col">
                 <h4>
-                  <img src="/assets/skills-svgrepo-com.svg" alt style="height: 5rem" class="px-3">
+                  <img src="/assets/skills-svgrepo-com.svg" alt style="height: 5rem" class="px-3" />
                   Takeaways from Table Games Dealer
                 </h4>
               </div>
@@ -881,7 +895,7 @@
             <div class="row align-items-center">
               <div class="col">
                 <h3>
-                  <img src="/assets/packing-warehouse-svgrepo-com.svg" alt="" style="height: 5rem" class="px-3">Field
+                  <img src="/assets/packing-warehouse-svgrepo-com.svg" alt="" style="height: 5rem" class="px-3" />Field
                   Equipment and Warehouse Supervisor
                 </h3>
               </div>
@@ -939,7 +953,7 @@
             <div class="row align-items-center">
               <div class="col">
                 <h4>
-                  <img src="/assets/skills-svgrepo-com.svg" alt style="height: 5rem" class="px-3">
+                  <img src="/assets/skills-svgrepo-com.svg" alt style="height: 5rem" class="px-3" />
                   Takeaways from Field Equipment and Warehouse Supervisor
                 </h4>
               </div>
@@ -969,7 +983,7 @@
               <div class="col">
                 <h3>
                   <img src="/assets/chemistry-laboratory-svgrepo-com.svg" alt="" style="height: 5rem"
-                    class="px-3">Laboratory Technician I & II
+                    class="px-3" />Laboratory Technician I & II
                 </h3>
               </div>
             </div>
@@ -1026,7 +1040,7 @@
             <div class="row align-items-center">
               <div class="col">
                 <h4>
-                  <img src="/assets/skills-svgrepo-com.svg" alt style="height: 5rem" class="px-3">
+                  <img src="/assets/skills-svgrepo-com.svg" alt style="height: 5rem" class="px-3" />
                   Takeaways from Laboratory Technician
                 </h4>
               </div>
@@ -1060,7 +1074,7 @@
               <div class="card h-100 ally">
                 <a href="mailto:Dwwestfall@protonmail.com">
                   <img src="./assets/icons/mail-svgrepo-com.svg" class="card-img-top" alt="Daniel's Email"
-                    style="height: 3rem"></a>
+                    style="height: 5rem" /></a>
                 <div class="card-body">
                   <h3 class="card-title">Email Me</h3>
                   <p class="card-text">
@@ -1074,7 +1088,7 @@
               <div class="card h-100 ally">
                 <a href="https://www.linkedin.com/in/danielwestfall/">
                   <img src="./assets/icons/linkedin-svgrepo-com.svg" class="card-img-top" alt="Daniel's Linkedin"
-                    style="height: 3rem"></a>
+                    style="height: 5rem" /></a>
                 <div class="card-body">
                   <h3 class="card-title">LinkedIn</h3>
                   <p class="card-text">
@@ -1089,7 +1103,7 @@
               <div class="card h-100 ally">
                 <a href="https://www.instagram.com/danielwwestfall/">
                   <img src="./assets/icons/instagram-svgrepo-com.svg" class="card-img-top" alt="Daniel's Instagram"
-                    style="height: 3rem"></a>
+                    style="height: 5rem" /></a>
                 <div class="card-body">
                   <h3 class="card-title">Instagram</h3>
                   <p class="card-text">
@@ -1104,7 +1118,7 @@
               <div class="card h-100 ally">
                 <a href="https://www.youtube.com/channel/UCckVablcameNsZHdwRlCQaA">
                   <img src="./assets/icons/youtube-svgrepo-com.svg" class="card-img-top" alt="Daniel's Youtube channel"
-                    style="height: 3rem"></a>
+                    style="height: 5rem" /></a>
                 <div class="card-body">
                   <h3 class="card-title">YouTube</h3>
                   <p class="card-text">
@@ -1121,6 +1135,60 @@
       </div>
     </section>
   </main>
+  <footer class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+        <li class="nav-item mx-2 mt-2">
+          <a class="nav-link" id="about-link-footer" href="#about">About</a>
+        </li>
+        <li class="nav-item mx-2 mt-2">
+          <a class="nav-link" id="projects-link-footer" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item mx-2 mt-2">
+          <a class="nav-link" id="certs-link-footer" href="#certs">Certifications</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="navbar-brand" id="home-link-footer" aria-current="page" href="#">CERTREQ</a>
+        </li>
+        <li class="nav-item mx-2 mt-2">
+          <a class="nav-link" id="resume-link-footer" href="#resume">Resume</a>
+        </li>
+        <li class="nav-item mx-2 mt-2">
+          <a class="nav-link" id="contact-link-footer" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item mx-2 mt-2">
+          <a class="nav-link" id="blog-link-footer" href="https://certreq.dev/blog/">Blog</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var navLinks = document.querySelectorAll(".nav-link");
+      var footerNavLinks = document.querySelectorAll(".footer-nav .nav-link");
+
+      navLinks.forEach(function (link) {
+        link.addEventListener("click", function (event) {
+          navLinks.forEach(function (navLink) {
+            navLink.classList.remove("active");
+          });
+          footerNavLinks.forEach(function (footerNavLink) {
+            footerNavLink.classList.remove("active");
+          });
+
+          link.classList.add("active");
+          var linkId = link.id;
+          var correspondingFooterLink = document.getElementById(
+            linkId + "-footer"
+          );
+          if (correspondingFooterLink) {
+            correspondingFooterLink.classList.add("active");
+          }
+        });
+      });
+    });
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
