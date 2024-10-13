@@ -2,1328 +2,599 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Missing Link Accessibility</title>
-  <link rel="icon" type="image/x-icon" href="./assets/a11y.svg">
-  <!--Meta Tags-->
-  <meta name="description" content="Explore my portfolio showcasing accessible web development projects.">
-  <meta name="keywords"
-    content="accessibility, accessible design, web design, web development, portfolio, Daniel Westfall, Certreq">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://certreq.dev/certreq-blog/">
-
-  <!-- Open Graph Tags (for social media sharing) -->
-  <meta property=“og:type” content=“website” />
-  <meta property=“og:url” content=“https://certreq.dev/” />
-  <meta property="og:title" content="Missing Link Accessibility">
-  <meta property="og:description"
-    content="Explore my portfolio showcasing accessible web design and development projects.">
-  <!-- <meta property="og:image" content="https://www.yourportfolio.com/images/your-image.jpg"> -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta property="twitter:title" content="Missing Link Accessibility" />
-  <meta name="twitter:site" content="@danwestfall6" />
-  <meta name="twitter:creator" content="@danwestfall6" />
-  <!-- <meta property="Twitter:image" content="" /> -->
-
-  <!--External CSS and JS-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=El+Messiri&family=Kameron&family=Lato&family=Play:wght@700&family=Raleway&family=Source+Code+Pro&family=Varela+Round&display=swap"
-    rel="stylesheet" />
-
-  <style>
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: "Varela Round", sans-serif;
-    }
-
-    .min-size-div {
-      min-width: 200px;
-      min-height: 200px;
-    }
-
-    .navbar-brand {
-      font-family: "Play", sans-serif;
-      font-size: 2rem;
-    }
-
-    .center-vertically {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: max-content;
-      text-align: center;
-    }
-
-    .header1 {
-      color: white;
-      position: absolute;
-      left: 4rem;
-      top: 8rem;
-      z-index: 10000;
-      font-size: large;
-    }
-
-    body {
-      font-family: sans-serif;
-    }
-
-    .a11y {
-      background-image: url("assets/computer-rate-rating-2-svgrepo-com.svg");
-      background-size: contain;
-      display: block;
-      background-repeat: no-repeat;
-      background-position: center center;
-      margin: 2rem;
-    }
-
-    .rez {
-      background-image: url("assets/missing_link_logo.svg");
-      background-size: contain;
-      display: block;
-      background-repeat: no-repeat;
-      background-position: center center;
-      margin: 2rem;
-    }
-
-    .shim {
-      height: 4rem;
-      width: 90%;
-      background-color: black;
-      background-size: cover;
-      color: white;
-      background-position: center;
-      border: 3px;
-      border-color: darkgray;
-      border-style: solid;
-      margin: auto;
-      margin-bottom: 1rem;
-      margin-top: 1rem;
-      border-radius: 25px 10px 25px 10px;
-      display: flex;
-      align-items: end;
-    }
-
-    .visually-hidden-focusable {
-      color: white;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-
-    section {
-      padding: 3rem;
-    }
-
-    .ally {
-      border-color: darkgray;
-      border-width: 5px;
-    }
-
-    .allycard {
-      border-color: darkgray;
-      border-width: 5px;
-    }
-
-    .card {
-      font-weight: 600;
-      font-size: 1em;
-    }
-
-    .navbar-light .navbar-nav .nav-link {
-      color: #000;
-    }
-
-    .nav-link.active,
-    .nav-link:hover {
-      text-decoration: underline;
-    }
-
-    a {
-      text-decoration: underline;
-    }
-
-    a img {
-      border: 2px solid transparent;
-    }
-
-    a:hover img,
-    *:focus,
-    .nav-link:focus-visible {
-      outline: 2px #f9f9f9 solid;
-      outline-offset: 0;
-      box-shadow: 0 0 0 4px #193146;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="https://getbootstrap.com/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/footers/">
+    <script src="https://getbootstrap.com/docs/5.3/assets/js/color-modes.js"></script>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-md bg-dark fixed-top" data-bs-theme="dark">
     <a class="visually-hidden-focusable" href="#content">Skip to main content</a>
+    <div class="container">
+        <header
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+            <div class="col-md-3 mb-2 mb-md-0">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/missing_link_logo.png" height="60" alt="Missing Link Accessibility">
+                </a>
+            </div>
 
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
-        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="#learn" class="nav-link px-2">Learn</a></li>
+                <li><a href="https://www.youtube.com/channel/UCXKRL86_pPtqy_C_13ikaew" class="nav-link px-2">YouTube</a>
+                </li>
+                <li><a href="#contact" class="nav-link px-2">Contact</a></li>
+                <li><a href="#about" class="nav-link px-2">About</a></li>
+            </ul>
 
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
-          <li class="nav-item mx-2 mt-2">
-            <a class="nav-link" id="about-link" href="#about">About</a>
-          </li>
-          <li class="nav-item mx-2 mt-2">
-            <a class="nav-link" id="projects-link" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item mx-2 mt-2">
-            <a class="nav-link" id="certs-link" href="#certs">Certifications</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="navbar-brand" id="home-link" aria-current="page" href="#">CERTREQ</a>
-          </li>
-          <li class="nav-item mx-2 mt-2">
-            <a class="nav-link" id="resume-link" href="#resume">Experience</a>
-          </li>
-          <li class="nav-item mx-2 mt-2">
-            <a class="nav-link" id="contact-link" href="#contact">Contact</a>
-          </li>
-          <li class="nav-item mx-2 mt-2">
-            <a class="nav-link" href="./assets/Daniel_Westfall_CV.pdf" download="Daniel_Westfall_Resume">PDF Resume</a>
-          </li>
-        </ul>
-      </div>
+
+        </header>
     </div>
-  </nav>
 
-  <main id="content">
-    <section id="home" aria-label="home" class="my-5">
-      <div class="container" style="width: 85%">
-        <div class="row my-3">
-          <div class="col-lg-6">
-            <div class="card ally">
-              <div class="card-body">
-                <h1 class="card-title">Missing Link Accessibility</h1>
-                <div class="card-text">
-                  <br />
-                  <h2 class="mt-0 pt-0">CertReq</h2>
-                  <br />
-                  <div class="card-text">
+    <main>
+
+        <div id="content" class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="/assets/missing_link_logo.png" class="d-block mx-lg-auto img-fluid"
+                        alt="Missing link accessibility logo" width="700" height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Missing Link Accessibility</h1>
+                    <p class="lead">
+                        Welcome to Missing Link Accessibility, where we make things that work for everyone.
+                        Accessibility isn't just for
+                        users with disabilities, it benefits everyone. So be selfish while you're being altruistic and
+                        make your content
+                        accessible. This is my site where I'll explain how to get to accessible as well as why you need
+                        to.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ======================================================================== -->
+        <div class="b-example-divider"></div>
+        <!-- ======================================================================== -->
+
+        <div class="container px-4 py-5" id="featured-3">
+            <h2 id="about" class="pb-2 border-bottom">My Philosophy and Logo</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                <div class="feature col">
+                    <div
+                        class="feature-icon d-inline-flex align-items-center justify-content-center  bg-gradient fs-2 mb-3">
+                        <img src="assets/a11yhuman.svg" alt="Human accessibility icon" height="100px">
+                    </div>
+                    <h3 class="fs-2 text-body-emphasis">
+                        Human
+                    </h3>
                     <p>
-                      Welcome to "CertReq," my platform dedicated to my career in accessibility as well as my journey
-                      toward acquiring the CPACC and WAS certifications. This is the platform I'll use to host my
-                      portfolio,
-                      resume, and achievements in my accessibility studies. In my role
-                      as an Accessibility Auditor Team Lead, my resolute commitment revolves around
-                      improving online experiences to ensure maximum accessibility for all individuals.
+                        My philosophy is represented graphically by logo I designed for this site. Let's break it down
+                        and I'll explain how I put it
+                        together. A common icon used for accessible content on the web is a stick figure of a human with
+                        it's arms out.
+                        This can be used to represent us all, either as users with different levels of ability or as a
+                        content creator
+                        looking for ways to get our content to as many people as possible.
+
+                    </p>
+                </div>
+                <div class="feature col">
+                    <div
+                        class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3">
+                        <img src="assets/a11ylinks.svg" alt="Web link icon" height="100px"
+                            style="padding-top:25px;padding-bottom:25px">
+                    </div>
+                    <h3 class="fs-2 text-body-emphasis">Links</h3>
+                    <p>
+                        What would the internet be without links? Without pages connected to one another, there would be
+                        no internet. The second element of my icon is a simple variation on a common link icon. Usually
+                        depicted as two or three
+                        links
+                        of a chain. In my logo we have two different links with the arms of the accessible human
+                        linking them together.
+                    </p>
+                </div>
+                <div class="feature col">
+                    <div
+                        class="feature-icon d-inline-flex align-items-center justify-content-center  bg-gradient fs-2 mb-3">
+                        <img src="assets/missing_link_logo_no_text.svg"
+                            alt="Missing Link Logo, the combined accessible human and links icons" height="100px">
+                    </div>
+                    <h3 class="fs-2 text-body-emphasis">
+                        Accessibility Links All
+                    </h3>
+                    <p>
+                        So in my depiction, we represent any user benefitting from accessibility. Either as the creator
+                        who utilizes
+                        accessibility to ensure everyone can access their art or information, or as the user who is able
+                        to use the accessible
+                        ways information is provided and completing that link.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ======================================================================== -->
+        <div class="b-example-divider"></div>
+        <!-- ======================================================================== -->
+
+        <div class="container px-4 py-5" id="custom-cards">
+            <h2 id="learn" class="pb-2 border-bottom">WCAG Principles</h2>
+
+            <div class="row row-cols-1 row-cols-lg-4 align-items-stretch g-4 py-5">
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('assets/star1.png');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="5em" height="5em" fill="white"
+                                class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                <path
+                                    d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                            </svg>
+                            <p class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Per<br>
+                                &nbsp;&nbsp;ceiv<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;able</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('assets/star2.png');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="5em" height="5em" fill="currentColor"
+                                class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+                            </svg>
+
+                            <p class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"><br>Oper <br>
+                                &nbsp;&nbsp;able
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('assets/star3.png');">
+
+
+
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="5em" height="5em" fill="currentColor"
+                                class="bi bi-lightbulb-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5" />
+                            </svg>
+
+
+                            <p class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Under<br>
+                                &nbsp;&nbsp;stand<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;able</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('assets/star4.png');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="5em" height="5em" fill="currentColor"
+                                class="bi bi-phone-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0" />
+                            </svg>
+
+                            <p class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"><br><br>Robust
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ======================================================================== -->
+        <div class="b-example-divider"></div>
+        <!-- ======================================================================== -->
+
+        <div class="container px-4 py-5">
+            <h2 id="part5" class="pb-2 border-bottom">Let's Learn Together</h2>
+
+            <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+                <div class="col d-flex flex-column align-items-start gap-2">
+                    <svg role="img" aria-describedby="uniqueTitleID uniqueDescID" height="200px" width="200px"
+                        version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"
+                        fill="#000000">
+                        <title id="uniqueTitleID">A student studying</title>
+                        <desc id="uniqueDescID"></desc>
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path style="fill:#F4FFF9;"
+                                d="M482.358,29.642v452.716c0,5.953-4.826,10.779-10.779,10.779H29.642 c-5.953,0-10.779-4.826-10.779-10.779V29.642c0-5.953,4.826-10.779,10.779-10.779h441.937 C477.532,18.863,482.358,23.689,482.358,29.642z">
+                            </path>
+                            <path style="fill:#A89B80;"
+                                d="M482.358,460.8v32.337c0,5.953-4.826,10.779-10.779,10.779H18.863 c-5.953,0-10.779-4.826-10.779-10.779V460.8c0-5.953,4.826-10.779,10.779-10.779h452.716 C477.532,450.021,482.358,454.847,482.358,460.8z">
+                            </path>
+                            <path style="fill:#fd793f;"
+                                d="M234.442,320.674v107.789H40.421V320.674c0-35.718,28.955-64.674,64.674-64.674h64.674 C205.487,256,234.442,284.955,234.442,320.674z">
+                            </path>
+                            <path style="fill:#fd793f;"
+                                d="M137.432,428.463H40.421V320.674c0-35.718,28.955-64.674,64.674-64.674h32.337V428.463z">
+                            </path>
+                            <path style="fill:#EFDDAB;"
+                                d="M256,503.916h-97.011c-11.906,0-21.558-9.651-21.558-21.558V342.232 c0-11.906,9.651-21.558,21.558-21.558H256c11.906,0,21.558,9.651,21.558,21.558v140.126 C277.558,494.264,267.906,503.916,256,503.916z">
+                            </path>
+                            <path style="fill:#fd793f;"
+                                d="M180.547,180.547c0,23.812-19.304,43.116-43.116,43.116s-43.116-19.304-43.116-43.116 s19.304-43.116,43.116-43.116C161.244,137.432,180.547,156.736,180.547,180.547z M137.432,417.684H83.537V353.01 c0-5.953-4.826-10.779-10.779-10.779H40.421v97.011c0,11.906,9.651,21.558,21.558,21.558h75.453 c11.906,0,21.558-9.651,21.558-21.558l0,0C158.989,427.336,149.338,417.684,137.432,417.684z">
+                            </path>
+                            <path style="fill:#fd793f;"
+                                d="M137.432,137.432v86.232c-23.812,0-43.116-19.304-43.116-43.116S113.62,137.432,137.432,137.432z">
+                            </path>
+                            <path style="fill:#B28D5B;"
+                                d="M482.358,191.326v107.789c0,5.953-4.826,10.779-10.779,10.779h-32.337h-32.337 c-5.953,0-10.779-4.826-10.779-10.779V191.326c0-5.953,4.826-10.779,10.779-10.779h21.558c5.953,0,10.779,4.826,10.779,10.779 c0-5.953,4.826-10.779,10.779-10.779h21.558C477.532,180.547,482.358,185.373,482.358,191.326z">
+                            </path>
+                            <path style="fill:#7F5D3B;"
+                                d="M460.8,180.547v129.347h-10.779c-5.953,0-10.779-4.826-10.779-10.779 c0,5.953-4.826,10.779-10.779,10.779h-21.558c-5.953,0-10.779-4.826-10.779-10.779V191.326c0-5.953,4.826-10.779,10.779-10.779 h21.558c5.953,0,10.779,4.826,10.779,10.779c0-5.953,4.826-10.779,10.779-10.779H460.8z">
+                            </path>
+                            <path style="fill:#FF8355;"
+                                d="M385.347,18.863v107.789c0,5.953-4.826,10.779-10.779,10.779h-32.337h-32.337 c-5.953,0-10.779-4.826-10.779-10.779V18.863c0-5.953,4.826-10.779,10.779-10.779h21.558c5.953,0,10.779,4.826,10.779,10.779 c0-5.953,4.826-10.779,10.779-10.779h21.558C380.522,8.084,385.347,12.91,385.347,18.863z">
+                            </path>
+                            <path style="fill:#E55D30;"
+                                d="M363.789,8.084v129.347h-21.558h-32.337c-5.953,0-10.779-4.826-10.779-10.779V18.863 c0-5.953,4.826-10.779,10.779-10.779h21.558c5.953,0,10.779,4.826,10.779,10.779c0-5.953,4.826-10.779,10.779-10.779H363.789z">
+                            </path>
+                            <path style="fill:#B28D5B;"
+                                d="M342.232,137.432h-32.337c-5.953,0-10.779-4.826-10.779-10.779V18.863 c0-5.953,4.826-10.779,10.779-10.779h21.558c5.953,0,10.779,4.826,10.779,10.779V137.432z">
+                            </path>
+                            <path style="fill:#7f3b3b;"
+                                d="M320.674,137.432h-10.779c-5.953,0-10.779-4.826-10.779-10.779V18.863 c0-5.953,4.826-10.779,10.779-10.779h10.779V137.432z">
+                            </path>
+                            <path style="fill:#769CA5;"
+                                d="M474.082,122.422l-18.669,10.779c-5.156,2.976-11.748,1.21-14.724-3.945l-53.895-93.349 c-2.976-5.156-1.21-11.748,3.945-14.724l18.669-10.779c5.156-2.976,11.748-1.21,14.724,3.945l53.895,93.349 C481.004,112.852,479.237,119.445,474.082,122.422z">
+                            </path>
+                            <path style="fill:#5B7A7F;"
+                                d="M464.747,127.811l-9.335,5.389c-5.156,2.976-11.748,1.21-14.724-3.945l-53.895-93.349 c-2.976-5.156-1.21-11.748,3.945-14.724l9.335-5.389L464.747,127.811z">
+                            </path>
+                            <path style="fill:#FFA233;"
+                                d="M428.463,309.895h-21.558c-5.953,0-10.779-4.826-10.779-10.779V191.326 c0-5.953,4.826-10.779,10.779-10.779h21.558c5.953,0,10.779,4.826,10.779,10.779v107.789 C439.242,305.069,434.416,309.895,428.463,309.895z">
+                            </path>
+                            <path style="fill:#FF7E1D;"
+                                d="M417.684,309.895h-10.779c-5.953,0-10.779-4.826-10.779-10.779V191.326 c0-5.953,4.826-10.779,10.779-10.779h10.779V309.895z">
+                            </path>
+                            <path style="fill:#C1B291;"
+                                d="M363.789,450.021h129.347c5.953,0,10.779,4.826,10.779,10.779v32.337 c0,5.953-4.826,10.779-10.779,10.779H363.789c-5.953,0-10.779-4.826-10.779-10.779V460.8 C353.01,454.847,357.836,450.021,363.789,450.021z">
+                            </path>
+                            <path style="fill:#DBCBA1;"
+                                d="M363.789,417.684h129.347c5.953,0,10.779,4.826,10.779,10.779V460.8 c0,5.953-4.826,10.779-10.779,10.779H363.789c-5.953,0-10.779-4.826-10.779-10.779v-32.337 C353.01,422.51,357.836,417.684,363.789,417.684z">
+                            </path>
+                            <path style="fill:#EFDDAB;"
+                                d="M363.789,385.347h129.347c5.953,0,10.779,4.826,10.779,10.779v32.337 c0,5.953-4.826,10.779-10.779,10.779H363.789c-5.953,0-10.779-4.826-10.779-10.779v-32.337 C353.01,390.173,357.836,385.347,363.789,385.347z">
+                            </path>
+                            <path
+                                d="M277.558,145.516h226.358c4.465,0,8.084-3.62,8.084-8.084c0-4.465-3.62-8.084-8.084-8.084h-25.663 c8.908-5.235,11.95-16.728,6.776-25.692l0,0l-53.895-93.349c-2.519-4.363-6.587-7.485-11.454-8.788 c-4.866-1.304-9.949-0.634-14.313,1.884l-13.55,7.823C388.879,4.619,382.253,0,374.568,0H353.01c-4.004,0-7.722,1.255-10.779,3.391 C339.175,1.255,335.457,0,331.453,0h-21.558c-10.401,0-18.863,8.463-18.863,18.863v107.789c0,0.915,0.066,1.814,0.192,2.695h-13.666 c-4.465,0-8.084,3.62-8.084,8.084C269.474,141.896,273.093,145.516,277.558,145.516z M394.78,28.183l18.67-10.779 c0.482-0.278,0.951-0.361,1.339-0.361c0.29,0,0.534,0.045,0.706,0.092c0.403,0.108,1.15,0.414,1.636,1.256l53.895,93.348 c0.743,1.287,0.301,2.939-0.986,3.682l-18.67,10.779c-1.286,0.742-2.938,0.3-3.681-0.987l-53.895-93.349 C393.051,30.578,393.494,28.926,394.78,28.183z M393.432,126.653V63.573l37.974,65.774h-38.167 C393.366,128.467,393.432,127.568,393.432,126.653z M307.2,18.863c0-1.485,1.209-2.695,2.695-2.695h21.558 c1.485,0,2.695,1.209,2.695,2.695v21.558c0,4.465,3.62,8.084,8.084,8.084s8.084-3.62,8.084-8.084V18.863 c0-1.485,1.209-2.695,2.695-2.695h21.558c1.485,0,2.695,1.209,2.695,2.695v107.789c0,1.485-1.209,2.695-2.695,2.695H353.01 c-1.485,0-2.695-1.209-2.695-2.695V72.758c0-4.465-3.62-8.084-8.084-8.084s-8.084,3.62-8.084,8.084v53.895 c0,1.485-1.209,2.695-2.695,2.695h-21.558c-1.485,0-2.695-1.209-2.695-2.695V18.863z M493.137,377.263H363.789 c-10.401,0-18.863,8.463-18.863,18.863v45.811h-35.032c-4.465,0-8.084,3.62-8.084,8.084s3.62,8.084,8.084,8.084h35.032v35.032 c0,10.401,8.463,18.863,18.863,18.863h129.347c10.401,0,18.863-8.463,18.863-18.863v-97.01 C512,385.726,503.537,377.263,493.137,377.263z M495.832,493.137c0,1.485-1.209,2.695-2.695,2.695H363.789 c-1.485,0-2.695-1.209-2.695-2.695v-13.666c0.881,0.127,1.78,0.192,2.695,0.192h129.347c0.915,0,1.814-0.066,2.695-0.192V493.137z M495.832,460.8c0,1.485-1.209,2.695-2.695,2.695H363.789c-1.485,0-2.695-1.209-2.695-2.695v-10.779v-2.887 c0.881,0.127,1.78,0.192,2.695,0.192h129.347c0.915,0,1.814-0.066,2.695-0.192V460.8z M495.832,428.463 c0,1.485-1.209,2.695-2.695,2.695H363.789c-1.485,0-2.695-1.209-2.695-2.695v-32.337c0-1.485,1.209-2.695,2.695-2.695h35.032v13.474 c0,4.465,3.62,8.084,8.084,8.084s8.084-3.62,8.084-8.084v-13.474h16.168v13.474c0,4.465,3.62,8.084,8.084,8.084 c4.465,0,8.084-3.62,8.084-8.084v-13.474h16.168v13.474c0,4.465,3.62,8.084,8.084,8.084s8.084-3.62,8.084-8.084v-13.474h13.474 c1.485,0,2.695,1.209,2.695,2.695V428.463z M256,312.589h-13.92c-4.035-36.328-34.925-64.674-72.312-64.674h-64.674 c-40.119,0-72.758,32.639-72.758,72.758v118.568c0,0.908,0.041,1.808,0.122,2.695H8.084c-4.465,0-8.084,3.62-8.084,8.084 s3.62,8.084,8.084,8.084H39.13c5.441,6.579,13.664,10.779,22.849,10.779h67.368v13.474c0,16.345,13.297,29.642,29.642,29.642H256 c16.345,0,29.642-13.297,29.642-29.642V342.232C285.642,325.886,272.345,312.589,256,312.589z M137.432,452.716H61.979 c-7.43,0-13.474-6.044-13.474-13.474V320.674c0-31.204,25.386-56.589,56.589-56.589h64.674c28.459,0,52.078,21.117,56.014,48.505 h-66.793c-16.345,0-29.642,13.297-29.642,29.642V409.6H91.621v-67.368c0-4.465-3.62-8.084-8.084-8.084s-8.084,3.62-8.084,8.084 v75.453c0,4.465,3.62,8.084,8.084,8.084h53.805c0.053,0.001,0.106,0.001,0.16,0c7.398,0.039,13.404,6.067,13.404,13.474 C150.905,446.672,144.862,452.716,137.432,452.716z M269.474,482.358c0,7.43-6.044,13.474-13.474,13.474h-97.011 c-7.43,0-13.474-6.044-13.474-13.474v-14.595c12.428-3.527,21.558-14.978,21.558-28.521s-9.13-24.994-21.558-28.521v-68.489 c0-7.43,6.044-13.474,13.474-13.474H256c7.43,0,13.474,6.044,13.474,13.474V482.358z M253.305,396.126 c0,4.465-3.62,8.084-8.084,8.084h-64.674c-4.465,0-8.084-3.62-8.084-8.084c0-4.465,3.62-8.084,8.084-8.084h64.674 C249.686,388.042,253.305,391.662,253.305,396.126z M503.916,301.811H490.25c0.127-0.881,0.192-1.78,0.192-2.695V191.326 c0-10.401-8.463-18.863-18.863-18.863h-21.558c-4.004,0-7.722,1.255-10.779,3.391c-3.057-2.136-6.775-3.391-10.779-3.391h-21.558 c-10.401,0-18.863,8.463-18.863,18.863v107.789c0,0.915,0.066,1.814,0.192,2.695h-56.781c-4.465,0-8.084,3.62-8.084,8.084 c0,4.465,3.62,8.084,8.084,8.084h172.463c4.465,0,8.084-3.62,8.084-8.084C512,305.43,508.38,301.811,503.916,301.811z M474.274,299.116c0,1.485-1.209,2.695-2.695,2.695h-21.558c-1.485,0-2.695-1.209-2.695-2.695v-53.895 c0-4.465-3.62-8.084-8.084-8.084c-4.465,0-8.084,3.62-8.084,8.084v53.895c0,1.485-1.209,2.695-2.695,2.695h-21.558 c-1.485,0-2.695-1.209-2.695-2.695V191.326c0-1.485,1.209-2.695,2.695-2.695h21.558c1.485,0,2.695,1.209,2.695,2.695v21.558 c0,4.465,3.62,8.084,8.084,8.084c4.465,0,8.084-3.62,8.084-8.084v-21.558c0-1.485,1.209-2.695,2.695-2.695h21.558 c1.485,0,2.695,1.209,2.695,2.695V299.116z M137.432,231.747c28.231,0,51.2-22.969,51.2-51.2s-22.969-51.2-51.2-51.2 s-51.2,22.969-51.2,51.2S109.2,231.747,137.432,231.747z M137.432,145.516c19.316,0,35.032,15.716,35.032,35.032 s-15.716,35.032-35.032,35.032c-19.316,0-35.032-15.716-35.032-35.032S118.116,145.516,137.432,145.516z M253.305,460.8 c0,4.465-3.62,8.084-8.084,8.084h-64.674c-4.465,0-8.084-3.62-8.084-8.084c0-4.465,3.62-8.084,8.084-8.084h64.674 C249.686,452.716,253.305,456.335,253.305,460.8z M253.305,428.463c0,4.465-3.62,8.084-8.084,8.084h-43.116 c-4.465,0-8.084-3.62-8.084-8.084s3.62-8.084,8.084-8.084h43.116C249.686,420.379,253.305,423.999,253.305,428.463z M253.305,363.789c0,4.465-3.62,8.084-8.084,8.084h-64.674c-4.465,0-8.084-3.62-8.084-8.084s3.62-8.084,8.084-8.084h64.674 C249.686,355.705,253.305,359.325,253.305,363.789z">
+                            </path>
+                        </g>
+                    </svg>
+                    <h2 class="fw-bold text-body-emphasis">WCAG, WAI-ARIA, and more!</h2>
+                    <p class="text-body-secondary">The Certified Professional in Web Accessibility (CPWA) is an advanced
+                        certification from the International Association
+                        of Accessibility Professionals (IAAP) that combines both the CPACC (Certified Professional in
+                        Accessibility Core
+                        Competencies) and the WAS (Web Accessibility Specialist) credentials. It demonstrates a
+                        professional's in-depth
+                        knowledge of accessibility standards, technical skills in implementing accessible web solutions,
+                        and the ability to
+                        manage and evaluate digital accessibility across various platforms.
                     </p>
 
-                    <p>
-                      Just as the "certreq" command in the
-                      digital realm handles certificate requests, this site will serve as a space
-                      where I document the process of obtaining certifications and recording my
-                      successes in the accessibility field.
-                      <a href="https://certreq.dev/certreq-blog" target="_blank">
-                        Visit my accessibility journal for my latest thoughts.
-                      </a>
-                      This will be a platform where I share the
-                      knowledge I gather and illustrate how this newfound
-                      understanding can be applied.
-                    </p>
-
-                  </div>
                 </div>
-              </div>
+
+                <div class="col">
+                    <div class="row row-cols-1 row-cols-sm-2 g-4">
+                        <div class="col d-flex flex-column gap-2">
+                            <div
+                                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                                <svg class="bi" width="1em" height="1em">
+                                    <use xlink:href="#collection"></use>
+                                </svg>
+                            </div>
+                            <h4 class="fw-semibold mb-0 text-body-emphasis">CPACC</h4>
+                            <p class="text-body-secondary">The CPACC that validates a comprehensive
+                                understanding of accessibility
+                                standards, principles, and best practices. It covers a broad range of topics, including
+                                the fundamentals of disability,
+                                accessibility-related laws and regulations, and universal design principles.
+                            </p>
+                        </div>
+
+                        <div class="col d-flex flex-column gap-2">
+                            <div
+                                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                                <svg class="bi" width="1em" height="1em">
+                                    <use xlink:href="#gear-fill"></use>
+                                </svg>
+                            </div>
+                            <h4 class="fw-semibold mb-0 text-body-emphasis">WAS</h4>
+                            <p class="text-body-secondary">The WAS certification focuses on the technical skills needed
+                                to implement, evaluate, and manage web accessibility. It covers in-depth
+                                knowledge of web content accessibility guidelines (WCAG), accessibility testing
+                                techniques, and the ability to remediate
+                                accessibility issues across various digital platforms.
+                            </p>
+                        </div>
+
+                        <div class="col d-flex flex-column gap-2">
+                            <div
+                                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                                <svg class="bi" width="1em" height="1em">
+                                    <use xlink:href="#speedometer"></use>
+                                </svg>
+                            </div>
+                            <h4 class="fw-semibold mb-0 text-body-emphasis">WCAG</h4>
+                            <p class="text-body-secondary">The Web Content Accessibility Guidelines (WCAG) are a set of
+                                internationally recognized standards developed by the World
+                                Wide Web Consortium (W3C) to make web content more accessible to people with
+                                disabilities. These guidelines provide
+                                specific criteria for improving accessibility in areas such as text alternatives,
+                                keyboard navigation, and visual
+                                design, ensuring that digital content is perceivable, operable, understandable, and
+                                robust.
+                            </p>
+                        </div>
+
+                        <div class="col d-flex flex-column gap-2">
+                            <div
+                                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                                <svg class="bi" width="1em" height="1em">
+                                    <use xlink:href="#table"></use>
+                                </svg>
+                            </div>
+                            <h4 class="fw-semibold mb-0 text-body-emphasis">WAI-ARIA</h4>
+                            <p class="text-body-secondary">The Web Accessibility Initiative - Accessible Rich Internet
+                                Applications (WAI-ARIA) is a technical specification
+                                developed by the W3C to improve the accessibility of dynamic web content and user
+                                interface components. WAI-ARIA
+                                provides a set of attributes that can be added to HTML elements to enhance the
+                                accessibility of interactive features,
+                                making them more usable for people who rely on assistive technologies such as screen
+                                readers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-sm-6 mb-3 mb-sm-0">
-            <div class="card h-100 ally">
-              <div class="card-body rez">
-                <!--A11y Audit Team Lead-->
-              </div>
+        </div>
+
+        <!-- ======================================================================== -->
+        <div class="b-example-divider"></div>
+        <!-- ======================================================================== -->
+
+        <div class="container px-4 py-5" id="hanging-icons">
+            <h2 class="pb-2 border-bottom">Proper Structure and Layout is part of Universal Design</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                <div class="col d-flex align-items-start">
+                    <div
+                        class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                        <svg viewBox="0 0 32 32" width="1.5em" height="1.5em" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26"></path>
+                                <path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529"></path>
+                                <path
+                                    d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z"
+                                    fill="white"></path>
+                            </g>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="fs-2 text-body-emphasis">HTML</h3>
+                        <p>HTML supports good accessibility by providing semantic elements, such as headings, lists, and
+                            form labels, which help
+                            structure content in a way that is understandable and navigable by assistive technologies.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div
+                        class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                        <svg viewBox="0 0 32 32" width="1.5em" height="1.5em" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#1172B8"></path>
+                                <path d="M26 5H16V29.5L24 27L26 5Z" fill="#33AADD"></path>
+                                <path
+                                    d="M19.5 17.5H9.5L9 14L17 11.5H9L8.5 8.5H24L23.5 12L17 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5Z"
+                                    fill="white"></path>
+                            </g>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="fs-2 text-body-emphasis">CSS</h3>
+                        <p>CSS enhances accessibility by enabling the separation of content from visual presentation,
+                            allowing users to customize
+                            how they view web content without affecting the underlying structure or meaning.</p>
+
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div
+                        class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" width="1.5em" aria-label="JavaScript"
+                            role="img" viewBox="0 0 512 512" fill="#000000">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <rect width="512" height="512" rx="15%" fill="#f7df1e"></rect>
+                                <path
+                                    d="M324 370c10 17 24 29 47 29c20 0 33-10 33 -24c0-16 -13 -22 -35 -32l-12-5c-35-15 -58 -33 -58 -72c0-36 27 -64 70 -64c31 0 53 11 68 39l-37 24c-8-15 -17 -21 -31 -21c-14 0-23 9 -23 21c0 14 9 20 30 29l12 5c41 18 64 35 64 76c0 43-34 67 -80 67c-45 0-74 -21 -88 -49zm-170 4c8 13 14 25 31 25c16 0 26-6 26 -30V203h48v164c0 50-29 72 -72 72c-39 0-61 -20 -72 -44z">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="fs-2 text-body-emphasis">JavaScript</h3>
+                        <p>JavaScript can improve accessibility by creating dynamic, interactive elements, but it must
+                            be implemented carefully to
+                            ensure that all functionality is accessible via keyboard and assistive technologies.</p>
+
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
 
-    <section aria-label="about" id="about" class="my-5">
-      <div class="shim">
-        <h2 class="px-3">About Me</h2>
-      </div>
-      <div class="container" style="width: 85%">
-        <div class="mx-3 px-3 my-3">
-          <p>
-            As a professional accessibility auditor, I bring a unique
-            background to the table that spans construction quality assurance,
-            customer service, entrepreneurship, and full-stack web
-            development. With a detail-oriented and meticulous approach, I've
-            honed my skills in ensuring high-quality results in every project
-            I undertake.
-          </p>
+        <!-- ======================================================================== -->
+        <div class="b-example-divider"></div>
+        <!-- ======================================================================== -->
 
-          <p>
-            My diverse experiences include running table games and dealing in
-            annual baccarat tournaments, building and running an award-winning
-            coffee shop from scratch, and developing my skills in full-stack
-            web development and UX design through MIT xPro and Google
-            certificates. With a focus on the user experience and user
-            interface design, I've learned about the importance of conducting
-            research, empathizing with users, and creating wireframes and
-            prototypes with tools like Figma and Adobe XD.
-          </p>
 
-          <p>
-            In my work as an accessibility auditor, I bring my passion for
-            ensuring that all users have equal access to technology and
-            digital experiences. I'm well-versed in tools like ANDI, WCAG
-            Color Contrast Checker, Section 508 Trusted Tester, WCAG 2.1, and
-            WAI ARIA, and I'm experienced in manual and automated
-            accessibility testing. I'm committed to making the digital world a
-            more inclusive and accessible place for everyone.
-          </p>
-        </div>
-      </div>
-    </section>
+        <div class="container my-5" id="contact">
+            <div class="p-5 text-center bg-body-tertiary rounded-3">
 
-    <section aria-label="projects" id="projects" class="my-5">
-      <div class="shim">
-        <h2 class="px-3">Daniel's Projects</h2>
-      </div>
-      <div class="container" style="width: 85%">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
-            <div class="card ally h-100">
-              <img src="./assets/image-frame-svgrepo-com.svg" class="card-img-top" alt="" style="padding: 1em" />
-              <div class="card-body">
-                <h3 class="card-title"><a href="https://certreq.dev/screenReaderAudit/" target="_blank"
-                    aria-label="Screen Reader Audit Checklist. Opens in new window.">Screen Reader Audit Checklist</a>
-                </h3>
-                <p class="card-text">
-                  A simple checklist made using Bootstrap forms that's navigable by screen readers I built for a
-                  co-worker who is a native screen reader user. He is able to enter his results and download a
-                  text file for our records.
+                <svg viewBox="0 0 24 24" width="5em" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M15.7281 3.88396C17.1624 2.44407 19.2604 2.41383 20.4219 3.57981C21.5856 4.74798 21.5542 6.85922 20.1189 8.30009L17.6951 10.7333C17.4028 11.0268 17.4037 11.5017 17.6971 11.794C17.9906 12.0863 18.4655 12.0854 18.7578 11.7919L21.1816 9.35869C23.0929 7.43998 23.3329 4.37665 21.4846 2.5212C19.6342 0.663551 16.5776 0.905664 14.6653 2.82536L9.81768 7.69182C7.90639 9.61053 7.66643 12.6739 9.5147 14.5293C9.80702 14.8228 10.2819 14.8237 10.5754 14.5314C10.8688 14.2391 10.8697 13.7642 10.5774 13.4707C9.41376 12.3026 9.4451 10.1913 10.8804 8.75042L15.7281 3.88396Z"
+                            fill="#03047e"></path>
+                        <path
+                            d="M14.4846 9.4707C14.1923 9.17724 13.7174 9.17632 13.4239 9.46864C13.1305 9.76097 13.1296 10.2358 13.4219 10.5293C14.5856 11.6975 14.5542 13.8087 13.1189 15.2496L8.27129 20.1161C6.83696 21.556 4.73889 21.5862 3.57742 20.4202C2.41376 19.2521 2.4451 17.1408 3.8804 15.6999L6.30424 13.2666C6.59657 12.9732 6.59565 12.4983 6.30219 12.206C6.00873 11.9137 5.53386 11.9146 5.24153 12.208L2.81769 14.6413C0.906387 16.56 0.666428 19.6234 2.5147 21.4788C4.36518 23.3365 7.42173 23.0944 9.334 21.1747L14.1816 16.3082C16.0929 14.3895 16.3329 11.3262 14.4846 9.4707Z"
+                            fill="#a70011"></path>
+                    </g>
+                </svg>
+
+                <h1 class="text-body-emphasis">Contact Me</h1>
+                <p class="col-lg-8 mx-auto fs-5 text-muted">
+                    Feel free to contact me. Connect on LinkedIn, Follow me on YouTube, or just keep coming back to this
+                    site.
                 </p>
-              </div>
-              <div class="card-footer">
-                <small class="text-body-secondary">Updated - Sep 22, 2023</small>
-              </div>
-            </div>
-          </div>
+                <div class="d-inline-flex gap-2 mb-5">
+                    <a href="mailto:missinglinkaccessibility@gmail.com"
+                        class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill" type="button">
+                        <svg viewBox="0 0 600 600" width="24px" height="24px" version="1.1" id="svg9724"
+                            sodipodi:docname="email-close.svg"
+                            inkscape:version="1.2.2 (1:1.2.2+202212051550+b0a8486541)"
+                            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" fill="#000000">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <defs id="defs9728"></defs>
+                                <g id="g10449" transform="matrix(0.95173205,0,0,0.95115787,13.901174,12.168794)"
+                                    style="stroke-width:1.05103">
+                                    <g id="path10026" inkscape:transform-center-x="-0.59233046"
+                                        inkscape:transform-center-y="-20.347403"
+                                        transform="matrix(1.3807551,0,0,1.2700888,273.60014,263.99768)"></g>
+                                    <g id="g11314" transform="matrix(1.5092301,0,0,1.3955555,36.774048,-9.4503933)"
+                                        style="stroke-width:50.6951"></g>
+                                    <path
+                                        style="color:#ffffff;fill:#ffffff;stroke-linecap:round;stroke-linejoin:round;-inkscape-stroke:none;paint-order:stroke fill markers"
+                                        d="m 132.50586,39.773437 c -80.786884,0 -147.111329,66.380993 -147.111329,147.175783 v 231.32422 c 0,80.79479 66.324445,147.17578 147.111329,147.17578 h 336.20508 c 80.78688,0 147.11328,-66.38099 147.11328,-147.17578 V 186.94922 c 0,-80.79479 -66.3264,-147.175783 -147.11328,-147.175783 z m 0,84.082033 h 336.20508 c 35.63231,0 63.02929,27.39904 63.02929,63.09375 v 231.32422 c 0,35.69471 -27.39698,63.09375 -63.02929,63.09375 H 132.50586 c -35.63231,0 -63.029298,-27.39904 -63.029298,-63.09375 V 186.94922 c 0,-35.69471 27.396988,-63.09375 63.029298,-63.09375 z"
+                                        id="rect240"></path>
+                                    <path
+                                        style="color:#ffffff;fill:#ffffff;stroke-linecap:round;stroke-linejoin:round;-inkscape-stroke:none"
+                                        d="M 67.464844,81.886719 A 42.041302,42.041302 0 0 0 38.351562,95.591797 42.041302,42.041302 0 0 0 41.162109,154.98047 L 272.31836,365.25195 a 42.045506,42.045506 0 0 0 56.58008,0 L 560.05469,154.98047 a 42.041302,42.041302 0 0 0 2.81054,-59.388673 42.041302,42.041302 0 0 0 -59.38867,-2.808594 L 300.60937,277.31836 97.740234,92.783203 A 42.041302,42.041302 0 0 0 67.464844,81.886719 Z"
+                                        id="path404"></path>
+                                    <g id="g1810" transform="translate(-0.51901729)">
+                                        <path style="color:#ffffff;fill:#ffffff;-inkscape-stroke:none"
+                                            d="m 418.54102,322.93555 -45.69727,43.45898 130.79492,137.53125 45.69727,-43.45898 z"
+                                            id="path1686">
+                                        </path>
+                                        <path style="color:#ffffff;fill:#ffffff;-inkscape-stroke:none"
+                                            d="M 183.54297,323.11719 52.748047,462.84961 98.787109,505.94531 229.58203,366.21289 Z"
+                                            id="path1686-3"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        &nbsp;
+                        Email Us
 
 
-        </div>
-      </div>
-    </section>
+                    </a>
+                    <a href="https://www.linkedin.com/in/danielwestfall/"
+                        class="btn btn-primary btn-lg px-4 rounded-pill" type="button">
 
-    <section aria-label="certifications" id="certs" class="my-5">
-      <div class="shim">
-        <h2 class="px-3">Daniel's Certifications</h2>
-      </div>
-      <div class="container" style="width: 85%">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
-            <div class="card ally h-100">
-              <img src="./assets/jawscert.jpg" class="card-img-top" alt="JAWS Certified logo" style="padding: 1em" />
-              <div class="card-body">
-                <h3 class="card-title">JAWS Certified Individual</h3>
-                <p class="card-text">
-                  The JAWS Certified Individual certificate is a credential
-                  awarded to individuals who have demonstrated proficiency in
-                  using the JAWS screen reading software to enhance
-                  accessibility for individuals with visual impairments.
-                </p>
-              </div>
-              <div class="card-footer">
-                <small class="text-body-secondary">Freedom Scientific - Issued Aug 2023</small>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card ally h-100">
-              <img src="./assets/242-2429040_nvda-certified-expert-logo-nv-access.png" class="card-img-top"
-                alt="NVDA Expert logo" style="padding: 1em" />
-              <div class="card-body">
-                <h3 class="card-title">NVDA Expert Certification</h3>
-                <p class="card-text">
-                  The NVDA Expert Certification is a credential awarded to
-                  individuals who have demonstrated proficiency in using the
-                  the NVDA screen reader to enhance accessibility for
-                  individuals with visual impairments.
-                </p>
-              </div>
-              <div class="card-footer">
-                <small class="text-body-secondary">NV Access Limited - Issued Aug 2023</small>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card ally h-100">
-              <img src="./assets/TT_Trademark.jpg" class="card-img-top" alt="Trusted Tester logo"
-                style="padding: 1em" />
-              <div class="card-body">
-                <h3 class="card-title">DHS Trusted Tester V5</h3>
-                <p class="card-text">
-                  The DHS Trusted Tester V5 certification validates expertise
-                  in accessibility testing methodologies and compliance with
-                  U.S. Department of Homeland Security (DHS) accessibility
-                  standards.
-                </p>
-              </div>
-              <div class="card-footer">
-                <small class="text-body-secondary">U.S DHS, Office of Accessible Systems & Technology -
-                  Credential ID TT-2204-02664 - Issued Apr 2022</small>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card ally h-100">
-              <img src="./assets/guxd.png" class="card-img-top" alt="Google UX Design Professional Certificate logo"
-                style="padding: 1em" />
-              <div class="card-body">
-                <h3 class="card-title">
-                  Google UX Design Professional Certificate
-                </h3>
-                <p class="card-text">
-                  The Google UX Design Professional Certificate is a
-                  comprehensive program that equips learners with the skills
-                  and knowledge needed to excel in user experience (UX)
-                  design, offered by Google in partnership with Coursera.
-                </p>
-              </div>
-              <div class="card-footer">
-                <small class="text-body-secondary">Google Career Certificates via Coursera - Issued Feb
-                  2022</small>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card ally h-100">
-              <img src="./assets/gaag.png" class="card-img-top" alt="Advanced Google Analytics logo"
-                style="padding: 1em" />
-              <div class="card-body">
-                <h3 class="card-title">Advanced Google Analytics</h3>
-                <p class="card-text">
-                  Advanced Google Analytics is a comprehensive course that
-                  delves into advanced tracking, data analysis, and reporting
-                  techniques to help users gain deeper insights into website
-                  and app performance.
-                  <br><br>
-                  Update coming soon...
-                </p>
-              </div>
-              <div class="card-footer">
-                <small class="text-body-secondary">Google Analytics Academy - Issued Apr 2021 · Expires Apr
-                  2024</small>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card ally h-100">
-              <img src="./assets/iaap-certified-professionals-in-accessibility-core-competencies-cpacc.png"
-                class="card-img-top" alt="IAAP CPACC Badge" style="padding: 1em" />
-              <div class="card-body">
-                <h3 class="card-title">IAAP Certified Professionals in Accessibility Core Competencies</h3>
-                <p class="card-text">
-                  <a href="https://www.credly.com/badges/150e7bf5-15b1-4770-bbb5-253e0d5666e1/public_url">From
-                    Credly:</a>
-                <blockquote cite="https://www.credly.com/badges/150e7bf5-15b1-4770-bbb5-253e0d5666e1/public_url">Earners
-                  of the IAAP Certified Professional in Accessibility Core Competencies (CPACC) have
-                  demonstrated their broad
-                  foundational knowledge of disability and accessibility concepts, to lead, guide, and develop more
-                  accessible products,
-                  services, and environments. This credential defines what accessibility professionals are expected to
-                  know and to help
-                  increase the quality of work delivered in the industries served.</blockquote>
-                </p>
-              </div>
-              <div class="card-footer">
-                <small class="text-body-secondary">Spring 2024</small>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section aria-label="resume" id="resume" class="my-5">
-      <div class="shim">
-        <h2 class="px-3"><a href="./assets/Daniel_Westfall_CV.pdf" download="Daniel_Westfall_Resume">My Resume</a></h2>
-      </div>
-
-      <!-- Key Skills-->
-      <div class="container" style="width: 85%">
-        <div class="card my-3 allycard">
-          <div class="card-header ally text-center">
-            <div class="row align-items-center">
-              <div class="col">
-                <h3>
-                  <img src="/assets/skills-svgrepo-com.svg" alt style="height: 5rem" class="px-3" />
-                  Key Skills
-                </h3>
-              </div>
-            </div>
-          </div>
-
-          <div class="row justify-content-center">
-            <div class="col-12">
-              <div class="card-body">
-                <span class="card-text">
-                  <ul>
-                    <li>Deep understanding of accessibility standards and guidelines (WCAG, WAI-ARIA, Section 508)</li>
-                    <li>Experienced in auditing and providing guidance for digital products including:</li>
-                    <li>
-                      <ul>
-                        <li> Websites</li>
-                        <li> Native Mobile apps</li>
-                      </ul>
-                    </li>
-                    <li> Demonstrated experience in creating, remediating, and auditing these document formats:</li>
-                    <li>
-                      <ul>
-                        <li>PDFs</li>
-                        <li>Google Workspace Documents</li>
-                        <li>Microsoft Office Documents</li>
-                      </ul>
-                    </li>
-                    <li>Provides remediation feedback and solutions in:</li>
-                    <li>
-                      <ul>
-                        <li>HTML, CSS, and JavaScript coding suggestions</li>
-                        <li>WAI-ARIA based solutions</li>
-                      </ul>
-                    </li>
-                    <li>Creative solutions to incorporate accessibility into complex existing systems</li>
-                    <li>Solid understanding of assistive technology and accessibility testing tools such as:</li>
-                    <li>
-                      <ul>
-                        <li>PC: JAWS, NVDA, Windows Narrator</li>
-                        <li>MacOs: VoiceOver</li>
-                        <li>iOS: VoiceOver</li>
-                        <li>Android: TalkBack</li>
-                        <li>Chromebook: ChromeVox</li>
-                        <li>Android Accessibility Suite, Accessibility Scanner, Switch Access, and Voice Access</li>
-                        <li>WebAIM Wave</li>
-                        <li>Colour Contrast Analyzer (CCA)</li>
-                        <li>PDF Accessibility Checker (PAC 2024)</li>
-                      </ul>
-                    </li>
-                    <li>Performed full and detailed audits producing complete Voluntary Product Accessibility
-                      Templates (VPAT®) or Accessibility Conformance Report (ACR)</li>
-                  </ul>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!--Ally Audit Team Lead-->
-      <div class="container" style="width: 85%">
-        <div class="card text-center ally">
-          <div class="card-header ally">
-            <div class="row align-items-center">
-              <div class="col">
-                <h3>
-                  <img src="assets/computer-rate-rating-2-svgrepo-com.svg" alt="" style="height: 5rem"
-                    class="px-3" />Accessibility Auditor and Team Lead
-                </h3>
-              </div>
-            </div>
-          </div>
-
-          <div class="row justify-content-center">
-            <div class="col-12">
-              <div class="card-body">
-                <h4 class="card-title">QuaverEd</h4>
-                <p class="card-text">
-                  <em>AUGUST 2022 - Current</em>
-                </p>
-
-                <ul style="text-align: left">
-                  <li>
-                    Provides guidance on changes needed to update existing user interfaces and proprietary
-                    frameworks to comply with WCAG 2.2 and Section 508 guidelines, resulting in increased
-                    accessibility.
-                  </li>
-                  <li>
-                    Collaborates effectively with cross-functional teams to solve accessibility issues and come up
-                    with creative solutions.
-                  </li>
-                  <li>
-                    Creates detailed Accessibility Conformance Reports (ACRs) for internal products using ITI's
-                    Voluntary Product Accessibility Template (VPAT), effectively communicating accessibility
-                    compliance to stakeholders to the latest WCAG standards.
-                  </li>
-                  <li>
-                    Leads a team of full-time employees and contractors including native users of assistive
-                    technologies.
-                  </li>
-                  <li>
-                    Trains staff on WCAG 2.2 guidelines and updates, Section 508, and digital document
-                    accessibility auditing.
-                  </li>
-                  <li>
-                    Works collaboratively to develop, maintain, and implement digital accessibility technologies,
-                    policies, standards, and best practices.
-                  </li>
-                  <li>
-                    Creates standards and methods of tagging and remediating PDFs and other digital documents to meet
-                    WCAG and PDF/UA standards.
-                  </li>
-                  <li>Remediates digital documents for accessibility including adding form elements and ensuring
-                    proper reading order.</li>
-                  <li>Conducts accessibility audits of teacher presented lesson materials, student and teacher
-                    specific interfaces, and highly interactive music composition tools.</li>
-                  <li>Performs thorough automated and manual testing of curricula using assistive technologies such
-                    as JAWS, VoiceOver, NVDA, ChromeVox, and Windows Narrator guaranteeing improved user
-                    experiences with AT.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="card-footer text-body-secondary ally">
-            During this position I moved from Accessibility Auditor to leading
-            a team of 5. I have full time employees and contractors including native AT users on my team!
-          </div>
-        </div>
-      </div>
-
-      <!-- Takeaways - A11y Audit Team Lead-->
-      <div class="container" style="width: 85%">
-        <div class="card my-3 allycard">
-          <div class="card-header ally text-center">
-            <div class="row align-items-center">
-              <div class="col">
-                <h4>
-                  <img src="/assets/skills-svgrepo-com.svg" alt style="height: 5rem" class="px-3" />
-                  Takeaways from Accessibility Audit Team Lead
-                </h4>
-              </div>
-            </div>
-          </div>
-
-          <div class="row justify-content-center">
-            <div class="col-12">
-              <div class="card-body">
-                <h5 class="card-title text-center">Skills</h5>
-                <span class="card-text">In my current role as the Accessibility Auditing Team Lead,
-                  I am spearheading the development of a standardized approach
-                  for auditing unique resources within an educational
-                  curriculum. While actively pursuing the CPACC certification,
-                  I am leading a growing team in the comprehensive evaluation
-                  of web-based software, PDFs, and all other materials
-                  provided to our users. This involves a deep understanding
-                  and interpretation of the WCAG guidelines, fostering
-                  creative thinking and innovative solutions, and applying
-                  meticulous attention to detail. Ensuring accessibility in
-                  educational resources has become not just a role but a
-                  passion, as I work towards making digital content inclusive
-                  for all learners.</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Calibration Technician -->
-      <div class="container" style="width: 85%">
-        <div class="card text-center ally">
-          <div class="card-header ally">
-            <div class="row align-items-center">
-              <div class="col">
-                <h3>
-                  <img src="/assets/radiation-svgrepo-com.svg" alt="" style="height: 5rem" class="px-3" />Calibration
-                  Technician
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div class="container" style="width: 85%">
-            <div class="row justify-content-center">
-              <div class="col-12">
-                <div class="card-body">
-                  <h4 class="card-title">K&S Associates</h4>
-                  <p class="card-text">
-                    <em>JUNE - AUGUST 2022</em>
-                  </p>
-
-                  <ul style="text-align: left">
-                    <li>
-                      Conducted a variety of calibrations, including NIST
-                      Traceable & AAPM accredited radiation therapy
-                      calibrations from Cs-137 and Co-60 gamma rays, LDR and
-                      HDR brachytherapy calibrations, and diagnostic X-ray
-                      calibrations, with a strong focus on accuracy and
-                      precision.
-                    </li>
-                    <li>
-                      Documented all calibration processes and prepared
-                      reports as required, ensuring compliance with relevant
-                      standards and regulations.
-                    </li>
-                    <li>
-                      Developed comprehensive reports and certificates about
-                      completed calibrations, ensuring that all relevant
-                      stakeholders had access to necessary information.
-                    </li>
-                  </ul>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                        </svg>&nbsp;
+                        Visit my LinkedIn
+                    </a>
                 </div>
-              </div>
             </div>
-          </div>
-
-          <div class="card-footer text-body-secondary ally">
-            Previous Position, Back in the Lab!
-          </div>
         </div>
-      </div>
 
-      <!-- Takeaways - Calibration Technician -->
-      <div class="container" style="width: 85%">
-        <div class="card my-3 ally">
-          <div class="card-header ally text-center">
-            <div class="row align-items-center">
-              <div class="col">
-                <h4>
-                  <img src="/assets/skills-svgrepo-com.svg" alt style="height: 5rem" class="px-3" />
-                  Takeaways from Radiation Laboratory Technician
-                </h4>
-              </div>
+
+    </main>
+
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                    <img src="/assets/missing_link_logo.png" height="50" alt="Missing Link Accessibility">
+                </a>
+                <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Missing Link Accessibility</span>
             </div>
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-12">
-              <div class="card-body">
-                <h5 class="card-title text-center">Skills</h5>
-                <span class="card-text">Taking on the role of a calibration technician while
-                  concurrently pursuing web development was a unique journey.
-                  Drawing from my prior experience handling nuclear devices, I
-                  honed my skills in meticulous attention to detail, precise
-                  inspections, and effective troubleshooting. This background
-                  has equipped me with a valuable set of qualities that I'm
-                  applied to both the world of calibration and now the realm
-                  of web development, creating a dynamic blend of technical
-                  expertise and problem-solving in my career path.</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Manager and Co-Founder -->
-      <div class="container" style="width: 85%">
-        <div class="card text-center ally">
-          <div class="card-header ally">
-            <div class="row align-items-center">
-              <div class="col">
-                <h3>
-                  <img src="/assets/cafe-svgrepo-com.svg" alt="" style="height: 5rem" class="px-3" />Manager and
-                  Co-Founder
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div class="container" style="width: 85%">
-            <div class="row justify-content-center">
-              <div class="col-12">
-                <div class="card-body">
-                  <h4 class="card-title">CoffeeTalk</h4>
-                  <p class="card-text">
-                    <em>MARCH 2018 - JULY 2021</em>
-                  </p>
-
-                  <ul style="text-align: left">
-                    <li>
-                      Conceptualized and designed a customer-focused
-                      experience, including visual design and retail products,
-                      resulting in recognition as Nextdoor's Neighborhood
-                      Favorite Coffee Shop twice annually.
-                    </li>
-                    <li>
-                      Gathered valuable customer insights and feedback about
-                      attitudes, emotions, and behaviors, using this
-                      information to curate a fresh and well-received seasonal
-                      menu of products for customers, with a focus on
-                      maximizing consumer satisfaction and accessibility for
-                      all.
-                    </li>
-                    <li>
-                      Developed advertising and marketing strategies,
-                      including digital materials for social media, and
-                      coordinated promotions and events to engage customers
-                      and the community at large.
-                    </li>
-                    <li>
-                      Planned, organized, and led in-store promotions and
-                      events, and collaborated with local minority
-                      organizations to promote cultural awareness and
-                      inclusion, with a strong commitment to accessibility and
-                      inclusion for all customers.
-                    </li>
-                    <li>
-                      Designed the storefront layout to create an intuitive
-                      and well-organized flow from ordering to enjoying
-                      products, resulting in a smooth process with maximum
-                      efficiency and minimal wait time for all customers,
-                      including those with disabilities.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card-footer text-body-secondary ally">
-            Previous Position!
-          </div>
-        </div>
-      </div>
-
-      <!-- Takeaways - Manager and Co-Founder -->
-      <div class="container" style="width: 85%">
-        <div class="card my-3 ally">
-          <div class="card-header ally text-center">
-            <div class="row align-items-center">
-              <div class="col">
-                <h4>
-                  <img src="/assets/skills-svgrepo-com.svg" alt style="height: 5rem" class="px-3" />
-                  Takeaways from Co-owner
-                </h4>
-              </div>
-            </div>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Skills</h5>
-            <div class="card-text">
-              <p>
-                Owning a business and interacting with a diverse group of
-                customers was a transformative experience in my life. It
-                provided me with a unique perspective on the needs,
-                preferences, and challenges faced by people from various
-                backgrounds. The interactions I had with customers highlighted
-                the importance of inclusivity and accessibility in our
-                increasingly digital world.
-              </p>
-              <p>
-                As that chapter of my life in business ownership closed, I
-                found myself drawn to the world of coding and web
-                accessibility. My interactions with customers underscored the
-                significance of creating online experiences that cater to
-                everyone, regardless of their abilities. This realization led
-                me to explore the field of web development and accessibility,
-                where I could contribute to making the internet a more
-                inclusive and user-friendly space for all.
-              </p>
-              <p>
-                In pursuing coding and web accessibility, I've embarked on a
-                journey to bridge the digital divide and ensure that
-                technology is accessible to a broader and more diverse
-                audience. This transition represents a meaningful shift in my
-                career and personal goals, driven by a commitment to creating
-                a more inclusive digital landscape.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Lab and Field Tech -->
-      <div class="container" style="width: 85%">
-        <div class="card text-center ally">
-          <div class="card-header ally">
-            <div class="row align-items-center">
-              <div class="col">
-                <h3>
-                  <img src="/assets/blueprint-svgrepo-com.svg" alt="" style="height: 5rem" class="px-3" />Laboratory
-                  Technician & Field Technician III
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div class="container" style="width: 85%">
-            <div class="row justify-content-center">
-              <div class="col-12">
-                <div class="card-body">
-                  <h4 class="card-title">Braun Intertec</h4>
-                  <p class="card-text">
-                    <em>AUGUST 2014 - MARCH 2018</em>
-                  </p>
-
-                  <ul style="text-align: left">
-                    <li>
-                      Ensured execution of project specifications and concepts
-                      to acceptable quality standards while any challenges or
-                      problems were defined and addressed to maintain project
-                      momentum and integrity by collaborating closely with
-                      engineers and teams on-site.
-                    </li>
-                    <li>
-                      Performed detail-oriented inspections and analytical
-                      problem-solving in fast-paced environments in up to six
-                      different sites per day.
-                    </li>
-                    <li>
-                      Effectively communicated all issues with relevant
-                      engineers and teams and collaborated on solutions,
-                      ultimately following through with the implementation and
-                      results.
-                    </li>
-                    <li>
-                      Responsible for maintaining a high level of quality and
-                      consistency while performing testing and iterative
-                      testing methods.
-                    </li>
-                    <li>
-                      Multitasked and effectively managed timely testing while
-                      delivering accurate results deadline-consciously.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card-footer text-body-secondary ally">
-            Previous Position!
-          </div>
-        </div>
-      </div>
-      <!-- Takeaways - Lab and Field Tech -->
-      <div class="container" style="width: 85%">
-        <div class="card my-3 ally">
-          <div class="card-header ally text-center">
-            <div class="row align-items-center">
-              <div class="col">
-                <h4>
-                  <img src="/assets/skills-svgrepo-com.svg" alt style="height: 5rem" class="px-3" />
-                  Takeaways from Lab and Field Tech
-                </h4>
-              </div>
-            </div>
-          </div>
-
-          <div class="card-body">
-            <h5 class="card-title">Skills</h5>
-            <span class="card-text">
-              Spending four years as a field inspector, conducting on-site
-              inspections on various construction sites, was a dynamic
-              journey. This role demanded a fusion of construction materials
-              expertise and a keen understanding of site-specific plans to
-              complete inspections in constantly evolving environments. It not
-              only enriched my technical skills but also instilled the ability
-              to adapt swiftly and think on my feet. This experience proved
-              invaluable, equipping me with the readiness to handle diverse
-              challenges and make informed decisions in the ever-changing
-              landscape of the construction industry.
-            </span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Casino -->
-      <div class="container" style="width: 85%">
-        <div class="card text-center ally">
-          <div class="card-header ally">
-            <div class="row align-items-center">
-              <div class="col">
-                <h3>
-                  <img src="/assets/croupier-svgrepo-com.svg" alt="" style="height: 5rem" class="px-3" />Table Games
-                  Dealer
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div class="container" style="width: 85%">
-            <div class="row justify-content-center">
-              <div class="col-12">
-                <div class="card-body">
-                  <h4 class="card-title">Kansas Star Casino</h4>
-                  <p class="card-text">
-                    <em>NOVEMBER 2012 - JULY 2014</em>
-                  </p>
-
-                  <ul style="text-align: left">
-                    <li>
-                      Facilitated games to provide customers with the highest
-                      quality gaming experience possible while upholding game
-                      security by adhering to state-regulated guidelines.
-                    </li>
-                    <li>
-                      Provided exceptional customer service with the
-                      property’s service standards and brand attitudes and was
-                      chosen to deal in the annual Lunar New Year Baccarat
-                      tournament twice due to the high level of customer focus
-                      and consistency.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card-footer text-body-secondary ally">
-            Previous Position!
-          </div>
-        </div>
-      </div>
-
-      <!-- Takeaways - Casino -->
-      <div class="container" style="width: 85%">
-        <div class="card my-3 ally">
-          <div class="card-header ally text-center">
-            <div class="row align-items-center">
-              <div class="col">
-                <h4>
-                  <img src="/assets/skills-svgrepo-com.svg" alt style="height: 5rem" class="px-3" />
-                  Takeaways from Table Games Dealer
-                </h4>
-              </div>
-            </div>
-          </div>
-
-          <div class="card-body">
-            <h5 class="card-title">Skills</h5>
-            <span class="card-text">Working as a table games dealer provided me with a unique skill
-              set. I had to think quickly, pay close attention to multiple
-              aspects of the game, and multitask efficiently, all while
-              ensuring that patrons had an enjoyable experience. This role not
-              only sharpened my ability to manage fast-paced, high-pressure
-              situations but also taught me the art of customer service and
-              creating a welcoming atmosphere, making it a truly enriching
-              experience.</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Equipment Supervisor -->
-      <div class="container" style="width: 85%">
-        <div class="card text-center ally">
-          <div class="card-header ally">
-            <div class="row align-items-center">
-              <div class="col">
-                <h3>
-                  <img src="/assets/packing-warehouse-svgrepo-com.svg" alt="" style="height: 5rem" class="px-3" />Field
-                  Equipment and Warehouse Supervisor
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div class="container" style="width: 85%">
-            <div class="row justify-content-center">
-              <div class="col-12">
-                <div class="card-body">
-                  <h4 class="card-title">Golder Associates, Inc.</h4>
-                  <p class="card-text">
-                    <em>MARCH 2005 - JULY 2012</em>
-                  </p>
-
-                  <ul style="text-align: left">
-                    <li>
-                      Maintained, prepared for use, and storage of field
-                      equipment.
-                    </li>
-                    <li>
-                      Managed inventory and sample storage at an off-site
-                      warehouse.
-                    </li>
-                    <li>
-                      Supervised the proper storage and disposal of samples,
-                      including contaminated and foreign soils.
-                    </li>
-                    <li>
-                      Preformed interface shear testing of soils and/or
-                      geosyntetic interfaces. Concrete testing including mix
-                      studies, sample creation, curing, and strength testing
-                      of samples.
-                    </li>
-                    <li>
-                      Preformed field work including air quality monitoring on
-                      a potentially hazardous construction site, and assisted
-                      in the relocation of an endangered plant species.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card-footer text-body-secondary ally">
-            Previous Position!
-          </div>
-        </div>
-      </div>
-
-      <!-- Takeaways - Golder 2 -->
-      <div class="container" style="width: 85%">
-        <div class="card my-3 ally">
-          <div class="card-header ally text-center">
-            <div class="row align-items-center">
-              <div class="col">
-                <h4>
-                  <img src="/assets/skills-svgrepo-com.svg" alt style="height: 5rem" class="px-3" />
-                  Takeaways from Field Equipment and Warehouse Supervisor
-                </h4>
-              </div>
-            </div>
-          </div>
-
-          <div class="card-body">
-            <h5 class="card-title">Skills</h5>
-            <span class="card-text">As a warehouse and field equipment manager, I was responsible
-              for complex lab testing, sample storage, and managing the
-              distribution and tracking the location and usage of field
-              equipment. This role demanded qualities like precision,
-              attention to detail, excellent organizational skills, and the
-              ability to maintain a systematic approach in a dynamic
-              environment. These attributes closely align with the qualities
-              needed for a proficient web accessibility auditor, ensuring an
-              inclusive online experience for all users.</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Lab and Field Tech -->
-      <div class="container" style="width: 85%">
-        <div class="card text-center ally">
-          <div class="card-header ally">
-            <div class="row align-items-center">
-              <div class="col">
-                <h3>
-                  <img src="/assets/chemistry-laboratory-svgrepo-com.svg" alt="" style="height: 5rem"
-                    class="px-3" />Laboratory Technician I & II
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div class="container" style="width: 85%">
-            <div class="row justify-content-center">
-              <div class="col-12">
-                <div class="card-body">
-                  <h4 class="card-title">Golder Associates, Inc.</h4>
-                  <p class="card-text">
-                    <em>JUNE 1998 - MARCH 2005</em>
-                  </p>
-
-                  <ul style="text-align: left">
-                    <li>
-                      Prepared and performed various tests on synthetics
-                      implementing standards from ASTM, AASHTO, Geosynthetic
-                      Accreditation Institute (GAI), and Corps of Engineers.
-                    </li>
-                    <li>
-                      Duties include ensuring the calibration and maintenance
-                      of laboratory equipment and log in/out procedures.
-                    </li>
-                    <li>
-                      Prepare and perform various tests on soils implementing
-                      standards from ASTM, AASHTO, GAI, and Corps of
-                      Engineers.
-                    </li>
-                    <li>
-                      Prepared and performed various tests on synthetics
-                      implementing standards from ASTM, AASHTO, Geosynthetic
-                      Accreditation Institute (GAI), and Corps of Engineers.
-                    </li>
-                    <li>
-                      Duties include ensuring the calibration and maintenance
-                      of laboratory equipment and log in/out procedures.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card-footer text-body-secondary ally">
-            Previous Position!
-          </div>
-        </div>
-      </div>
-
-      <!-- Takeaways - Golder 1 -->
-      <div class="container" style="width: 85%">
-        <div class="card my-3 ally">
-          <div class="card-header ally text-center">
-            <div class="row align-items-center">
-              <div class="col">
-                <h4>
-                  <img src="/assets/skills-svgrepo-com.svg" alt style="height: 5rem" class="px-3" />
-                  Takeaways from Laboratory Technician
-                </h4>
-              </div>
-            </div>
-          </div>
-
-          <div class="card-body">
-            <h5 class="card-title">Skills</h5>
-            <span class="card-text">My journey as a lab tech began with the most fundamental tasks
-              and evolved into handling the most intricate of tests. In this
-              role, I learned the art of conducting tests with precision,
-              keenly observing details, and ensuring the consistency of
-              testing methods and environmental conditions to achieve nothing
-              short of accurate and precise results. This experience instilled
-              in me the value of methodical work and meticulous attention to
-              detail, skills that are fundamental not just in the lab but in
-              any field that demands accuracy and reliability.</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section aria-label="contact" id="contact" class="my-5">
-      <div class="shim">
-        <h2 class="px-3">Contact</h2>
-      </div>
-      <div class="container" style="width: 85%">
-        <div class="mx-3 px-3 my-3">
-          <div class="row row-cols-1 row-cols-md-4 g-4">
-            <div class="col">
-              <div class="card h-100 ally">
-
-                <img src="./assets/icons/mail-svgrepo-com.svg" class="card-img-top" alt="Daniel's Email"
-                  style="height: 5rem" />
-                <div class="card-body">
-                  <a href="mailto:Dwwestfall@protonmail.com">
-                    <h3 class="card-title">Email Me</h3>
-                  </a>
-                  <p class="card-text">
-                    Let's collaborate on something amazing! Reach out to me
-                    via email to start the conversation.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100 ally">
-
-                <img src="./assets/icons/linkedin-svgrepo-com.svg" class="card-img-top" alt="Daniel's Linkedin"
-                  style="height: 5rem" />
-                <div class="card-body">
-                  <a href="https://www.linkedin.com/in/danielwestfall/">
-                    <h3 class="card-title">LinkedIn</h3>
-                  </a>
-                  <p class="card-text">
-                    Interested in connecting or discussing opportunities?
-                    Don't hesitate to reach out on LinkedIn. Let's connect and
-                    explore possibilities together.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100 ally">
-
-                <img src="./assets/icons/instagram-svgrepo-com.svg" class="card-img-top" alt="Daniel's Instagram"
-                  style="height: 5rem" />
-                <div class="card-body">
-                  <a href="https://www.instagram.com/danielwwestfall/">
-                    <h3 class="card-title">Instagram</h3>
-                  </a>
-                  <p class="card-text">
-                    Stay updated with my latest content and behind-the-scenes
-                    moments on Instagram! Feel free to follow me and send me a
-                    direct message. Let's engage and share our passions!
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100 ally">
-
-                <img src="./assets/icons/youtube-svgrepo-com.svg" class="card-img-top" alt="Daniel's Youtube channel"
-                  style="height: 5rem" />
-                <div class="card-body">
-                  <a href="https://www.youtube.com/channel/UCckVablcameNsZHdwRlCQaA">
-                    <h3 class="card-title">YouTube</h3>
-                  </a>
-                  <p class="card-text">
-                    Join the conversation on YouTube! Subscribe to my channel
-                    for exciting videos, tutorials, and discussions. Leave a
-                    comment on my latest video or send me a message—your
-                    feedback and ideas are always welcome!
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
-    <div class="container-fluid">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
-        <li class="nav-item mx-2 mt-2">
-          <a class="nav-link" id="about-link-footer" href="#about">About</a>
-        </li>
-        <li class="nav-item mx-2 mt-2">
-          <a class="nav-link" id="projects-link-footer" href="#projects">Projects</a>
-        </li>
-        <li class="nav-item mx-2 mt-2">
-          <a class="nav-link" id="certs-link-footer" href="#certs">Certifications</a>
-        </li>
-        <li class="nav-item mx-2">
-          <a class="navbar-brand" id="home-link-footer" aria-current="page" href="#">CERTREQ</a>
-        </li>
-        <li class="nav-item mx-2 mt-2">
-          <a class="nav-link" id="resume-link-footer" href="#resume">Resume</a>
-        </li>
-        <li class="nav-item mx-2 mt-2">
-          <a class="nav-link" id="contact-link-footer" href="#contact">Contact</a>
-        </li>
-        <li class="nav-item mx-2 mt-2">
-          <a class="nav-link" id="blog-link-footer" href="https://certreq.dev/blog/">Blog</a>
-        </li>
-      </ul>
+            <!--
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-body-secondary" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-twitter-x" viewBox="0 0 16 16">
+                            <path
+                                d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                        </svg>
+                    </a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-youtube" viewBox="0 0 16 16">
+                            <path
+                                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                        </svg>
+                    </a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                        </svg>
+                    </a></li>
+            </ul>
+        -->
+        </footer>
     </div>
-  </footer>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      var navLinks = document.querySelectorAll(".nav-link");
-      var footerNavLinks = document.querySelectorAll(".footer-nav .nav-link");
 
-      navLinks.forEach(function (link) {
-        link.addEventListener("click", function (event) {
-          navLinks.forEach(function (navLink) {
-            navLink.classList.remove("active");
-          });
-          footerNavLinks.forEach(function (footerNavLink) {
-            footerNavLink.classList.remove("active");
-          });
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 
-          link.classList.add("active");
-          var linkId = link.id;
-          var correspondingFooterLink = document.getElementById(
-            linkId + "-footer"
-          );
-          if (correspondingFooterLink) {
-            correspondingFooterLink.classList.add("active");
-          }
-        });
-      });
-    });
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-    crossorigin="anonymous"></script>
 </body>
 
 </html>
