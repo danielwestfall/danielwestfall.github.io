@@ -1,0 +1,2322 @@
+{
+  "html-what-is-html": {
+    "title": "What is HTML?",
+    "content": "<p>What is HTML? Coming Soon!</p>"
+  },
+  "html-why-learn-html": {
+    "title": "Why Learn HTML?",
+    "content": "<p>Why Learn HTML? Coming Soon!</p>"
+  },
+  "html-tools-you-need": {
+    "title": "Tools You Need",
+    "content": "<p>Tools You Need Coming Soon!</p>"
+  },
+  "html-your-first-html-file": {
+    "title": "Your First HTML File",
+    "content": "<p>Your First HTML File Coming Soon!</p>"
+  },
+  "html-basic-html-structure": {
+    "title": "Basic HTML Structure",
+    "content": "<p>Basic HTML Structure Coming Soon!</p>"
+  },
+  "html-the-head-section": {
+    "title": "The <head> Section",
+    "content": "<p>The &lt;head&gt; Section Coming Soon!</p>"
+  },
+  "html-the-body-section": {
+    "title": "The <body> Section",
+    "content": "<p>The &lt;body&gt; Section Coming Soon!</p>"
+  },
+  "html-headings-h1-h6": {
+    "title": "Headings (h1-h6)",
+    "content": "<p>Headings (h1-h6) Coming Soon!</p>"
+  },
+  "html-paragraphs-p": {
+    "title": "Paragraphs (p)",
+    "content": "<p>Paragraphs (p) Coming Soon!</p>"
+  },
+  "html-text-format-bold": {
+    "title": "Text Format: Bold",
+    "content": "<p>Text Format: Bold Coming Soon!</p>"
+  },
+  "html-text-format-italics": {
+    "title": "Text Format: Italics",
+    "content": "<p>Text Format: Italics Coming Soon!</p>"
+  },
+  "html-save-view-html": {
+    "title": "Save & View HTML",
+    "content": "<p>Save & View HTML Coming Soon!</p>"
+  },
+  "html-beginner-mistakes": {
+    "title": "Beginner Mistakes",
+    "content": "<p>Beginner Mistakes Coming Soon!</p>"
+  },
+  "html-quiz-1-basics": {
+    "title": "Quiz 1: Basics",
+    "content": "<p>Quiz 1: Basics Coming Soon!</p>"
+  },
+  "html-unordered-lists-ul": {
+    "title": "Unordered Lists (<ul>)",
+    "content": "<p>Unordered Lists (&lt;ul&gt;) Coming Soon!</p>"
+  },
+  "html-ordered-lists-ol": {
+    "title": "Ordered Lists (<ol>)",
+    "content": "<p>Ordered Lists (&lt;ol&gt;) Coming Soon!</p>"
+  },
+  "html-descriptive-lists-dl": {
+    "title": "Descriptive Lists (<dl>)",
+    "content": "<p>Descriptive Lists (&lt;dl&gt;) Coming Soon!</p>"
+  },
+  "html-breaks-br-rules-hr": {
+    "title": "Breaks (<br>), Rules (<hr>)",
+    "content": "<p>Breaks (&lt;br&gt;), Rules (&lt;hr&gt;) Coming Soon!</p>"
+  },
+  "html-images-img-src": {
+    "title": "Images (<img>): src",
+    "content": "<p>Images (&lt;img&gt;): src Coming Soon!</p>"
+  },
+  "html-images-img-alt-a11y": {
+    "title": "Images (<img>): alt (A11y)",
+    "content": "<p>Images (&lt;img&gt;): alt (A11y) Coming Soon!</p>"
+  },
+  "html-image-dimensions-best": {
+    "title": "Image Dimensions (Best)",
+    "content": "<p>Image Dimensions (Best) Coming Soon!</p>"
+  },
+  "html-links-a-href-internal": {
+    "title": "Links (<a>): href (Internal)",
+    "content": "<p>Links (&lt;a&gt;): href (Internal) Coming Soon!</p>"
+  },
+  "html-links-a-href-external": {
+    "title": "Links (<a>): href (External)",
+    "content": "<p>Links (&lt;a&gt;): href (External) Coming Soon!</p>"
+  },
+  "html-links-a-target-blank": {
+    "title": "Links (<a>): target (_blank)",
+    "content": "<p>Links (&lt;a&gt;): target (_blank) Coming Soon!</p>"
+  },
+  "html-content-div": {
+    "title": "Content: <div>",
+    "content": "<p>Content: &lt;div&gt; Coming Soon!</p>"
+  },
+  "html-semantic-header-nav-main-footer": {
+    "title": "Semantic: <header>, <nav>, <main>, <footer>",
+    "content": "<p>Semantic: &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;footer&gt; Coming Soon!</p>"
+  },
+  "html-semantic-article-section-aside": {
+    "title": "Semantic: <article>, <section>, <aside>",
+    "content": "<p>Semantic: &lt;article&gt;, &lt;section&gt;, &lt;aside&gt; Coming Soon!</p>"
+  },
+  "html-inline-vs-block": {
+    "title": "Inline vs Block",
+    "content": "<p>Inline vs Block Coming Soon!</p>"
+  },
+  "html-quiz-2-lists-images-links": {
+    "title": "Quiz 2: Lists, Images, Links",
+    "content": "<p>Quiz 2: Lists, Images, Links Coming Soon!</p>"
+  },
+  "html-intro-tables": {
+    "title": "Intro Tables",
+    "content": "<p>Intro Tables Coming Soon!</p>"
+  },
+  "html-table-headers-th": {
+    "title": "Table Headers (<th>)",
+    "content": "<p>Table Headers (&lt;th&gt;) Coming Soon!</p>"
+  },
+  "html-table-captions-caption": {
+    "title": "Table Captions (<caption>)",
+    "content": "<p>Table Captions (&lt;caption&gt;) Coming Soon!</p>"
+  },
+  "html-row-col-spanning": {
+    "title": "Row/Col Spanning",
+    "content": "<p>Row/Col Spanning Coming Soon!</p>"
+  },
+  "html-table-structure-thead-tbody-tfoot": {
+    "title": "Table Structure (thead, tbody, tfoot)",
+    "content": "<p>Table Structure (thead, tbody, tfoot) Coming Soon!</p>"
+  },
+  "html-basic-forms-form": {
+    "title": "Basic Forms (<form>)",
+    "content": "<p>Basic Forms (&lt;form&gt;) Coming Soon!</p>"
+  },
+  "html-text-input": {
+    "title": "Text Input",
+    "content": "<p>Text Input Coming Soon!</p>"
+  },
+  "html-password-input": {
+    "title": "Password Input",
+    "content": "<p>Password Input Coming Soon!</p>"
+  },
+  "html-submit-buttons": {
+    "title": "Submit Buttons",
+    "content": "<p>Submit Buttons Coming Soon!</p>"
+  },
+  "html-labels-label": {
+    "title": "Labels (<label>)",
+    "content": "<p>Labels (&lt;label&gt;) Coming Soon!</p>"
+  },
+  "html-radio-buttons": {
+    "title": "Radio Buttons",
+    "content": "<p>Radio Buttons Coming Soon!</p>"
+  },
+  "html-checkboxes": {
+    "title": "Checkboxes",
+    "content": "<p>Checkboxes Coming Soon!</p>"
+  },
+  "html-dropdown-select": {
+    "title": "Dropdown Select",
+    "content": "<p>Dropdown Select Coming Soon!</p>"
+  },
+  "html-text-areas": {
+    "title": "Text Areas",
+    "content": "<p>Text Areas Coming Soon!</p>"
+  },
+  "html-fieldset-legend": {
+    "title": "Fieldset & Legend",
+    "content": "<p>Fieldset & Legend Coming Soon!</p>"
+  },
+  "html-form-attributes-action-method": {
+    "title": "Form Attributes (action, method)",
+    "content": "<p>Form Attributes (action, method) Coming Soon!</p>"
+  },
+  "html-quiz-3-tables-forms": {
+    "title": "Quiz 3: Tables/Forms",
+    "content": "<p>Quiz 3: Tables/Forms Coming Soon!</p>"
+  },
+  "html-embed-video": {
+    "title": "Embed Video",
+    "content": "<p>Embed Video Coming Soon!</p>"
+  },
+  "html-video-attributes": {
+    "title": "Video Attributes",
+    "content": "<p>Video Attributes Coming Soon!</p>"
+  },
+  "html-video-a11y-captions": {
+    "title": "Video A11y: Captions",
+    "content": "<p>Video A11y: Captions Coming Soon!</p>"
+  },
+  "html-embed-audio": {
+    "title": "Embed Audio",
+    "content": "<p>Embed Audio Coming Soon!</p>"
+  },
+  "html-audio-attributes": {
+    "title": "Audio Attributes",
+    "content": "<p>Audio Attributes Coming Soon!</p>"
+  },
+  "html-embed-webpages-iframe": {
+    "title": "Embed Webpages (<iframe>)",
+    "content": "<p>Embed Webpages (&lt;iframe&gt;) Coming Soon!</p>"
+  },
+  "html-embed-svg-inline": {
+    "title": "Embed SVG (Inline)",
+    "content": "<p>Embed SVG (Inline) Coming Soon!</p>"
+  },
+  "html-embed-canvas": {
+    "title": "Embed Canvas",
+    "content": "<p>Embed Canvas Coming Soon!</p>"
+  },
+  "html-quiz-4-multimedia": {
+    "title": "Quiz 4: Multimedia",
+    "content": "<p>Quiz 4: Multimedia Coming Soon!</p>"
+  },
+  "html-details-summary": {
+    "title": "<details> & <summary>",
+    "content": "<p>&lt;details&gt; &amp; &lt;summary&gt; Coming Soon!</p>"
+  },
+  "html-dialog": {
+    "title": "<dialog>",
+    "content": "<p>&lt;dialog&gt; Coming Soon!</p>"
+  },
+  "html-figure-figcaption": {
+    "title": "<figure> & <figcaption>",
+    "content": "<p>&lt;figure&gt; &amp; &lt;figcaption&gt; Coming Soon!</p>"
+  },
+  "html-time": {
+    "title": "<time>",
+    "content": "<p>&lt;time&gt; Coming Soon!</p>"
+  },
+  "html-address": {
+    "title": "<address>",
+    "content": "<p>&lt;address&gt; Coming Soon!</p>"
+  },
+  "html-cite": {
+    "title": "<cite>",
+    "content": "<p>&lt;cite&gt; Coming Soon!</p>"
+  },
+  "html-q-blockquote": {
+    "title": "<q> & <blockquote>",
+    "content": "<p>&lt;q&gt; &amp; &lt;blockquote&gt; Coming Soon!</p>"
+  },
+  "html-pre-code": {
+    "title": "<pre> & <code>",
+    "content": "<p>&lt;pre&gt; &amp; &lt;code&gt; Coming Soon!</p>"
+  },
+  "html-inline-code-semantics": {
+    "title": "Inline Code Semantics",
+    "content": "<p>Inline Code Semantics Coming Soon!</p>"
+  },
+  "html-metadata-details": {
+    "title": "Metadata Details",
+    "content": "<p>Metadata Details Coming Soon!</p>"
+  },
+  "html-charset-utf-8": {
+    "title": "Charset (UTF-8)",
+    "content": "<p>Charset (UTF-8) Coming Soon!</p>"
+  },
+  "html-viewport-meta": {
+    "title": "Viewport Meta",
+    "content": "<p>Viewport Meta Coming Soon!</p>"
+  },
+  "html-language-attributes": {
+    "title": "Language Attributes",
+    "content": "<p>Language Attributes Coming Soon!</p>"
+  },
+  "html-quiz-5-advanced-semantics": {
+    "title": "Quiz 5: Advanced Semantics",
+    "content": "<p>Quiz 5: Advanced Semantics Coming Soon!</p>"
+  },
+  "html-semantic-html-for-a11y": {
+    "title": "Semantic HTML for A11y",
+    "content": "<p>Semantic HTML for A11y Coming Soon!</p>"
+  },
+  "html-aria-intro-role": {
+    "title": "ARIA: Intro & role",
+    "content": "<p>ARIA: Intro &amp; role Coming Soon!</p>"
+  },
+  "html-aria-attributes-label-labelledby": {
+    "title": "ARIA Attributes (label, labelledby, etc.)",
+    "content": "<p>ARIA Attributes (label, labelledby, etc.) Coming Soon!</p>"
+  },
+  "html-aria-attributes-hidden-expanded": {
+    "title": "ARIA Attributes (hidden, expanded, controls)",
+    "content": "<p>ARIA Attributes (hidden, expanded, controls) Coming Soon!</p>"
+  },
+  "html-keyboard-nav-best-practices": {
+    "title": "Keyboard Nav Best Practices",
+    "content": "<p>Keyboard Nav Best Practices Coming Soon!</p>"
+  },
+  "html-focus-management": {
+    "title": "Focus Management",
+    "content": "<p>Focus Management Coming Soon!</p>"
+  },
+  "html-accessible-forms": {
+    "title": "Accessible Forms",
+    "content": "<p>Accessible Forms Coming Soon!</p>"
+  },
+  "html-accessible-tables": {
+    "title": "Accessible Tables",
+    "content": "<p>Accessible Tables Coming Soon!</p>"
+  },
+  "html-accessible-images-alt-text": {
+    "title": "Accessible Images (alt text)",
+    "content": "<p>Accessible Images (alt text) Coming Soon!</p>"
+  },
+  "html-accessible-multimedia": {
+    "title": "Accessible Multimedia",
+    "content": "<p>Accessible Multimedia Coming Soon!</p>"
+  },
+  "html-design-for-color-blindness": {
+    "title": "Design for Color Blindness",
+    "content": "<p>Design for Color Blindness Coming Soon!</p>"
+  },
+  "html-a11y-testing-basic": {
+    "title": "A11y Testing (Basic)",
+    "content": "<p>A11y Testing (Basic) Coming Soon!</p>"
+  },
+  "html-quiz-6-accessibility": {
+    "title": "Quiz 6: Accessibility",
+    "content": "<p>Quiz 6: Accessibility Coming Soon!</p>"
+  },
+  "html-intro-html5-apis": {
+    "title": "Intro HTML5 APIs",
+    "content": "<p>Intro HTML5 APIs Coming Soon!</p>"
+  },
+  "html-geolocation-api": {
+    "title": "Geolocation API",
+    "content": "<p>Geolocation API Coming Soon!</p>"
+  },
+  "html-canvas-api": {
+    "title": "Canvas API",
+    "content": "<p>Canvas API Coming Soon!</p>"
+  },
+  "html-audio-video-apis-advanced": {
+    "title": "Audio/Video APIs (Advanced)",
+    "content": "<p>Audio/Video APIs (Advanced) Coming Soon!</p>"
+  },
+  "html-web-storage": {
+    "title": "Web Storage",
+    "content": "<p>Web Storage Coming Soon!</p>"
+  },
+  "html-drag-and-drop-api": {
+    "title": "Drag and Drop API",
+    "content": "<p>Drag and Drop API Coming Soon!</p>"
+  },
+  "html-web-workers": {
+    "title": "Web Workers",
+    "content": "<p>Web Workers Coming Soon!</p>"
+  },
+  "html-websockets-intro": {
+    "title": "WebSockets (Intro)",
+    "content": "<p>WebSockets (Intro) Coming Soon!</p>"
+  },
+  "html-quiz-7-html5-apis": {
+    "title": "Quiz 7: HTML5 APIs",
+    "content": "<p>Quiz 7: HTML5 APIs Coming Soon!</p>"
+  },
+  "html-html-validation": {
+    "title": "HTML Validation",
+    "content": "<p>HTML Validation Coming Soon!</p>"
+  },
+  "html-code-formatting": {
+    "title": "Code Formatting",
+    "content": "<p>Code Formatting Coming Soon!</p>"
+  },
+  "html-performance-loading": {
+    "title": "Performance: Loading",
+    "content": "<p>Performance: Loading Coming Soon!</p>"
+  },
+  "html-frameworks-libraries-html-use": {
+    "title": "Frameworks/Libraries (HTML Use)",
+    "content": "<p>Frameworks/Libraries (HTML Use) Coming Soon!</p>"
+  },
+  "html-html-templating": {
+    "title": "HTML Templating",
+    "content": "<p>HTML Templating Coming Soon!</p>"
+  },
+  "html-microdata-schema-org": {
+    "title": "Microdata & Schema.org",
+    "content": "<p>Microdata &amp; Schema.org Coming Soon!</p>"
+  },
+  "html-custom-data-attributes": {
+    "title": "Custom Data Attributes",
+    "content": "<p>Custom Data Attributes Coming Soon!</p>"
+  },
+  "html-html-in-email": {
+    "title": "HTML in Email",
+    "content": "<p>HTML in Email Coming Soon!</p>"
+  },
+  "html-html-evolution": {
+    "title": "HTML Evolution",
+    "content": "<p>HTML Evolution Coming Soon!</p>"
+  },
+  "html-staying-up-to-date": {
+    "title": "Staying Up-to-Date",
+    "content": "<p>Staying Up-to-Date Coming Soon!</p>"
+  },
+  "html-contribute-to-communities": {
+    "title": "Contribute to Communities",
+    "content": "<p>Contribute to Communities Coming Soon!</p>"
+  },
+  "html-quiz-8-best-practices": {
+    "title": "Quiz 8: Best Practices",
+    "content": "<p>Quiz 8: Best Practices Coming Soon!</p>"
+  },
+  "html-html5-apis-deep-dive": {
+    "title": "HTML5 APIs (Deep Dive)",
+    "content": "<p>HTML5 APIs (Deep Dive) Coming Soon!</p>"
+  },
+  "html-advanced-svg": {
+    "title": "Advanced SVG",
+    "content": "<p>Advanced SVG Coming Soon!</p>"
+  },
+  "html-performance-tuning-complex": {
+    "title": "Performance Tuning (Complex)",
+    "content": "<p>Performance Tuning (Complex) Coming Soon!</p>"
+  },
+  "html-advanced-a11y-testing": {
+    "title": "Advanced A11y Testing",
+    "content": "<p>Advanced A11y Testing Coming Soon!</p>"
+  },
+  "html-html-ssr": {
+    "title": "HTML & SSR",
+    "content": "<p>HTML &amp; SSR Coming Soon!</p>"
+  },
+  "html-html-in-pwas": {
+    "title": "HTML in PWAs",
+    "content": "<p>HTML in PWAs Coming Soon!</p>"
+  },
+  "html-future-of-html": {
+    "title": "Future of HTML",
+    "content": "<p>Future of HTML Coming Soon!</p>"
+  },
+  "html-contribute-to-standard": {
+    "title": "Contribute to Standard",
+    "content": "<p>Contribute to Standard Coming Soon!</p>"
+  },
+  "html-custom-semantic-elements-aria": {
+    "title": "Custom Semantic Elements (ARIA)",
+    "content": "<p>Custom Semantic Elements (ARIA) Coming Soon!</p>"
+  },
+  "html-advanced-forms-validation": {
+    "title": "Advanced Forms/Validation",
+    "content": "<p>Advanced Forms/Validation Coming Soon!</p>"
+  },
+  "html-i18n-l10n-with-html": {
+    "title": "i18n/l10n with HTML",
+    "content": "<p>i18n/l10n with HTML Coming Soon!</p>"
+  },
+  "html-security-best-practices": {
+    "title": "Security Best Practices",
+    "content": "<p>Security Best Practices Coming Soon!</p>"
+  },
+  "html-final-project": {
+    "title": "Final Project",
+    "content": "<p>Final Project Coming Soon!</p>"
+  },
+  "css-what-is-css": {
+    "title": "What is CSS?",
+    "content": "<p>What is CSS? Coming Soon!</p>"
+  },
+  "css-why-learn-css": {
+    "title": "Why Learn CSS?",
+    "content": "<p>Why Learn CSS? Coming Soon!</p>"
+  },
+  "css-css-syntax": {
+    "title": "CSS Syntax",
+    "content": "<p>CSS Syntax Coming Soon!</p>"
+  },
+  "css-apply-css-inline": {
+    "title": "Apply CSS: Inline",
+    "content": "<p>Apply CSS: Inline Coming Soon!</p>"
+  },
+  "css-apply-css-internal": {
+    "title": "Apply CSS: Internal",
+    "content": "<p>Apply CSS: Internal Coming Soon!</p>"
+  },
+  "css-apply-css-external": {
+    "title": "Apply CSS: External",
+    "content": "<p>Apply CSS: External Coming Soon!</p>"
+  },
+  "css-create-css-file": {
+    "title": "Create CSS File",
+    "content": "<p>Create CSS File Coming Soon!</p>"
+  },
+  "css-link-css-to-html": {
+    "title": "Link CSS to HTML",
+    "content": "<p>Link CSS to HTML Coming Soon!</p>"
+  },
+  "css-element-selectors": {
+    "title": "Element Selectors",
+    "content": "<p>Element Selectors Coming Soon!</p>"
+  },
+  "css-class-selectors": {
+    "title": "Class Selectors",
+    "content": "<p>Class Selectors Coming Soon!</p>"
+  },
+  "css-id-selectors": {
+    "title": "ID Selectors",
+    "content": "<p>ID Selectors Coming Soon!</p>"
+  },
+  "css-understanding-cascade": {
+    "title": "Understanding Cascade",
+    "content": "<p>Understanding Cascade Coming Soon!</p>"
+  },
+  "css-specificity": {
+    "title": "Specificity",
+    "content": "<p>Specificity Coming Soon!</p>"
+  },
+  "css-inheritance": {
+    "title": "Inheritance",
+    "content": "<p>Inheritance Coming Soon!</p>"
+  },
+  "css-beginner-mistakes": {
+    "title": "Beginner Mistakes",
+    "content": "<p>Beginner Mistakes Coming Soon!</p>"
+  },
+  "css-quiz-1-intro-selectors": {
+    "title": "Quiz 1: Intro/Selectors",
+    "content": "<p>Quiz 1: Intro/Selectors Coming Soon!</p>"
+  },
+  "css-color": {
+    "title": "color",
+    "content": "<p>color Coming Soon!</p>"
+  },
+  "css-font-family": {
+    "title": "font-family",
+    "content": "<p>font-family Coming Soon!</p>"
+  },
+  "css-font-size": {
+    "title": "font-size",
+    "content": "<p>font-size Coming Soon!</p>"
+  },
+  "css-font-weight": {
+    "title": "font-weight",
+    "content": "<p>font-weight Coming Soon!</p>"
+  },
+  "css-font-style": {
+    "title": "font-style",
+    "content": "<p>font-style Coming Soon!</p>"
+  },
+  "css-text-decoration": {
+    "title": "text-decoration",
+    "content": "<p>text-decoration Coming Soon!</p>"
+  },
+  "css-text-align": {
+    "title": "text-align",
+    "content": "<p>text-align Coming Soon!</p>"
+  },
+  "css-line-height": {
+    "title": "line-height",
+    "content": "<p>line-height Coming Soon!</p>"
+  },
+  "css-letter-word-spacing": {
+    "title": "letter/word-spacing",
+    "content": "<p>letter/word-spacing Coming Soon!</p>"
+  },
+  "css-text-transform": {
+    "title": "text-transform",
+    "content": "<p>text-transform Coming Soon!</p>"
+  },
+  "css-text-indent": {
+    "title": "text-indent",
+    "content": "<p>text-indent Coming Soon!</p>"
+  },
+  "css-using-google-fonts": {
+    "title": "Using Google Fonts",
+    "content": "<p>Using Google Fonts Coming Soon!</p>"
+  },
+  "css-quiz-2-styling-text": {
+    "title": "Quiz 2: Styling Text",
+    "content": "<p>Quiz 2: Styling Text Coming Soon!</p>"
+  },
+  "css-intro-box-model": {
+    "title": "Intro Box Model",
+    "content": "<p>Intro Box Model Coming Soon!</p>"
+  },
+  "css-width-height": {
+    "title": "width & height",
+    "content": "<p>width &amp; height Coming Soon!</p>"
+  },
+  "css-padding": {
+    "title": "padding",
+    "content": "<p>padding Coming Soon!</p>"
+  },
+  "css-border": {
+    "title": "border",
+    "content": "<p>border Coming Soon!</p>"
+  },
+  "css-margin": {
+    "title": "margin",
+    "content": "<p>margin Coming Soon!</p>"
+  },
+  "css-box-sizing": {
+    "title": "box-sizing",
+    "content": "<p>box-sizing Coming Soon!</p>"
+  },
+  "css-display": {
+    "title": "display",
+    "content": "<p>display Coming Soon!</p>"
+  },
+  "css-display-none-vs-visibility-hidden": {
+    "title": "display:none vs visibility:hidden",
+    "content": "<p>display:none vs visibility:hidden Coming Soon!</p>"
+  },
+  "css-quiz-3-box-model": {
+    "title": "Quiz 3: Box Model",
+    "content": "<p>Quiz 3: Box Model Coming Soon!</p>"
+  },
+  "css-background-color": {
+    "title": "background-color",
+    "content": "<p>background-color Coming Soon!</p>"
+  },
+  "css-background-image": {
+    "title": "background-image",
+    "content": "<p>background-image Coming Soon!</p>"
+  },
+  "css-background-repeat": {
+    "title": "background-repeat",
+    "content": "<p>background-repeat Coming Soon!</p>"
+  },
+  "css-background-position": {
+    "title": "background-position",
+    "content": "<p>background-position Coming Soon!</p>"
+  },
+  "css-background-size": {
+    "title": "background-size",
+    "content": "<p>background-size Coming Soon!</p>"
+  },
+  "css-background-attachment": {
+    "title": "background-attachment",
+    "content": "<p>background-attachment Coming Soon!</p>"
+  },
+  "css-background-shorthand": {
+    "title": "background Shorthand",
+    "content": "<p>background Shorthand Coming Soon!</p>"
+  },
+  "css-hex-colors": {
+    "title": "Hex Colors",
+    "content": "<p>Hex Colors Coming Soon!</p>"
+  },
+  "css-rgb-rgba-colors": {
+    "title": "RGB/RGBA Colors",
+    "content": "<p>RGB/RGBA Colors Coming Soon!</p>"
+  },
+  "css-hsl-hsla-colors": {
+    "title": "HSL/HSLA Colors",
+    "content": "<p>HSL/HSLA Colors Coming Soon!</p>"
+  },
+  "css-color-contrast-a11y": {
+    "title": "Color Contrast (A11y)",
+    "content": "<p>Color Contrast (A11y) Coming Soon!</p>"
+  },
+  "css-quiz-4-backgrounds-colors": {
+    "title": "Quiz 4: Backgrounds/Colors",
+    "content": "<p>Quiz 4: Backgrounds/Colors Coming Soon!</p>"
+  },
+  "css-normal-flow-positioning": {
+    "title": "Normal Flow & Positioning",
+    "content": "<p>Normal Flow &amp; Positioning Coming Soon!</p>"
+  },
+  "css-float": {
+    "title": "float",
+    "content": "<p>float Coming Soon!</p>"
+  },
+  "css-clear": {
+    "title": "clear",
+    "content": "<p>clear Coming Soon!</p>"
+  },
+  "css-intro-layout-techniques": {
+    "title": "Intro Layout Techniques",
+    "content": "<p>Intro Layout Techniques Coming Soon!</p>"
+  },
+  "css-fixed-width-layouts": {
+    "title": "Fixed-Width Layouts",
+    "content": "<p>Fixed-Width Layouts Coming Soon!</p>"
+  },
+  "css-fluid-layouts": {
+    "title": "Fluid Layouts",
+    "content": "<p>Fluid Layouts Coming Soon!</p>"
+  },
+  "css-quiz-5-basic-layout": {
+    "title": "Quiz 5: Basic Layout",
+    "content": "<p>Quiz 5: Basic Layout Coming Soon!</p>"
+  },
+  "css-attribute-selectors": {
+    "title": "Attribute Selectors",
+    "content": "<p>Attribute Selectors Coming Soon!</p>"
+  },
+  "css-pseudo-classes-state": {
+    "title": "Pseudo-Classes (State)",
+    "content": "<p>Pseudo-Classes (State) Coming Soon!</p>"
+  },
+  "css-pseudo-classes-structural": {
+    "title": "Pseudo-Classes (Structural)",
+    "content": "<p>Pseudo-Classes (Structural) Coming Soon!</p>"
+  },
+  "css-pseudo-elements": {
+    "title": "Pseudo-Elements",
+    "content": "<p>Pseudo-Elements Coming Soon!</p>"
+  },
+  "css-pseudo-elements-text": {
+    "title": "Pseudo-Elements (Text)",
+    "content": "<p>Pseudo-Elements (Text) Coming Soon!</p>"
+  },
+  "css-descendant-selectors-space": {
+    "title": "Descendant Selectors (Space)",
+    "content": "<p>Descendant Selectors (Space) Coming Soon!</p>"
+  },
+  "css-child-selectors": {
+    "title": "Child Selectors (>)",
+    "content": "<p>Child Selectors (&gt;) Coming Soon!</p>"
+  },
+  "css-adjacent-sibling-selectors": {
+    "title": "Adjacent Sibling Selectors (+)",
+    "content": "<p>Adjacent Sibling Selectors (+) Coming Soon!</p>"
+  },
+  "css-general-sibling-selectors": {
+    "title": "General Sibling Selectors (~)",
+    "content": "<p>General Sibling Selectors (~) Coming Soon!</p>"
+  },
+  "css-specificity-revisited": {
+    "title": "Specificity Revisited",
+    "content": "<p>Specificity Revisited Coming Soon!</p>"
+  },
+  "css-quiz-6-advanced-selectors": {
+    "title": "Quiz 6: Advanced Selectors",
+    "content": "<p>Quiz 6: Advanced Selectors Coming Soon!</p>"
+  },
+  "css-what-is-rwd": {
+    "title": "What is RWD?",
+    "content": "<p>What is RWD? Coming Soon!</p>"
+  },
+  "css-viewport-meta-tag": {
+    "title": "Viewport Meta Tag",
+    "content": "<p>Viewport Meta Tag Coming Soon!</p>"
+  },
+  "css-fluid-layouts-percentages": {
+    "title": "Fluid Layouts (Percentages)",
+    "content": "<p>Fluid Layouts (Percentages) Coming Soon!</p>"
+  },
+  "css-intro-media-queries": {
+    "title": "Intro Media Queries",
+    "content": "<p>Intro Media Queries Coming Soon!</p>"
+  },
+  "css-target-widths-media": {
+    "title": "Target Widths (@media)",
+    "content": "<p>Target Widths (@media) Coming Soon!</p>"
+  },
+  "css-responsive-typography": {
+    "title": "Responsive Typography",
+    "content": "<p>Responsive Typography Coming Soon!</p>"
+  },
+  "css-responsive-images": {
+    "title": "Responsive Images",
+    "content": "<p>Responsive Images Coming Soon!</p>"
+  },
+  "css-quiz-7-intro-rwd": {
+    "title": "Quiz 7: Intro RWD",
+    "content": "<p>Quiz 7: Intro RWD Coming Soon!</p>"
+  },
+  "css-intro-flexbox": {
+    "title": "Intro Flexbox",
+    "content": "<p>Intro Flexbox Coming Soon!</p>"
+  },
+  "css-flex-container": {
+    "title": "Flex Container",
+    "content": "<p>Flex Container Coming Soon!</p>"
+  },
+  "css-flex-direction": {
+    "title": "flex-direction",
+    "content": "<p>flex-direction Coming Soon!</p>"
+  },
+  "css-justify-content": {
+    "title": "justify-content",
+    "content": "<p>justify-content Coming Soon!</p>"
+  },
+  "css-align-items": {
+    "title": "align-items",
+    "content": "<p>align-items Coming Soon!</p>"
+  },
+  "css-flex-wrap": {
+    "title": "flex-wrap",
+    "content": "<p>flex-wrap Coming Soon!</p>"
+  },
+  "css-align-content": {
+    "title": "align-content",
+    "content": "<p>align-content Coming Soon!</p>"
+  },
+  "css-order": {
+    "title": "order",
+    "content": "<p>order Coming Soon!</p>"
+  },
+  "css-flex-grow": {
+    "title": "flex-grow",
+    "content": "<p>flex-grow Coming Soon!</p>"
+  },
+  "css-flex-shrink": {
+    "title": "flex-shrink",
+    "content": "<p>flex-shrink Coming Soon!</p>"
+  },
+  "css-flex-basis": {
+    "title": "flex-basis",
+    "content": "<p>flex-basis Coming Soon!</p>"
+  },
+  "css-flex-shorthand": {
+    "title": "flex Shorthand",
+    "content": "<p>flex Shorthand Coming Soon!</p>"
+  },
+  "css-align-self": {
+    "title": "align-self",
+    "content": "<p>align-self Coming Soon!</p>"
+  },
+  "css-flexbox-examples": {
+    "title": "Flexbox Examples",
+    "content": "<p>Flexbox Examples Coming Soon!</p>"
+  },
+  "css-quiz-8-flexbox": {
+    "title": "Quiz 8: Flexbox",
+    "content": "<p>Quiz 8: Flexbox Coming Soon!</p>"
+  },
+  "css-intro-grid": {
+    "title": "Intro Grid",
+    "content": "<p>Intro Grid Coming Soon!</p>"
+  },
+  "css-grid-container": {
+    "title": "Grid Container",
+    "content": "<p>Grid Container Coming Soon!</p>"
+  },
+  "css-grid-template-rows-columns": {
+    "title": "grid-template-rows/columns",
+    "content": "<p>grid-template-rows/columns Coming Soon!</p>"
+  },
+  "css-grid-gap": {
+    "title": "grid-gap",
+    "content": "<p>grid-gap Coming Soon!</p>"
+  },
+  "css-placing-grid-items": {
+    "title": "Placing Grid Items",
+    "content": "<p>Placing Grid Items Coming Soon!</p>"
+  },
+  "css-grid-row-column-shorthand": {
+    "title": "grid-row/column Shorthand",
+    "content": "<p>grid-row/column Shorthand Coming Soon!</p>"
+  },
+  "css-named-grid-lines": {
+    "title": "Named Grid Lines",
+    "content": "<p>Named Grid Lines Coming Soon!</p>"
+  },
+  "css-grid-template-areas": {
+    "title": "Grid Template Areas",
+    "content": "<p>Grid Template Areas Coming Soon!</p>"
+  },
+  "css-implicit-vs-explicit-grids": {
+    "title": "Implicit vs Explicit Grids",
+    "content": "<p>Implicit vs Explicit Grids Coming Soon!</p>"
+  },
+  "css-justify-align-items-item": {
+    "title": "justify/align-items (Item)",
+    "content": "<p>justify/align-items (Item) Coming Soon!</p>"
+  },
+  "css-justify-align-content-track": {
+    "title": "justify/align-content (Track)",
+    "content": "<p>justify/align-content (Track) Coming Soon!</p>"
+  },
+  "css-repeat-function": {
+    "title": "repeat() Function",
+    "content": "<p>repeat() Function Coming Soon!</p>"
+  },
+  "css-minmax-function": {
+    "title": "minmax() Function",
+    "content": "<p>minmax() Function Coming Soon!</p>"
+  },
+  "css-fr-unit": {
+    "title": "fr Unit",
+    "content": "<p>fr Unit Coming Soon!</p>"
+  },
+  "css-grid-examples": {
+    "title": "Grid Examples",
+    "content": "<p>Grid Examples Coming Soon!</p>"
+  },
+  "css-flexbox-grid": {
+    "title": "Flexbox + Grid",
+    "content": "<p>Flexbox + Grid Coming Soon!</p>"
+  },
+  "css-quiz-9-grid": {
+    "title": "Quiz 9: Grid",
+    "content": "<p>Quiz 9: Grid Coming Soon!</p>"
+  },
+  "css-intro-transitions": {
+    "title": "Intro Transitions",
+    "content": "<p>Intro Transitions Coming Soon!</p>"
+  },
+  "css-transition-property": {
+    "title": "transition-property",
+    "content": "<p>transition-property Coming Soon!</p>"
+  },
+  "css-transition-duration": {
+    "title": "transition-duration",
+    "content": "<p>transition-duration Coming Soon!</p>"
+  },
+  "css-transition-timing-function": {
+    "title": "transition-timing-function",
+    "content": "<p>transition-timing-function Coming Soon!</p>"
+  },
+  "css-transition-delay": {
+    "title": "transition-delay",
+    "content": "<p>transition-delay Coming Soon!</p>"
+  },
+  "css-transition-shorthand": {
+    "title": "transition Shorthand",
+    "content": "<p>transition Shorthand Coming Soon!</p>"
+  },
+  "css-intro-animations": {
+    "title": "Intro Animations",
+    "content": "<p>Intro Animations Coming Soon!</p>"
+  },
+  "css-keyframes-rule": {
+    "title": "@keyframes Rule",
+    "content": "<p>@keyframes Rule Coming Soon!</p>"
+  },
+  "css-animation-name": {
+    "title": "animation-name",
+    "content": "<p>animation-name Coming Soon!</p>"
+  },
+  "css-animation-duration": {
+    "title": "animation-duration",
+    "content": "<p>animation-duration Coming Soon!</p>"
+  },
+  "css-animation-timing-function": {
+    "title": "animation-timing-function",
+    "content": "<p>animation-timing-function Coming Soon!</p>"
+  },
+  "css-animation-delay": {
+    "title": "animation-delay",
+    "content": "<p>animation-delay Coming Soon!</p>"
+  },
+  "css-animation-iteration-count": {
+    "title": "animation-iteration-count",
+    "content": "<p>animation-iteration-count Coming Soon!</p>"
+  },
+  "css-animation-direction": {
+    "title": "animation-direction",
+    "content": "<p>animation-direction Coming Soon!</p>"
+  },
+  "css-animation-fill-mode": {
+    "title": "animation-fill-mode",
+    "content": "<p>animation-fill-mode Coming Soon!</p>"
+  },
+  "css-animation-play-state": {
+    "title": "animation-play-state",
+    "content": "<p>animation-play-state Coming Soon!</p>"
+  },
+  "css-animation-shorthand": {
+    "title": "animation Shorthand",
+    "content": "<p>animation Shorthand Coming Soon!</p>"
+  },
+  "css-perf-considerations": {
+    "title": "Perf Considerations",
+    "content": "<p>Perf Considerations Coming Soon!</p>"
+  },
+  "css-a11y-considerations-reduced-motion": {
+    "title": "A11y Considerations (Reduced Motion)",
+    "content": "<p>A11y Considerations (Reduced Motion) Coming Soon!</p>"
+  },
+  "css-quiz-10-transitions-animations": {
+    "title": "Quiz 10: Transitions/Animations",
+    "content": "<p>Quiz 10: Transitions/Animations Coming Soon!</p>"
+  },
+  "css-intro-transforms": {
+    "title": "Intro Transforms",
+    "content": "<p>Intro Transforms Coming Soon!</p>"
+  },
+  "css-2d-transforms": {
+    "title": "2D Transforms",
+    "content": "<p>2D Transforms Coming Soon!</p>"
+  },
+  "css-transform-origin": {
+    "title": "transform-origin",
+    "content": "<p>transform-origin Coming Soon!</p>"
+  },
+  "css-3d-transforms-intro": {
+    "title": "3D Transforms (Intro)",
+    "content": "<p>3D Transforms (Intro) Coming Soon!</p>"
+  },
+  "css-perspective": {
+    "title": "perspective",
+    "content": "<p>perspective Coming Soon!</p>"
+  },
+  "css-transform-style": {
+    "title": "transform-style",
+    "content": "<p>transform-style Coming Soon!</p>"
+  },
+  "css-intro-filters": {
+    "title": "Intro Filters",
+    "content": "<p>Intro Filters Coming Soon!</p>"
+  },
+  "css-basic-filters": {
+    "title": "Basic Filters",
+    "content": "<p>Basic Filters Coming Soon!</p>"
+  },
+  "css-color-filters": {
+    "title": "Color Filters",
+    "content": "<p>Color Filters Coming Soon!</p>"
+  },
+  "css-advanced-filters": {
+    "title": "Advanced Filters",
+    "content": "<p>Advanced Filters Coming Soon!</p>"
+  },
+  "css-multiple-filters": {
+    "title": "Multiple Filters",
+    "content": "<p>Multiple Filters Coming Soon!</p>"
+  },
+  "css-perf-considerations-transforms-filters": {
+    "title": "Perf Considerations",
+    "content": "<p>Perf Considerations Coming Soon!</p>"
+  },
+  "css-quiz-11-transforms-filters": {
+    "title": "Quiz 11: Transforms/Filters",
+    "content": "<p>Quiz 11: Transforms/Filters Coming Soon!</p>"
+  },
+  "css-complex-media-queries": {
+    "title": "Complex Media Queries",
+    "content": "<p>Complex Media Queries Coming Soon!</p>"
+  },
+  "css-breakpoint-strategies": {
+    "title": "Breakpoint Strategies",
+    "content": "<p>Breakpoint Strategies Coming Soon!</p>"
+  },
+  "css-responsive-images-depth": {
+    "title": "Responsive Images (Depth)",
+    "content": "<p>Responsive Images (Depth) Coming Soon!</p>"
+  },
+  "css-flexible-units-em-rem-vw-vh": {
+    "title": "Flexible Units (em, rem, vw, vh)",
+    "content": "<p>Flexible Units (em, rem, vw, vh) Coming Soon!</p>"
+  },
+  "css-mobile-first-vs-desktop-first": {
+    "title": "Mobile-First vs Desktop-First",
+    "content": "<p>Mobile-First vs Desktop-First Coming Soon!</p>"
+  },
+  "css-testing-responsive": {
+    "title": "Testing Responsive",
+    "content": "<p>Testing Responsive Coming Soon!</p>"
+  },
+  "css-a11y-considerations-responsive": {
+    "title": "A11y Considerations",
+    "content": "<p>A11y Considerations Coming Soon!</p>"
+  },
+  "css-quiz-12-advanced-rwd": {
+    "title": "Quiz 12: Advanced RWD",
+    "content": "<p>Quiz 12: Advanced RWD Coming Soon!</p>"
+  },
+  "css-what-are-preprocessors": {
+    "title": "What are Preprocessors?",
+    "content": "<p>What are Preprocessors? Coming Soon!</p>"
+  },
+  "css-why-use-preprocessor": {
+    "title": "Why Use Preprocessor?",
+    "content": "<p>Why Use Preprocessor? Coming Soon!</p>"
+  },
+  "css-sass-less-variables": {
+    "title": "Sass/Less: Variables",
+    "content": "<p>Sass/Less: Variables Coming Soon!</p>"
+  },
+  "css-sass-less-nesting": {
+    "title": "Sass/Less: Nesting",
+    "content": "<p>Sass/Less: Nesting Coming Soon!</p>"
+  },
+  "css-sass-less-mixins": {
+    "title": "Sass/Less: Mixins",
+    "content": "<p>Sass/Less: Mixins Coming Soon!</p>"
+  },
+  "css-other-features": {
+    "title": "Other Features",
+    "content": "<p>Other Features Coming Soon!</p>"
+  },
+  "css-compiling": {
+    "title": "Compiling",
+    "content": "<p>Compiling Coming Soon!</p>"
+  },
+  "css-quiz-13-preprocessors": {
+    "title": "Quiz 13: Preprocessors",
+    "content": "<p>Quiz 13: Preprocessors Coming Soon!</p>"
+  },
+  "css-what-are-frameworks": {
+    "title": "What are Frameworks?",
+    "content": "<p>What are Frameworks? Coming Soon!</p>"
+  },
+  "css-why-use-framework": {
+    "title": "Why Use Framework?",
+    "content": "<p>Why Use Framework? Coming Soon!</p>"
+  },
+  "css-framework-structure-grid": {
+    "title": "Framework Structure (Grid)",
+    "content": "<p>Framework Structure (Grid) Coming Soon!</p>"
+  },
+  "css-using-components": {
+    "title": "Using Components",
+    "content": "<p>Using Components Coming Soon!</p>"
+  },
+  "css-customizing-framework": {
+    "title": "Customizing Framework",
+    "content": "<p>Customizing Framework Coming Soon!</p>"
+  },
+  "css-a11y-considerations-frameworks": {
+    "title": "A11y Considerations",
+    "content": "<p>A11y Considerations Coming Soon!</p>"
+  },
+  "css-quiz-14-frameworks": {
+    "title": "Quiz 14: Frameworks",
+    "content": "<p>Quiz 14: Frameworks Coming Soon!</p>"
+  },
+  "css-css-variables-depth": {
+    "title": "CSS Variables (Depth)",
+    "content": "<p>CSS Variables (Depth) Coming Soon!</p>"
+  },
+  "css-calc-function": {
+    "title": "calc() Function",
+    "content": "<p>calc() Function Coming Soon!</p>"
+  },
+  "css-css-houdini-intro": {
+    "title": "CSS Houdini (Intro)",
+    "content": "<p>CSS Houdini (Intro) Coming Soon!</p>"
+  },
+  "css-perf-reduce-file-size": {
+    "title": "Perf: Reduce File Size",
+    "content": "<p>Perf: Reduce File Size Coming Soon!</p>"
+  },
+  "css-perf-avoid-layout-thrashing": {
+    "title": "Perf: Avoid Layout Thrashing",
+    "content": "<p>Perf: Avoid Layout Thrashing Coming Soon!</p>"
+  },
+  "css-critical-rendering-path": {
+    "title": "Critical Rendering Path",
+    "content": "<p>Critical Rendering Path Coming Soon!</p>"
+  },
+  "css-css-modules-scoped-styling": {
+    "title": "CSS Modules/Scoped Styling",
+    "content": "<p>CSS Modules/Scoped Styling Coming Soon!</p>"
+  },
+  "css-maintainable-scalable-css": {
+    "title": "Maintainable/Scalable CSS",
+    "content": "<p>Maintainable/Scalable CSS Coming Soon!</p>"
+  },
+  "css-css-in-js-concepts": {
+    "title": "CSS-in-JS (Concepts)",
+    "content": "<p>CSS-in-JS (Concepts) Coming Soon!</p>"
+  },
+  "css-shadow-dom": {
+    "title": "Shadow DOM",
+    "content": "<p>Shadow DOM Coming Soon!</p>"
+  },
+  "css-advanced-animations": {
+    "title": "Advanced Animations",
+    "content": "<p>Advanced Animations Coming Soon!</p>"
+  },
+  "css-quiz-15-advanced-perf": {
+    "title": "Quiz 15: Advanced/Perf",
+    "content": "<p>Quiz 15: Advanced/Perf Coming Soon!</p>"
+  },
+  "css-css-houdini-apis-deep-dive": {
+    "title": "CSS Houdini APIs (Deep Dive)",
+    "content": "<p>CSS Houdini APIs (Deep Dive) Coming Soon!</p>"
+  },
+  "css-advanced-grid-flexbox": {
+    "title": "Advanced Grid/Flexbox",
+    "content": "<p>Advanced Grid/Flexbox Coming Soon!</p>"
+  },
+  "css-perf-profiling-optimization": {
+    "title": "Perf Profiling/Optimization",
+    "content": "<p>Perf Profiling/Optimization Coming Soon!</p>"
+  },
+  "css-contribute-to-specs": {
+    "title": "Contribute to Specs",
+    "content": "<p>Contribute to Specs Coming Soon!</p>"
+  },
+  "css-emerging-features": {
+    "title": "Emerging Features",
+    "content": "<p>Emerging Features Coming Soon!</p>"
+  },
+  "css-styling-for-print-media": {
+    "title": "Styling for Print/Media",
+    "content": "<p>Styling for Print/Media Coming Soon!</p>"
+  },
+  "css-css-with-backend": {
+    "title": "CSS with Backend",
+    "content": "<p>CSS with Backend Coming Soon!</p>"
+  },
+  "css-architecting-large-codebases": {
+    "title": "Architecting Large Codebases",
+    "content": "<p>Architecting Large Codebases Coming Soon!</p>"
+  },
+  "css-advanced-a11y-ux": {
+    "title": "Advanced A11y/UX",
+    "content": "<p>Advanced A11y/UX Coming Soon!</p>"
+  },
+  "css-final-project": {
+    "title": "Final Project",
+    "content": "<p>Final Project Coming Soon!</p>"
+  },
+  "js-what-is-js": {
+    "title": "What is JS?",
+    "content": "<p>What is JS? Coming Soon!</p>"
+  },
+  "js-why-learn-js": {
+    "title": "Why Learn JS?",
+    "content": "<p>Why Learn JS? Coming Soon!</p>"
+  },
+  "js-tools-you-need": {
+    "title": "Tools You Need",
+    "content": "<p>Tools You Need Coming Soon!</p>"
+  },
+  "js-script-tag": {
+    "title": "<script> tag",
+    "content": "<p>&lt;script&gt; tag Coming Soon!</p>"
+  },
+  "js-external-js-files": {
+    "title": "External JS Files",
+    "content": "<p>External JS Files Coming Soon!</p>"
+  },
+  "js-console-log": {
+    "title": "console.log()",
+    "content": "<p>console.log() Coming Soon!</p>"
+  },
+  "js-statements-semicolons": {
+    "title": "Statements/Semicolons",
+    "content": "<p>Statements/Semicolons Coming Soon!</p>"
+  },
+  "js-comments": {
+    "title": "Comments",
+    "content": "<p>Comments Coming Soon!</p>"
+  },
+  "js-variables-let-const-var": {
+    "title": "Variables (let, const, var)",
+    "content": "<p>Variables (let, const, var) Coming Soon!</p>"
+  },
+  "js-data-types-numbers-strings": {
+    "title": "Data Types (Numbers, Strings, Booleans)",
+    "content": "<p>Data Types (Numbers, Strings, Booleans) Coming Soon!</p>"
+  },
+  "js-null-undefined": {
+    "title": "null and undefined",
+    "content": "<p>null and undefined Coming Soon!</p>"
+  },
+  "js-assignment-operator": {
+    "title": "Assignment Operator",
+    "content": "<p>Assignment Operator Coming Soon!</p>"
+  },
+  "js-arithmetic-operators": {
+    "title": "Arithmetic Operators",
+    "content": "<p>Arithmetic Operators Coming Soon!</p>"
+  },
+  "js-beginner-mistakes": {
+    "title": "Beginner Mistakes",
+    "content": "<p>Beginner Mistakes Coming Soon!</p>"
+  },
+  "js-quiz-1-intro-basics": {
+    "title": "Quiz 1: Intro/Basics",
+    "content": "<p>Quiz 1: Intro/Basics Coming Soon!</p>"
+  },
+  "js-what-is-the-dom": {
+    "title": "What is the DOM?",
+    "content": "<p>What is the DOM? Coming Soon!</p>"
+  },
+  "js-getelementbyid": {
+    "title": "getElementById()",
+    "content": "<p>getElementById() Coming Soon!</p>"
+  },
+  "js-getelementsbyclassname": {
+    "title": "getElementsByClassName()",
+    "content": "<p>getElementsByClassName() Coming Soon!</p>"
+  },
+  "js-getelementsbytagname": {
+    "title": "getElementsByTagName()",
+    "content": "<p>getElementsByTagName() Coming Soon!</p>"
+  },
+  "js-queryselector-all": {
+    "title": "querySelector/All()",
+    "content": "<p>querySelector/All() Coming Soon!</p>"
+  },
+  "js-textcontent": {
+    "title": "textContent",
+    "content": "<p>textContent Coming Soon!</p>"
+  },
+  "js-innerhtml-caution": {
+    "title": "innerHTML (Caution)",
+    "content": "<p>innerHTML (Caution) Coming Soon!</p>"
+  },
+  "js-get-set-attribute": {
+    "title": "get/setAttribute()",
+    "content": "<p>get/setAttribute() Coming Soon!</p>"
+  },
+  "js-classlist": {
+    "title": "classList",
+    "content": "<p>classList Coming Soon!</p>"
+  },
+  "js-element-style": {
+    "title": "element.style",
+    "content": "<p>element.style Coming Soon!</p>"
+  },
+  "js-intro-events": {
+    "title": "Intro Events",
+    "content": "<p>Intro Events Coming Soon!</p>"
+  },
+  "js-addeventlistener": {
+    "title": "addEventListener()",
+    "content": "<p>addEventListener() Coming Soon!</p>"
+  },
+  "js-common-events": {
+    "title": "Common Events",
+    "content": "<p>Common Events Coming Soon!</p>"
+  },
+  "js-first-interactive-example": {
+    "title": "First Interactive Example",
+    "content": "<p>First Interactive Example Coming Soon!</p>"
+  },
+  "js-quiz-2-basic-dom": {
+    "title": "Quiz 2: Basic DOM",
+    "content": "<p>Quiz 2: Basic DOM Coming Soon!</p>"
+  },
+  "js-comparison-operators": {
+    "title": "Comparison Operators",
+    "content": "<p>Comparison Operators Coming Soon!</p>"
+  },
+  "js-logical-operators": {
+    "title": "Logical Operators",
+    "content": "<p>Logical Operators Coming Soon!</p>"
+  },
+  "js-if-statements": {
+    "title": "if Statements",
+    "content": "<p>if Statements Coming Soon!</p>"
+  },
+  "js-else-statements": {
+    "title": "else Statements",
+    "content": "<p>else Statements Coming Soon!</p>"
+  },
+  "js-else-if-statements": {
+    "title": "else if Statements",
+    "content": "<p>else if Statements Coming Soon!</p>"
+  },
+  "js-switch-statements": {
+    "title": "switch Statements",
+    "content": "<p>switch Statements Coming Soon!</p>"
+  },
+  "js-ternary-operator": {
+    "title": "Ternary Operator",
+    "content": "<p>Ternary Operator Coming Soon!</p>"
+  },
+  "js-for-loop": {
+    "title": "for loop",
+    "content": "<p>for loop Coming Soon!</p>"
+  },
+  "js-while-do-while": {
+    "title": "while / do...while",
+    "content": "<p>while / do...while Coming Soon!</p>"
+  },
+  "js-break-continue": {
+    "title": "break / continue",
+    "content": "<p>break / continue Coming Soon!</p>"
+  },
+  "js-iterate-arrays-basic": {
+    "title": "Iterate Arrays (Basic)",
+    "content": "<p>Iterate Arrays (Basic) Coming Soon!</p>"
+  },
+  "js-quiz-3-control-flow": {
+    "title": "Quiz 3: Control Flow",
+    "content": "<p>Quiz 3: Control Flow Coming Soon!</p>"
+  },
+  "js-intro-arrays": {
+    "title": "Intro Arrays",
+    "content": "<p>Intro Arrays Coming Soon!</p>"
+  },
+  "js-create-access-arrays": {
+    "title": "Create/Access Arrays",
+    "content": "<p>Create/Access Arrays Coming Soon!</p>"
+  },
+  "js-array-length": {
+    "title": "Array length",
+    "content": "<p>Array length Coming Soon!</p>"
+  },
+  "js-basic-array-methods": {
+    "title": "Basic Array Methods",
+    "content": "<p>Basic Array Methods Coming Soon!</p>"
+  },
+  "js-intro-objects": {
+    "title": "Intro Objects",
+    "content": "<p>Intro Objects Coming Soon!</p>"
+  },
+  "js-create-objects": {
+    "title": "Create Objects",
+    "content": "<p>Create Objects Coming Soon!</p>"
+  },
+  "js-access-object-properties": {
+    "title": "Access Object Properties",
+    "content": "<p>Access Object Properties Coming Soon!</p>"
+  },
+  "js-add-modify-delete-properties": {
+    "title": "Add/Modify/Delete Properties",
+    "content": "<p>Add/Modify/Delete Properties Coming Soon!</p>"
+  },
+  "js-nested-objects-arrays": {
+    "title": "Nested Objects/Arrays",
+    "content": "<p>Nested Objects/Arrays Coming Soon!</p>"
+  },
+  "js-quiz-4-arrays-objects-basic": {
+    "title": "Quiz 4: Arrays/Objects (Basic)",
+    "content": "<p>Quiz 4: Arrays/Objects (Basic) Coming Soon!</p>"
+  },
+  "js-what-are-functions": {
+    "title": "What are Functions?",
+    "content": "<p>What are Functions? Coming Soon!</p>"
+  },
+  "js-function-declarations": {
+    "title": "Function Declarations",
+    "content": "<p>Function Declarations Coming Soon!</p>"
+  },
+  "js-calling-functions": {
+    "title": "Calling Functions",
+    "content": "<p>Calling Functions Coming Soon!</p>"
+  },
+  "js-parameters-arguments": {
+    "title": "Parameters/Arguments",
+    "content": "<p>Parameters/Arguments Coming Soon!</p>"
+  },
+  "js-return-keyword": {
+    "title": "return Keyword",
+    "content": "<p>return Keyword Coming Soon!</p>"
+  },
+  "js-function-expressions": {
+    "title": "Function Expressions",
+    "content": "<p>Function Expressions Coming Soon!</p>"
+  },
+  "js-arrow-functions": {
+    "title": "Arrow Functions",
+    "content": "<p>Arrow Functions Coming Soon!</p>"
+  },
+  "js-scope": {
+    "title": "Scope",
+    "content": "<p>Scope Coming Soon!</p>"
+  },
+  "js-closurs-intro": {
+    "title": "Closures (Intro)",
+    "content": "<p>Closures (Intro) Coming Soon!</p>"
+  },
+  "js-quiz-5-functions": {
+    "title": "Quiz 5: Functions",
+    "content": "<p>Quiz 5: Functions Coming Soon!</p>"
+  },
+  "js-get-form-input-values": {
+    "title": "Get Form Input Values",
+    "content": "<p>Get Form Input Values Coming Soon!</p>"
+  },
+  "js-submit-event": {
+    "title": "Submit Event",
+    "content": "<p>Submit Event Coming Soon!</p>"
+  },
+  "js-prevent-default": {
+    "title": "Prevent Default",
+    "content": "<p>Prevent Default Coming Soon!</p>"
+  },
+  "js-validate-input-basic": {
+    "title": "Validate Input (Basic)",
+    "content": "<p>Validate Input (Basic) Coming Soon!</p>"
+  },
+  "js-input-change-events": {
+    "title": "Input/Change Events",
+    "content": "<p>Input/Change Events Coming Soon!</p>"
+  },
+  "js-checkboxes-radio-buttons": {
+    "title": "Checkboxes/Radio Buttons",
+    "content": "<p>Checkboxes/Radio Buttons Coming Soon!</p>"
+  },
+  "js-select-menus": {
+    "title": "Select Menus",
+    "content": "<p>Select Menus Coming Soon!</p>"
+  },
+  "js-a11y-dynamic-forms": {
+    "title": "A11y Dynamic Forms",
+    "content": "<p>A11y Dynamic Forms Coming Soon!</p>"
+  },
+  "js-quiz-6-forms": {
+    "title": "Quiz 6: Forms",
+    "content": "<p>Quiz 6: Forms Coming Soon!</p>"
+  },
+  "js-string-properties-methods": {
+    "title": "String Properties/Methods",
+    "content": "<p>String Properties/Methods Coming Soon!</p>"
+  },
+  "js-string-searching": {
+    "title": "String Searching",
+    "content": "<p>String Searching Coming Soon!</p>"
+  },
+  "js-extract-substrings": {
+    "title": "Extract Substrings",
+    "content": "<p>Extract Substrings Coming Soon!</p>"
+  },
+  "js-replace-split-strings": {
+    "title": "Replace/Split Strings",
+    "content": "<p>Replace/Split Strings Coming Soon!</p>"
+  },
+  "js-number-properties-methods": {
+    "title": "Number Properties/Methods",
+    "content": "<p>Number Properties/Methods Coming Soon!</p>"
+  },
+  "js-math-object": {
+    "title": "Math Object",
+    "content": "<p>Math Object Coming Soon!</p>"
+  },
+  "js-date-object-basic": {
+    "title": "Date Object (Basic)",
+    "content": "<p>Date Object (Basic) Coming Soon!</p>"
+  },
+  "js-quiz-7-strings-numbers": {
+    "title": "Quiz 7: Strings/Numbers",
+    "content": "<p>Quiz 7: Strings/Numbers Coming Soon!</p>"
+  },
+  "js-advanced-array-methods": {
+    "title": "Advanced Array Methods",
+    "content": "<p>Advanced Array Methods Coming Soon!</p>"
+  },
+  "js-spread-syntax": {
+    "title": "Spread Syntax (...)",
+    "content": "<p>Spread Syntax (...) Coming Soon!</p>"
+  },
+  "js-destructuring": {
+    "title": "Destructuring",
+    "content": "<p>Destructuring Coming Soon!</p>"
+  },
+  "js-object-iteration": {
+    "title": "Object Iteration",
+    "content": "<p>Object Iteration Coming Soon!</p>"
+  },
+  "js-this-keyword-intro": {
+    "title": "The this Keyword (Intro)",
+    "content": "<p>The this Keyword (Intro) Coming Soon!</p>"
+  },
+  "js-prototypes-intro": {
+    "title": "Prototypes (Intro)",
+    "content": "<p>Prototypes (Intro) Coming Soon!</p>"
+  },
+  "js-quiz-8-arrays-objects-advanced": {
+    "title": "Quiz 8: Arrays/Objects (Advanced)",
+    "content": "<p>Quiz 8: Arrays/Objects (Advanced) Coming Soon!</p>"
+  },
+  "js-what-is-async-js": {
+    "title": "What is Async JS?",
+    "content": "<p>What is Async JS? Coming Soon!</p>"
+  },
+  "js-settimeout-setinterval": {
+    "title": "setTimeout/setInterval",
+    "content": "<p>setTimeout/setInterval Coming Soon!</p>"
+  },
+  "js-callbacks-intro": {
+    "title": "Callbacks (Intro)",
+    "content": "<p>Callbacks (Intro) Coming Soon!</p>"
+  },
+  "js-promises-intro": {
+    "title": "Promises (Intro)",
+    "content": "<p>Promises (Intro) Coming Soon!</p>"
+  },
+  "js-fetch-api-basic": {
+    "title": "fetch() API (Basic)",
+    "content": "<p>fetch() API (Basic) Coming Soon!</p>"
+  },
+  "js-working-with-json": {
+    "title": "Working with JSON",
+    "content": "<p>Working with JSON Coming Soon!</p>"
+  },
+  "js-intro-web-apis": {
+    "title": "Intro Web APIs",
+    "content": "<p>Intro Web APIs Coming Soon!</p>"
+  },
+  "js-geolocation-api": {
+    "title": "Geolocation API",
+    "content": "<p>Geolocation API Coming Soon!</p>"
+  },
+  "js-history-api": {
+    "title": "History API",
+    "content": "<p>History API Coming Soon!</p>"
+  },
+  "js-quiz-9-async-js-apis-beginner": {
+    "title": "Quiz 9: Async JS/APIs (Beginner)",
+    "content": "<p>Quiz 9: Async JS/APIs (Beginner) Coming Soon!</p>"
+  },
+  "js-types-of-errors": {
+    "title": "Types of Errors",
+    "content": "<p>Types of Errors Coming Soon!</p>"
+  },
+  "js-try-catch": {
+    "title": "try...catch",
+    "content": "<p>try...catch Coming Soon!</p>"
+  },
+  "js-finally-block": {
+    "title": "finally Block",
+    "content": "<p>finally Block Coming Soon!</p>"
+  },
+  "js-browser-dev-tools": {
+    "title": "Browser Dev Tools",
+    "content": "<p>Browser Dev Tools Coming Soon!</p>"
+  },
+  "js-breakpoints": {
+    "title": "Breakpoints",
+    "content": "<p>Breakpoints Coming Soon!</p>"
+  },
+  "js-logging-info": {
+    "title": "Logging Info",
+    "content": "<p>Logging Info Coming Soon!</p>"
+  },
+  "js-debugging-strategies": {
+    "title": "Debugging Strategies",
+    "content": "<p>Debugging Strategies Coming Soon!</p>"
+  },
+  "js-quiz-10-error-handling-debugging": {
+    "title": "Quiz 10: Error Handling/Debugging",
+    "content": "<p>Quiz 10: Error Handling/Debugging Coming Soon!</p>"
+  },
+  "js-let-const": {
+    "title": "let and const",
+    "content": "<p>let and const Coming Soon!</p>"
+  },
+  "js-arrow-functions-detailed": {
+    "title": "Arrow Functions (Detailed)",
+    "content": "<p>Arrow Functions (Detailed) Coming Soon!</p>"
+  },
+  "js-template-literals": {
+    "title": "Template Literals",
+    "content": "<p>Template Literals Coming Soon!</p>"
+  },
+  "js-default-parameters": {
+    "title": "Default Parameters",
+    "content": "<p>Default Parameters Coming Soon!</p>"
+  },
+  "js-rest-spread": {
+    "title": "Rest/Spread",
+    "content": "<p>Rest/Spread Coming Soon!</p>"
+  },
+  "js-destructuring": {
+    "title": "Destructuring",
+    "content": "<p>Destructuring Coming Soon!</p>"
+  },
+  "js-classes": {
+    "title": "Classes",
+    "content": "<p>Classes Coming Soon!</p>"
+  },
+  "js-modules-intro": {
+    "title": "Modules (Intro)",
+    "content": "<p>Modules (Intro) Coming Soon!</p>"
+  },
+  "js-promises-async-await": {
+    "title": "Promises (async/await)",
+    "content": "<p>Promises (async/await) Coming Soon!</p>"
+  },
+  "js-for-of-loop": {
+    "title": "for...of Loop",
+    "content": "<p>for...of Loop Coming Soon!</p>"
+  },
+  "js-sets-maps": {
+    "title": "Sets and Maps",
+    "content": "<p>Sets and Maps Coming Soon!</p>"
+  },
+  "js-quiz-11-es6-features": {
+    "title": "Quiz 11: ES6+ Features",
+    "content": "<p>Quiz 11: ES6+ Features Coming Soon!</p>"
+  },
+  "js-manage-focus-programmatically": {
+    "title": "Manage Focus Programmatically",
+    "content": "<p>Manage Focus Programmatically Coming Soon!</p>"
+  },
+  "js-accessible-keyboard-nav": {
+    "title": "Accessible Keyboard Nav",
+    "content": "<p>Accessible Keyboard Nav Coming Soon!</p>"
+  },
+  "js-update-aria-dynamically": {
+    "title": "Update ARIA Dynamically",
+    "content": "<p>Update ARIA Dynamically Coming Soon!</p>"
+  },
+  "js-accessible-custom-forms-js-aria": {
+    "title": "Accessible Custom Forms (JS/ARIA)",
+    "content": "<p>Accessible Custom Forms (JS/ARIA) Coming Soon!</p>"
+  },
+  "js-announce-dynamic-content-live-regions": {
+    "title": "Announce Dynamic Content (Live Regions)",
+    "content": "<p>Announce Dynamic Content (Live Regions) Coming Soon!</p>"
+  },
+  "js-handle-keyboard-events": {
+    "title": "Handle Keyboard Events",
+    "content": "<p>Handle Keyboard Events Coming Soon!</p>"
+  },
+  "js-accessible-drag-and-drop": {
+    "title": "Accessible Drag and Drop",
+    "content": "<p>Accessible Drag and Drop Coming Soon!</p>"
+  },
+  "js-test-js-with-a11y": {
+    "title": "Test JS with A11y",
+    "content": "<p>Test JS with A11y Coming Soon!</p>"
+  },
+  "js-quiz-12-a11y-with-js": {
+    "title": "Quiz 12: A11y with JS",
+    "content": "<p>Quiz 12: A11y with JS Coming Soon!</p>"
+  },
+  "js-fetch-api-more": {
+    "title": "fetch() API (More)",
+    "content": "<p>fetch() API (More) Coming Soon!</p>"
+  },
+  "js-send-data-with-fetch": {
+    "title": "Send Data with fetch()",
+    "content": "<p>Send Data with fetch() Coming Soon!</p>"
+  },
+  "js-handle-response-types": {
+    "title": "Handle Response Types",
+    "content": "<p>Handle Response Types Coming Soon!</p>"
+  },
+  "js-working-with-api-headers": {
+    "title": "Working with API Headers",
+    "content": "<p>Working with API Headers Coming Soon!</p>"
+  },
+  "js-api-authentication-basic": {
+    "title": "API Authentication (Basic)",
+    "content": "<p>API Authentication (Basic) Coming Soon!</p>"
+  },
+  "js-error-handling-for-api": {
+    "title": "Error Handling for API",
+    "content": "<p>Error Handling for API Coming Soon!</p>"
+  },
+  "js-web-api-standards-rest-graphql": {
+    "title": "Web API Standards (REST, GraphQL)",
+    "content": "<p>Web API Standards (REST, GraphQL) Coming Soon!</p>"
+  },
+  "js-quiz-13-working-with-apis-intermediate": {
+    "title": "Quiz 13: Working with APIs (Intermediate)",
+    "content": "<p>Quiz 13: Working with APIs (Intermediate) Coming Soon!</p>"
+  },
+  "js-what-are-frameworks-libraries": {
+    "title": "What are Frameworks/Libraries?",
+    "content": "<p>What are Frameworks/Libraries? Coming Soon!</p>"
+  },
+  "js-why-use-framework-library": {
+    "title": "Why Use Framework/Library?",
+    "content": "<p>Why Use Framework/Library? Coming Soon!</p>"
+  },
+  "js-basic-concepts-components-props-state": {
+    "title": "Basic Concepts (Components, Props, State)",
+    "content": "<p>Basic Concepts (Components, Props, State) Coming Soon!</p>"
+  },
+  "js-role-of-js-in-frameworks": {
+    "title": "Role of JS in Frameworks",
+    "content": "<p>Role of JS in Frameworks Coming Soon!</p>"
+  },
+  "js-setup-basic-project-conceptual": {
+    "title": "Setup Basic Project (Conceptual)",
+    "content": "<p>Setup Basic Project (Conceptual) Coming Soon!</p>"
+  },
+  "js-quiz-14-frameworks-libraries-conceptual": {
+    "title": "Quiz 14: Frameworks/Libraries (Conceptual)",
+    "content": "<p>Quiz 14: Frameworks/Libraries (Conceptual) Coming Soon!</p>"
+  },
+  "js-intro-js-testing": {
+    "title": "Intro JS Testing",
+    "content": "<p>Intro JS Testing Coming Soon!</p>"
+  },
+  "js-basic-testing-frameworks": {
+    "title": "Basic Testing Frameworks",
+    "content": "<p>Basic Testing Frameworks Coming Soon!</p>"
+  },
+  "js-writing-simple-tests": {
+    "title": "Writing Simple Tests",
+    "content": "<p>Writing Simple Tests Coming Soon!</p>"
+  },
+  "js-code-linting-formatting": {
+    "title": "Code Linting/Formatting",
+    "content": "<p>Code Linting/Formatting Coming Soon!</p>"
+  },
+  "js-basic-deployment-concepts": {
+    "title": "Basic Deployment Concepts",
+    "content": "<p>Basic Deployment Concepts Coming Soon!</p>"
+  },
+  "js-quiz-15-testing-deployment": {
+    "title": "Quiz 15: Testing/Deployment",
+    "content": "<p>Quiz 15: Testing/Deployment Coming Soon!</p>"
+  },
+  "js-prototypes-inheritance-deep-dive": {
+    "title": "Prototypes/Inheritance (Deep Dive)",
+    "content": "<p>Prototypes/Inheritance (Deep Dive) Coming Soon!</p>"
+  },
+  "js-advanced-closures-scope": {
+    "title": "Advanced Closures/Scope",
+    "content": "<p>Advanced Closures/Scope Coming Soon!</p>"
+  },
+  "js-web-workers-detailed": {
+    "title": "Web Workers (Detailed)",
+    "content": "<p>Web Workers (Detailed) Coming Soon!</p>"
+  },
+  "js-service-workers-pwas": {
+    "title": "Service Workers/PWAs",
+    "content": "<p>Service Workers/PWAs Coming Soon!</p>"
+  },
+  "js-advanced-dom-performance": {
+    "title": "Advanced DOM/Performance",
+    "content": "<p>Advanced DOM/Performance Coming Soon!</p>"
+  },
+  "js-node-js-intro": {
+    "title": "Node.js (Intro)",
+    "content": "<p>Node.js (Intro) Coming Soon!</p>"
+  },
+  "js-package-managers-npm-yarn": {
+    "title": "Package Managers (npm, yarn)",
+    "content": "<p>Package Managers (npm, yarn) Coming Soon!</p>"
+  },
+  "js-build-apis-with-node-js": {
+    "title": "Build APIs with Node.js",
+    "content": "<p>Build APIs with Node.js Coming Soon!</p>"
+  },
+  "js-advanced-framework-library": {
+    "title": "Advanced Framework/Library",
+    "content": "<p>Advanced Framework/Library Coming Soon!</p>"
+  },
+  "js-js-security-best-practices": {
+    "title": "JS Security Best Practices",
+    "content": "<p>JS Security Best Practices Coming Soon!</p>"
+  },
+  "js-perf-optimization-complex": {
+    "title": "Perf Optimization (Complex)",
+    "content": "<p>Perf Optimization (Complex) Coming Soon!</p>"
+  },
+  "js-contribute-to-open-source": {
+    "title": "Contribute to Open Source",
+    "content": "<p>Contribute to Open Source Coming Soon!</p>"
+  },
+  "js-stay-up-to-date-ecosystem": {
+    "title": "Stay Up-to-Date (Ecosystem)",
+    "content": "<p>Stay Up-to-Date (Ecosystem) Coming Soon!</p>"
+  },
+  "js-final-project": {
+    "title": "Final Project",
+    "content": "<p>Final Project Coming Soon!</p>"
+  },
+  "aria-what-is-aria": {
+    "title": "What is ARIA?",
+    "content": "<p>What is ARIA? Coming Soon!</p>"
+  },
+  "aria-why-is-aria-necessary": {
+    "title": "Why is ARIA Necessary?",
+    "content": "<p>Why is ARIA Necessary? Coming Soon!</p>"
+  },
+  "aria-aria-features-roles-states-properties": {
+    "title": "ARIA Features: Roles, States, Properties",
+    "content": "<p>ARIA Features: Roles, States, Properties Coming Soon!</p>"
+  },
+  "aria-aria-semantic-html": {
+    "title": "ARIA + Semantic HTML",
+    "content": "<p>ARIA + Semantic HTML Coming Soon!</p>"
+  },
+  "aria-importance-of-a11y": {
+    "title": "Importance of A11y",
+    "content": "<p>Importance of A11y Coming Soon!</p>"
+  },
+  "aria-aria-screen-readers": {
+    "title": "ARIA + Screen Readers",
+    "content": "<p>ARIA + Screen Readers Coming Soon!</p>"
+  },
+  "aria-basic-aria-example-role": {
+    "title": "Basic ARIA Example (role)",
+    "content": "<p>Basic ARIA Example (role) Coming Soon!</p>"
+  },
+  "aria-beginner-mistakes": {
+    "title": "Beginner Mistakes",
+    "content": "<p>Beginner Mistakes Coming Soon!</p>"
+  },
+  "aria-quiz-1-what-why-aria": {
+    "title": "Quiz 1: What/Why ARIA?",
+    "content": "<p>Quiz 1: What/Why ARIA? Coming Soon!</p>"
+  },
+  "aria-intro-landmark-roles": {
+    "title": "Intro Landmark Roles",
+    "content": "<p>Intro Landmark Roles Coming Soon!</p>"
+  },
+  "aria-role-banner": {
+    "title": "role=\"banner\"",
+    "content": "<p>role=\"banner\" Coming Soon!</p>"
+  },
+  "aria-role-navigation": {
+    "title": "role=\"navigation\"",
+    "content": "<p>role=\"navigation\" Coming Soon!</p>"
+  },
+  "aria-role-main": {
+    "title": "role=\"main\"",
+    "content": "<p>role=\"main\" Coming Soon!</p>"
+  },
+  "aria-role-complementary": {
+    "title": "role=\"complementary\"",
+    "content": "<p>role=\"complementary\" Coming Soon!</p>"
+  },
+  "aria-role-contentinfo": {
+    "title": "role=\"contentinfo\"",
+    "content": "<p>role=\"contentinfo\" Coming Soon!</p>"
+  },
+  "aria-role-search": {
+    "title": "role=\"search\"",
+    "content": "<p>role=\"search\" Coming Soon!</p>"
+  },
+  "aria-role-application-use-case": {
+    "title": "role=\"application\" (Use Case)",
+    "content": "<p>role=\"application\" (Use Case) Coming Soon!</p>"
+  },
+  "aria-intro-structural-roles": {
+    "title": "Intro Structural Roles",
+    "content": "<p>Intro Structural Roles Coming Soon!</p>"
+  },
+  "aria-role-article": {
+    "title": "role=\"article\"",
+    "content": "<p>role=\"article\" Coming Soon!</p>"
+  },
+  "aria-role-region": {
+    "title": "role=\"region\"",
+    "content": "<p>role=\"region\" Coming Soon!</p>"
+  },
+  "aria-role-group": {
+    "title": "role=\"group\"",
+    "content": "<p>role=\"group\" Coming Soon!</p>"
+  },
+  "aria-role-list-listitem": {
+    "title": "role=\"list/listItem\"",
+    "content": "<p>role=\"list/listItem\" Coming Soon!</p>"
+  },
+  "aria-role-definition": {
+    "title": "role=\"definition\"",
+    "content": "<p>role=\"definition\" Coming Soon!</p>"
+  },
+  "aria-role-term": {
+    "title": "role=\"term\"",
+    "content": "<p>role=\"term\" Coming Soon!</p>"
+  },
+  "aria-quiz-2-landmark-structural": {
+    "title": "Quiz 2: Landmark/Structural",
+    "content": "<p>Quiz 2: Landmark/Structural Coming Soon!</p>"
+  },
+  "aria-intro-widget-roles": {
+    "title": "Intro Widget Roles",
+    "content": "<p>Intro Widget Roles Coming Soon!</p>"
+  },
+  "aria-role-button": {
+    "title": "role=\"button\"",
+    "content": "<p>role=\"button\" Coming Soon!</p>"
+  },
+  "aria-role-link": {
+    "title": "role=\"link\"",
+    "content": "<p>role=\"link\" Coming Soon!</p>"
+  },
+  "aria-role-checkbox": {
+    "title": "role=\"checkbox\"",
+    "content": "<p>role=\"checkbox\" Coming Soon!</p>"
+  },
+  "aria-role-radio-radiogroup": {
+    "title": "role=\"radio/radiogroup\"",
+    "content": "<p>role=\"radio/radiogroup\" Coming Soon!</p>"
+  },
+  "aria-role-textbox": {
+    "title": "role=\"textbox\"",
+    "content": "<p>role=\"textbox\" Coming Soon!</p>"
+  },
+  "aria-role-combobox": {
+    "title": "role=\"combobox\"",
+    "content": "<p>role=\"combobox\" Coming Soon!</p>"
+  },
+  "aria-role-listbox-option": {
+    "title": "role=\"listbox/option\"",
+    "content": "<p>role=\"listbox/option\" Coming Soon!</p>"
+  },
+  "aria-role-menu-menubar-menuitem": {
+    "title": "role=\"menu/menubar/menuitem\"",
+    "content": "<p>role=\"menu/menubar/menuitem\" Coming Soon!</p>"
+  },
+  "aria-role-tab-tablist-tabpanel": {
+    "title": "role=\"tab/tablist/tabpanel\"",
+    "content": "<p>role=\"tab/tablist/tabpanel\" Coming Soon!</p>"
+  },
+  "aria-role-tree-treeitem-treegrid": {
+    "title": "role=\"tree/treeitem/treegrid\"",
+    "content": "<p>role=\"tree/treeitem/treegrid\" Coming Soon!</p>"
+  },
+  "aria-role-slider": {
+    "title": "role=\"slider\"",
+    "content": "<p>role=\"slider\" Coming Soon!</p>"
+  },
+  "aria-role-progressbar-meter": {
+    "title": "role=\"progressbar/meter\"",
+    "content": "<p>role=\"progressbar/meter\" Coming Soon!</p>"
+  },
+  "aria-role-tooltip": {
+    "title": "role=\"tooltip\"",
+    "content": "<p>role=\"tooltip\" Coming Soon!</p>"
+  },
+  "aria-role-alert-alertdialog": {
+    "title": "role=\"alert/alertdialog\"",
+    "content": "<p>role=\"alert/alertdialog\" Coming Soon!</p>"
+  },
+  "aria-quiz-3-widget-roles": {
+    "title": "Quiz 3: Widget Roles",
+    "content": "<p>Quiz 3: Widget Roles Coming Soon!</p>"
+  },
+  "aria-intro-states-properties": {
+    "title": "Intro States/Properties",
+    "content": "<p>Intro States/Properties Coming Soon!</p>"
+  },
+  "aria-state-vs-property": {
+    "title": "State vs Property",
+    "content": "<p>State vs Property Coming Soon!</p>"
+  },
+  "aria-aria-expanded": {
+    "title": "aria-expanded",
+    "content": "<p>aria-expanded Coming Soon!</p>"
+  },
+  "aria-aria-selected": {
+    "title": "aria-selected",
+    "content": "<p>aria-selected Coming Soon!</p>"
+  },
+  "aria-aria-checked": {
+    "title": "aria-checked",
+    "content": "<p>aria-checked Coming Soon!</p>"
+  },
+  "aria-aria-disabled": {
+    "title": "aria-disabled",
+    "content": "<p>aria-disabled Coming Soon!</p>"
+  },
+  "aria-aria-label": {
+    "title": "aria-label",
+    "content": "<p>aria-label Coming Soon!</p>"
+  },
+  "aria-aria-labelledby": {
+    "title": "aria-labelledby",
+    "content": "<p>aria-labelledby Coming Soon!</p>"
+  },
+  "aria-aria-describedby": {
+    "title": "aria-describedby",
+    "content": "<p>aria-describedby Coming Soon!</p>"
+  },
+  "aria-quiz-4-basic-states-properties": {
+    "title": "Quiz 4: Basic States/Properties",
+    "content": "<p>Quiz 4: Basic States/Properties Coming Soon!</p>"
+  },
+  "aria-aria-current": {
+    "title": "aria-current",
+    "content": "<p>aria-current Coming Soon!</p>"
+  },
+  "aria-aria-pressed": {
+    "title": "aria-pressed",
+    "content": "<p>aria-pressed Coming Soon!</p>"
+  },
+  "aria-aria-busy": {
+    "title": "aria-busy",
+    "content": "<p>aria-busy Coming Soon!</p>"
+  },
+  "aria-aria-invalid": {
+    "title": "aria-invalid",
+    "content": "<p>aria-invalid Coming Soon!</p>"
+  },
+  "aria-aria-controls": {
+    "title": "aria-controls",
+    "content": "<p>aria-controls Coming Soon!</p>"
+  },
+  "aria-aria-owns": {
+    "title": "aria-owns",
+    "content": "<p>aria-owns Coming Soon!</p>"
+  },
+  "aria-aria-posinset-setsize": {
+    "title": "aria-posinset/setsize",
+    "content": "<p>aria-posinset/setsize Coming Soon!</p>"
+  },
+  "aria-aria-valuemin-max-now": {
+    "title": "aria-valuemin/max/now",
+    "content": "<p>aria-valuemin/max/now Coming Soon!</p>"
+  },
+  "aria-enhance-custom-forms": {
+    "title": "Enhance Custom Forms",
+    "content": "<p>Enhance Custom Forms Coming Soon!</p>"
+  },
+  "aria-accessible-dynamic-content-live-regions": {
+    "title": "Accessible Dynamic Content (Live Regions)",
+    "content": "<p>Accessible Dynamic Content (Live Regions) Coming Soon!</p>"
+  },
+  "aria-quiz-5-intermediate-states-properties": {
+    "title": "Quiz 5: Intermediate States/Properties",
+    "content": "<p>Quiz 5: Intermediate States/Properties Coming Soon!</p>"
+  },
+  "aria-intro-live-regions": {
+    "title": "Intro Live Regions",
+    "content": "<p>Intro Live Regions Coming Soon!</p>"
+  },
+  "aria-aria-live-off": {
+    "title": "aria-live=\"off\"",
+    "content": "<p>aria-live=\"off\" Coming Soon!</p>"
+  },
+  "aria-aria-live-polite": {
+    "title": "aria-live=\"polite\"",
+    "content": "<p>aria-live=\"polite\" Coming Soon!</p>"
+  },
+  "aria-aria-live-assertive": {
+    "title": "aria-live=\"assertive\"",
+    "content": "<p>aria-live=\"assertive\" Coming Soon!</p>"
+  },
+  "aria-aria-relevant": {
+    "title": "aria-relevant",
+    "content": "<p>aria-relevant Coming Soon!</p>"
+  },
+  "aria-aria-atomic": {
+    "title": "aria-atomic",
+    "content": "<p>aria-atomic Coming Soon!</p>"
+  },
+  "aria-live-region-best-practices": {
+    "title": "Live Region Best Practices",
+    "content": "<p>Live Region Best Practices Coming Soon!</p>"
+  },
+  "aria-live-region-pitfalls": {
+    "title": "Live Region Pitfalls",
+    "content": "<p>Live Region Pitfalls Coming Soon!</p>"
+  },
+  "aria-live-region-examples": {
+    "title": "Live Region Examples",
+    "content": "<p>Live Region Examples Coming Soon!</p>"
+  },
+  "aria-quiz-6-live-regions": {
+    "title": "Quiz 6: Live Regions",
+    "content": "<p>Quiz 6: Live Regions Coming Soon!</p>"
+  },
+  "aria-js-role-in-aria-updates": {
+    "title": "JS Role in ARIA Updates",
+    "content": "<p>JS Role in ARIA Updates Coming Soon!</p>"
+  },
+  "aria-update-states-properties-with-js": {
+    "title": "Update States/Properties with JS",
+    "content": "<p>Update States/Properties with JS Coming Soon!</p>"
+  },
+  "aria-manage-focus-with-js": {
+    "title": "Manage Focus with JS",
+    "content": "<p>Manage Focus with JS Coming Soon!</p>"
+  },
+  "aria-accessible-keyboard-interactions-js": {
+    "title": "Accessible Keyboard Interactions (JS)",
+    "content": "<p>Accessible Keyboard Interactions (JS) Coming Soon!</p>"
+  },
+  "aria-announce-dynamic-content-js": {
+    "title": "Announce Dynamic Content (JS)",
+    "content": "<p>Announce Dynamic Content (JS) Coming Soon!</p>"
+  },
+  "aria-update-aria-on-interaction": {
+    "title": "Update ARIA on Interaction",
+    "content": "<p>Update ARIA on Interaction Coming Soon!</p>"
+  },
+  "aria-test-dynamic-aria-with-screen-readers": {
+    "title": "Test Dynamic ARIA with Screen Readers",
+    "content": "<p>Test Dynamic ARIA with Screen Readers Coming Soon!</p>"
+  },
+  "aria-quiz-7-aria-js": {
+    "title": "Quiz 7: ARIA and JS",
+    "content": "<p>Quiz 7: ARIA and JS Coming Soon!</p>"
+  },
+  "aria-rule-1-no-aria-if-native-html-works": {
+    "title": "Rule 1: No ARIA if Native HTML Works",
+    "content": "<p>Rule 1: No ARIA if Native HTML Works Coming Soon!</p>"
+  },
+  "aria-rule-2-if-aria-make-it-correct": {
+    "title": "Rule 2: If ARIA, Make it Correct",
+    "content": "<p>Rule 2: If ARIA, Make it Correct Coming Soon!</p>"
+  },
+  "aria-rule-3-keyboard-usable": {
+    "title": "Rule 3: Keyboard Usable",
+    "content": "<p>Rule 3: Keyboard Usable Coming Soon!</p>"
+  },
+  "aria-rule-4-role-presentation-none": {
+    "title": "Rule 4: role=\"presentation\"/none",
+    "content": "<p>Rule 4: role=\"presentation\"/none Coming Soon!</p>"
+  },
+  "aria-pattern-accessible-accordions": {
+    "title": "Pattern: Accessible Accordions",
+    "content": "<p>Pattern: Accessible Accordions Coming Soon!</p>"
+  },
+  "aria-pattern-accessible-modal-dialogs": {
+    "title": "Pattern: Accessible Modal Dialogs",
+    "content": "<p>Pattern: Accessible Modal Dialogs Coming Soon!</p>"
+  },
+  "aria-pattern-accessible-carousels": {
+    "title": "Pattern: Accessible Carousels",
+    "content": "<p>Pattern: Accessible Carousels Coming Soon!</p>"
+  },
+  "aria-pattern-accessible-toolbars": {
+    "title": "Pattern: Accessible Toolbars",
+    "content": "<p>Pattern: Accessible Toolbars Coming Soon!</p>"
+  },
+  "aria-pattern-accessible-data-tables": {
+    "title": "Pattern: Accessible Data Tables",
+    "content": "<p>Pattern: Accessible Data Tables Coming Soon!</p>"
+  },
+  "aria-quiz-8-best-practices-patterns": {
+    "title": "Quiz 8: Best Practices/Patterns",
+    "content": "<p>Quiz 8: Best Practices/Patterns Coming Soon!</p>"
+  },
+  "aria-inspect-aria-dev-tools": {
+    "title": "Inspect ARIA (Dev Tools)",
+    "content": "<p>Inspect ARIA (Dev Tools) Coming Soon!</p>"
+  },
+  "aria-a11y-testing-tools": {
+    "title": "A11y Testing Tools",
+    "content": "<p>A11y Testing Tools Coming Soon!</p>"
+  },
+  "aria-test-with-screen-readers-basic": {
+    "title": "Test with Screen Readers (Basic)",
+    "content": "<p>Test with Screen Readers (Basic) Coming Soon!</p>"
+  },
+  "aria-keyboard-nav-testing": {
+    "title": "Keyboard Nav Testing",
+    "content": "<p>Keyboard Nav Testing Coming Soon!</p>"
+  },
+  "aria-identify-aria-errors": {
+    "title": "Identify ARIA Errors",
+    "content": "<p>Identify ARIA Errors Coming Soon!</p>"
+  },
+  "aria-a11y-conformance-wcag-aria": {
+    "title": "A11y Conformance (WCAG/ARIA)",
+    "content": "<p>A11y Conformance (WCAG/ARIA) Coming Soon!</p>"
+  },
+  "aria-user-testing-with-assistive-tech": {
+    "title": "User Testing with Assistive Tech",
+    "content": "<p>User Testing with Assistive Tech Coming Soon!</p>"
+  },
+  "aria-quiz-9-aria-a11y-testing": {
+    "title": "Quiz 9: ARIA/A11y Testing",
+    "content": "<p>Quiz 9: ARIA/A11y Testing Coming Soon!</p>"
+  },
+  "aria-aria-authoring-practices-guide": {
+    "title": "ARIA Authoring Practices Guide (APG)",
+    "content": "<p>ARIA Authoring Practices Guide (APG) Coming Soon!</p>"
+  },
+  "aria-advanced-states-properties": {
+    "title": "Advanced States/Properties",
+    "content": "<p>Advanced States/Properties Coming Soon!</p>"
+  },
+  "aria-touch-interactions": {
+    "title": "Touch Interactions",
+    "content": "<p>Touch Interactions Coming Soon!</p>"
+  },
+  "aria-aria-in-spas": {
+    "title": "ARIA in SPAs",
+    "content": "<p>ARIA in SPAs Coming Soon!</p>"
+  },
+  "aria-aria-ssr": {
+    "title": "ARIA and SSR",
+    "content": "<p>ARIA and SSR Coming Soon!</p>"
+  },
+  "aria-future-of-aria": {
+    "title": "Future of ARIA",
+    "content": "<p>Future of ARIA Coming Soon!</p>"
+  },
+  "aria-contribute-to-aria-docs": {
+    "title": "Contribute to ARIA Docs",
+    "content": "<p>Contribute to ARIA Docs Coming Soon!</p>"
+  },
+  "aria-quiz-10-advanced-concepts": {
+    "title": "Quiz 10: Advanced Concepts",
+    "content": "<p>Quiz 10: Advanced Concepts Coming Soon!</p>"
+  },
+  "aria-aria-semantic-html-revisited": {
+    "title": "ARIA + Semantic HTML (Revisited)",
+    "content": "<p>ARIA + Semantic HTML (Revisited) Coming Soon!</p>"
+  },
+  "aria-aria-css": {
+    "title": "ARIA + CSS",
+    "content": "<p>ARIA + CSS Coming Soon!</p>"
+  },
+  "aria-aria-svg-a11y": {
+    "title": "ARIA + SVG A11y",
+    "content": "<p>ARIA + SVG A11y Coming Soon!</p>"
+  },
+  "aria-aria-web-components": {
+    "title": "ARIA + Web Components",
+    "content": "<p>ARIA + Web Components Coming Soon!</p>"
+  },
+  "aria-aria-in-native-mobile": {
+    "title": "ARIA in Native Mobile",
+    "content": "<p>ARIA in Native Mobile Coming Soon!</p>"
+  },
+  "aria-quiz-11-related-tech": {
+    "title": "Quiz 11: Related Tech",
+    "content": "<p>Quiz 11: Related Tech Coming Soon!</p>"
+  },
+  "aria-complex-widget-implementations": {
+    "title": "Complex Widget Implementations",
+    "content": "<p>Complex Widget Implementations Coming Soon!</p>"
+  },
+  "aria-perf-optimization-aria-updates": {
+    "title": "Perf Optimization (ARIA Updates)",
+    "content": "<p>Perf Optimization (ARIA Updates) Coming Soon!</p>"
+  },
+  "aria-advanced-a11y-testing-debugging": {
+    "title": "Advanced A11y Testing/Debugging",
+    "content": "<p>Advanced A11y Testing/Debugging Coming Soon!</p>"
+  },
+  "aria-contribute-to-aria-specs": {
+    "title": "Contribute to ARIA Specs",
+    "content": "<p>Contribute to ARIA Specs Coming Soon!</p>"
+  },
+  "aria-emerging-a11y-apis": {
+    "title": "Emerging A11y APIs",
+    "content": "<p>Emerging A11y APIs Coming Soon!</p>"
+  },
+  "aria-advocate-for-a11y-inclusive-design": {
+    "title": "Advocate for A11y/Inclusive Design",
+    "content": "<p>Advocate for A11y/Inclusive Design Coming Soon!</p>"
+  },
+  "aria-final-project": {
+    "title": "Final Project",
+    "content": "<p>Final Project Coming Soon!</p>"
+  }
+}

@@ -1,552 +1,1795 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeA11y.Dev | Homepage</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
-    <link href="https://getbootstrap.com/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/footers/">
-    <script src="https://getbootstrap.com/docs/5.3/assets/js/color-modes.js"></script>
+    <title>CodeA11y | Home</title>
+
+    <meta http-equiv="X-Compatible" content="IE=edge">
+
+    <meta name="description"
+        content="Learn HTML, CSS, JavaScript, and ARIA for building accessible websites with CodeA11y tutorials and resources.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Daniel Westfall">
+    <meta name="copyright" content="© 2025 Daniel Westfall">
+    <meta name="language" content="en">
+    <meta name="theme-color" content="#193146">
+    <meta property="og:title" content="CodeA11y | Learn Web Accessibility">
+    <meta property="og:description"
+        content="Master accessible web development with tutorials on HTML, CSS, JavaScript, and ARIA.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.codea11y.dev/">
+    <meta property="og:locale" content="en_US">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="canonical" href="https://www.codea11y.dev/">
+
+    <!-- Finish later
+    <meta property="og:image" content="https://www.yourwebsite.com/assets/share-image.jpg">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CodeA11y | Learn Web Accessibility">
+    <meta name="twitter:description"
+        content="Master accessible web development with tutorials on HTML, CSS, JavaScript, and ARIA.">
+    <meta name="twitter:image" content="https://www.yourwebsite.com/assets/twitter-share-image.jpg">
+    <meta name="twitter:site" content="@YourTwitterHandle">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="google-site-verification" content="">
+    <meta name="bing-site-auth" content="">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <meta name="format-detection" content="telephone=no, email=no, address=no">
+
+    -->
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <a class="visually-hidden-focusable" href="#content">Skip to main content</a>
-    <div class="container">
-        <header
-            class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-            <div class="col-md-3 mb-2 mb-md-0">
-                <a class="navbar-brand" href="#">
-                    <img src="./assets/codea11y_logo.svg" height="60" alt="CodeA11y logo" loading="lazy">
-                </a>
-            </div>
 
-            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="#learn" class="nav-link px-2">Learn</a></li>
-                <li><a href="https://www.youtube.com/channel/UCXKRL86_pPtqy_C_13ikaew" class="nav-link px-2">YouTube</a>
+    <header class="banner">
+        <div class="logo">
+            <img src="assets/codea11y_logo.svg" alt="codea11y" loading="lazy">
+        </div>
+        <nav class="navbar">
+            <!--<ul>
+                <li><a href="/learn">Learn</a></li>
+                <li><a href="/about">About Me</a></li>
+                <li><a href="https://www.youtube.com/yourchannel" target="_blank" rel="noopener noreferrer">YouTube</a>
                 </li>
-                <li><a href="#contact" class="nav-link px-2">Contact</a></li>
-                <li><a href="#about" class="nav-link px-2">About</a></li>
-                <li><a href="https://certreq.dev/certreq-blog/" target="_blank" rel="noopener noreferrer"
-                        class="nav-link px-2">Blog</a></li>
-            </ul>
+            </ul>-->
+        </nav>
+    </header>
 
-
-        </header>
-    </div>
-
-    <main>
-
-        <div id="content" class="container col-xxl-8 px-4 py-5">
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="/assets/codea11y_logo.svg" class="d-block mx-lg-auto img-fluid" alt="CodeA11y logo"
-                        width="700" height="500" loading="lazy">
-                </div>
-                <div class="col-lg-6">
-                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">CodeA11y.Dev</h1>
-                    <p class="lead">
-                        Welcome to CodeA11y.dev, where we aim to make things that work for everyone.
-                        As Tim Berners-Lee said, 'The power of the web is in its universality.'
-                        Accessibility isn't just for users with disabilities, it benefits everyone.
-                        This site is a work in progress, but will eventually contain information on how to make your
-                        site more accessible. We'll have articles, videos, and links to other resources on HTML, CSS,
-                        JavaScript, ARIA, and more.
-                    </p>
-                </div>
-            </div>
+    <main class="tabbed-content">
+        <div role="tablist" aria-label="Tutorial Languages">
+            <button role="tab" id="html-tab" aria-controls="html-panel" aria-selected="true">HTML</button>
+            <button role="tab" id="css-tab" aria-controls="css-panel" aria-selected="false">CSS</button>
+            <button role="tab" id="js-tab" aria-controls="js-panel" aria-selected="false">JavaScript</button>
+            <button role="tab" id="aria-tab" aria-controls="aria-panel" aria-selected="false">ARIA</button>
         </div>
 
-        <!-- ======================================================================== -->
-        <div class="b-example-divider"></div>
-        <!-- ======================================================================== -->
+        <div role="tabpanel" id="html-panel" aria-labelledby="html-tab">
+            <div class="accordion-container">
 
-        <div class="container px-4 py-5" id="featured-3">
-            <h2 id="about" class="pb-2 border-bottom">My Philosophy and Logo</h2>
-            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-                <div class="feature col">
-                    <div
-                        class="feature-icon d-inline-flex align-items-center justify-content-center  bg-gradient fs-2 mb-3">
-                        <img src="assets/a11yhuman.svg" alt="Human accessibility icon" height="100px">
-                    </div>
-                    <h3 class="fs-2 text-body-emphasis">
-                        Human
-                    </h3>
-                    <p>
-                        My philosophy is represented graphically within the logo I designed for this site. Let's break
-                        it down
-                        and I'll explain how I put it
-                        together. A common icon used for accessible content on the web is a stick figure of a human with
-                        it's arms out.
-                        This can be used to represent us all, either as users with different levels of ability or as a
-                        content creator
-                        looking for ways to get our content to as many people as possible.
-
-                    </p>
-                </div>
-                <div class="feature col">
-                    <div
-                        class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3">
-                        <img src="assets/a11ylinks.svg" alt="Web link icon" height="100px"
-                            style="padding-top:25px;padding-bottom:25px">
-                    </div>
-                    <h3 class="fs-2 text-body-emphasis">Links</h3>
-                    <p>
-                        What would the internet be without links? Without pages connected to one another, there would be
-                        no internet. The second element of my icon is a simple variation on a common link icon. Usually
-                        depicted as two or three
-                        links
-                        of a chain. In my logo we have two different links with the arms of the accessible human
-                        linking them together.
-                    </p>
-                </div>
-                <div class="feature col">
-                    <div
-                        class="feature-icon d-inline-flex align-items-center justify-content-center  bg-gradient fs-2 mb-3">
-                        <img src="assets/missing_link_logo_no_text.svg"
-                            alt="Missing Link Logo, the combined accessible human and links icons" height="100px">
-                    </div>
-                    <h3 class="fs-2 text-body-emphasis">
-                        Accessibility Links All
-                    </h3>
-                    <p>
-                        So in my logo, we represent how everyone benefits from accessibility. Either as the creator
-                        who utilizes
-                        accessibility to ensure everyone can access their art or information, or as the user who is able
-                        to access the information provided and therefore completes that link.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <!-- ======================================================================== -->
-        <div class="b-example-divider"></div>
-        <!-- ======================================================================== -->
-
-        <div class="container px-4 py-5" id="custom-cards">
-            <h2 id="learn" class="pb-2 border-bottom">WCAG Principles</h2>
-
-            <div class="row row-cols-1 row-cols-lg-4 align-items-stretch g-4 py-5">
-                <div class="col">
-                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                        style="background-image: url('assets/star1.png');">
-                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="5em" height="5em" fill="white"
-                                class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                <path
-                                    d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                            </svg>
-                            <p class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Per<br>
-                                &nbsp;&nbsp;ceiv<br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;able</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                        style="background-image: url('assets/star2.png');">
-                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-
-                            <svg xmlns="http://www.w3.org/2000/svg" width="5em" height="5em" fill="currentColor"
-                                class="bi bi-gear-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
-                            </svg>
-
-                            <p class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"><br>Oper <br>
-                                &nbsp;&nbsp;able
-                            </p>
-
-                        </div>
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="html-topic-i-panel">
+                        I. Getting Started
+                    </button>
+                    <div id="html-topic-i-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="html-what-is-html" aria-selected="false"
+                            data-toggle-group="html-i">What is HTML?</button>
+                        <button type="button" data-article="html-why-learn-html" aria-selected="false"
+                            data-toggle-group="html-i">Why Learn HTML?</button>
+                        <button type="button" data-article="html-tools-you-need" aria-selected="false"
+                            data-toggle-group="html-i">Tools You Need</button>
+                        <button type="button" data-article="html-your-first-html-file" aria-selected="false"
+                            data-toggle-group="html-i">Your First HTML File</button>
+                        <button type="button" data-article="html-basic-html-structure" aria-selected="false"
+                            data-toggle-group="html-i">Basic HTML Structure</button>
+                        <button type="button" data-article="html-the-head-section" aria-selected="false"
+                            data-toggle-group="html-i">The &lt;head&gt; Section</button>
+                        <button type="button" data-article="html-the-body-section" aria-selected="false"
+                            data-toggle-group="html-i">The &lt;body&gt; Section</button>
+                        <button type="button" data-article="html-headings-h1-h6" aria-selected="false"
+                            data-toggle-group="html-i">Headings (&lt;h1&gt; to &lt;h6&gt;)</button>
+                        <button type="button" data-article="html-paragraphs-p" aria-selected="false"
+                            data-toggle-group="html-i">Paragraphs (&lt;p&gt;)</button>
+                        <button type="button" data-article="html-text-format-bold" aria-selected="false"
+                            data-toggle-group="html-i">Text Format: Bold</button>
+                        <button type="button" data-article="html-text-format-italics" aria-selected="false"
+                            data-toggle-group="html-i">Text Format: Italics</button>
+                        <button type="button" data-article="html-save-view-html" aria-selected="false"
+                            data-toggle-group="html-i">Save & View HTML</button>
+                        <button type="button" data-article="html-beginner-mistakes" aria-selected="false"
+                            data-toggle-group="html-i">Beginner Mistakes</button>
+                        <button type="button" data-article="html-quiz-1-basics" aria-selected="false"
+                            data-toggle-group="html-i">Quiz 1: Basics</button>
                     </div>
                 </div>
 
-                <div class="col">
-                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                        style="background-image: url('assets/star3.png');">
-
-
-
-                        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="5em" height="5em" fill="currentColor"
-                                class="bi bi-lightbulb-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5" />
-                            </svg>
-
-
-                            <p class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Under<br>
-                                &nbsp;&nbsp;stand<br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;able</p>
-
-                        </div>
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="html-topic-ii-panel">
+                        II. Content and Structure
+                    </button>
+                    <div id="html-topic-ii-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="html-unordered-lists-ul" aria-selected="false"
+                            data-toggle-group="html-ii">Unordered Lists (&lt;ul&gt;)</button>
+                        <button type="button" data-article="html-ordered-lists-ol" aria-selected="false"
+                            data-toggle-group="html-ii">Ordered Lists (&lt;ol&gt;)</button>
+                        <button type="button" data-article="html-descriptive-lists-dl" aria-selected="false"
+                            data-toggle-group="html-ii">Descriptive Lists (&lt;dl&gt;)</button>
+                        <button type="button" data-article="html-breaks-br-rules-hr" aria-selected="false"
+                            data-toggle-group="html-ii">Breaks (&lt;br&gt;), Rules (&lt;hr&gt;)</button>
+                        <button type="button" data-article="html-images-img-src" aria-selected="false"
+                            data-toggle-group="html-ii">Images (&lt;img&gt;): src</button>
+                        <button type="button" data-article="html-images-img-alt-a11y" aria-selected="false"
+                            data-toggle-group="html-ii">Images (&lt;img&gt;): alt (A11y)</button>
+                        <button type="button" data-article="html-image-dimensions-best" aria-selected="false"
+                            data-toggle-group="html-ii">Image Dimensions (Best)</button>
+                        <button type="button" data-article="html-links-a-href-internal" aria-selected="false"
+                            data-toggle-group="html-ii">Links (&lt;a&gt;): href (Internal)</button>
+                        <button type="button" data-article="html-links-a-href-external" aria-selected="false"
+                            data-toggle-group="html-ii">Links (&lt;a&gt;): href (External)</button>
+                        <button type="button" data-article="html-links-a-target-blank" aria-selected="false"
+                            data-toggle-group="html-ii">Links (&lt;a&gt;): target (_blank)</button>
+                        <button type="button" data-article="html-content-div" aria-selected="false"
+                            data-toggle-group="html-ii">Content: &lt;div&gt;</button>
+                        <button type="button" data-article="html-semantic-header-nav-main-footer" aria-selected="false"
+                            data-toggle-group="html-ii">Semantic: &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;,
+                            &lt;footer&gt;</button>
+                        <button type="button" data-article="html-semantic-article-section-aside" aria-selected="false"
+                            data-toggle-group="html-ii">Semantic: &lt;article&gt;, &lt;section&gt;,
+                            &lt;aside&gt;</button>
+                        <button type="button" data-article="html-inline-vs-block" aria-selected="false"
+                            data-toggle-group="html-ii">Inline vs Block</button>
+                        <button type="button" data-article="html-quiz-2-lists-images-links" aria-selected="false"
+                            data-toggle-group="html-ii">Quiz 2: Lists, Images, Links</button>
                     </div>
                 </div>
 
-                <div class="col">
-                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                        style="background-image: url('assets/star4.png');">
-                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-
-                            <svg xmlns="http://www.w3.org/2000/svg" width="5em" height="5em" fill="currentColor"
-                                class="bi bi-phone-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0" />
-                            </svg>
-
-                            <p class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"><br><br>Robust
-                            </p>
-
-                        </div>
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="html-topic-iii-panel">
+                        III. Tables and Forms
+                    </button>
+                    <div id="html-topic-iii-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="html-intro-tables" aria-selected="false"
+                            data-toggle-group="html-iii">Intro Tables</button>
+                        <button type="button" data-article="html-table-headers-th" aria-selected="false"
+                            data-toggle-group="html-iii">Table Headers (&lt;th&gt;)</button>
+                        <button type="button" data-article="html-table-captions-caption" aria-selected="false"
+                            data-toggle-group="html-iii">Table Captions (&lt;caption&gt;)</button>
+                        <button type="button" data-article="html-row-col-spanning" aria-selected="false"
+                            data-toggle-group="html-iii">Row/Col Spanning</button>
+                        <button type="button" data-article="html-table-structure-thead-tbody-tfoot"
+                            aria-selected="false" data-toggle-group="html-iii">Table Structure (thead, tbody,
+                            tfoot)</button>
+                        <button type="button" data-article="html-basic-forms-form" aria-selected="false"
+                            data-toggle-group="html-iii">Basic Forms (&lt;form&gt;)</button>
+                        <button type="button" data-article="html-text-input" aria-selected="false"
+                            data-toggle-group="html-iii">Text Input</button>
+                        <button type="button" data-article="html-password-input" aria-selected="false"
+                            data-toggle-group="html-iii">Password Input</button>
+                        <button type="button" data-article="html-submit-buttons" aria-selected="false"
+                            data-toggle-group="html-iii">Submit Buttons</button>
+                        <button type="button" data-article="html-labels-label" aria-selected="false"
+                            data-toggle-group="html-iii">Labels (&lt;label&gt;)</button>
+                        <button type="button" data-article="html-radio-buttons" aria-selected="false"
+                            data-toggle-group="html-iii">Radio Buttons</button>
+                        <button type="button" data-article="html-checkboxes" aria-selected="false"
+                            data-toggle-group="html-iii">Checkboxes</button>
+                        <button type="button" data-article="html-dropdown-select" aria-selected="false"
+                            data-toggle-group="html-iii">Dropdown Select</button>
+                        <button type="button" data-article="html-text-areas" aria-selected="false"
+                            data-toggle-group="html-iii">Text Areas</button>
+                        <button type="button" data-article="html-fieldset-legend" aria-selected="false"
+                            data-toggle-group="html-iii">Fieldset & Legend</button>
+                        <button type="button" data-article="html-form-attributes-action-method" aria-selected="false"
+                            data-toggle-group="html-iii">Form Attributes (action, method)</button>
+                        <button type="button" data-article="html-quiz-3-tables-forms" aria-selected="false"
+                            data-toggle-group="html-iii">Quiz 3: Tables/Forms</button>
                     </div>
                 </div>
 
-            </div>
-        </div>
-
-        <!-- ======================================================================== -->
-        <div class="b-example-divider"></div>
-        <!-- ======================================================================== -->
-
-        <div class="container px-4 py-5">
-            <h2 id="part5" class="pb-2 border-bottom">Let's Learn Together</h2>
-
-            <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
-                <div class="col d-flex flex-column align-items-start gap-2">
-                    <svg role="img" aria-describedby="uniqueTitleID uniqueDescID" height="200px" width="200px"
-                        version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"
-                        fill="#000000">
-                        <title id="uniqueTitleID">A student studying</title>
-                        <desc id="uniqueDescID"></desc>
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <path style="fill:#F4FFF9;"
-                                d="M482.358,29.642v452.716c0,5.953-4.826,10.779-10.779,10.779H29.642 c-5.953,0-10.779-4.826-10.779-10.779V29.642c0-5.953,4.826-10.779,10.779-10.779h441.937 C477.532,18.863,482.358,23.689,482.358,29.642z">
-                            </path>
-                            <path style="fill:#A89B80;"
-                                d="M482.358,460.8v32.337c0,5.953-4.826,10.779-10.779,10.779H18.863 c-5.953,0-10.779-4.826-10.779-10.779V460.8c0-5.953,4.826-10.779,10.779-10.779h452.716 C477.532,450.021,482.358,454.847,482.358,460.8z">
-                            </path>
-                            <path style="fill:#fd793f;"
-                                d="M234.442,320.674v107.789H40.421V320.674c0-35.718,28.955-64.674,64.674-64.674h64.674 C205.487,256,234.442,284.955,234.442,320.674z">
-                            </path>
-                            <path style="fill:#fd793f;"
-                                d="M137.432,428.463H40.421V320.674c0-35.718,28.955-64.674,64.674-64.674h32.337V428.463z">
-                            </path>
-                            <path style="fill:#EFDDAB;"
-                                d="M256,503.916h-97.011c-11.906,0-21.558-9.651-21.558-21.558V342.232 c0-11.906,9.651-21.558,21.558-21.558H256c11.906,0,21.558,9.651,21.558,21.558v140.126 C277.558,494.264,267.906,503.916,256,503.916z">
-                            </path>
-                            <path style="fill:#fd793f;"
-                                d="M180.547,180.547c0,23.812-19.304,43.116-43.116,43.116s-43.116-19.304-43.116-43.116 s19.304-43.116,43.116-43.116C161.244,137.432,180.547,156.736,180.547,180.547z M137.432,417.684H83.537V353.01 c0-5.953-4.826-10.779-10.779-10.779H40.421v97.011c0,11.906,9.651,21.558,21.558,21.558h75.453 c11.906,0,21.558-9.651,21.558-21.558l0,0C158.989,427.336,149.338,417.684,137.432,417.684z">
-                            </path>
-                            <path style="fill:#fd793f;"
-                                d="M137.432,137.432v86.232c-23.812,0-43.116-19.304-43.116-43.116S113.62,137.432,137.432,137.432z">
-                            </path>
-                            <path style="fill:#B28D5B;"
-                                d="M482.358,191.326v107.789c0,5.953-4.826,10.779-10.779,10.779h-32.337h-32.337 c-5.953,0-10.779-4.826-10.779-10.779V191.326c0-5.953,4.826-10.779,10.779-10.779h21.558c5.953,0,10.779,4.826,10.779,10.779 c0-5.953,4.826-10.779,10.779-10.779h21.558C477.532,180.547,482.358,185.373,482.358,191.326z">
-                            </path>
-                            <path style="fill:#7F5D3B;"
-                                d="M460.8,180.547v129.347h-10.779c-5.953,0-10.779-4.826-10.779-10.779 c0,5.953-4.826,10.779-10.779,10.779h-21.558c-5.953,0-10.779-4.826-10.779-10.779V191.326c0-5.953,4.826-10.779,10.779-10.779 h21.558c5.953,0,10.779,4.826,10.779,10.779c0-5.953,4.826-10.779,10.779-10.779H460.8z">
-                            </path>
-                            <path style="fill:#FF8355;"
-                                d="M385.347,18.863v107.789c0,5.953-4.826,10.779-10.779,10.779h-32.337h-32.337 c-5.953,0-10.779-4.826-10.779-10.779V18.863c0-5.953,4.826-10.779,10.779-10.779h21.558c5.953,0,10.779,4.826,10.779,10.779 c0-5.953,4.826-10.779,10.779-10.779h21.558C380.522,8.084,385.347,12.91,385.347,18.863z">
-                            </path>
-                            <path style="fill:#E55D30;"
-                                d="M363.789,8.084v129.347h-21.558h-32.337c-5.953,0-10.779-4.826-10.779-10.779V18.863 c0-5.953,4.826-10.779,10.779-10.779h21.558c5.953,0,10.779,4.826,10.779,10.779c0-5.953,4.826-10.779,10.779-10.779H363.789z">
-                            </path>
-                            <path style="fill:#B28D5B;"
-                                d="M342.232,137.432h-32.337c-5.953,0-10.779-4.826-10.779-10.779V18.863 c0-5.953,4.826-10.779,10.779-10.779h21.558c5.953,0,10.779,4.826,10.779,10.779V137.432z">
-                            </path>
-                            <path style="fill:#7f3b3b;"
-                                d="M320.674,137.432h-10.779c-5.953,0-10.779-4.826-10.779-10.779V18.863 c0-5.953,4.826-10.779,10.779-10.779h10.779V137.432z">
-                            </path>
-                            <path style="fill:#769CA5;"
-                                d="M474.082,122.422l-18.669,10.779c-5.156,2.976-11.748,1.21-14.724-3.945l-53.895-93.349 c-2.976-5.156-1.21-11.748,3.945-14.724l18.669-10.779c5.156-2.976,11.748-1.21,14.724,3.945l53.895,93.349 C481.004,112.852,479.237,119.445,474.082,122.422z">
-                            </path>
-                            <path style="fill:#5B7A7F;"
-                                d="M464.747,127.811l-9.335,5.389c-5.156,2.976-11.748,1.21-14.724-3.945l-53.895-93.349 c-2.976-5.156-1.21-11.748,3.945-14.724l9.335-5.389L464.747,127.811z">
-                            </path>
-                            <path style="fill:#FFA233;"
-                                d="M428.463,309.895h-21.558c-5.953,0-10.779-4.826-10.779-10.779V191.326 c0-5.953,4.826-10.779,10.779-10.779h21.558c5.953,0,10.779,4.826,10.779,10.779v107.789 C439.242,305.069,434.416,309.895,428.463,309.895z">
-                            </path>
-                            <path style="fill:#FF7E1D;"
-                                d="M417.684,309.895h-10.779c-5.953,0-10.779-4.826-10.779-10.779V191.326 c0-5.953,4.826-10.779,10.779-10.779h10.779V309.895z">
-                            </path>
-                            <path style="fill:#C1B291;"
-                                d="M363.789,450.021h129.347c5.953,0,10.779,4.826,10.779,10.779v32.337 c0,5.953-4.826,10.779-10.779,10.779H363.789c-5.953,0-10.779-4.826-10.779-10.779V460.8 C353.01,454.847,357.836,450.021,363.789,450.021z">
-                            </path>
-                            <path style="fill:#DBCBA1;"
-                                d="M363.789,417.684h129.347c5.953,0,10.779,4.826,10.779,10.779V460.8 c0,5.953-4.826,10.779-10.779,10.779H363.789c-5.953,0-10.779-4.826-10.779-10.779v-32.337 C353.01,422.51,357.836,417.684,363.789,417.684z">
-                            </path>
-                            <path style="fill:#EFDDAB;"
-                                d="M363.789,385.347h129.347c5.953,0,10.779,4.826,10.779,10.779v32.337 c0,5.953-4.826,10.779-10.779,10.779H363.789c-5.953,0-10.779-4.826-10.779-10.779v-32.337 C353.01,390.173,357.836,385.347,363.789,385.347z">
-                            </path>
-                            <path
-                                d="M277.558,145.516h226.358c4.465,0,8.084-3.62,8.084-8.084c0-4.465-3.62-8.084-8.084-8.084h-25.663 c8.908-5.235,11.95-16.728,6.776-25.692l0,0l-53.895-93.349c-2.519-4.363-6.587-7.485-11.454-8.788 c-4.866-1.304-9.949-0.634-14.313,1.884l-13.55,7.823C388.879,4.619,382.253,0,374.568,0H353.01c-4.004,0-7.722,1.255-10.779,3.391 C339.175,1.255,335.457,0,331.453,0h-21.558c-10.401,0-18.863,8.463-18.863,18.863v107.789c0,0.915,0.066,1.814,0.192,2.695h-13.666 c-4.465,0-8.084,3.62-8.084,8.084C269.474,141.896,273.093,145.516,277.558,145.516z M394.78,28.183l18.67-10.779 c0.482-0.278,0.951-0.361,1.339-0.361c0.29,0,0.534,0.045,0.706,0.092c0.403,0.108,1.15,0.414,1.636,1.256l53.895,93.348 c0.743,1.287,0.301,2.939-0.986,3.682l-18.67,10.779c-1.286,0.742-2.938,0.3-3.681-0.987l-53.895-93.349 C393.051,30.578,393.494,28.926,394.78,28.183z M393.432,126.653V63.573l37.974,65.774h-38.167 C393.366,128.467,393.432,127.568,393.432,126.653z M307.2,18.863c0-1.485,1.209-2.695,2.695-2.695h21.558 c1.485,0,2.695,1.209,2.695,2.695v21.558c0,4.465,3.62,8.084,8.084,8.084s8.084-3.62,8.084-8.084V18.863 c0-1.485,1.209-2.695,2.695-2.695h21.558c1.485,0,2.695,1.209,2.695,2.695v107.789c0,1.485-1.209,2.695-2.695,2.695H353.01 c-1.485,0-2.695-1.209-2.695-2.695V72.758c0-4.465-3.62-8.084-8.084-8.084s-8.084,3.62-8.084,8.084v53.895 c0,1.485-1.209,2.695-2.695,2.695h-21.558c-1.485,0-2.695-1.209-2.695-2.695V18.863z M493.137,377.263H363.789 c-10.401,0-18.863,8.463-18.863,18.863v45.811h-35.032c-4.465,0-8.084,3.62-8.084,8.084s3.62,8.084,8.084,8.084h35.032v35.032 c0,10.401,8.463,18.863,18.863,18.863h129.347c10.401,0,18.863-8.463,18.863-18.863v-97.01 C512,385.726,503.537,377.263,493.137,377.263z M495.832,493.137c0,1.485-1.209,2.695-2.695,2.695H363.789 c-1.485,0-2.695-1.209-2.695-2.695v-13.666c0.881,0.127,1.78,0.192,2.695,0.192h129.347c0.915,0,1.814-0.066,2.695-0.192V493.137z M495.832,460.8c0,1.485-1.209,2.695-2.695,2.695H363.789c-1.485,0-2.695-1.209-2.695-2.695v-10.779v-2.887 c0.881,0.127,1.78,0.192,2.695,0.192h129.347c0.915,0,1.814-0.066,2.695-0.192V460.8z M495.832,428.463 c0,1.485-1.209,2.695-2.695,2.695H363.789c-1.485,0-2.695-1.209-2.695-2.695v-32.337c0-1.485,1.209-2.695,2.695-2.695h35.032v13.474 c0,4.465,3.62,8.084,8.084,8.084s8.084-3.62,8.084-8.084v-13.474h16.168v13.474c0,4.465,3.62,8.084,8.084,8.084 c4.465,0,8.084-3.62,8.084-8.084v-13.474h16.168v13.474c0,4.465,3.62,8.084,8.084,8.084s8.084-3.62,8.084-8.084v-13.474h13.474 c1.485,0,2.695,1.209,2.695,2.695V428.463z M256,312.589h-13.92c-4.035-36.328-34.925-64.674-72.312-64.674h-64.674 c-40.119,0-72.758,32.639-72.758,72.758v118.568c0,0.908,0.041,1.808,0.122,2.695H8.084c-4.465,0-8.084,3.62-8.084,8.084 s3.62,8.084,8.084,8.084H39.13c5.441,6.579,13.664,10.779,22.849,10.779h67.368v13.474c0,16.345,13.297,29.642,29.642,29.642H256 c16.345,0,29.642-13.297,29.642-29.642V342.232C285.642,325.886,272.345,312.589,256,312.589z M137.432,452.716H61.979 c-7.43,0-13.474-6.044-13.474-13.474V320.674c0-31.204,25.386-56.589,56.589-56.589h64.674c28.459,0,52.078,21.117,56.014,48.505 h-66.793c-16.345,0-29.642,13.297-29.642,29.642V409.6H91.621v-67.368c0-4.465-3.62-8.084-8.084-8.084s-8.084,3.62-8.084,8.084 v75.453c0,4.465,3.62,8.084,8.084,8.084h53.805c0.053,0.001,0.106,0.001,0.16,0c7.398,0.039,13.404,6.067,13.404,13.474 C150.905,446.672,144.862,452.716,137.432,452.716z M269.474,482.358c0,7.43-6.044,13.474-13.474,13.474h-97.011 c-7.43,0-13.474-6.044-13.474-13.474v-14.595c12.428-3.527,21.558-14.978,21.558-28.521s-9.13-24.994-21.558-28.521v-68.489 c0-7.43,6.044-13.474,13.474-13.474H256c7.43,0,13.474,6.044,13.474,13.474V482.358z M253.305,396.126 c0,4.465-3.62,8.084-8.084,8.084h-64.674c-4.465,0-8.084-3.62-8.084-8.084c0-4.465,3.62-8.084,8.084-8.084h64.674 C249.686,388.042,253.305,391.662,253.305,396.126z M503.916,301.811H490.25c0.127-0.881,0.192-1.78,0.192-2.695V191.326 c0-10.401-8.463-18.863-18.863-18.863h-21.558c-4.004,0-7.722,1.255-10.779,3.391c-3.057-2.136-6.775-3.391-10.779-3.391h-21.558 c-10.401,0-18.863,8.463-18.863,18.863v107.789c0,0.915,0.066,1.814,0.192,2.695h-56.781c-4.465,0-8.084,3.62-8.084,8.084 c0,4.465,3.62,8.084,8.084,8.084h172.463c4.465,0,8.084-3.62,8.084-8.084C512,305.43,508.38,301.811,503.916,301.811z M474.274,299.116c0,1.485-1.209,2.695-2.695,2.695h-21.558c-1.485,0-2.695-1.209-2.695-2.695v-53.895 c0-4.465-3.62-8.084-8.084-8.084c-4.465,0-8.084,3.62-8.084,8.084v53.895c0,1.485-1.209,2.695-2.695,2.695h-21.558 c-1.485,0-2.695-1.209-2.695-2.695V191.326c0-1.485,1.209-2.695,2.695-2.695h21.558c1.485,0,2.695,1.209,2.695,2.695v21.558 c0,4.465,3.62,8.084,8.084,8.084c4.465,0,8.084-3.62,8.084-8.084v-21.558c0-1.485,1.209-2.695,2.695-2.695h21.558 c1.485,0,2.695,1.209,2.695,2.695V299.116z M137.432,231.747c28.231,0,51.2-22.969,51.2-51.2s-22.969-51.2-51.2-51.2 s-51.2,22.969-51.2,51.2S109.2,231.747,137.432,231.747z M137.432,145.516c19.316,0,35.032,15.716,35.032,35.032 s-15.716,35.032-35.032,35.032c-19.316,0-35.032-15.716-35.032-35.032S118.116,145.516,137.432,145.516z M253.305,460.8 c0,4.465-3.62,8.084-8.084,8.084h-64.674c-4.465,0-8.084-3.62-8.084-8.084c0-4.465,3.62-8.084,8.084-8.084h64.674 C249.686,452.716,253.305,456.335,253.305,460.8z M253.305,428.463c0,4.465-3.62,8.084-8.084,8.084h-43.116 c-4.465,0-8.084-3.62-8.084-8.084s3.62-8.084,8.084-8.084h43.116C249.686,420.379,253.305,423.999,253.305,428.463z M253.305,363.789c0,4.465-3.62,8.084-8.084,8.084h-64.674c-4.465,0-8.084-3.62-8.084-8.084s3.62-8.084,8.084-8.084h64.674 C249.686,355.705,253.305,359.325,253.305,363.789z">
-                            </path>
-                        </g>
-                    </svg>
-                    <h2 class="fw-bold text-body-emphasis">WCAG, WAI-ARIA, and more!</h2>
-                    <p class="text-body-secondary">The Certified Professional in Web Accessibility (CPWA) is an advanced
-                        certification from the International Association
-                        of Accessibility Professionals (IAAP) that combines both the CPACC (Certified Professional in
-                        Accessibility Core
-                        Competencies) and the WAS (Web Accessibility Specialist) credentials. It demonstrates a
-                        professional's in-depth
-                        knowledge of accessibility standards, technical skills in implementing accessible web solutions,
-                        and the ability to
-                        manage and evaluate digital accessibility across various platforms.
-                    </p>
-
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="html-topic-iv-panel">
+                        V. Multimedia and Embedding
+                    </button>
+                    <div id="html-topic-iv-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="html-embed-video" aria-selected="false"
+                            data-toggle-group="html-iv">Embed Video</button>
+                        <button type="button" data-article="html-video-attributes" aria-selected="false"
+                            data-toggle-group="html-iv">Video Attributes</button>
+                        <button type="button" data-article="html-video-a11y-captions" aria-selected="false"
+                            data-toggle-group="html-iv">Video A11y: Captions</button>
+                        <button type="button" data-article="html-embed-audio" aria-selected="false"
+                            data-toggle-group="html-iv">Embed Audio</button>
+                        <button type="button" data-article="html-audio-attributes" aria-selected="false"
+                            data-toggle-group="html-iv">Audio Attributes</button>
+                        <button type="button" data-article="html-embed-webpages-iframe" aria-selected="false"
+                            data-toggle-group="html-iv">Embed Webpages (&lt;iframe&gt;)</button>
+                        <button type="button" data-article="html-embed-svg-inline" aria-selected="false"
+                            data-toggle-group="html-iv">Embed SVG (Inline)</button>
+                        <button type="button" data-article="html-embed-canvas" aria-selected="false"
+                            data-toggle-group="html-iv">Embed Canvas</button>
+                        <button type="button" data-article="html-quiz-4-multimedia" aria-selected="false"
+                            data-toggle-group="html-iv">Quiz 4: Multimedia</button>
+                    </div>
                 </div>
 
-                <div class="col">
-                    <div class="row row-cols-1 row-cols-sm-2 g-4">
-                        <div class="col d-flex flex-column gap-2">
-                            <div
-                                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-                                <svg class="bi" width="1em" height="1em">
-                                    <use xlink:href="#collection"></use>
-                                </svg>
-                            </div>
-                            <h3 class="fw-semibold mb-0 text-body-emphasis">CPACC</h3>
-                            <p class="text-body-secondary">The CPACC that validates a comprehensive
-                                understanding of accessibility
-                                standards, principles, and best practices. It covers a broad range of topics, including
-                                the fundamentals of disability,
-                                accessibility-related laws and regulations, and universal design principles.
-                            </p>
-                        </div>
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="html-topic-v-panel">
+                        VI. Advanced Structure/Semantics
+                    </button>
+                    <div id="html-topic-v-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="html-details-summary" aria-selected="false"
+                            data-toggle-group="html-v">&lt;details&gt; &amp; &lt;summary&gt;</button>
+                        <button type="button" data-article="html-dialog" aria-selected="false"
+                            data-toggle-group="html-v">&lt;dialog&gt;</button>
+                        <button type="button" data-article="html-figure-figcaption" aria-selected="false"
+                            data-toggle-group="html-v">&lt;figure&gt; &amp; &lt;figcaption&gt;</button>
+                        <button type="button" data-article="html-time" aria-selected="false"
+                            data-toggle-group="html-v">&lt;time&gt;</button>
+                        <button type="button" data-article="html-address" aria-selected="false"
+                            data-toggle-group="html-v">&lt;address&gt;</button>
+                        <button type="button" data-article="html-cite" aria-selected="false"
+                            data-toggle-group="html-v">&lt;cite&gt;</button>
+                        <button type="button" data-article="html-q-blockquote" aria-selected="false"
+                            data-toggle-group="html-v">&lt;q&gt; &amp; &lt;blockquote&gt;</button>
+                        <button type="button" data-article="html-pre-code" aria-selected="false"
+                            data-toggle-group="html-v">&lt;pre&gt; &amp; &lt;code&gt;</button>
+                        <button type="button" data-article="html-inline-code-semantics" aria-selected="false"
+                            data-toggle-group="html-v">Inline Code Semantics</button>
+                        <button type="button" data-article="html-metadata-details" aria-selected="false"
+                            data-toggle-group="html-v">Metadata Details</button>
+                        <button type="button" data-article="html-charset-utf-8" aria-selected="false"
+                            data-toggle-group="html-v">Charset (UTF-8)</button>
+                        <button type="button" data-article="html-viewport-meta" aria-selected="false"
+                            data-toggle-group="html-v">Viewport Meta</button>
+                        <button type="button" data-article="html-language-attributes" aria-selected="false"
+                            data-toggle-group="html-v">Language Attributes</button>
+                        <button type="button" data-article="html-quiz-5-advanced-semantics" aria-selected="false"
+                            data-toggle-group="html-v">Quiz 5: Advanced Semantics</button>
+                    </div>
+                </div>
 
-                        <div class="col d-flex flex-column gap-2">
-                            <div
-                                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-                                <svg class="bi" width="1em" height="1em">
-                                    <use xlink:href="#gear-fill"></use>
-                                </svg>
-                            </div>
-                            <h3 class="fw-semibold mb-0 text-body-emphasis">WAS</h2>
-                                <p class="text-body-secondary">The WAS certification focuses on the technical skills
-                                    needed
-                                    to implement, evaluate, and manage web accessibility. It covers in-depth
-                                    knowledge of web content accessibility guidelines (WCAG), accessibility testing
-                                    techniques, and the ability to remediate
-                                    accessibility issues across various digital platforms.
-                                </p>
-                        </div>
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="html-topic-vi-panel">
+                        VII. Accessibility in Depth
+                    </button>
+                    <div id="html-topic-vi-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="html-semantic-html-for-a11y" aria-selected="false"
+                            data-toggle-group="html-vi">Semantic HTML for A11y</button>
+                        <button type="button" data-article="html-aria-intro-role" aria-selected="false"
+                            data-toggle-group="html-vi">ARIA: Intro &amp; role</button>
+                        <button type="button" data-article="html-aria-attributes-label-labelledby" aria-selected="false"
+                            data-toggle-group="html-vi">ARIA Attributes (label, labelledby, etc.)</button>
+                        <button type="button" data-article="html-aria-attributes-hidden-expanded" aria-selected="false"
+                            data-toggle-group="html-vi">ARIA Attributes (hidden, expanded, controls)</button>
+                        <button type="button" data-article="html-keyboard-nav-best-practices" aria-selected="false"
+                            data-toggle-group="html-vi">Keyboard Nav Best Practices</button>
+                        <button type="button" data-article="html-focus-management" aria-selected="false"
+                            data-toggle-group="html-vi">Focus Management</button>
+                        <button type="button" data-article="html-accessible-forms" aria-selected="false"
+                            data-toggle-group="html-vi">Accessible Forms</button>
+                        <button type="button" data-article="html-accessible-tables" aria-selected="false"
+                            data-toggle-group="html-vi">Accessible Tables</button>
+                        <button type="button" data-article="html-accessible-images-alt-text" aria-selected="false"
+                            data-toggle-group="html-vi">Accessible Images (alt text)</button>
+                        <button type="button" data-article="html-accessible-multimedia" aria-selected="false"
+                            data-toggle-group="html-vi">Accessible Multimedia</button>
+                        <button type="button" data-article="html-design-for-color-blindness" aria-selected="false"
+                            data-toggle-group="html-vi">Design for Color Blindness</button>
+                        <button type="button" data-article="html-a11y-testing-basic" aria-selected="false"
+                            data-toggle-group="html-vi">A11y Testing (Basic)</button>
+                        <button type="button" data-article="html-quiz-6-accessibility" aria-selected="false"
+                            data-toggle-group="html-vi">Quiz 6: Accessibility</button>
+                    </div>
+                </div>
 
-                        <div class="col d-flex flex-column gap-2">
-                            <div
-                                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-                                <svg class="bi" width="1em" height="1em">
-                                    <use xlink:href="#speedometer"></use>
-                                </svg>
-                            </div>
-                            <h3 class="fw-semibold mb-0 text-body-emphasis">WCAG</h3>
-                            <p class="text-body-secondary">The Web Content Accessibility Guidelines (WCAG) are a set of
-                                internationally recognized standards developed by the World
-                                Wide Web Consortium (W3C) to make web content more accessible to people with
-                                disabilities. These guidelines provide
-                                specific criteria for improving accessibility in areas such as text alternatives,
-                                keyboard navigation, and visual
-                                design, ensuring that digital content is perceivable, operable, understandable, and
-                                robust.
-                            </p>
-                        </div>
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="html-topic-vii-panel">
+                        VIII. HTML5 APIs (Intro)
+                    </button>
+                    <div id="html-topic-vii-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="html-intro-html5-apis" aria-selected="false"
+                            data-toggle-group="html-vii">Intro HTML5 APIs</button>
+                        <button type="button" data-article="html-geolocation-api" aria-selected="false"
+                            data-toggle-group="html-vii">Geolocation API</button>
+                        <button type="button" data-article="html-canvas-api" aria-selected="false"
+                            data-toggle-group="html-vii">Canvas API</button>
+                        <button type="button" data-article="html-audio-video-apis-advanced" aria-selected="false"
+                            data-toggle-group="html-vii">Audio/Video APIs (Advanced)</button>
+                        <button type="button" data-article="html-web-storage" aria-selected="false"
+                            data-toggle-group="html-vii">Web Storage</button>
+                        <button type="button" data-article="html-drag-and-drop-api" aria-selected="false"
+                            data-toggle-group="html-vii">Drag and Drop API</button>
+                        <button type="button" data-article="html-web-workers" aria-selected="false"
+                            data-toggle-group="html-vii">Web Workers</button>
+                        <button type="button" data-article="html-websockets-intro" aria-selected="false"
+                            data-toggle-group="html-vii">WebSockets (Intro)</button>
+                        <button type="button" data-article="html-quiz-7-html5-apis" aria-selected="false"
+                            data-toggle-group="html-vii">Quiz 7: HTML5 APIs</button>
+                    </div>
+                </div>
 
-                        <div class="col d-flex flex-column gap-2">
-                            <div
-                                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-                                <svg class="bi" width="1em" height="1em">
-                                    <use xlink:href="#table"></use>
-                                </svg>
-                            </div>
-                            <h3 class="fw-semibold mb-0 text-body-emphasis">WAI-ARIA</h3>
-                            <p class="text-body-secondary">The Web Accessibility Initiative - Accessible Rich Internet
-                                Applications (WAI-ARIA) is a technical specification
-                                developed by the W3C to improve the accessibility of dynamic web content and user
-                                interface components. WAI-ARIA
-                                provides a set of attributes that can be added to HTML elements to enhance the
-                                accessibility of interactive features,
-                                making them more usable for people who rely on assistive technologies such as screen
-                                readers.
-                            </p>
-                        </div>
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="html-topic-viii-panel">
+                        IX. Best Practices & Advanced
+                    </button>
+                    <div id="html-topic-viii-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="html-html-validation" aria-selected="false"
+                            data-toggle-group="html-viii">HTML Validation</button>
+                        <button type="button" data-article="html-code-formatting" aria-selected="false"
+                            data-toggle-group="html-viii">Code Formatting</button>
+                        <button type="button" data-article="html-performance-loading" aria-selected="false"
+                            data-toggle-group="html-viii">Performance: Loading</button>
+                        <button type="button" data-article="html-frameworks-libraries-html-use" aria-selected="false"
+                            data-toggle-group="html-viii">Frameworks/Libraries (HTML Use)</button>
+                        <button type="button" data-article="html-html-templating" aria-selected="false"
+                            data-toggle-group="html-viii">HTML Templating</button>
+                        <button type="button" data-article="html-microdata-schema-org" aria-selected="false"
+                            data-toggle-group="html-viii">Microdata &amp; Schema.org</button>
+                        <button type="button" data-article="html-custom-data-attributes" aria-selected="false"
+                            data-toggle-group="html-viii">Custom Data Attributes</button>
+                        <button type="button" data-article="html-html-in-email" aria-selected="false"
+                            data-toggle-group="html-viii">HTML in Email</button>
+                        <button type="button" data-article="html-html-evolution" aria-selected="false"
+                            data-toggle-group="html-viii">HTML Evolution</button>
+                        <button type="button" data-article="html-staying-up-to-date" aria-selected="false"
+                            data-toggle-group="html-viii">Staying Up-to-Date</button>
+                        <button type="button" data-article="html-contribute-to-communities" aria-selected="false"
+                            data-toggle-group="html-viii">Contribute to Communities</button>
+                        <button type="button" data-article="html-quiz-8-best-practices" aria-selected="false"
+                            data-toggle-group="html-viii">Quiz 8: Best Practices</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="html-topic-ix-panel">
+                        X. Expert Topics & Future
+                    </button>
+                    <div id="html-topic-ix-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="html-html5-apis-deep-dive" aria-selected="false"
+                            data-toggle-group="html-ix">HTML5 APIs (Deep Dive)</button>
+                        <button type="button" data-article="html-advanced-svg" aria-selected="false"
+                            data-toggle-group="html-ix">Advanced SVG</button>
+                        <button type="button" data-article="html-performance-tuning-complex" aria-selected="false"
+                            data-toggle-group="html-ix">Performance Tuning (Complex)</button>
+                        <button type="button" data-article="html-advanced-a11y-testing" aria-selected="false"
+                            data-toggle-group="html-ix">Advanced A11y Testing</button>
+                        <button type="button" data-article="html-html-ssr" aria-selected="false"
+                            data-toggle-group="html-ix">HTML &amp; SSR</button>
+                        <button type="button" data-article="html-html-in-pwas" aria-selected="false"
+                            data-toggle-group="html-ix">HTML in PWAs</button>
+                        <button type="button" data-article="html-future-of-html" aria-selected="false"
+                            data-toggle-group="html-ix">Future of HTML</button>
+                        <button type="button" data-article="html-contribute-to-standard" aria-selected="false"
+                            data-toggle-group="html-ix">Contribute to Standard</button>
+                        <button type="button" data-article="html-custom-semantic-elements-aria" aria-selected="false"
+                            data-toggle-group="html-ix">Custom Semantic Elements (ARIA)</button>
+                        <button type="button" data-article="html-advanced-forms-validation" aria-selected="false"
+                            data-toggle-group="html-ix">Advanced Forms/Validation</button>
+                        <button type="button" data-article="html-i18n-l10n-with-html" aria-selected="false"
+                            data-toggle-group="html-ix">i18n/l10n with HTML</button>
+                        <button type="button" data-article="html-security-best-practices" aria-selected="false"
+                            data-toggle-group="html-ix">Security Best Practices</button>
+                        <button type="button" data-article="html-final-project" aria-selected="false"
+                            data-toggle-group="html-ix">Final Project</button>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- ======================================================================== -->
-        <div class="b-example-divider"></div>
-        <!-- ======================================================================== -->
-
-        <div class="container px-4 py-5" id="hanging-icons">
-            <h2 class="pb-2 border-bottom">Proper Structure and Layout is part of Universal Design</h2>
-            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-                <div class="col d-flex align-items-start">
-                    <div
-                        class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-                        <svg viewBox="0 0 32 32" width="1.5em" height="1.5em" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26"></path>
-                                <path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529"></path>
-                                <path
-                                    d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z"
-                                    fill="white"></path>
-                            </g>
-                        </svg>
-                    </div>
-                    <div>
-                        <h3 class="fs-2 text-body-emphasis">HTML</h3>
-                        <p>HTML supports good accessibility by providing semantic elements, such as headings, lists, and
-                            form labels, which help
-                            structure content in a way that is understandable and navigable by assistive technologies.
+            <div id="html-article-content" class="article-content">
+                <div class="row">
+                    <div class="text-column">
+                        <h2>HTML</h2>
+                        <p>
+                            Think of HTML as the fundamental framework of a webpage, much like the 2x4s that form the
+                            skeleton of a
+                            house. It
+                            provides the essential structure by defining the different sections, headings, paragraphs,
+                            images, and
+                            other elements
+                            that make up the content. Just as the 2x4s dictate the shape and layout of rooms, HTML tags
+                            organize the
+                            information on
+                            a page into a logical hierarchy. Without this underlying structure, the content would be a
+                            disorganized
+                            jumble, unable
+                            to be properly presented or styled.
                         </p>
-
                     </div>
-                </div>
-                <div class="col d-flex align-items-start">
-                    <div
-                        class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-                        <svg viewBox="0 0 32 32" width="1.5em" height="1.5em" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#1172B8"></path>
-                                <path d="M26 5H16V29.5L24 27L26 5Z" fill="#33AADD"></path>
-                                <path
-                                    d="M19.5 17.5H9.5L9 14L17 11.5H9L8.5 8.5H24L23.5 12L17 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5Z"
-                                    fill="white"></path>
-                            </g>
-                        </svg>
-                    </div>
-                    <div>
-                        <h3 class="fs-2 text-body-emphasis">CSS</h3>
-                        <p>CSS enhances accessibility by enabling the separation of content from visual presentation,
-                            allowing users to customize
-                            how they view web content without affecting the underlying structure or meaning.</p>
-
-                    </div>
-                </div>
-                <div class="col d-flex align-items-start">
-                    <div
-                        class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" width="1.5em" aria-label="JavaScript"
-                            role="img" viewBox="0 0 512 512" fill="#000000">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <rect width="512" height="512" rx="15%" fill="#f7df1e"></rect>
-                                <path
-                                    d="M324 370c10 17 24 29 47 29c20 0 33-10 33 -24c0-16 -13 -22 -35 -32l-12-5c-35-15 -58 -33 -58 -72c0-36 27 -64 70 -64c31 0 53 11 68 39l-37 24c-8-15 -17 -21 -31 -21c-14 0-23 9 -23 21c0 14 9 20 30 29l12 5c41 18 64 35 64 76c0 43-34 67 -80 67c-45 0-74 -21 -88 -49zm-170 4c8 13 14 25 31 25c16 0 26-6 26 -30V203h48v164c0 50-29 72 -72 72c-39 0-61 -20 -72 -44z">
-                                </path>
-                            </g>
-                        </svg>
-                    </div>
-                    <div>
-                        <h3 class="fs-2 text-body-emphasis">JavaScript</h3>
-                        <p>JavaScript can improve accessibility by creating dynamic, interactive elements, but it must
-                            be implemented carefully to
-                            ensure that all functionality is accessible via keyboard and assistive technologies.</p>
-
+                    <div class="image-column">
+                        <img src="assets/build_structure.png"
+                            alt="Framing a house with wood like structuring a webpage with HTML" loading="lazy">
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- ======================================================================== -->
-        <div class="b-example-divider"></div>
-        <!-- ======================================================================== -->
+        <div role="tabpanel" id="css-panel" aria-labelledby="css-tab" hidden>
+            <div class="accordion-container">
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="css-topic-i-panel">
+                        I. Getting Started
+                    </button>
+                    <div id="css-topic-i-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="css-what-is-css" aria-selected="false"
+                            data-toggle-group="css-i">What is CSS?</button>
+                        <button type="button" data-article="css-why-learn-css" aria-selected="false"
+                            data-toggle-group="css-i">Why Learn CSS?</button>
+                        <button type="button" data-article="css-css-syntax" aria-selected="false"
+                            data-toggle-group="css-i">CSS Syntax</button>
+                        <button type="button" data-article="css-apply-css-inline" aria-selected="false"
+                            data-toggle-group="css-i">Apply CSS: Inline</button>
+                        <button type="button" data-article="css-apply-css-internal" aria-selected="false"
+                            data-toggle-group="css-i">Apply CSS: Internal</button>
+                        <button type="button" data-article="css-apply-css-external" aria-selected="false"
+                            data-toggle-group="css-i">Apply CSS: External</button>
+                        <button type="button" data-article="css-create-css-file" aria-selected="false"
+                            data-toggle-group="css-i">Create CSS File</button>
+                        <button type="button" data-article="css-link-css-to-html" aria-selected="false"
+                            data-toggle-group="css-i">Link CSS to HTML</button>
+                        <button type="button" data-article="css-element-selectors" aria-selected="false"
+                            data-toggle-group="css-i">Element Selectors</button>
+                        <button type="button" data-article="css-class-selectors" aria-selected="false"
+                            data-toggle-group="css-i">Class Selectors</button>
+                        <button type="button" data-article="css-id-selectors" aria-selected="false"
+                            data-toggle-group="css-i">ID Selectors</button>
+                        <button type="button" data-article="css-understanding-cascade" aria-selected="false"
+                            data-toggle-group="css-i">Understanding Cascade</button>
+                        <button type="button" data-article="css-specificity" aria-selected="false"
+                            data-toggle-group="css-i">Specificity</button>
+                        <button type="button" data-article="css-inheritance" aria-selected="false"
+                            data-toggle-group="css-i">Inheritance</button>
+                        <button type="button" data-article="css-beginner-mistakes" aria-selected="false"
+                            data-toggle-group="css-i">Beginner Mistakes</button>
+                        <button type="button" data-article="css-quiz-1-intro-selectors" aria-selected="false"
+                            data-toggle-group="css-i">Quiz 1: Intro/Selectors</button>
+                    </div>
+                </div>
 
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="css-topic-ii-panel">
+                        II. Styling Text
+                    </button>
+                    <div id="css-topic-ii-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="css-color" aria-selected="false"
+                            data-toggle-group="css-ii">color</button>
+                        <button type="button" data-article="css-font-family" aria-selected="false"
+                            data-toggle-group="css-ii">font-family</button>
+                        <button type="button" data-article="css-font-size" aria-selected="false"
+                            data-toggle-group="css-ii">font-size</button>
+                        <button type="button" data-article="css-font-weight" aria-selected="false"
+                            data-toggle-group="css-ii">font-weight</button>
+                        <button type="button" data-article="css-font-style" aria-selected="false"
+                            data-toggle-group="css-ii">font-style</button>
+                        <button type="button" data-article="css-text-decoration" aria-selected="false"
+                            data-toggle-group="css-ii">text-decoration</button>
+                        <button type="button" data-article="css-text-align" aria-selected="false"
+                            data-toggle-group="css-ii">text-align</button>
+                        <button type="button" data-article="css-line-height" aria-selected="false"
+                            data-toggle-group="css-ii">line-height</button>
+                        <button type="button" data-article="css-letter-word-spacing" aria-selected="false"
+                            data-toggle-group="css-ii">letter/word-spacing</button>
+                        <button type="button" data-article="css-text-transform" aria-selected="false"
+                            data-toggle-group="css-ii">text-transform</button>
+                        <button type="button" data-article="css-text-indent" aria-selected="false"
+                            data-toggle-group="css-ii">text-indent</button>
+                        <button type="button" data-article="css-using-google-fonts" aria-selected="false"
+                            data-toggle-group="css-ii">Using Google Fonts</button>
+                        <button type="button" data-article="css-quiz-2-styling-text" aria-selected="false"
+                            data-toggle-group="css-ii">Quiz 2: Styling Text</button>
+                    </div>
+                </div>
 
-        <div class="container my-5" id="contact">
-            <div class="p-5 text-center bg-body-tertiary rounded-3">
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="css-topic-iii-panel">
+                        III. Styling Boxes (Box Model)
+                    </button>
+                    <div id="css-topic-iii-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="css-intro-box-model" aria-selected="false"
+                            data-toggle-group="css-iii">Intro Box Model</button>
+                        <button type="button" data-article="css-width-height" aria-selected="false"
+                            data-toggle-group="css-iii">width &amp; height</button>
+                        <button type="button" data-article="css-padding" aria-selected="false"
+                            data-toggle-group="css-iii">padding</button>
+                        <button type="button" data-article="css-border" aria-selected="false"
+                            data-toggle-group="css-iii">border</button>
+                        <button type="button" data-article="css-margin" aria-selected="false"
+                            data-toggle-group="css-iii">margin</button>
+                        <button type="button" data-article="css-box-sizing" aria-selected="false"
+                            data-toggle-group="css-iii">box-sizing</button>
+                        <button type="button" data-article="css-display" aria-selected="false"
+                            data-toggle-group="css-iii">display</button>
+                        <button type="button" data-article="css-display-none-vs-visibility-hidden" aria-selected="false"
+                            data-toggle-group="css-iii">display:none vs visibility:hidden</button>
+                        <button type="button" data-article="css-quiz-3-box-model" aria-selected="false"
+                            data-toggle-group="css-iii">Quiz 3: Box Model</button>
+                    </div>
+                </div>
 
-                <svg viewBox="0 0 24 24" width="5em" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                    <g id="SVGRepo_iconCarrier">
-                        <path
-                            d="M15.7281 3.88396C17.1624 2.44407 19.2604 2.41383 20.4219 3.57981C21.5856 4.74798 21.5542 6.85922 20.1189 8.30009L17.6951 10.7333C17.4028 11.0268 17.4037 11.5017 17.6971 11.794C17.9906 12.0863 18.4655 12.0854 18.7578 11.7919L21.1816 9.35869C23.0929 7.43998 23.3329 4.37665 21.4846 2.5212C19.6342 0.663551 16.5776 0.905664 14.6653 2.82536L9.81768 7.69182C7.90639 9.61053 7.66643 12.6739 9.5147 14.5293C9.80702 14.8228 10.2819 14.8237 10.5754 14.5314C10.8688 14.2391 10.8697 13.7642 10.5774 13.4707C9.41376 12.3026 9.4451 10.1913 10.8804 8.75042L15.7281 3.88396Z"
-                            fill="#03047e"></path>
-                        <path
-                            d="M14.4846 9.4707C14.1923 9.17724 13.7174 9.17632 13.4239 9.46864C13.1305 9.76097 13.1296 10.2358 13.4219 10.5293C14.5856 11.6975 14.5542 13.8087 13.1189 15.2496L8.27129 20.1161C6.83696 21.556 4.73889 21.5862 3.57742 20.4202C2.41376 19.2521 2.4451 17.1408 3.8804 15.6999L6.30424 13.2666C6.59657 12.9732 6.59565 12.4983 6.30219 12.206C6.00873 11.9137 5.53386 11.9146 5.24153 12.208L2.81769 14.6413C0.906387 16.56 0.666428 19.6234 2.5147 21.4788C4.36518 23.3365 7.42173 23.0944 9.334 21.1747L14.1816 16.3082C16.0929 14.3895 16.3329 11.3262 14.4846 9.4707Z"
-                            fill="#a70011"></path>
-                    </g>
-                </svg>
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="css-topic-iv-panel">
+                        IV. Backgrounds and Colors
+                    </button>
+                    <div id="css-topic-iv-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="css-background-color" aria-selected="false"
+                            data-toggle-group="css-iv">background-color</button>
+                        <button type="button" data-article="css-background-image" aria-selected="false"
+                            data-toggle-group="css-iv">background-image</button>
+                        <button type="button" data-article="css-background-repeat" aria-selected="false"
+                            data-toggle-group="css-iv">background-repeat</button>
+                        <button type="button" data-article="css-background-position" aria-selected="false"
+                            data-toggle-group="css-iv">background-position</button>
+                        <button type="button" data-article="css-background-size" aria-selected="false"
+                            data-toggle-group="css-iv">background-size</button>
+                        <button type="button" data-article="css-background-attachment" aria-selected="false"
+                            data-toggle-group="css-iv">background-attachment</button>
+                        <button type="button" data-article="css-background-shorthand" aria-selected="false"
+                            data-toggle-group="css-iv">background Shorthand</button>
+                        <button type="button" data-article="css-hex-colors" aria-selected="false"
+                            data-toggle-group="css-iv">Hex Colors</button>
+                        <button type="button" data-article="css-rgb-rgba-colors" aria-selected="false"
+                            data-toggle-group="css-iv">RGB/RGBA Colors</button>
+                        <button type="button" data-article="css-hsl-hsla-colors" aria-selected="false"
+                            data-toggle-group="css-iv">HSL/HSLA Colors</button>
+                        <button type="button" data-article="css-color-contrast-a11y" aria-selected="false"
+                            data-toggle-group="css-iv">Color Contrast (A11y)</button>
+                        <button type="button" data-article="css-quiz-4-backgrounds-colors" aria-selected="false"
+                            data-toggle-group="css-iv">Quiz 4: Backgrounds/Colors</button>
+                    </div>
+                </div>
 
-                <h2 class="text-body-emphasis">Contact Me</h2>
-                <p class="col-lg-8 mx-auto fs-5 text-muted">
-                    Feel free to contact me. Connect on LinkedIn, Follow me on YouTube, or just keep coming back to this
-                    site.
-                </p>
-                <div class="d-inline-flex gap-2 mb-5">
-                    <a href="mailto:missinglinkaccessibility@gmail.com"
-                        class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill" type="button">
-                        <svg viewBox="0 0 600 600" width="24px" height="24px" version="1.1" id="svg9724"
-                            sodipodi:docname="email-close.svg"
-                            inkscape:version="1.2.2 (1:1.2.2+202212051550+b0a8486541)"
-                            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-                            xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" fill="#000000">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <defs id="defs9728"></defs>
-                                <g id="g10449" transform="matrix(0.95173205,0,0,0.95115787,13.901174,12.168794)"
-                                    style="stroke-width:1.05103">
-                                    <g id="path10026" inkscape:transform-center-x="-0.59233046"
-                                        inkscape:transform-center-y="-20.347403"
-                                        transform="matrix(1.3807551,0,0,1.2700888,273.60014,263.99768)"></g>
-                                    <g id="g11314" transform="matrix(1.5092301,0,0,1.3955555,36.774048,-9.4503933)"
-                                        style="stroke-width:50.6951"></g>
-                                    <path
-                                        style="color:#ffffff;fill:#ffffff;stroke-linecap:round;stroke-linejoin:round;-inkscape-stroke:none;paint-order:stroke fill markers"
-                                        d="m 132.50586,39.773437 c -80.786884,0 -147.111329,66.380993 -147.111329,147.175783 v 231.32422 c 0,80.79479 66.324445,147.17578 147.111329,147.17578 h 336.20508 c 80.78688,0 147.11328,-66.38099 147.11328,-147.17578 V 186.94922 c 0,-80.79479 -66.3264,-147.175783 -147.11328,-147.175783 z m 0,84.082033 h 336.20508 c 35.63231,0 63.02929,27.39904 63.02929,63.09375 v 231.32422 c 0,35.69471 -27.39698,63.09375 -63.02929,63.09375 H 132.50586 c -35.63231,0 -63.029298,-27.39904 -63.029298,-63.09375 V 186.94922 c 0,-35.69471 27.396988,-63.09375 63.029298,-63.09375 z"
-                                        id="rect240"></path>
-                                    <path
-                                        style="color:#ffffff;fill:#ffffff;stroke-linecap:round;stroke-linejoin:round;-inkscape-stroke:none"
-                                        d="M 67.464844,81.886719 A 42.041302,42.041302 0 0 0 38.351562,95.591797 42.041302,42.041302 0 0 0 41.162109,154.98047 L 272.31836,365.25195 a 42.045506,42.045506 0 0 0 56.58008,0 L 560.05469,154.98047 a 42.041302,42.041302 0 0 0 2.81054,-59.388673 42.041302,42.041302 0 0 0 -59.38867,-2.808594 L 300.60937,277.31836 97.740234,92.783203 A 42.041302,42.041302 0 0 0 67.464844,81.886719 Z"
-                                        id="path404"></path>
-                                    <g id="g1810" transform="translate(-0.51901729)">
-                                        <path style="color:#ffffff;fill:#ffffff;-inkscape-stroke:none"
-                                            d="m 418.54102,322.93555 -45.69727,43.45898 130.79492,137.53125 45.69727,-43.45898 z"
-                                            id="path1686">
-                                        </path>
-                                        <path style="color:#ffffff;fill:#ffffff;-inkscape-stroke:none"
-                                            d="M 183.54297,323.11719 52.748047,462.84961 98.787109,505.94531 229.58203,366.21289 Z"
-                                            id="path1686-3"></path>
-                                    </g>
-                                </g>
-                            </g>
-                        </svg>
-                        &nbsp;
-                        Email Me
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="css-topic-v-panel">
+                        V. Basic Layout
+                    </button>
+                    <div id="css-topic-v-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="css-normal-flow-positioning" aria-selected="false"
+                            data-toggle-group="css-v">Normal Flow &amp; Positioning</button>
+                        <button type="button" data-article="css-float" aria-selected="false"
+                            data-toggle-group="css-v">float</button>
+                        <button type="button" data-article="css-clear" aria-selected="false"
+                            data-toggle-group="css-v">clear</button>
+                        <button type="button" data-article="css-intro-layout-techniques" aria-selected="false"
+                            data-toggle-group="css-v">Intro Layout Techniques</button>
+                        <button type="button" data-article="css-fixed-width-layouts" aria-selected="false"
+                            data-toggle-group="css-v">Fixed-Width Layouts</button>
+                        <button type="button" data-article="css-fluid-layouts" aria-selected="false"
+                            data-toggle-group="css-v">Fluid Layouts</button>
+                        <button type="button" data-article="css-quiz-5-basic-layout" aria-selected="false"
+                            data-toggle-group="css-v">Quiz 5: Basic Layout</button>
+                    </div>
+                </div>
 
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="css-topic-vi-panel">
+                        VI. Selectors in Depth
+                    </button>
+                    <div id="css-topic-vi-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="css-attribute-selectors" aria-selected="false"
+                            data-toggle-group="css-vi">Attribute Selectors</button>
+                        <button type="button" data-article="css-pseudo-classes-state" aria-selected="false"
+                            data-toggle-group="css-vi">Pseudo-Classes (State)</button>
+                        <button type="button" data-article="css-pseudo-classes-structural" aria-selected="false"
+                            data-toggle-group="css-vi">Pseudo-Classes (Structural)</button>
+                        <button type="button" data-article="css-pseudo-elements" aria-selected="false"
+                            data-toggle-group="css-vi">Pseudo-Elements</button>
+                        <button type="button" data-article="css-pseudo-elements-text" aria-selected="false"
+                            data-toggle-group="css-vi">Pseudo-Elements (Text)</button>
+                        <button type="button" data-article="css-descendant-selectors-space" aria-selected="false"
+                            data-toggle-group="css-vi">Descendant Selectors (Space)</button>
+                        <button type="button" data-article="css-child-selectors" aria-selected="false"
+                            data-toggle-group="css-vi">Child Selectors (&gt;)</button>
+                        <button type="button" data-article="css-adjacent-sibling-selectors" aria-selected="false"
+                            data-toggle-group="css-vi">Adjacent Sibling Selectors (+)</button>
+                        <button type="button" data-article="css-general-sibling-selectors" aria-selected="false"
+                            data-toggle-group="css-vi">General Sibling Selectors (~)</button>
+                        <button type="button" data-article="css-specificity-revisited" aria-selected="false"
+                            data-toggle-group="css-vi">Specificity Revisited</button>
+                        <button type="button" data-article="css-quiz-6-advanced-selectors" aria-selected="false"
+                            data-toggle-group="css-vi">Quiz 6: Advanced Selectors</button>
+                    </div>
+                </div>
 
-                    </a>
-                    <a href="https://www.linkedin.com/in/danielwestfall/"
-                        class="btn btn-primary btn-lg px-4 rounded-pill" type="button">
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="css-topic-vii-panel">
+                        VII. Responsive Design (Intro)
+                    </button>
+                    <div id="css-topic-vii-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="css-what-is-rwd" aria-selected="false"
+                            data-toggle-group="css-vii">What is RWD?</button>
+                        <button type="button" data-article="css-viewport-meta-tag" aria-selected="false"
+                            data-toggle-group="css-vii">Viewport Meta Tag</button>
+                        <button type="button" data-article="css-fluid-layouts-percentages" aria-selected="false"
+                            data-toggle-group="css-vii">Fluid Layouts (Percentages)</button>
+                        <button type="button" data-article="css-intro-media-queries" aria-selected="false"
+                            data-toggle-group="css-vii">Intro Media Queries</button>
+                        <button type="button" data-article="css-target-widths-media" aria-selected="false"
+                            data-toggle-group="css-vii">Target Widths (@media)</button>
+                        <button type="button" data-article="css-responsive-typography" aria-selected="false"
+                            data-toggle-group="css-vii">Responsive Typography</button>
+                        <button type="button" data-article="css-responsive-images" aria-selected="false"
+                            data-toggle-group="css-vii">Responsive Images</button>
+                        <button type="button" data-article="css-quiz-7-intro-rwd" aria-selected="false"
+                            data-toggle-group="css-vii">Quiz 7: Intro RWD</button>
+                    </div>
+                </div>
 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                            class="bi bi-linkedin" viewBox="0 0 16 16">
-                            <path
-                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
-                        </svg>&nbsp;
-                        Visit my LinkedIn
-                    </a>
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="css-topic-viii-panel">
+                        VIII. CSS Layout: Flexbox
+                    </button>
+                    <div id="css-topic-viii-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="css-intro-flexbox" aria-selected="false"
+                            data-toggle-group="css-viii">Intro Flexbox</button>
+                        <button type="button" data-article="css-flex-container" aria-selected="false"
+                            data-toggle-group="css-viii">Flex Container</button>
+                        <button type="button" data-article="css-flex-direction" aria-selected="false"
+                            data-toggle-group="css-viii">flex-direction</button>
+                        <button type="button" data-article="css-justify-content" aria-selected="false"
+                            data-toggle-group="css-viii">justify-content</button>
+                        <button type="button" data-article="css-align-items" aria-selected="false"
+                            data-toggle-group="css-viii">align-items</button>
+                        <button type="button" data-article="css-flex-wrap" aria-selected="false"
+                            data-toggle-group="css-viii">flex-wrap</button>
+                        <button type="button" data-article="css-align-content" aria-selected="false"
+                            data-toggle-group="css-viii">align-content</button>
+                        <button type="button" data-article="css-order" aria-selected="false"
+                            data-toggle-group="css-viii">order</button>
+                        <button type="button" data-article="css-flex-grow" aria-selected="false"
+                            data-toggle-group="css-viii">flex-grow</button>
+                        <button type="button" data-article="css-flex-shrink" aria-selected="false"
+                            data-toggle-group="css-viii">flex-shrink</button>
+                        <button type="button" data-article="css-flex-basis" aria-selected="false"
+                            data-toggle-group="css-viii">flex-basis</button>
+                        <button type="button" data-article="css-flex-shorthand" aria-selected="false"
+                            data-toggle-group="css-viii">flex Shorthand</button>
+                        <button type="button" data-article="css-align-self" aria-selected="false"
+                            data-toggle-group="css-viii">align-self</button>
+                        <button type="button" data-article="css-flexbox-examples" aria-selected="false"
+                            data-toggle-group="css-viii">Flexbox Examples</button>
+                        <button type="button" data-article="css-quiz-8-flexbox" aria-selected="false"
+                            data-toggle-group="css-viii">Quiz 8: Flexbox</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="css-topic-ix-panel">
+                        IX. CSS Layout: Grid
+                    </button>
+                    <div id="css-topic-ix-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="css-intro-grid" aria-selected="false"
+                            data-toggle-group="css-ix">Intro Grid</button>
+                        <button type="button" data-article="css-grid-container" aria-selected="false"
+                            data-toggle-group="css-ix">Grid Container</button>
+                        <button type="button" data-article="css-grid-template-rows-columns" aria-selected="false"
+                            data-toggle-group="css-ix">grid-template-rows/columns</button>
+                        <button type="button" data-article="css-grid-gap" aria-selected="false"
+                            data-toggle-group="css-ix">grid-gap</button>
+                        <button type="button" data-article="css-placing-grid-items" aria-selected="false"
+                            data-toggle-group="css-ix">Placing Grid Items</button>
+                        <button type="button" data-article="css-grid-row-column-shorthand" aria-selected="false"
+                            data-toggle-group="css-ix">grid-row/column Shorthand</button>
+                        <button type="button" data-article="css-named-grid-lines" aria-selected="false"
+                            data-toggle-group="css-ix">Named Grid Lines</button>
+                        <button type="button" data-article="css-grid-template-areas" aria-selected="false"
+                            data-toggle-group="css-ix">Grid Template Areas</button>
+                        <button type="button" data-article="css-implicit-vs-explicit-grids" aria-selected="false"
+                            data-toggle-group="css-ix">Implicit vs Explicit Grids</button>
+                        <button type="button" data-article="css-justify-align-items-item" aria-selected="false"
+                            data-toggle-group="css-ix">justify/align-items (Item)</button>
+                        <button type="button" data-article="css-justify-align-content-track" aria-selected="false"
+                            data-toggle-group="css-ix">justify/align-content (Track)</button>
+                        <button type="button" data-article="css-repeat-function" aria-selected="false"
+                            data-toggle-group="css-ix">repeat() Function</button>
+                        <button type="button" data-article="css-minmax-function" aria-selected="false"
+                            data-toggle-group="css-ix">minmax() Function</button>
+                        <button type="button" data-article="css-fr-unit" aria-selected="false"
+                            data-toggle-group="css-ix">fr Unit</button>
+                        <button type="button" data-article="css-grid-examples" aria-selected="false"
+                            data-toggle-group="css-ix">Grid Examples</button>
+                        <button type="button" data-article="css-flexbox-grid" aria-selected="false"
+                            data-toggle-group="css-ix">Flexbox + Grid</button>
+                        <button type="button" data-article="css-quiz-9-grid" aria-selected="false"
+                            data-toggle-group="css-ix">Quiz 9: Grid</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="css-topic-x-panel">
+                        X. Transitions and Animations
+                    </button>
+                    <div id="css-topic-x-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="css-intro-transitions" aria-selected="false"
+                            data-toggle-group="css-x">Intro Transitions</button>
+                        <button type="button" data-article="css-transition-property" aria-selected="false"
+                            data-toggle-group="css-x">transition-property</button>
+                        <button type="button" data-article="css-transition-duration" aria-selected="false"
+                            data-toggle-group="css-x">transition-duration</button>
+                        <button type="button" data-article="css-transition-timing-function" aria-selected="false"
+                            data-toggle-group="css-x">transition-timing-function</button>
+                        <button type="button" data-article="css-transition-delay" aria-selected="false"
+                            data-toggle-group="css-x">transition-delay</button>
+                        <button type="button" data-article="css-transition-shorthand" aria-selected="false"
+                            data-toggle-group="css-x">transition Shorthand</button>
+                        <button type="button" data-article="css-intro-animations" aria-selected="false"
+                            data-toggle-group="css-x">Intro Animations</button>
+                        <button type="button" data-article="css-keyframes-rule" aria-selected="false"
+                            data-toggle-group="css-x">@keyframes Rule</button>
+                        <button type="button" data-article="css-animation-name" aria-selected="false"
+                            data-toggle-group="css-x">animation-name</button>
+                        <button type="button" data-article="css-animation-duration" aria-selected="false"
+                            data-toggle-group="css-x">animation-duration</button>
+                        <button type="button" data-article="css-animation-timing-function" aria-selected="false"
+                            data-toggle-group="css-x">animation-timing-function</button>
+                        <button type="button" data-article="css-animation-delay" aria-selected="false"
+                            data-toggle-group="css-x">animation-delay</button>
+                        <button type="button" data-article="css-animation-iteration-count" aria-selected="false"
+                            data-toggle-group="css-x">animation-iteration-count</button>
+                        <button type="button" data-article="css-animation-direction" aria-selected="false"
+                            data-toggle-group="css-x">animation-direction</button>
+                        <button type="button" data-article="css-animation-fill-mode" aria-selected="false"
+                            data-toggle-group="css-x">animation-fill-mode</button>
+                        <button type="button" data-article="css-animation-play-state" aria-selected="false"
+                            data-toggle-group="css-x">animation-play-state</button>
+                        <button type="button" data-article="css-animation-shorthand" aria-selected="false"
+                            data-toggle-group="css-x">animation Shorthand</button>
+                        <button type="button" data-article="css-perf-considerations" aria-selected="false"
+                            data-toggle-group="css-x">Perf Considerations</button>
+                        <button type="button" data-article="css-a11y-considerations-reduced-motion"
+                            aria-selected="false" data-toggle-group="css-x">A11y Considerations (Reduced
+                            Motion)</button>
+                        <button type="button" data-article="css-quiz-10-transitions-animations" aria-selected="false"
+                            data-toggle-group="css-x">Quiz 10: Transitions/Animations</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="css-topic-xi-panel">
+                        XI. Transforms and Filters
+                    </button>
+                    <div id="css-topic-xi-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="css-intro-transforms" aria-selected="false"
+                            data-toggle-group="css-xi">Intro Transforms</button>
+                        <button type="button" data-article="css-2d-transforms" aria-selected="false"
+                            data-toggle-group="css-xi">2D Transforms</button>
+                        <button type="button" data-article="css-transform-origin" aria-selected="false"
+                            data-toggle-group="css-xi">transform-origin</button>
+                        <button type="button" data-article="css-3d-transforms-intro" aria-selected="false"
+                            data-toggle-group="css-xi">3D Transforms (Intro)</button>
+                        <button type="button" data-article="css-perspective" aria-selected="false"
+                            data-toggle-group="css-xi">perspective</button>
+                        <button type="button" data-article="css-transform-style" aria-selected="false"
+                            data-toggle-group="css-xi">transform-style</button>
+                        <button type="button" data-article="css-intro-filters" aria-selected="false"
+                            data-toggle-group="css-xi">Intro Filters</button>
+                        <button type="button" data-article="css-basic-filters" aria-selected="false"
+                            data-toggle-group="css-xi">Basic Filters</button>
+                        <button type="button" data-article="css-color-filters" aria-selected="false"
+                            data-toggle-group="css-xi">Color Filters</button>
+                        <button type="button" data-article="css-advanced-filters" aria-selected="false"
+                            data-toggle-group="css-xi">Advanced Filters</button>
+                        <button type="button" data-article="css-multiple-filters" aria-selected="false"
+                            data-toggle-group="css-xi">Multiple Filters</button>
+                        <button type="button" data-article="css-perf-considerations-transforms-filters"
+                            aria-selected="false" data-toggle-group="css-xi">Perf Considerations</button>
+                        <button type="button" data-article="css-quiz-11-transforms-filters" aria-selected="false"
+                            data-toggle-group="css-xi">Quiz 11: Transforms/Filters</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="css-topic-xii-panel">
+                        XII. Advanced Responsive Design
+                    </button>
+                    <div id="css-topic-xii-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="css-complex-media-queries" aria-selected="false"
+                            data-toggle-group="css-xii">Complex Media Queries</button>
+                        <button type="button" data-article="css-breakpoint-strategies" aria-selected="false"
+                            data-toggle-group="css-xii">Breakpoint Strategies</button>
+                        <button type="button" data-article="css-responsive-images-depth" aria-selected="false"
+                            data-toggle-group="css-xii">Responsive Images (Depth)</button>
+                        <button type="button" data-article="css-flexible-units-em-rem-vw-vh" aria-selected="false"
+                            data-toggle-group="css-xii">Flexible Units (em, rem, vw, vh)</button>
+                        <button type="button" data-article="css-mobile-first-vs-desktop-first" aria-selected="false"
+                            data-toggle-group="css-xii">Mobile-First vs Desktop-First</button>
+                        <button type="button" data-article="css-testing-responsive" aria-selected="false"
+                            data-toggle-group="css-xii">Testing Responsive</button>
+                        <button type="button" data-article="css-a11y-considerations-responsive" aria-selected="false"
+                            data-toggle-group="css-xii">A11y Considerations</button>
+                        <button type="button" data-article="css-quiz-12-advanced-rwd" aria-selected="false"
+                            data-toggle-group="css-xii">Quiz 12: Advanced RWD</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="css-topic-xiii-panel">
+                        XIII. CSS Preprocessors (Intro)
+                    </button>
+                    <div id="css-topic-xiii-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="css-what-are-preprocessors" aria-selected="false"
+                            data-toggle-group="css-xiii">What are Preprocessors?</button>
+                        <button type="button" data-article="css-why-use-preprocessor" aria-selected="false"
+                            data-toggle-group="css-xiii">Why Use Preprocessor?</button>
+                        <button type="button" data-article="css-sass-less-variables" aria-selected="false"
+                            data-toggle-group="css-xiii">Sass/Less: Variables</button>
+                        <button type="button" data-article="css-sass-less-nesting" aria-selected="false"
+                            data-toggle-group="css-xiii">Sass/Less: Nesting</button>
+                        <button type="button" data-article="css-sass-less-mixins" aria-selected="false"
+                            data-toggle-group="css-xiii">Sass/Less: Mixins</button>
+                        <button type="button" data-article="css-other-features" aria-selected="false"
+                            data-toggle-group="css-xiii">Other Features</button>
+                        <button type="button" data-article="css-compiling" aria-selected="false"
+                            data-toggle-group="css-xiii">Compiling</button>
+                        <button type="button" data-article="css-quiz-13-preprocessors" aria-selected="false"
+                            data-toggle-group="css-xiii">Quiz 13: Preprocessors</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="css-topic-xiv-panel">
+                        XIV. CSS Frameworks (Intro)
+                    </button>
+                    <div id="css-topic-xiv-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="css-what-are-frameworks" aria-selected="false"
+                            data-toggle-group="css-xiv">What are Frameworks?</button>
+                        <button type="button" data-article="css-why-use-framework" aria-selected="false"
+                            data-toggle-group="css-xiv">Why Use Framework?</button>
+                        <button type="button" data-article="css-framework-structure-grid" aria-selected="false"
+                            data-toggle-group="css-xiv">Framework Structure (Grid)</button>
+                        <button type="button" data-article="css-using-components" aria-selected="false"
+                            data-toggle-group="css-xiv">Using Components</button>
+                        <button type="button" data-article="css-customizing-framework" aria-selected="false"
+                            data-toggle-group="css-xiv">Customizing Framework</button>
+                        <button type="button" data-article="css-a11y-considerations-frameworks" aria-selected="false"
+                            data-toggle-group="css-xiv">A11y Considerations</button>
+                        <button type="button" data-article="css-quiz-14-frameworks" aria-selected="false"
+                            data-toggle-group="css-xiv">Quiz 14: Frameworks</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="css-topic-xv-panel">
+                        XV. Advanced Topics & Performance
+                    </button>
+                    <div id="css-topic-xv-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="css-css-variables-depth" aria-selected="false"
+                            data-toggle-group="css-xv">CSS Variables (Depth)</button>
+                        <button type="button" data-article="css-calc-function" aria-selected="false"
+                            data-toggle-group="css-xv">calc() Function</button>
+                        <button type="button" data-article="css-css-houdini-intro" aria-selected="false"
+                            data-toggle-group="css-xv">CSS Houdini (Intro)</button>
+                        <button type="button" data-article="css-perf-reduce-file-size" aria-selected="false"
+                            data-toggle-group="css-xv">Perf: Reduce File Size</button>
+                        <button type="button" data-article="css-perf-avoid-layout-thrashing" aria-selected="false"
+                            data-toggle-group="css-xv">Perf: Avoid Layout Thrashing</button>
+                        <button type="button" data-article="css-critical-rendering-path" aria-selected="false"
+                            data-toggle-group="css-xv">Critical Rendering Path</button>
+                        <button type="button" data-article="css-css-modules-scoped-styling" aria-selected="false"
+                            data-toggle-group="css-xv">CSS Modules/Scoped Styling</button>
+                        <button type="button" data-article="css-maintainable-scalable-css" aria-selected="false"
+                            data-toggle-group="css-xv">Maintainable/Scalable CSS</button>
+                        <button type="button" data-article="css-css-in-js-concepts" aria-selected="false"
+                            data-toggle-group="css-xv">CSS-in-JS (Concepts)</button>
+                        <button type="button" data-article="css-shadow-dom" aria-selected="false"
+                            data-toggle-group="css-xv">Shadow DOM</button>
+                        <button type="button" data-article="css-advanced-animations" aria-selected="false"
+                            data-toggle-group="css-xv">Advanced Animations</button>
+                        <button type="button" data-article="css-quiz-15-advanced-perf" aria-selected="false"
+                            data-toggle-group="css-xv">Quiz 15: Advanced/Perf</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="css-topic-xvi-panel">
+                        XVI. Expert CSS & Future
+                    </button>
+                    <div id="css-topic-xvi-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="css-css-houdini-apis-deep-dive" aria-selected="false"
+                            data-toggle-group="css-xvi">CSS Houdini APIs (Deep Dive)</button>
+                        <button type="button" data-article="css-advanced-grid-flexbox" aria-selected="false"
+                            data-toggle-group="css-xvi">Advanced Grid/Flexbox</button>
+                        <button type="button" data-article="css-perf-profiling-optimization" aria-selected="false"
+                            data-toggle-group="css-xvi">Perf Profiling/Optimization</button>
+                        <button type="button" data-article="css-contribute-to-specs" aria-selected="false"
+                            data-toggle-group="css-xvi">Contribute to Specs</button>
+                        <button type="button" data-article="css-emerging-features" aria-selected="false"
+                            data-toggle-group="css-xvi">Emerging Features</button>
+                        <button type="button" data-article="css-styling-for-print-media" aria-selected="false"
+                            data-toggle-group="css-xvi">Styling for Print/Media</button>
+                        <button type="button" data-article="css-css-with-backend" aria-selected="false"
+                            data-toggle-group="css-xvi">CSS with Backend</button>
+                        <button type="button" data-article="css-architecting-large-codebases" aria-selected="false"
+                            data-toggle-group="css-xvi">Architecting Large Codebases</button>
+                        <button type="button" data-article="css-advanced-a11y-ux" aria-selected="false"
+                            data-toggle-group="css-xvi">Advanced A11y/UX</button>
+                        <button type="button" data-article="css-final-project" aria-selected="false"
+                            data-toggle-group="css-xvi">Final Project</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="css-article-content" class="article-content">
+                <div class="row">
+                    <div class="text-column">
+                        <h2>CSS</h2>
+                        <p>
+                            Think of CSS as the paint, wallpaper, furniture, and decorations for your webpage's HTML
+                            structure. Just as you'd choose
+                            colors, textures, and layouts to transform a bare room, CSS allows you to style the visual
+                            appearance of your website
+                            elements. It controls everything from colors and fonts to spacing and positioning, bringing
+                            personality and visual
+                            appeal to the underlying content. Without CSS, your webpage would be like an unpainted house
+                            –
+                            functional but lacking in
+                            aesthetics and overall user experience.
+                        </p>
+                    </div>
+                    <div class="image-column">
+                        <img src="assets/build_design.png" alt="Decorating a house like designing a webpage with CSS"
+                            loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div role="tabpanel" id="js-panel" aria-labelledby="js-tab" hidden>
+            <div class="accordion-container">
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="js-topic-i-panel">
+                        I. Getting Started
+                    </button>
+                    <div id="js-topic-i-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="js-what-is-js" aria-selected="false"
+                            data-toggle-group="js-i">What is JS?</button>
+                        <button type="button" data-article="js-why-learn-js" aria-selected="false"
+                            data-toggle-group="js-i">Why Learn JS?</button>
+                        <button type="button" data-article="js-tools-you-need" aria-selected="false"
+                            data-toggle-group="js-i">Tools You Need</button>
+                        <button type="button" data-article="js-script-tag" aria-selected="false"
+                            data-toggle-group="js-i">&lt;script&gt; tag</button>
+                        <button type="button" data-article="js-external-js-files" aria-selected="false"
+                            data-toggle-group="js-i">External JS Files</button>
+                        <button type="button" data-article="js-console-log" aria-selected="false"
+                            data-toggle-group="js-i">console.log()</button>
+                        <button type="button" data-article="js-statements-semicolons" aria-selected="false"
+                            data-toggle-group="js-i">Statements/Semicolons</button>
+                        <button type="button" data-article="js-comments" aria-selected="false"
+                            data-toggle-group="js-i">Comments</button>
+                        <button type="button" data-article="js-variables-let-const-var" aria-selected="false"
+                            data-toggle-group="js-i">Variables (let, const, var)</button>
+                        <button type="button" data-article="js-data-types-numbers-strings" aria-selected="false"
+                            data-toggle-group="js-i">Data Types (Numbers, Strings, Booleans)</button>
+                        <button type="button" data-article="js-null-undefined" aria-selected="false"
+                            data-toggle-group="js-i">null and undefined</button>
+                        <button type="button" data-article="js-assignment-operator" aria-selected="false"
+                            data-toggle-group="js-i">Assignment Operator</button>
+                        <button type="button" data-article="js-arithmetic-operators" aria-selected="false"
+                            data-toggle-group="js-i">Arithmetic Operators</button>
+                        <button type="button" data-article="js-beginner-mistakes" aria-selected="false"
+                            data-toggle-group="js-i">Beginner Mistakes</button>
+                        <button type="button" data-article="js-quiz-1-intro-basics" aria-selected="false"
+                            data-toggle-group="js-i">Quiz 1: Intro/Basics</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="js-topic-ii-panel">
+                        II. Browser Interaction (Basic DOM)
+                    </button>
+                    <div id="js-topic-ii-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="js-what-is-the-dom" aria-selected="false"
+                            data-toggle-group="js-ii">What is the DOM?</button>
+                        <button type="button" data-article="js-getelementbyid" aria-selected="false"
+                            data-toggle-group="js-ii">getElementById()</button>
+                        <button type="button" data-article="js-getelementsbyclassname" aria-selected="false"
+                            data-toggle-group="js-ii">getElementsByClassName()</button>
+                        <button type="button" data-article="js-getelementsbytagname" aria-selected="false"
+                            data-toggle-group="js-ii">getElementsByTagName()</button>
+                        <button type="button" data-article="js-queryselector-all" aria-selected="false"
+                            data-toggle-group="js-ii">querySelector/All()</button>
+                        <button type="button" data-article="js-textcontent" aria-selected="false"
+                            data-toggle-group="js-ii">textContent</button>
+                        <button type="button" data-article="js-innerhtml-caution" aria-selected="false"
+                            data-toggle-group="js-ii">innerHTML (Caution)</button>
+                        <button type="button" data-article="js-get-set-attribute" aria-selected="false"
+                            data-toggle-group="js-ii">get/setAttribute()</button>
+                        <button type="button" data-article="js-classlist" aria-selected="false"
+                            data-toggle-group="js-ii">classList</button>
+                        <button type="button" data-article="js-element-style" aria-selected="false"
+                            data-toggle-group="js-ii">element.style</button>
+                        <button type="button" data-article="js-intro-events" aria-selected="false"
+                            data-toggle-group="js-ii">Intro Events</button>
+                        <button type="button" data-article="js-addeventlistener" aria-selected="false"
+                            data-toggle-group="js-ii">addEventListener()</button>
+                        <button type="button" data-article="js-common-events" aria-selected="false"
+                            data-toggle-group="js-ii">Common Events</button>
+                        <button type="button" data-article="js-first-interactive-example" aria-selected="false"
+                            data-toggle-group="js-ii">First Interactive Example</button>
+                        <button type="button" data-article="js-quiz-2-basic-dom" aria-selected="false"
+                            data-toggle-group="js-ii">Quiz 2: Basic DOM</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="js-topic-iii-panel">
+                        III. Control Flow and Logic
+                    </button>
+                    <div id="js-topic-iii-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="js-comparison-operators" aria-selected="false"
+                            data-toggle-group="js-iii">Comparison Operators</button>
+                        <button type="button" data-article="js-logical-operators" aria-selected="false"
+                            data-toggle-group="js-iii">Logical Operators</button>
+                        <button type="button" data-article="js-if-statements" aria-selected="false"
+                            data-toggle-group="js-iii">if Statements</button>
+                        <button type="button" data-article="js-else-statements" aria-selected="false"
+                            data-toggle-group="js-iii">else Statements</button>
+                        <button type="button" data-article="js-else-if-statements" aria-selected="false"
+                            data-toggle-group="js-iii">else if Statements</button>
+                        <button type="button" data-article="js-switch-statements" aria-selected="false"
+                            data-toggle-group="js-iii">switch Statements</button>
+                        <button type="button" data-article="js-ternary-operator" aria-selected="false"
+                            data-toggle-group="js-iii">Ternary Operator</button>
+                        <button type="button" data-article="js-for-loop" aria-selected="false"
+                            data-toggle-group="js-iii">for loop</button>
+                        <button type="button" data-article="js-while-do-while" aria-selected="false"
+                            data-toggle-group="js-iii">while / do...while</button>
+                        <button type="button" data-article="js-break-continue" aria-selected="false"
+                            data-toggle-group="js-iii">break / continue</button>
+                        <button type="button" data-article="js-iterate-arrays-basic" aria-selected="false"
+                            data-toggle-group="js-iii">Iterate Arrays (Basic)</button>
+                        <button type="button" data-article="js-quiz-3-control-flow" aria-selected="false"
+                            data-toggle-group="js-iii">Quiz 3: Control Flow</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="js-topic-iv-panel">
+                        IV. Data Structures: Arrays & Objects
+                    </button>
+                    <div id="js-topic-iv-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="js-intro-arrays" aria-selected="false"
+                            data-toggle-group="js-iv">Intro Arrays</button>
+                        <button type="button" data-article="js-create-access-arrays" aria-selected="false"
+                            data-toggle-group="js-iv">Create/Access Arrays</button>
+                        <button type="button" data-article="js-array-length" aria-selected="false"
+                            data-toggle-group="js-iv">Array length</button>
+                        <button type="button" data-article="js-basic-array-methods" aria-selected="false"
+                            data-toggle-group="js-iv">Basic Array Methods</button>
+                        <button type="button" data-article="js-intro-objects" aria-selected="false"
+                            data-toggle-group="js-iv">Intro Objects</button>
+                        <button type="button" data-article="js-create-objects" aria-selected="false"
+                            data-toggle-group="js-iv">Create Objects</button>
+                        <button type="button" data-article="js-access-object-properties" aria-selected="false"
+                            data-toggle-group="js-iv">Access Object Properties</button>
+                        <button type="button" data-article="js-add-modify-delete-properties" aria-selected="false"
+                            data-toggle-group="js-iv">Add/Modify/Delete Properties</button>
+                        <button type="button" data-article="js-nested-objects-arrays" aria-selected="false"
+                            data-toggle-group="js-iv">Nested Objects/Arrays</button>
+                        <button type="button" data-article="js-quiz-4-arrays-objects-basic" aria-selected="false"
+                            data-toggle-group="js-iv">Quiz 4: Arrays/Objects (Basic)</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="js-topic-v-panel">
+                        V. Functions: Reusable Code
+                    </button>
+                    <div id="js-topic-v-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="js-what-are-functions" aria-selected="false"
+                            data-toggle-group="js-v">What is Functions?</button>
+                        <button type="button" data-article="js-function-declarations" aria-selected="false"
+                            data-toggle-group="js-v">Function Declarations</button>
+                        <button type="button" data-article="js-calling-functions" aria-selected="false"
+                            data-toggle-group="js-v">Calling Functions</button>
+                        <button type="button" data-article="js-parameters-arguments" aria-selected="false"
+                            data-toggle-group="js-v">Parameters/Arguments</button>
+                        <button type="button" data-article="js-return-keyword" aria-selected="false"
+                            data-toggle-group="js-v">return Keyword</button>
+                        <button type="button" data-article="js-function-expressions" aria-selected="false"
+                            data-toggle-group="js-v">Function Expressions</button>
+                        <button type="button" data-article="js-arrow-functions" aria-selected="false"
+                            data-toggle-group="js-v">Arrow Functions</button>
+                        <button type="button" data-article="js-scope" aria-selected="false"
+                            data-toggle-group="js-v">Scope</button>
+                        <button type="button" data-article="js-closurs-intro" aria-selected="false"
+                            data-toggle-group="js-v">Closures (Intro)</button>
+                        <button type="button" data-article="js-quiz-5-functions" aria-selected="false"
+                            data-toggle-group="js-v">Quiz 5: Functions</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="js-topic-vi-panel">
+                        VI. Form Interaction (Intermediate DOM/Events)
+                    </button>
+                    <div id="js-topic-vi-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="js-get-form-input-values" aria-selected="false"
+                            data-toggle-group="js-vi">Get Form Input Values</button>
+                        <button type="button" data-article="js-submit-event" aria-selected="false"
+                            data-toggle-group="js-vi">Submit Event</button>
+                        <button type="button" data-article="js-prevent-default" aria-selected="false"
+                            data-toggle-group="js-vi">Prevent Default</button>
+                        <button type="button" data-article="js-validate-input-basic" aria-selected="false"
+                            data-toggle-group="js-vi">Validate Input (Basic)</button>
+                        <button type="button" data-article="js-input-change-events" aria-selected="false"
+                            data-toggle-group="js-vi">Input/Change Events</button>
+                        <button type="button" data-article="js-checkboxes-radio-buttons" aria-selected="false"
+                            data-toggle-group="js-vi">Checkboxes/Radio Buttons</button>
+                        <button type="button" data-article="js-select-menus" aria-selected="false"
+                            data-toggle-group="js-vi">Select Menus</button>
+                        <button type="button" data-article="js-a11y-dynamic-forms" aria-selected="false"
+                            data-toggle-group="js-vi">A11y Dynamic Forms</button>
+                        <button type="button" data-article="js-quiz-6-forms" aria-selected="false"
+                            data-toggle-group="js-vi">Quiz 6: Forms</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="js-topic-vii-panel">
+                        VII. Strings and Numbers
+                    </button>
+                    <div id="js-topic-vii-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="js-string-properties-methods" aria-selected="false"
+                            data-toggle-group="js-vii">String Properties/Methods</button>
+                        <button type="button" data-article="js-string-searching" aria-selected="false"
+                            data-toggle-group="js-vii">String Searching</button>
+                        <button type="button" data-article="js-extract-substrings" aria-selected="false"
+                            data-toggle-group="js-vii">Extract Substrings</button>
+                        <button type="button" data-article="js-replace-split-strings" aria-selected="false"
+                            data-toggle-group="js-vii">Replace/Split Strings</button>
+                        <button type="button" data-article="js-number-properties-methods" aria-selected="false"
+                            data-toggle-group="js-vii">Number Properties/Methods</button>
+                        <button type="button" data-article="js-math-object" aria-selected="false"
+                            data-toggle-group="js-vii">Math Object</button>
+                        <button type="button" data-article="js-date-object-basic" aria-selected="false"
+                            data-toggle-group="js-vii">Date Object (Basic)</button>
+                        <button type="button" data-article="js-quiz-7-strings-numbers" aria-selected="false"
+                            data-toggle-group="js-vii">Quiz 7: Strings/Numbers</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="js-topic-viii-panel">
+                        VIII. More Arrays and Objects
+                    </button>
+                    <div id="js-topic-viii-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="js-advanced-array-methods" aria-selected="false"
+                            data-toggle-group="js-viii">Advanced Array Methods</button>
+                        <button type="button" data-article="js-spread-syntax" aria-selected="false"
+                            data-toggle-group="js-viii">Spread Syntax (...)</button>
+                        <button type="button" data-article="js-destructuring" aria-selected="false"
+                            data-toggle-group="js-viii">Destructuring</button>
+                        <button type="button" data-article="js-object-iteration" aria-selected="false"
+                            data-toggle-group="js-viii">Object Iteration</button>
+                        <button type="button" data-article="js-this-keyword-intro" aria-selected="false"
+                            data-toggle-group="js-viii">The this Keyword (Intro)</button>
+                        <button type="button" data-article="js-prototypes-intro" aria-selected="false"
+                            data-toggle-group="js-viii">Prototypes (Intro)</button>
+                        <button type="button" data-article="js-quiz-8-arrays-objects-advanced" aria-selected="false"
+                            data-toggle-group="js-viii">Quiz 8: Arrays/Objects (Advanced)</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="js-topic-ix-panel">
+                        IX. Async JS and APIs (Beginner)
+                    </button>
+                    <div id="js-topic-ix-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="js-what-is-async-js" aria-selected="false"
+                            data-toggle-group="js-ix">What is Async JS?</button>
+                        <button type="button" data-article="js-settimeout-setinterval" aria-selected="false"
+                            data-toggle-group="js-ix">setTimeout/setInterval</button>
+                        <button type="button" data-article="js-callbacks-intro" aria-selected="false"
+                            data-toggle-group="js-ix">Callbacks (Intro)</button>
+                        <button type="button" data-article="js-promises-intro" aria-selected="false"
+                            data-toggle-group="js-ix">Promises (Intro)</button>
+                        <button type="button" data-article="js-fetch-api-basic" aria-selected="false"
+                            data-toggle-group="js-ix">fetch() API (Basic)</button>
+                        <button type="button" data-article="js-working-with-json" aria-selected="false"
+                            data-toggle-group="js-ix">Working with JSON</button>
+                        <button type="button" data-article="js-intro-web-apis" aria-selected="false"
+                            data-toggle-group="js-ix">Intro Web APIs</button>
+                        <button type="button" data-article="js-geolocation-api" aria-selected="false"
+                            data-toggle-group="js-ix">Geolocation API</button>
+                        <button type="button" data-article="js-history-api" aria-selected="false"
+                            data-toggle-group="js-ix">History API</button>
+                        <button type="button" data-article="js-quiz-9-async-js-apis-beginner" aria-selected="false"
+                            data-toggle-group="js-ix">Quiz 9: Async JS/APIs (Beginner)</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="js-topic-x-panel">
+                        X. Error Handling and Debugging
+                    </button>
+                    <div id="js-topic-x-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="js-types-of-errors" aria-selected="false"
+                            data-toggle-group="js-x">Types of Errors</button>
+                        <button type="button" data-article="js-try-catch" aria-selected="false"
+                            data-toggle-group="js-x">try...catch</button>
+                        <button type="button" data-article="js-finally-block" aria-selected="false"
+                            data-toggle-group="js-x">finally Block</button>
+                        <button type="button" data-article="js-browser-dev-tools" aria-selected="false"
+                            data-toggle-group="js-x">Browser Dev Tools</button>
+                        <button type="button" data-article="js-breakpoints" aria-selected="false"
+                            data-toggle-group="js-x">Breakpoints</button>
+                        <button type="button" data-article="js-logging-info" aria-selected="false"
+                            data-toggle-group="js-x">Logging Info</button>
+                        <button type="button" data-article="js-debugging-strategies" aria-selected="false"
+                            data-toggle-group="js-x">Debugging Strategies</button>
+                        <button type="button" data-article="js-quiz-10-error-handling-debugging" aria-selected="false"
+                            data-toggle-group="js-x">Quiz 10: Error Handling/Debugging</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="js-topic-xi-panel">
+                        XI. ES6+ Features (Modern JS)
+                    </button>
+                    <div id="js-topic-xi-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="js-let-const" aria-selected="false"
+                            data-toggle-group="js-xi">let and const</button>
+                        <button type="button" data-article="js-arrow-functions-detailed" aria-selected="false"
+                            data-toggle-group="js-xi">Arrow Functions (Detailed)</button>
+                        <button type="button" data-article="js-template-literals" aria-selected="false"
+                            data-toggle-group="js-xi">Template Literals</button>
+                        <button type="button" data-article="js-default-parameters" aria-selected="false"
+                            data-toggle-group="js-xi">Default Parameters</button>
+                        <button type="button" data-article="js-rest-spread" aria-selected="false"
+                            data-toggle-group="js-xi">Rest/Spread</button>
+                        <button type="button" data-article="js-destructuring" aria-selected="false"
+                            data-toggle-group="js-xi">Destructuring</button>
+                        <button type="button" data-article="js-classes" aria-selected="false"
+                            data-toggle-group="js-xi">Classes</button>
+                        <button type="button" data-article="js-modules-intro" aria-selected="false"
+                            data-toggle-group="js-xi">Modules (Intro)</button>
+                        <button type="button" data-article="js-promises-async-await" aria-selected="false"
+                            data-toggle-group="js-xi">Promises (async/await)</button>
+                        <button type="button" data-article="js-for-of-loop" aria-selected="false"
+                            data-toggle-group="js-xi">for...of Loop</button>
+                        <button type="button" data-article="js-sets-maps" aria-selected="false"
+                            data-toggle-group="js-xi">Sets and Maps</button>
+                        <button type="button" data-article="js-quiz-11-es6-features" aria-selected="false"
+                            data-toggle-group="js-xi">Quiz 11: ES6+ Features</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="js-topic-xii-panel">
+                        XII. Accessibility with JavaScript (Advanced)
+                    </button>
+                    <div id="js-topic-xii-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="js-manage-focus-programmatically" aria-selected="false"
+                            data-toggle-group="js-xii">Manage Focus Programmatically</button>
+                        <button type="button" data-article="js-accessible-keyboard-nav" aria-selected="false"
+                            data-toggle-group="js-xii">Accessible Keyboard Nav</button>
+                        <button type="button" data-article="js-update-aria-dynamically" aria-selected="false"
+                            data-toggle-group="js-xii">Update ARIA Dynamically</button>
+                        <button type="button" data-article="js-accessible-custom-forms-js-aria" aria-selected="false"
+                            data-toggle-group="js-xii">Accessible Custom Forms (JS/ARIA)</button>
+                        <button type="button" data-article="js-announce-dynamic-content-live-regions"
+                            aria-selected="false" data-toggle-group="js-xii">Announce Dynamic Content (Live
+                            Regions)</button>
+                        <button type="button" data-article="js-handle-keyboard-events" aria-selected="false"
+                            data-toggle-group="js-xii">Handle Keyboard Events</button>
+                        <button type="button" data-article="js-accessible-drag-and-drop" aria-selected="false"
+                            data-toggle-group="js-xii">Accessible Drag and Drop</button>
+                        <button type="button" data-article="js-test-js-with-a11y" aria-selected="false"
+                            data-toggle-group="js-xii">Test JS with A11y</button>
+                        <button type="button" data-article="js-quiz-12-a11y-with-js" aria-selected="false"
+                            data-toggle-group="js-xii">Quiz 12: A11y with JS</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="js-topic-xiii-panel">
+                        XIII. Working with APIs (Intermediate)
+                    </button>
+                    <div id="js-topic-xiii-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="js-fetch-api-more" aria-selected="false"
+                            data-toggle-group="js-xiii">fetch() API (More)</button>
+                        <button type="button" data-article="js-send-data-with-fetch" aria-selected="false"
+                            data-toggle-group="js-xiii">Send Data with fetch()</button>
+                        <button type="button" data-article="js-handle-response-types" aria-selected="false"
+                            data-toggle-group="js-xiii">Handle Response Types</button>
+                        <button type="button" data-article="js-working-with-api-headers" aria-selected="false"
+                            data-toggle-group="js-xiii">Working with API Headers</button>
+                        <button type="button" data-article="js-api-authentication-basic" aria-selected="false"
+                            data-toggle-group="js-xiii">API Authentication (Basic)</button>
+                        <button type="button" data-article="js-error-handling-for-api" aria-selected="false"
+                            data-toggle-group="js-xiii">Error Handling for API</button>
+                        <button type="button" data-article="js-web-api-standards-rest-graphql" aria-selected="false"
+                            data-toggle-group="js-xiii">Web API Standards (REST, GraphQL)</button>
+                        <button type="button" data-article="js-quiz-13-working-with-apis-intermediate"
+                            aria-selected="false" data-toggle-group="js-xiii">Quiz 13: Working with APIs
+                            (Intermediate)</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="js-topic-xiv-panel">
+                        XIV. Front-End Frameworks/Libraries (Conceptual)
+                    </button>
+                    <div id="js-topic-xiv-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="js-what-are-frameworks-libraries" aria-selected="false"
+                            data-toggle-group="js-xiv">What are Frameworks/Libraries?</button>
+                        <button type="button" data-article="js-why-use-framework-library" aria-selected="false"
+                            data-toggle-group="js-xiv">Why Use Framework/Library?</button>
+                        <button type="button" data-article="js-basic-concepts-components-props-state"
+                            aria-selected="false" data-toggle-group="js-xiv">Basic Concepts (Components, Props,
+                            State)</button>
+                        <button type="button" data-article="js-role-of-js-in-frameworks" aria-selected="false"
+                            data-toggle-group="js-xiv">Role of JS in Frameworks</button>
+                        <button type="button" data-article="js-setup-basic-project-conceptual" aria-selected="false"
+                            data-toggle-group="js-xiv">Setup Basic Project (Conceptual)</button>
+                        <button type="button" data-article="js-quiz-14-frameworks-libraries-conceptual"
+                            aria-selected="false" data-toggle-group="js-xiv">Quiz 14: Frameworks/Libraries
+                            (Conceptual)</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="js-topic-xv-panel">
+                        XV. Testing and Deployment
+                    </button>
+                    <div id="js-topic-xv-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="js-intro-js-testing" aria-selected="false"
+                            data-toggle-group="js-xv">Intro JS Testing</button>
+                        <button type="button" data-article="js-basic-testing-frameworks" aria-selected="false"
+                            data-toggle-group="js-xv">Basic Testing Frameworks</button>
+                        <button type="button" data-article="js-writing-simple-tests" aria-selected="false"
+                            data-toggle-group="js-xv">Writing Simple Tests</button>
+                        <button type="button" data-article="js-code-linting-formatting" aria-selected="false"
+                            data-toggle-group="js-xv">Code Linting/Formatting</button>
+                        <button type="button" data-article="js-basic-deployment-concepts" aria-selected="false"
+                            data-toggle-group="js-xv">Basic Deployment Concepts</button>
+                        <button type="button" data-article="js-quiz-15-testing-deployment" aria-selected="false"
+                            data-toggle-group="js-xv">Quiz 15: Testing/Deployment</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="js-topic-xvi-panel">
+                        XVI. Advanced JS and Ecosystem
+                    </button>
+                    <div id="js-topic-xvi-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="js-prototypes-inheritance-deep-dive" aria-selected="false"
+                            data-toggle-group="js-xvi">Prototypes/Inheritance (Deep Dive)</button>
+                        <button type="button" data-article="js-advanced-closures-scope" aria-selected="false"
+                            data-toggle-group="js-xvi">Advanced Closures/Scope</button>
+                        <button type="button" data-article="js-web-workers-detailed" aria-selected="false"
+                            data-toggle-group="js-xvi">Web Workers (Detailed)</button>
+                        <button type="button" data-article="js-service-workers-pwas" aria-selected="false"
+                            data-toggle-group="js-xvi">Service Workers/PWAs</button>
+                        <button type="button" data-article="js-advanced-dom-performance" aria-selected="false"
+                            data-toggle-group="js-xvi">Advanced DOM/Performance</button>
+                        <button type="button" data-article="js-node-js-intro" aria-selected="false"
+                            data-toggle-group="js-xvi">Node.js (Intro)</button>
+                        <button type="button" data-article="js-package-managers-npm-yarn" aria-selected="false"
+                            data-toggle-group="js-xvi">Package Managers (npm, yarn)</button>
+                        <button type="button" data-article="js-build-apis-with-node-js" aria-selected="false"
+                            data-toggle-group="js-xvi">Build APIs with Node.js</button>
+                        <button type="button" data-article="js-advanced-framework-library" aria-selected="false"
+                            data-toggle-group="js-xvi">Advanced Framework/Library</button>
+                        <button type="button" data-article="js-js-security-best-practices" aria-selected="false"
+                            data-toggle-group="js-xvi">JS Security Best Practices</button>
+                        <button type="button" data-article="js-perf-optimization-complex" aria-selected="false"
+                            data-toggle-group="js-xvi">Perf Optimization (Complex)</button>
+                        <button type="button" data-article="js-contribute-to-open-source" aria-selected="false"
+                            data-toggle-group="js-xvi">Contribute to Open Source</button>
+                        <button type="button" data-article="js-stay-up-to-date-ecosystem" aria-selected="false"
+                            data-toggle-group="js-xvi">Stay Up-to-Date (Ecosystem)</button>
+                        <button type="button" data-article="js-final-project" aria-selected="false"
+                            data-toggle-group="js-xvi">Final Project</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="js-article-content" class="article-content">
+                <div class="row">
+                    <div class="text-column">
+                        <h2>JavaScript</h2>
+                        <p>
+                            Consider JavaScript the electrical wiring, plumbing, and smart devices of your webpage,
+                            bringing
+                            dynamic functionality
+                            to the static HTML structure. It enables interactive elements like buttons that respond to
+                            clicks, forms that validate
+                            user input, and dynamic content that updates without requiring a full page reload. Just as
+                            utilities make a house
+                            livable and functional, JavaScript adds behavior and interactivity, transforming a basic
+                            webpage
+                            into a dynamic and
+                            engaging user experience. It's the behind-the-scenes logic that makes things happen.
+                        </p>
+                    </div>
+                    <div class="image-column">
+                        <img src="assets/build_wiring.png"
+                            alt="Adding utilities to a house like adding functionality to a webpage with JavaScript"
+                            loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div role="tabpanel" id="aria-panel" aria-labelledby="aria-tab" hidden>
+            <div class="accordion-container">
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="aria-topic-i-panel">
+                        I. Introduction to ARIA
+                    </button>
+                    <div id="aria-topic-i-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="aria-what-is-aria" aria-selected="false"
+                            data-toggle-group="aria-i">What is ARIA?</button>
+                        <button type="button" data-article="aria-why-is-aria-necessary" aria-selected="false"
+                            data-toggle-group="aria-i">Why is ARIA Necessary?</button>
+                        <button type="button" data-article="aria-aria-features-roles-states-properties"
+                            aria-selected="false" data-toggle-group="aria-i">ARIA Features: Roles, States,
+                            Properties</button>
+                        <button type="button" data-article="aria-aria-semantic-html" aria-selected="false"
+                            data-toggle-group="aria-i">ARIA + Semantic HTML</button>
+                        <button type="button" data-article="aria-importance-of-a11y" aria-selected="false"
+                            data-toggle-group="aria-i">Importance of A11y</button>
+                        <button type="button" data-article="aria-aria-screen-readers" aria-selected="false"
+                            data-toggle-group="aria-i">ARIA + Screen Readers</button>
+                        <button type="button" data-article="aria-basic-aria-example-role" aria-selected="false"
+                            data-toggle-group="aria-i">Basic ARIA Example (role)</button>
+                        <button type="button" data-article="aria-beginner-mistakes" aria-selected="false"
+                            data-toggle-group="aria-i">Beginner Mistakes</button>
+                        <button type="button" data-article="aria-quiz-1-what-why-aria" aria-selected="false"
+                            data-toggle-group="aria-i">Quiz 1: What/Why ARIA?</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="aria-topic-ii-panel">
+                        II. ARIA Roles (Structural/Landmark)
+                    </button>
+                    <div id="aria-topic-ii-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="aria-intro-landmark-roles" aria-selected="false"
+                            data-toggle-group="aria-ii">Intro Landmark Roles</button>
+                        <button type="button" data-article="aria-role-banner" aria-selected="false"
+                            data-toggle-group="aria-ii">role="banner"</button>
+                        <button type="button" data-article="aria-role-navigation" aria-selected="false"
+                            data-toggle-group="aria-ii">role="navigation"</button>
+                        <button type="button" data-article="aria-role-main" aria-selected="false"
+                            data-toggle-group="aria-ii">role="main"</button>
+                        <button type="button" data-article="aria-role-complementary" aria-selected="false"
+                            data-toggle-group="aria-ii">role="complementary"</button>
+                        <button type="button" data-article="aria-role-contentinfo" aria-selected="false"
+                            data-toggle-group="aria-ii">role="contentinfo"</button>
+                        <button type="button" data-article="aria-role-search" aria-selected="false"
+                            data-toggle-group="aria-ii">role="search"</button>
+                        <button type="button" data-article="aria-role-application-use-case" aria-selected="false"
+                            data-toggle-group="aria-ii">role="application" (Use Case)</button>
+                        <button type="button" data-article="aria-intro-structural-roles" aria-selected="false"
+                            data-toggle-group="aria-ii">Intro Structural Roles</button>
+                        <button type="button" data-article="aria-role-article" aria-selected="false"
+                            data-toggle-group="aria-ii">role="article"</button>
+                        <button type="button" data-article="aria-role-region" aria-selected="false"
+                            data-toggle-group="aria-ii">role="region"</button>
+                        <button type="button" data-article="aria-role-group" aria-selected="false"
+                            data-toggle-group="aria-ii">role="group"</button>
+                        <button type="button" data-article="aria-role-list-listitem" aria-selected="false"
+                            data-toggle-group="aria-ii">role="list/listItem"</button>
+                        <button type="button" data-article="aria-role-definition" aria-selected="false"
+                            data-toggle-group="aria-ii">role="definition"</button>
+                        <button type="button" data-article="aria-role-term" aria-selected="false"
+                            data-toggle-group="aria-ii">role="term"</button>
+                        <button type="button" data-article="aria-quiz-2-landmark-structural" aria-selected="false"
+                            data-toggle-group="aria-ii">Quiz 2: Landmark/Structural</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="aria-topic-iii-panel">
+                        III. ARIA Roles (Widget)
+                    </button>
+                    <div id="aria-topic-iii-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="aria-intro-widget-roles" aria-selected="false"
+                            data-toggle-group="aria-iii">Intro Widget Roles</button>
+                        <button type="button" data-article="aria-role-button" aria-selected="false"
+                            data-toggle-group="aria-iii">role="button"</button>
+                        <button type="button" data-article="aria-role-link" aria-selected="false"
+                            data-toggle-group="aria-iii">role="link"</button>
+                        <button type="button" data-article="aria-role-checkbox" aria-selected="false"
+                            data-toggle-group="aria-iii">role="checkbox"</button>
+                        <button type="button" data-article="aria-role-radio-radiogroup" aria-selected="false"
+                            data-toggle-group="aria-iii">role="radio/radiogroup"</button>
+                        <button type="button" data-article="aria-role-textbox" aria-selected="false"
+                            data-toggle-group="aria-iii">role="textbox"</button>
+                        <button type="button" data-article="aria-role-combobox" aria-selected="false"
+                            data-toggle-group="aria-iii">role="combobox"</button>
+                        <button type="button" data-article="aria-role-listbox-option" aria-selected="false"
+                            data-toggle-group="aria-iii">role="listbox/option"</button>
+                        <button type="button" data-article="aria-role-menu-menubar-menuitem" aria-selected="false"
+                            data-toggle-group="aria-iii">role="menu/menubar/menuitem"</button>
+                        <button type="button" data-article="aria-role-tab-tablist-tabpanel" aria-selected="false"
+                            data-toggle-group="aria-iii">role="tab/tablist/tabpanel"</button>
+                        <button type="button" data-article="aria-role-tree-treeitem-treegrid" aria-selected="false"
+                            data-toggle-group="aria-iii">role="tree/treeitem/treegrid"</button>
+                        <button type="button" data-article="aria-role-slider" aria-selected="false"
+                            data-toggle-group="aria-iii">role="slider"</button>
+                        <button type="button" data-article="aria-role-progressbar-meter" aria-selected="false"
+                            data-toggle-group="aria-iii">role="progressbar/meter"</button>
+                        <button type="button" data-article="aria-role-tooltip" aria-selected="false"
+                            data-toggle-group="aria-iii">role="tooltip"</button>
+                        <button type="button" data-article="aria-role-alert-alertdialog" aria-selected="false"
+                            data-toggle-group="aria-iii">role="alert/alertdialog"</button>
+                        <button type="button" data-article="aria-quiz-3-widget-roles" aria-selected="false"
+                            data-toggle-group="aria-iii">Quiz 3: Widget Roles</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="aria-topic-iv-panel">
+                        IV. ARIA States/Properties (Beginner)
+                    </button>
+                    <div id="aria-topic-iv-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="aria-intro-states-properties" aria-selected="false"
+                            data-toggle-group="aria-iv">Intro States/Properties</button>
+                        <button type="button" data-article="aria-state-vs-property" aria-selected="false"
+                            data-toggle-group="aria-iv">State vs Property</button>
+                        <button type="button" data-article="aria-aria-expanded" aria-selected="false"
+                            data-toggle-group="aria-iv">aria-expanded</button>
+                        <button type="button" data-article="aria-aria-selected" aria-selected="false"
+                            data-toggle-group="aria-iv">aria-selected</button>
+                        <button type="button" data-article="aria-aria-checked" aria-selected="false"
+                            data-toggle-group="aria-iv">aria-checked</button>
+                        <button type="button" data-article="aria-aria-disabled" aria-selected="false"
+                            data-toggle-group="aria-iv">aria-disabled</button>
+                        <button type="button" data-article="aria-aria-label" aria-selected="false"
+                            data-toggle-group="aria-iv">aria-label</button>
+                        <button type="button" data-article="aria-aria-labelledby" aria-selected="false"
+                            data-toggle-group="aria-iv">aria-labelledby</button>
+                        <button type="button" data-article="aria-aria-describedby" aria-selected="false"
+                            data-toggle-group="aria-iv">aria-describedby</button>
+                        <button type="button" data-article="aria-quiz-4-basic-states-properties" aria-selected="false"
+                            data-toggle-group="aria-iv">Quiz 4: Basic States/Properties</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="aria-topic-v-panel">
+                        V. ARIA States/Properties (Intermediate)
+                    </button>
+                    <div id="aria-topic-v-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="aria-aria-current" aria-selected="false"
+                            data-toggle-group="aria-v">aria-current</button>
+                        <button type="button" data-article="aria-aria-pressed" aria-selected="false"
+                            data-toggle-group="aria-v">aria-pressed</button>
+                        <button type="button" data-article="aria-aria-busy" aria-selected="false"
+                            data-toggle-group="aria-v">aria-busy</button>
+                        <button type="button" data-article="aria-aria-invalid" aria-selected="false"
+                            data-toggle-group="aria-v">aria-invalid</button>
+                        <button type="button" data-article="aria-aria-controls" aria-selected="false"
+                            data-toggle-group="aria-v">aria-controls</button>
+                        <button type="button" data-article="aria-aria-owns" aria-selected="false"
+                            data-toggle-group="aria-v">aria-owns</button>
+                        <button type="button" data-article="aria-aria-posinset-setsize" aria-selected="false"
+                            data-toggle-group="aria-v">aria-posinset/setsize</button>
+                        <button type="button" data-article="aria-aria-valuemin-max-now" aria-selected="false"
+                            data-toggle-group="aria-v">aria-valuemin/max/now</button>
+                        <button type="button" data-article="aria-enhance-custom-forms" aria-selected="false"
+                            data-toggle-group="aria-v">Enhance Custom Forms</button>
+                        <button type="button" data-article="aria-accessible-dynamic-content-live-regions"
+                            aria-selected="false" data-toggle-group="aria-v">Accessible Dynamic Content (Live
+                            Regions)</button>
+                        <button type="button" data-article="aria-quiz-5-intermediate-states-properties"
+                            aria-selected="false" data-toggle-group="aria-v">Quiz 5: Intermediate
+                            States/Properties</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="aria-topic-vi-panel">
+                        VI. ARIA Live Regions
+                    </button>
+                    <div id="aria-topic-vi-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="aria-intro-live-regions" aria-selected="false"
+                            data-toggle-group="aria-vi">Intro Live Regions</button>
+                        <button type="button" data-article="aria-aria-live-off" aria-selected="false"
+                            data-toggle-group="aria-vi">aria-live="off"</button>
+                        <button type="button" data-article="aria-aria-live-polite" aria-selected="false"
+                            data-toggle-group="aria-vi">aria-live="polite"</button>
+                        <button type="button" data-article="aria-aria-live-assertive" aria-selected="false"
+                            data-toggle-group="aria-vi">aria-live="assertive"</button>
+                        <button type="button" data-article="aria-aria-relevant" aria-selected="false"
+                            data-toggle-group="aria-vi">aria-relevant</button>
+                        <button type="button" data-article="aria-aria-atomic" aria-selected="false"
+                            data-toggle-group="aria-vi">aria-atomic</button>
+                        <button type="button" data-article="aria-live-region-best-practices" aria-selected="false"
+                            data-toggle-group="aria-vi">Live Region Best Practices</button>
+                        <button type="button" data-article="aria-live-region-pitfalls" aria-selected="false"
+                            data-toggle-group="aria-vi">Live Region Pitfalls</button>
+                        <button type="button" data-article="aria-live-region-examples" aria-selected="false"
+                            data-toggle-group="aria-vi">Live Region Examples</button>
+                        <button type="button" data-article="aria-quiz-6-live-regions" aria-selected="false"
+                            data-toggle-group="aria-vi">Quiz 6: Live Regions</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="aria-topic-vii-panel">
+                        VII. ARIA and JavaScript
+                    </button>
+                    <div id="aria-topic-vii-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="aria-js-role-in-aria-updates" aria-selected="false"
+                            data-toggle-group="aria-vii">JS Role in ARIA Updates</button>
+                        <button type="button" data-article="aria-update-states-properties-with-js" aria-selected="false"
+                            data-toggle-group="aria-vii">Update States/Properties with JS</button>
+                        <button type="button" data-article="aria-manage-focus-with-js" aria-selected="false"
+                            data-toggle-group="aria-vii">Manage Focus with JS</button>
+                        <button type="button" data-article="aria-accessible-keyboard-interactions-js"
+                            aria-selected="false" data-toggle-group="aria-vii">Accessible Keyboard Interactions
+                            (JS)</button>
+                        <button type="button" data-article="aria-announce-dynamic-content-js" aria-selected="false"
+                            data-toggle-group="aria-vii">Announce Dynamic Content (JS)</button>
+                        <button type="button" data-article="aria-update-aria-on-interaction" aria-selected="false"
+                            data-toggle-group="aria-vii">Update ARIA on Interaction</button>
+                        <button type="button" data-article="aria-test-dynamic-aria-with-screen-readers"
+                            aria-selected="false" data-toggle-group="aria-vii">Test Dynamic ARIA with Screen
+                            Readers</button>
+                        <button type="button" data-article="aria-quiz-7-aria-js" aria-selected="false"
+                            data-toggle-group="aria-vii">Quiz 7: ARIA and JS</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="aria-topic-viii-panel">
+                        VIII. ARIA Best Practices & Patterns
+                    </button>
+                    <div id="aria-topic-viii-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="aria-rule-1-no-aria-if-native-html-works"
+                            aria-selected="false" data-toggle-group="aria-viii">Rule 1: No ARIA if Native HTML
+                            Works</button>
+                        <button type="button" data-article="aria-rule-2-if-aria-make-it-correct" aria-selected="false"
+                            data-toggle-group="aria-viii">Rule 2: If ARIA, Make it Correct</button>
+                        <button type="button" data-article="aria-rule-3-keyboard-usable" aria-selected="false"
+                            data-toggle-group="aria-viii">Rule 3: Keyboard Usable</button>
+                        <button type="button" data-article="aria-rule-4-role-presentation-none" aria-selected="false"
+                            data-toggle-group="aria-viii">Rule 4: role="presentation"/none</button>
+                        <button type="button" data-article="aria-pattern-accessible-accordions" aria-selected="false"
+                            data-toggle-group="aria-viii">Pattern: Accessible Accordions</button>
+                        <button type="button" data-article="aria-pattern-accessible-modal-dialogs" aria-selected="false"
+                            data-toggle-group="aria-viii">Pattern: Accessible Modals</button>
+                        <button type="button" data-article="aria-pattern-accessible-carousels" aria-selected="false"
+                            data-toggle-group="aria-viii">Pattern: Accessible Carousels</button>
+                        <button type="button" data-article="aria-pattern-accessible-toolbars" aria-selected="false"
+                            data-toggle-group="aria-viii">Pattern: Accessible Toolbars</button>
+                        <button type="button" data-article="aria-pattern-accessible-data-tables" aria-selected="false"
+                            data-toggle-group="aria-viii">Pattern: Accessible Data Tables</button>
+                        <button type="button" data-article="aria-quiz-8-best-practices-patterns" aria-selected="false"
+                            data-toggle-group="aria-viii">Quiz 8: Best Practices/Patterns</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="aria-topic-ix-panel">
+                        IX. ARIA and Accessibility Testing
+                    </button>
+                    <div id="aria-topic-ix-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="aria-inspect-aria-dev-tools" aria-selected="false"
+                            data-toggle-group="aria-ix">Inspect ARIA (Dev Tools)</button>
+                        <button type="button" data-article="aria-a11y-testing-tools" aria-selected="false"
+                            data-toggle-group="aria-ix">A11y Testing Tools</button>
+                        <button type="button" data-article="aria-test-with-screen-readers-basic" aria-selected="false"
+                            data-toggle-group="aria-ix">Test with Screen Readers (Basic)</button>
+                        <button type="button" data-article="aria-keyboard-nav-testing" aria-selected="false"
+                            data-toggle-group="aria-ix">Keyboard Nav Testing</button>
+                        <button type="button" data-article="aria-identify-aria-errors" aria-selected="false"
+                            data-toggle-group="aria-ix">Identify ARIA Errors</button>
+                        <button type="button" data-article="aria-a11y-conformance-wcag-aria" aria-selected="false"
+                            data-toggle-group="aria-ix">A11y Conformance (WCAG/ARIA)</button>
+                        <button type="button" data-article="aria-user-testing-with-assistive-tech" aria-selected="false"
+                            data-toggle-group="aria-ix">User Testing with Assistive Tech</button>
+                        <button type="button" data-article="aria-quiz-9-aria-a11y-testing" aria-selected="false"
+                            data-toggle-group="aria-ix">Quiz 9: ARIA/A11y Testing</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="aria-topic-x-panel">
+                        X. Advanced ARIA Concepts
+                    </button>
+                    <div id="aria-topic-x-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="aria-aria-authoring-practices-guide" aria-selected="false"
+                            data-toggle-group="aria-x">ARIA Authoring Practices Guide (APG)</button>
+                        <button type="button" data-article="aria-advanced-states-properties" aria-selected="false"
+                            data-toggle-group="aria-x">Advanced States/Properties</button>
+                        <button type="button" data-article="aria-touch-interactions" aria-selected="false"
+                            data-toggle-group="aria-x">Touch Interactions</button>
+                        <button type="button" data-article="aria-aria-in-spas" aria-selected="false"
+                            data-toggle-group="aria-x">ARIA in SPAs</button>
+                        <button type="button" data-article="aria-aria-ssr" aria-selected="false"
+                            data-toggle-group="aria-x">ARIA and SSR</button>
+                        <button type="button" data-article="aria-future-of-aria" aria-selected="false"
+                            data-toggle-group="aria-x">Future of ARIA</button>
+                        <button type="button" data-article="aria-contribute-to-aria-docs" aria-selected="false"
+                            data-toggle-group="aria-x">Contribute to ARIA Docs</button>
+                        <button type="button" data-article="aria-quiz-10-advanced-concepts" aria-selected="false"
+                            data-toggle-group="aria-x">Quiz 10: Advanced Concepts</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="aria-topic-xi-panel">
+                        XI. ARIA and Related Technologies
+                    </button>
+                    <div id="aria-topic-xi-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="aria-aria-semantic-html-revisited" aria-selected="false"
+                            data-toggle-group="aria-xi">ARIA + Semantic HTML (Revisited)</button>
+                        <button type="button" data-article="aria-aria-css" aria-selected="false"
+                            data-toggle-group="aria-xi">ARIA + CSS</button>
+                        <button type="button" data-article="aria-aria-svg-a11y" aria-selected="false"
+                            data-toggle-group="aria-xi">ARIA + SVG A11y</button>
+                        <button type="button" data-article="aria-aria-web-components" aria-selected="false"
+                            data-toggle-group="aria-xi">ARIA + Web Components</button>
+                        <button type="button" data-article="aria-aria-in-native-mobile" aria-selected="false"
+                            data-toggle-group="aria-xi">ARIA in Native Mobile</button>
+                        <button type="button" data-article="aria-quiz-11-related-tech" aria-selected="false"
+                            data-toggle-group="aria-xi">Quiz 11: Related Tech</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="aria-topic-xii-panel">
+                        XII. Expert ARIA & Future
+                    </button>
+                    <div id="aria-topic-xii-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="aria-complex-widget-implementations" aria-selected="false"
+                            data-toggle-group="aria-xii">Complex Widget Implementations</button>
+                        <button type="button" data-article="aria-perf-optimization-aria-updates" aria-selected="false"
+                            data-toggle-group="aria-xii">Perf Optimization (ARIA Updates)</button>
+                        <button type="button" data-article="aria-advanced-a11y-testing-debugging" aria-selected="false"
+                            data-toggle-group="aria-xii">Advanced A11y Testing/Debugging</button>
+                        <button type="button" data-article="aria-contribute-to-aria-specs" aria-selected="false"
+                            data-toggle-group="aria-xii">Contribute to ARIA Specs</button>
+                        <button type="button" data-article="aria-emerging-a11y-apis" aria-selected="false"
+                            data-toggle-group="aria-xii">Emerging A11y APIs</button>
+                        <button type="button" data-article="aria-advocate-for-a11y-inclusive-design"
+                            aria-selected="false" data-toggle-group="aria-xii">Advocate for A11y/Inclusive
+                            Design</button>
+                        <button type="button" data-article="aria-final-project" aria-selected="false"
+                            data-toggle-group="aria-xii">Final Project</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="aria-article-content" class="article-content">
+                <div class="row">
+                    <div class="text-column">
+                        <h2>ARIA</h2>
+                        <p>
+                            Think of ARIA attributes as the labels you meticulously apply to the breakers in an
+                            electrical
+                            panel. Just as those
+                            labels clarify the function of each switch ("kitchen lights," "outlets"), ARIA provides
+                            semantic
+                            meaning to HTML
+                            elements for assistive technologies like screen readers. By adding ARIA roles, states, and
+                            properties, you clearly
+                            define the purpose and current status of interactive components, making your website
+                            understandable and navigable for
+                            users with disabilities. Without these labels, the functionality might be present, but its
+                            purpose would be ambiguous
+                            and inaccessible.
+                        </p>
+                    </div>
+                    <div class="image-column">
+                        <img src="assets/build_identify.png"
+                            alt="Adding utilities to a house like adding functionality to a webpage with JavaScript"
+                            loading="lazy">
+                    </div>
                 </div>
             </div>
         </div>
@@ -554,23 +1797,17 @@
 
     </main>
 
+    <footer class="footer">
+        <div class="contact-info">
+            <p>© 2025 Daniel Westfall | <a href="mailto:daniel@codea11y.dev">Email: daniel@codea11y.dev</a> | <a
+                    href="https://www.linkedin.com/in/danielwestfall/" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a> | <a
+                    href="https://www.youtube.com/channel/UCXKRL86_pPtqy_C_13ikaew" target="_blank"
+                    rel="noopener noreferrer">YouTube</a></p>
+        </div>
+    </footer>
 
-    <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <div class="col-md-4 d-flex align-items-center">
-                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-                    <img src="/assets/codea11y_logo.svg" height="50" alt="CodeA11y Logo" loading="lazy" />
-                </a>
-                <span class="mb-3 mb-md-0 text-body-secondary">© 2025 CodeA11y.Dev</span>
-            </div>
-        </footer>
-    </div>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
