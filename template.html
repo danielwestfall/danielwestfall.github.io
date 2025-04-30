@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Content Template</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* Optional: Add some basic styling for this template page */
+        body {
+            padding: 20px;
+            /* Add padding to the body */
+            background-color: var(--color-background-body);
+            /* Use your CSS variable */
+            color: var(--color-text-body);
+            /* Use your CSS variable */
+            font-family: "Cal Sans", sans-serif;
+            /* Ensure font is applied */
+            line-height: 1.6;
+        }
+
+        .template-container {
+            max-width: 800px;
+            /* Limit the width of the content area */
+            margin: 20px auto;
+            /* Center the container */
+            padding: 20px;
+            background-color: var(--color-background-white);
+            /* Use your CSS variable */
+            border: 1px solid var(--color-border-light);
+            /* Use your CSS variable */
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            border-bottom: 2px solid var(--color-border-light);
+            /* Separator for the main title */
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Add any other specific styles for the template page here if needed */
+    </style>
+</head>
+
+<body>
+
+    <div class="template-container">
+
+        <!-- Grab from here down -->
+        <article>
+            <h1>What is HTML?</h1>
+            <p>
+                HTML, or HyperText Markup Language, is the standard language used to create and structure content on the
+                web. It defines
+                the basic building blocks of web pages by using a system of elements and tags that instruct web browsers
+                how to display
+                text, images, links, and other types of media. HTML is not a programming language—it's a markup
+                language, meaning it’s
+                used to label or "mark up" content to give it meaning and structure.
+            </p>
+
+            <div class="row">
+                <div class="text-column">
+                    <h2>Section Heading (h2)</h2>
+                    <p>
+                        At its core, HTML organizes content using elements like
+                        &lt;p&gt; for paragraphs,
+                        &lt;h1&gt; through &lt;h6&gt; for headings, &lt;a&gt; for hyperlinks, &lt;img&gt; for images,
+                        and &lt;div&gt; or &lt;section&gt; for
+                        layout grouping. Each
+                        of these elements typically has an opening tag, some content, and a closing tag
+                        (for example: &lt;p&gt;
+                        This is a paragraph.&lt;/p&gt;). HTML also supports attributes within tags,
+                        allowing you to define
+                        characteristics such as the src of an image or the href of a link.
+                    </p>
+                </div>
+                <div class="image-column">
+                    <img src="assets/teacher_tablet_monitor.png" alt="A placeholder image for demonstration">
+                </div>
+            </div>
+            <p>
+                HTML forms the foundation of most web content, but it’s usually used alongside CSS (Cascading Style
+                Sheets) for visual
+                styling and JavaScript for interactivity. While HTML sets the structure, CSS makes it look good, and
+                JavaScript makes it
+                dynamic.
+            </p>
+            <div class="row">
+
+                <div class="image-column">
+                    <img src="assets/teacher_tablet.png" alt="A placeholder image for demonstration">
+                </div>
+                <div class="text-column">
+                    <h2>Section Heading (h2)</h2>
+                    <p>
+                        Over the years, HTML has evolved significantly. The current standard, HTML5, introduced many new
+                        elements and APIs, such
+                        as &lt;video&gt;, &lt;audio&gt;, &lt;canvas&gt;, and enhanced support for semantic structure
+                        with tags like &lt;article&gt;, &lt;nav&gt;, and &lt;footer&gt;
+                        . These advancements make HTML more powerful and better suited for modern web applications, with
+                        a focus on accessibility, multimedia, and cleaner code.
+                    </p>
+                </div>
+            </div>
+        </article>
+        <!-- 
+
+
+
+
+
+
+
+
+
+
+            <p>
+                Use paragraph tags (`
+            <p>`) for regular text. You can include <strong>bold text</strong>
+                using the <code>&lt;strong&gt;</code> tag or <em>italic text</em> using the <code>&lt;em&gt;</code> tag.
+            </p>
+ 
+        <h3>Sub-section Heading (h3)</h3>
+        <p>
+            You can create lists:
+        </p>
+        <ul>
+            <li>Unordered list item 1</li>
+            <li>Unordered list item 2</li>
+            <li>Unordered list item 3</li>
+        </ul>
+
+        <p>And ordered lists:</p>
+        <ol>
+            <li>Ordered list item 1</li>
+            <li>Ordered list item 2</li>
+            <li>Ordered list item 3</li>
+        </ol>
+
+        <h4>Another Heading Level (h4)</h4>
+        <p>
+            To include code examples, use the <code>&lt;pre&gt;</code> and <code>&lt;code&gt;</code> tags.
+        </p>
+
+        <pre><code class="language-html">
+&lt;!-- Example HTML Code --&gt;
+&lt;div class="example"&gt;
+    &lt;p&gt;Hello, World!&lt;/p&gt;
+&lt;/div&gt;
+        </code></pre>
+
+        <pre><code class="language-css">
+/* Example CSS Code */
+.example {
+    color: blue;
+    font-size: 16px;
+}
+        </code></pre>
+
+        <pre><code class="language-javascript">
+// Example JavaScript Code
+function greet() {
+    console.log("Hello from JS!");
+}
+greet();
+        </code></pre>
+
+        <h5>Image Example (h5)</h5>
+        <p>You can embed images using the `&lt;img&gt;` tag. Remember to include the `alt` attribute for accessibility.
+        </p>
+
+
+
+        <h6>Smallest Heading (h6)</h6>
+        <p>
+            Feel free to use other standard HTML elements as needed, such as `
+        <blockquote>` for quotes,
+            `<table>` for data tables, etc. Ensure all your HTML is valid and well-formed.
+                </p>
+
+                <blockquote>
+                    <p>This is a blockquote for quoting external sources or highlighting important text.</p>
+                    <footer>— Quote Author</footer>
+                </blockquote>
+
+                <p>
+                    Remember to only copy the HTML that would go *inside* the `article-content` div in your main page
+                    structure.
+                    Do not include the `&lt;html&gt;`, `&lt;head&gt;`, `&lt;body&gt;` tags, or the main layout divs
+                    (`.template-container` in this template, or the main tab/accordion structure from your main page).
+                </p>
+-->
+    </div>
+
+</body>
+
+</html>
