@@ -33,7 +33,7 @@ body {
     flex-direction: column;
     min-height: 100vh; /* Ensures footer stays at the bottom */
     font-family: "Cal Sans", sans-serif;
-    font-weight: 200;
+    font-weight: 400;
     font-style: normal;
     line-height: 1.5; /* Added for better readability */
 }
@@ -47,10 +47,13 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
     margin-top: var(--space-lg); /* Add space above h2 */
+    font-size: 2em; /* Example size, adjust as needed */
+    text-align: center; /* Center h2 headings */
 }
 
 p {
     margin-bottom: var(--space-md); /* Add bottom margin to paragraphs */
+     font-size: 1.25em;
 }
 
 
@@ -66,12 +69,12 @@ p {
 }
 
 .logo {
-    font-size: 1.5em;
+    font-size: 1.75em;
 }
 
 /* Responsive Logo Sizing (Requested) */
 .logo img {
-     max-width: 150px; /* Example: Set a max width for the logo */
+     max-width: 200px; /* Example: Set a max width for the logo */
      height: auto; /* Ensure aspect ratio is maintained */
      display: block; /* Helps with layout flow */
      /* If you need to center the logo itself within the banner, add display:flex, justify-content: center to .logo */
@@ -263,17 +266,10 @@ p {
     gap: var(--space-xl); /* Use gap for spacing */
 }
 
-/* Removed li margin-left */
-/* .footer-links li { margin-left: 20px; } */
-
-
 .contact-info {
     margin-bottom: var(--space-md);
     font-size: 0.9em; /* Slightly smaller text */
 }
-
-/* Removed Unused Disclosure Styles (Requested) */
-
 
 /* Layout for content rows within article content */
 .row {
@@ -409,4 +405,14 @@ p {
     color: hyperlinktext;
   }
   /* Add more specific rules for components as needed */
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: var(--color-border-light); /* Use light border color */
+    margin: var(--space-lg) 0; /* Add space above and below the line */
+    width: 70%;
+    margin-left: auto; /* Center the line */
+    margin-right: auto; /* Center the line */
 }
