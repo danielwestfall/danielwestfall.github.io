@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OS Accessibility Features</title>
+
+    <meta http-equiv="X-Compatible" content="IE=edge">
+
+    <meta name="description"
+        content="Explore accessibility features across different operating systems (Windows, macOS, iOS, Android, ChromeOS, Linux) categorized by disability type.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Daniel Westfall">
+    <meta name="copyright" content="© 2025 Daniel Westfall">
+    <meta name="language" content="en">
+    <meta name="theme-color" content="#193146">
+    <meta property="og:title" content="OS Accessibility Features">
+    <meta property="og:description"
+        content="Learn about built-in accessibility tools for vision, hearing, mobility, and cognitive needs on various OS platforms.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.yourwebsite.com/">
+    <meta property="og:image" content="https://www.yourwebsite.com/assets/share-image.jpg">
+    <meta property="og:locale" content="en_US">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="OS Accessibility Features">
+    <meta name="twitter:description"
+        content="Learn about built-in accessibility tools for vision, hearing, mobility, and cognitive needs on various OS platforms.">
+    <meta name="twitter:image" content="https://www.yourwebsite.com/assets/twitter-share-image.jpg">
+    <meta name="twitter:site" content="@YourTwitterHandle">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="canonical" href="https://www.yourwebsite.com/">
+    <meta name="google-site-verification" content="">
+    <meta name="bing-site-auth" content="">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <meta name="format-detection" content="telephone=no, email=no, address=no">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="banner">
+        <div class="logo">
+            <img src="../assets/codea11y_logo.svg" alt="codea11y" loading="lazy">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../">Learn A11y Coding</a></li>
+
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="tabbed-content">
+        <div role="tablist" aria-label="Operating Systems">
+            <button role="tab" id="windows-tab" aria-controls="windows-panel" aria-selected="true">Windows</button>
+            <button role="tab" id="macos-tab" aria-controls="macos-panel" aria-selected="false">macOS</button>
+            <button role="tab" id="ios-tab" aria-controls="ios-panel" aria-selected="false">iOS</button>
+            <button role="tab" id="android-tab" aria-controls="android-panel" aria-selected="false">Android</button>
+            <button role="tab" id="chromeos-tab" aria-controls="chromeos-panel" aria-selected="false">ChromeOS</button>
+            <button role="tab" id="linux-tab" aria-controls="linux-panel" aria-selected="false">Linux</button>
+        </div>
+
+        <div role="tabpanel" id="windows-panel" aria-labelledby="windows-tab">
+            <div class="accordion-container">
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="windows-vision-panel">
+                        Vision Accessibility Features
+                    </button>
+                    <div id="windows-vision-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="windows-vision-narrator" aria-selected="false"
+                            data-toggle-group="windows-vision">Narrator (Screen Reader)</button>
+                        <button type="button" data-article="windows-vision-magnifier" aria-selected="false"
+                            data-toggle-group="windows-vision">Magnifier</button>
+                        <button type="button" data-article="windows-vision-color-filters" aria-selected="false"
+                            data-toggle-group="windows-vision">Color Filters</button>
+                        <button type="button" data-article="windows-vision-high-contrast" aria-selected="false"
+                            data-toggle-group="windows-vision">High Contrast Mode</button>
+                        <button type="button" data-article="windows-vision-text-size" aria-selected="false"
+                            data-toggle-group="windows-vision">Text Size</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="windows-hearing-panel">
+                        Hearing Accessibility Features
+                    </button>
+                    <div id="windows-hearing-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="windows-hearing-closed-captions" aria-selected="false"
+                            data-toggle-group="windows-hearing">Closed Captions</button>
+                        <button type="button" data-article="windows-hearing-mono-audio" aria-selected="false"
+                            data-toggle-group="windows-hearing">Mono Audio</button>
+                        <button type="button" data-article="windows-hearing-sound-notifications" aria-selected="false"
+                            data-toggle-group="windows-hearing">Sound Notifications</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="windows-mobility-panel">
+                        Mobility Accessibility Features
+                    </button>
+                    <div id="windows-mobility-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="windows-mobility-sticky-keys" aria-selected="false"
+                            data-toggle-group="windows-mobility">Sticky Keys</button>
+                        <button type="button" data-article="windows-mobility-filter-keys" aria-selected="false"
+                            data-toggle-group="windows-mobility">Filter Keys</button>
+                        <button type="button" data-article="windows-mobility-toggle-keys" aria-selected="false"
+                            data-toggle-group="windows-mobility">Toggle Keys</button>
+                        <button type="button" data-article="windows-mobility-mouse-keys" aria-selected="false"
+                            data-toggle-group="windows-mobility">Mouse Keys</button>
+                        <button type="button" data-article="windows-mobility-on-screen-keyboard" aria-selected="false"
+                            data-toggle-group="windows-mobility">On-Screen Keyboard</button>
+                        <button type="button" data-article="windows-mobility-voice-access" aria-selected="false"
+                            data-toggle-group="windows-mobility">Voice Access</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="windows-cognitive-panel">
+                        Cognitive Accessibility Features
+                    </button>
+                    <div id="windows-cognitive-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="windows-cognitive-focus-assist" aria-selected="false"
+                            data-toggle-group="windows-cognitive">Focus Assist</button>
+                        <button type="button" data-article="windows-cognitive-narrator-settings" aria-selected="false"
+                            data-toggle-group="windows-cognitive">Narrator Settings (Verbosity, Speed)</button>
+                        <button type="button" data-article="windows-cognitive-simplified-settings" aria-selected="false"
+                            data-toggle-group="windows-cognitive">Simplified Settings</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="windows-article-content" class="article-content">
+                <div class="row">
+                    <div class="text-column">
+                        <h2>Windows Accessibility Features</h2>
+                        <p>
+                            Explore the built-in accessibility features available in Microsoft Windows to customize your
+                            experience.
+                            Select a category from the left and then a specific feature to learn more.
+                        </p>
+                    </div>
+                    <div class="image-column">
+                        <img src="../assets/need_vision_a11y.png"
+                            alt="A woman squints to see the screen. After she adjusts text size, she can sit back and see comfortably."
+                            loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div role="tabpanel" id="macos-panel" aria-labelledby="macos-tab" hidden>
+            <div class="accordion-container">
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="macos-vision-panel">
+                        Vision Accessibility Features
+                    </button>
+                    <div id="macos-vision-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="macos-vision-voiceover" aria-selected="false"
+                            data-toggle-group="macos-vision">VoiceOver (Screen Reader)</button>
+                        <button type="button" data-article="macos-vision-zoom" aria-selected="false"
+                            data-toggle-group="macos-vision">Zoom</button>
+                        <button type="button" data-article="macos-vision-display-filters" aria-selected="false"
+                            data-toggle-group="macos-vision">Display Filters</button>
+                        <button type="button" data-article="macos-vision-invert-colors" aria-selected="false"
+                            data-toggle-group="macos-vision">Invert Colors</button>
+                        <button type="button" data-article="macos-vision-text-size" aria-selected="false"
+                            data-toggle-group="macos-vision">Text Size</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="macos-hearing-panel">
+                        Hearing Accessibility Features
+                    </button>
+                    <div id="macos-hearing-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="macos-hearing-captions-sdh" aria-selected="false"
+                            data-toggle-group="macos-hearing">Captions and SDH</button>
+                        <button type="button" data-article="macos-hearing-mono-audio" aria-selected="false"
+                            data-toggle-group="macos-hearing">Mono Audio</button>
+                        <button type="button" data-article="macos-hearing-flash-alerts" aria-selected="false"
+                            data-toggle-group="macos-hearing">Flash Alerts</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="macos-mobility-panel">
+                        Mobility Accessibility Features
+                    </button>
+                    <div id="macos-mobility-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="macos-mobility-sticky-keys" aria-selected="false"
+                            data-toggle-group="macos-mobility">Sticky Keys</button>
+                        <button type="button" data-article="macos-mobility-filter-keys" aria-selected="false"
+                            data-toggle-group="macos-mobility">Filter Keys</button>
+                        <button type="button" data-article="macos-mobility-mouse-keys" aria-selected="false"
+                            data-toggle-group="macos-mobility">Mouse Keys</button>
+                        <button type="button" data-article="macos-mobility-on-screen-keyboard" aria-selected="false"
+                            data-toggle-group="macos-mobility">On-Screen Keyboard</button>
+                        <button type="button" data-article="macos-mobility-voice-control" aria-selected="false"
+                            data-toggle-group="macos-mobility">Voice Control</button>
+                        <button type="button" data-article="macos-mobility-switch-control" aria-selected="false"
+                            data-toggle-group="macos-mobility">Switch Control</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="macos-cognitive-panel">
+                        Cognitive Accessibility Features
+                    </button>
+                    <div id="macos-cognitive-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="macos-cognitive-reduce-motion" aria-selected="false"
+                            data-toggle-group="macos-cognitive">Reduce Motion</button>
+                        <button type="button" data-article="macos-cognitive-siri" aria-selected="false"
+                            data-toggle-group="macos-cognitive">Siri</button>
+                        <button type="button" data-article="macos-cognitive-guided-access" aria-selected="false"
+                            data-toggle-group="macos-cognitive">Guided Access</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="macos-article-content" class="article-content">
+                <div class="row">
+                    <div class="text-column">
+                        <h2>macOS Accessibility Features</h2>
+                        <p>
+                            Discover the powerful accessibility options built into Apple's macOS.
+                            Select a category from the left and then a specific feature to learn more.
+                        </p>
+                    </div>
+                    <div class="image-column">
+                        <img src="../assets/need_contrast_a11y.png"
+                            alt="A woman is struggling to see content on her laptop due to glare. A site with high contrast text and images makes it easy to read even with glare."
+                            loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div role="tabpanel" id="ios-panel" aria-labelledby="ios-tab" hidden>
+            <div class="accordion-container">
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="ios-vision-panel">
+                        Vision Accessibility Features
+                    </button>
+                    <div id="ios-vision-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="ios-vision-voiceover" aria-selected="false"
+                            data-toggle-group="ios-vision">VoiceOver (Screen Reader)</button>
+                        <button type="button" data-article="ios-vision-zoom" aria-selected="false"
+                            data-toggle-group="ios-vision">Zoom</button>
+                        <button type="button" data-article="ios-vision-display-accommodations" aria-selected="false"
+                            data-toggle-group="ios-vision">Display Accommodations</button>
+                        <button type="button" data-article="ios-vision-magnifier" aria-selected="false"
+                            data-toggle-group="ios-vision">Magnifier</button>
+                        <button type="button" data-article="ios-vision-text-size" aria-selected="false"
+                            data-toggle-group="ios-vision">Text Size</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="ios-hearing-panel">
+                        Hearing Accessibility Features
+                    </button>
+                    <div id="ios-hearing-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="ios-hearing-captions-sdh" aria-selected="false"
+                            data-toggle-group="ios-hearing">Captions and SDH</button>
+                        <button type="button" data-article="ios-hearing-hearing-devices" aria-selected="false"
+                            data-toggle-group="ios-hearing">Hearing Devices</button>
+                        <button type="button" data-article="ios-hearing-sound-recognition" aria-selected="false"
+                            data-toggle-group="ios-hearing">Sound Recognition</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="ios-mobility-panel">
+                        Mobility Accessibility Features
+                    </button>
+                    <div id="ios-mobility-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="ios-mobility-assistivetouch" aria-selected="false"
+                            data-toggle-group="ios-mobility">AssistiveTouch</button>
+                        <button type="button" data-article="ios-mobility-switch-control" aria-selected="false"
+                            data-toggle-group="ios-mobility">Switch Control</button>
+                        <button type="button" data-article="ios-mobility-voice-control" aria-selected="false"
+                            data-toggle-group="ios-mobility">Voice Control</button>
+                        <button type="button" data-article="ios-mobility-back-tap" aria-selected="false"
+                            data-toggle-group="ios-mobility">Back Tap</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="ios-cognitive-panel">
+                        Cognitive Accessibility Features
+                    </button>
+                    <div id="ios-cognitive-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="ios-cognitive-guided-access" aria-selected="false"
+                            data-toggle-group="ios-cognitive">Guided Access</button>
+                        <button type="button" data-article="ios-cognitive-siri" aria-selected="false"
+                            data-toggle-group="ios-cognitive">Siri</button>
+                        <button type="button" data-article="ios-cognitive-accessibility-shortcut" aria-selected="false"
+                            data-toggle-group="ios-cognitive">Accessibility Shortcut</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="ios-article-content" class="article-content">
+                <div class="row">
+                    <div class="text-column">
+                        <h2>iOS Accessibility Features</h2>
+                        <p>
+                            Learn about the accessibility features available on Apple's mobile operating system, iOS.
+                            Select a category from the left and then a specific feature to learn more.
+                        </p>
+                    </div>
+                    <div class="image-column">
+                        <img src="../assets/need_vision_a11y.png"
+                            alt="A woman squints to see the screen. After she adjusts text size, she can sit back and see comfortably."
+                            loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div role="tabpanel" id="android-panel" aria-labelledby="android-tab" hidden>
+            <div class="accordion-container">
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="android-vision-panel">
+                        Vision Accessibility Features
+                    </button>
+                    <div id="android-vision-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="android-vision-talkback" aria-selected="false"
+                            data-toggle-group="android-vision">TalkBack (Screen Reader)</button>
+                        <button type="button" data-article="android-vision-select-to-speak" aria-selected="false"
+                            data-toggle-group="android-vision">Select to Speak</button>
+                        <button type="button" data-article="android-vision-magnification" aria-selected="false"
+                            data-toggle-group="android-vision">Magnification</button>
+                        <button type="button" data-article="android-vision-color-correction-inversion"
+                            aria-selected="false" data-toggle-group="android-vision">Color Correction and
+                            Inversion</button>
+                        <button type="button" data-article="android-vision-font-display-size" aria-selected="false"
+                            data-toggle-group="android-vision">Font and Display Size</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="android-hearing-panel">
+                        Hearing Accessibility Features
+                    </button>
+                    <div id="android-hearing-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="android-hearing-live-caption" aria-selected="false"
+                            data-toggle-group="android-hearing">Live Caption</button>
+                        <button type="button" data-article="android-hearing-sound-amplifier" aria-selected="false"
+                            data-toggle-group="android-hearing">Sound Amplifier</button>
+                        <button type="button" data-article="android-hearing-hearing-aid-support" aria-selected="false"
+                            data-toggle-group="android-hearing">Hearing Aid Support</button>
+                        <button type="button" data-article="android-hearing-live-transcribe" aria-selected="false"
+                            data-toggle-group="android-hearing">Live Transcribe</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="android-mobility-panel">
+                        Mobility Accessibility Features
+                    </button>
+                    <div id="android-mobility-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="android-mobility-accessibility-menu" aria-selected="false"
+                            data-toggle-group="android-mobility">Accessibility Menu</button>
+                        <button type="button" data-article="android-mobility-switch-access" aria-selected="false"
+                            data-toggle-group="android-mobility">Switch Access</button>
+                        <button type="button" data-article="android-mobility-voice-access" aria-selected="false"
+                            data-toggle-group="android-mobility">Voice Access</button>
+                        <button type="button" data-article="android-mobility-talkback-gestures" aria-selected="false"
+                            data-toggle-group="android-mobility">TalkBack Gestures</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="android-cognitive-panel">
+                        Cognitive Accessibility Features
+                    </button>
+                    <div id="android-cognitive-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="android-cognitive-accessibility-button"
+                            aria-selected="false" data-toggle-group="android-cognitive">Accessibility Button</button>
+                        <button type="button" data-article="android-cognitive-timing-controls" aria-selected="false"
+                            data-toggle-group="android-cognitive">Timing Controls</button>
+                        <button type="button" data-article="android-cognitive-assistant" aria-selected="false"
+                            data-toggle-group="android-cognitive">Google Assistant</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="android-article-content" class="article-content">
+                <div class="row">
+                    <div class="text-column">
+                        <h2>Android Accessibility Features</h2>
+                        <p>
+                            Explore the comprehensive accessibility settings available on Google's Android mobile
+                            operating system.
+                            Select a category from the left and then a specific feature to learn more.
+                        </p>
+                    </div>
+                    <div class="image-column">
+                        <img src="../assets/need_contrast_a11y.png"
+                            alt="A woman is struggling to see content on her laptop due to glare. A site with high contrast text and images makes it easy to read even with glare."
+                            loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div role="tabpanel" id="chromeos-panel" aria-labelledby="chromeos-tab" hidden>
+            <div class="accordion-container">
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="chromeos-vision-panel">
+                        Vision Accessibility Features
+                    </button>
+                    <div id="chromeos-vision-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="chromeos-vision-chromevox" aria-selected="false"
+                            data-toggle-group="chromeos-vision">ChromeVox (Screen Reader)</button>
+                        <button type="button" data-article="chromeos-vision-high-contrast-mode" aria-selected="false"
+                            data-toggle-group="chromeos-vision">High Contrast Mode</button>
+                        <button type="button" data-article="chromeos-vision-screen-magnifier" aria-selected="false"
+                            data-toggle-group="chromeos-vision">Screen Magnifier</button>
+                        <button type="button" data-article="chromeos-vision-select-to-speak" aria-selected="false"
+                            data-toggle-group="chromeos-vision">Select-to-Speak</button>
+                        <button type="button" data-article="chromeos-vision-large-mouse-cursor" aria-selected="false"
+                            data-toggle-group="chromeos-vision">Large Mouse Cursor</button>
+                        <button type="button" data-article="chromeos-vision-docked-magnifier" aria-selected="false"
+                            data-toggle-group="chromeos-vision">Docked Magnifier</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="chromeos-hearing-panel">
+                        Hearing Accessibility Features
+                    </button>
+                    <div id="chromeos-hearing-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="chromeos-hearing-select-to-speak" aria-selected="false"
+                            data-toggle-group="chromeos-hearing">Select-to-Speak (Audio)</button>
+                        <button type="button" data-article="chromeos-hearing-mono-audio" aria-selected="false"
+                            data-toggle-group="chromeos-hearing">Mono Audio</button>
+                        <button type="button" data-article="chromeos-hearing-sound-notifications" aria-selected="false"
+                            data-toggle-group="chromeos-hearing">Sound Notifications</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="chromeos-mobility-panel">
+                        Mobility Accessibility Features
+                    </button>
+                    <div id="chromeos-mobility-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="chromeos-mobility-sticky-keys" aria-selected="false"
+                            data-toggle-group="chromeos-mobility">Sticky Keys</button>
+                        <button type="button" data-article="chromeos-mobility-on-screen-keyboard" aria-selected="false"
+                            data-toggle-group="chromeos-mobility">On-Screen Keyboard</button>
+                        <button type="button" data-article="chromeos-mobility-automatic-clicks" aria-selected="false"
+                            data-toggle-group="chromeos-mobility">Automatic Clicks (Dwell Click)</button>
+                        <button type="button" data-article="chromeos-mobility-switch-access" aria-selected="false"
+                            data-toggle-group="chromeos-mobility">Switch Access</button>
+                        <button type="button" data-article="chromeos-mobility-voice-access" aria-selected="false"
+                            data-toggle-group="chromeos-mobility">Voice Access</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="chromeos-cognitive-panel">
+                        Cognitive Accessibility Features
+                    </button>
+                    <div id="chromeos-cognitive-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="chromeos-cognitive-dictation" aria-selected="false"
+                            data-toggle-group="chromeos-cognitive">Dictation (Voice Typing)</button>
+                        <button type="button" data-article="chromeos-cognitive-text-to-speech" aria-selected="false"
+                            data-toggle-group="chromeos-cognitive">Text-to-Speech Settings</button>
+                        <button type="button" data-article="chromeos-cognitive-accessibility-settings-search"
+                            aria-selected="false" data-toggle-group="chromeos-cognitive">Accessibility Settings
+                            Search</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="chromeos-article-content" class="article-content">
+                <div class="row">
+                    <div class="text-column">
+                        <h2>ChromeOS Accessibility Features</h2>
+                        <p>
+                            Explore the accessibility features built into Google's ChromeOS.
+                            Select a category from the left and then a specific feature to learn more.
+                        </p>
+                    </div>
+                    <div class="image-column">
+                        <img src="../assets/need_vision_a11y.png"
+                            alt="A woman squints to see the screen. After she adjusts text size, she can sit back and see comfortably."
+                            loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div role="tabpanel" id="linux-panel" aria-labelledby="linux-tab" hidden>
+            <div class="accordion-container">
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="linux-vision-panel">
+                        Vision Accessibility Features
+                    </button>
+                    <div id="linux-vision-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="linux-vision-orca" aria-selected="false"
+                            data-toggle-group="linux-vision">Orca (Screen Reader)</button>
+                        <button type="button" data-article="linux-vision-magnifier" aria-selected="false"
+                            data-toggle-group="linux-vision">Screen Magnifier</button>
+                        <button type="button" data-article="linux-vision-high-contrast" aria-selected="false"
+                            data-toggle-group="linux-vision">High Contrast Mode</button>
+                        <button type="button" data-article="linux-vision-text-size" aria-selected="false"
+                            data-toggle-group="linux-vision">Text Size</button>
+                        <button type="button" data-article="linux-vision-color-filters" aria-selected="false"
+                            data-toggle-group="linux-vision">Color Filters</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="linux-hearing-panel">
+                        Hearing Accessibility Features
+                    </button>
+                    <div id="linux-hearing-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="linux-hearing-visual-alerts" aria-selected="false"
+                            data-toggle-group="linux-hearing">Visual Alerts</button>
+                        <button type="button" data-article="linux-hearing-captioning" aria-selected="false"
+                            data-toggle-group="linux-hearing">Captioning Support</button>
+                        <button type="button" data-article="linux-hearing-mono-audio" aria-selected="false"
+                            data-toggle-group="linux-hearing">Mono Audio</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="linux-mobility-panel">
+                        Mobility Accessibility Features
+                    </button>
+                    <div id="linux-mobility-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="linux-mobility-sticky-keys" aria-selected="false"
+                            data-toggle-group="linux-mobility">Sticky Keys</button>
+                        <button type="button" data-article="linux-mobility-slow-keys" aria-selected="false"
+                            data-toggle-group="linux-mobility">Slow Keys</button>
+                        <button type="button" data-article="linux-mobility-bounce-keys" aria-selected="false"
+                            data-toggle-group="linux-mobility">Bounce Keys</button>
+                        <button type="button" data-article="linux-mobility-mouse-keys" aria-selected="false"
+                            data-toggle-group="linux-mobility">Mouse Keys</button>
+                        <button type="button" data-article="linux-mobility-on-screen-keyboard" aria-selected="false"
+                            data-toggle-group="linux-mobility">On-Screen Keyboard</button>
+                        <button type="button" data-article="linux-mobility-switch-access" aria-selected="false"
+                            data-toggle-group="linux-mobility">Switch Access</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="linux-cognitive-panel">
+                        Cognitive Accessibility Features
+                    </button>
+                    <div id="linux-cognitive-panel" class="accordion-panel" hidden>
+                        <button type="button" data-article="linux-cognitive-window-settings" aria-selected="false"
+                            data-toggle-group="linux-cognitive">Window and Workspace Settings</button>
+                        <button type="button" data-article="linux-cognitive-notification-settings" aria-selected="false"
+                            data-toggle-group="linux-cognitive">Notification Settings</button>
+                        <button type="button" data-article="linux-cognitive-simplified-interfaces" aria-selected="false"
+                            data-toggle-group="linux-cognitive">Simplified Interfaces</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="linux-article-content" class="article-content">
+                <div class="row">
+                    <div class="text-column">
+                        <h2>Linux Accessibility Features</h2>
+                        <p>
+                            Explore the accessibility features available in popular Linux distributions.
+                            Select a category from the left and then a specific feature to learn more.
+                        </p>
+                    </div>
+                    <div class="image-column">
+                        <img src="../assets/need_contrast_a11y.png"
+                            alt="A woman is struggling to see content on her laptop due to glare. A site with high contrast text and images makes it easy to read even with glare."
+                            loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">Learn</a></li>
+                <li><a href="/about">About Me</a></li>
+                <li><a href="https://www.youtube.com/channel/UCXKRL86_pPtqy_C_13ikaew" target="_blank"
+                        rel="noopener noreferrer">YouTube</a>
+                </li>
+            </ul>
+        </div>
+        <div class="contact-info">
+            <p>© 2025 Daniel Westfall | <a href="mailto:your.email@example.com">Email: your.email@example.com</a> | <a
+                    href="https://www.linkedin.com/in/yourlinkedinprofile/" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
