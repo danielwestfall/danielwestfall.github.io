@@ -51,11 +51,19 @@ h2 {
     text-align: center; /* Center h2 headings */
 }
 
+h3 {
+    font-size: 1.5em; /* Example size, adjust as needed */
+    margin-top: var(--space-lg); /* Add space above h3 */
+}
+
 p {
     margin-bottom: var(--space-md); /* Add bottom margin to paragraphs */
      font-size: 1.25em;
 }
 
+ul {
+    font-size: 1.15em;
+}
 
 .banner {
     /* Original color was white, but text links are dark. Assuming text links are intended */
