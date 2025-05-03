@@ -78,6 +78,8 @@ ul {
 
 .logo {
     font-size: 1.75em;
+    max-width: 200px; /* Example: Set a max width for the logo */
+     height: auto; /* Ensure aspect ratio is maintained */
 }
 
 /* Responsive Logo Sizing (Requested) */
@@ -105,7 +107,7 @@ ul {
 .footer-links a {
     color: var(--color-text-dark);
     text-decoration: none; /* Added default no underline */
-}
+} 
 
 
 .navbar a:hover,
@@ -303,7 +305,7 @@ ul {
     display: block; /* Needed for margin: auto centering */
     max-width: 100%; /* Ensure image is responsive, scales down */
     height: auto; /* Maintain aspect ratio */
-    max-height: 400px; /* Keep your existing max-height to prevent excessive size */
+    max-height: 600px; /* Keep your existing max-height to prevent excessive size */
     object-fit: cover; /* Keep your existing object-fit if you want to cover the area */
 
     /* Centering the block-level image within the column */
