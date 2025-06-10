@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeA11y | Home</title>
 
-    <meta http-equiv="X-Compatible" content="IE=edge">
-
     <meta name="description"
         content="Learn HTML, CSS, JavaScript, and ARIA for building accessible websites with CodeA11y tutorials and resources.">
     <meta name="robots" content="index, follow">
@@ -15,40 +13,45 @@
     <meta name="copyright" content="© 2025 Daniel Westfall">
     <meta name="language" content="en">
     <meta name="theme-color" content="#193146">
+
     <meta property="og:title" content="CodeA11y | Learn Web Accessibility">
     <meta property="og:description"
         content="Master accessible web development with tutorials on HTML, CSS, JavaScript, and ARIA.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.codea11y.dev/">
+    <meta property="og:image" content="https://www.codea11y.dev/assets/codea11y-share-image.jpg">
     <meta property="og:locale" content="en_US">
-    <meta name="referrer" content="strict-origin-when-cross-origin">
-    <link rel="canonical" href="https://www.codea11y.dev/">
 
-    <!-- Finish later
-    <meta property="og:image" content="https://www.yourwebsite.com/assets/share-image.jpg">
-    
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="CodeA11y | Learn Web Accessibility">
     <meta name="twitter:description"
         content="Master accessible web development with tutorials on HTML, CSS, JavaScript, and ARIA.">
-    <meta name="twitter:image" content="https://www.yourwebsite.com/assets/twitter-share-image.jpg">
-    <meta name="twitter:site" content="@YourTwitterHandle">
+    <meta name="twitter:image" content="https://www.codea11y.dev/assets/codea11y-twitter-share-image.jpg">
+    <meta name="twitter:site" content="@codea11y">
+
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta name="google-site-verification" content="">
-    <meta name="bing-site-auth" content="">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="canonical" href="https://www.codea11y.dev/">
+
+    <meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE_HERE">
+    <meta name="bing-site-auth" content="YOUR_BING_VERIFICATION_CODE_HERE">
+
+    <link rel="icon" type="image/png" href="./assets/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="CodeA11y" />
+    <link rel="manifest" href="./assets/site.webmanifest" />
+
     <meta name="format-detection" content="telephone=no, email=no, address=no">
 
-    -->
-
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
@@ -104,7 +107,7 @@
         </nav>
     </header>
 
-    <main class="tabbed-content">
+<main class="tabbed-content" data-articles-path="./data/articles.json">
         <div role="tablist" aria-label="Tutorial Languages">
             <button role="tab" id="welcome-tab" aria-controls="welcome-panel" aria-selected="true">Welcome</button>
             <button role="tab" id="html-tab" aria-controls="html-panel" aria-selected="false">HTML</button>
