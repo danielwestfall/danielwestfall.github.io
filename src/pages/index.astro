@@ -1,0 +1,50 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import { Image } from 'astro:assets';
+import profileImage from '../assets/teacher_tablet.png';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<link href="https://fonts.googleapis.com/css2?family=Cal+Sans&amp;family=Urbanist:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<Header />
+		<main>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Hi, I'm Daniel Westfall</h1>
+          <p class="subtitle">Digital Accessibility Specialist (CPWA)</p>
+          <p>
+            Welcome to my digital workshop. This is my blog where I'll be sharing my thoughts,
+            tutorials, and ideas on building more inclusive and accessible experiences for 
+            everyone, across both the web and games.
+          </p>
+          <div class="cta-buttons">
+            <a href="/blog" class="button-primary">Read The Blog</a>
+            <a href="/about" class="button-secondary">More About Me</a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <Image 
+            src={profileImage} 
+            alt="Let's explore digital accessibility together!"
+            width={400}
+            height={400}
+            class="profile-image"
+          />
+        </div>
+      </div>
+
+    </section>
+  </main>
+		<Footer />
+	</body>
+</html>
