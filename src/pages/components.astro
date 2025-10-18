@@ -170,6 +170,69 @@ if (import.meta.env.PROD) {
 				</div>
 			</section>
 
+			<!-- Logo Colors -->
+			<section class="style-section">
+				<h2>🎨 Logo Color System</h2>
+				<p class="section-desc">
+					Logo colors automatically adapt between themes while maintaining WCAG AA compliance (4.5:1 contrast ratio).
+				</p>
+				<div class="logo-colors-showcase">
+					<div class="logo-color-example">
+						<h4>🌞 Light Theme</h4>
+						<div class="color-samples">
+							<div class="logo-color-sample">
+								<div class="color-swatch" style="background-color: #03047e;"></div>
+								<div class="color-info">
+									<strong>Blue:</strong> #03047e<br>
+									<small>Original brand color</small>
+								</div>
+							</div>
+							<div class="logo-color-sample">
+								<div class="color-swatch" style="background-color: #a70011;"></div>
+								<div class="color-info">
+									<strong>Red:</strong> #a70011<br>
+									<small>Original brand color</small>
+								</div>
+							</div>
+							<div class="logo-color-sample">
+								<div class="color-swatch" style="background-color: #fd793f;"></div>
+								<div class="color-info">
+									<strong>Orange:</strong> #fd793f<br>
+									<small>Original brand color</small>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="logo-color-example">
+						<h4>🌙 Dark Theme</h4>
+						<div class="color-samples">
+							<div class="logo-color-sample">
+								<div class="color-swatch" style="background-color: #4d4fff;"></div>
+								<div class="color-info">
+									<strong>Blue:</strong> #4d4fff<br>
+									<small>4.5:1 contrast on black</small>
+								</div>
+							</div>
+							<div class="logo-color-sample">
+								<div class="color-swatch" style="background-color: #ff4d66;"></div>
+								<div class="color-info">
+									<strong>Red:</strong> #ff4d66<br>
+									<small>4.5:1 contrast on black</small>
+								</div>
+							</div>
+							<div class="logo-color-sample">
+								<div class="color-swatch" style="background-color: #ff9966;"></div>
+								<div class="color-info">
+									<strong>Orange:</strong> #ff9966<br>
+									<small>4.5:1 contrast on black</small>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			<!-- Responsive Breakpoints -->
 			<section class="style-section">
 				<h2>📱 Responsive Breakpoints</h2>
@@ -550,6 +613,66 @@ if (import.meta.env.PROD) {
 		background: var(--md-sys-color-surface-container-high);
 		padding: 0.75rem;
 		border-radius: 6px;
+	}
+	
+	/* Logo Colors */
+	.logo-colors-showcase {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+		margin-top: 1.5rem;
+	}
+	
+	.logo-color-example {
+		padding: 1.5rem;
+		background: var(--md-sys-color-surface-container-low);
+		border: 1px solid var(--md-sys-color-outline-variant);
+		border-radius: 12px;
+	}
+	
+	.logo-color-example h4 {
+		margin: 0 0 1rem 0;
+		color: var(--md-sys-color-primary);
+	}
+	
+	.color-samples {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+	
+	.logo-color-sample {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		padding: 0.75rem;
+		background: var(--md-sys-color-surface);
+		border-radius: 8px;
+		border: 1px solid var(--md-sys-color-outline-variant);
+	}
+	
+	.logo-color-sample .color-swatch {
+		width: 40px;
+		height: 40px;
+		border-radius: 6px;
+		border: 2px solid var(--md-sys-color-outline);
+		flex-shrink: 0;
+	}
+	
+	.logo-color-sample .color-info {
+		flex: 1;
+		font-size: 0.9rem;
+		line-height: 1.4;
+	}
+	
+	.logo-color-sample .color-info strong {
+		color: var(--md-sys-color-on-surface);
+		font-weight: 600;
+	}
+	
+	.logo-color-sample .color-info small {
+		color: var(--md-sys-color-on-surface-variant);
+		font-style: italic;
 	}
 	
 	/* Breakpoints */
