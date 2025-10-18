@@ -7,7 +7,6 @@ import { defineConfig } from 'astro/config';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://danielwestfall.github.io',
-    base: '/',
 	integrations: [mdx(), sitemap()],
 	vite: {
 		resolve: {
