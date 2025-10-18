@@ -1,5 +1,5 @@
 ---
-title: 'Crafting a Soul, Not Just a Shell: Accessibility and The Future of Character Creation'
+title: "Crafting a Soul, Not Just a Shell: Accessibility and The Future of Character Creation"
 description: 'My thoughts on an accessible game feature can make it much more immersive'
 pubDate: 'Oct 17 2025'
 heroImage: '@assets/hero_monologue.png'
