@@ -5,6 +5,7 @@
  */
 
 :root {
+	/* Legacy color system for compatibility */
 	--accent: #2337ff;
 	--accent-dark: #000d8a;
 	--black: 15, 18, 25;
@@ -15,6 +16,191 @@
 	--box-shadow:
 		0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%), 0 16px 32px
 		rgba(var(--gray), 33%);
+}
+
+/* Material Design 3 Light Theme */
+:root,
+[data-theme="light"] {
+	/* Primary */
+	--md-sys-color-primary: #2337ff;
+	--md-sys-color-on-primary: #ffffff;
+	--md-sys-color-primary-container: #dde1ff;
+	--md-sys-color-on-primary-container: #000d8a;
+	
+	/* Secondary */
+	--md-sys-color-secondary: #5f5f6f;
+	--md-sys-color-on-secondary: #ffffff;
+	--md-sys-color-secondary-container: #e4e1f9;
+	--md-sys-color-on-secondary-container: #1c1b29;
+	
+	/* Tertiary */
+	--md-sys-color-tertiary: #7c5295;
+	--md-sys-color-on-tertiary: #ffffff;
+	--md-sys-color-tertiary-container: #fdd7ff;
+	--md-sys-color-on-tertiary-container: #31004e;
+	
+	/* Error */
+	--md-sys-color-error: #ba1a1a;
+	--md-sys-color-on-error: #ffffff;
+	--md-sys-color-error-container: #ffdad6;
+	--md-sys-color-on-error-container: #410002;
+	
+	/* Background & Surface */
+	--md-sys-color-background: #fefbff;
+	--md-sys-color-on-background: #1c1b1f;
+	--md-sys-color-surface: #fefbff;
+	--md-sys-color-on-surface: #1c1b1f;
+	--md-sys-color-surface-variant: #e4e1ec;
+	--md-sys-color-on-surface-variant: #46464f;
+	--md-sys-color-surface-container: #f2f0f4;
+	--md-sys-color-surface-container-low: #fbf9fd;
+	--md-sys-color-surface-container-lowest: #ffffff;
+	--md-sys-color-surface-container-high: #ece9f0;
+	--md-sys-color-surface-container-highest: #e6e3ea;
+	
+	/* Outline */
+	--md-sys-color-outline: #777680;
+	--md-sys-color-outline-variant: #c7c5d0;
+	
+	/* Inverse */
+	--md-sys-color-inverse-surface: #313033;
+	--md-sys-color-inverse-on-surface: #f4f0f7;
+	--md-sys-color-inverse-primary: #b6c4ff;
+	
+	/* Shadow & Scrim */
+	--md-sys-color-shadow: #000000;
+	--md-sys-color-scrim: #000000;
+}
+
+/* Material Design 3 Dark Theme */
+@media (prefers-color-scheme: dark) {
+	:root:not([data-theme="light"]) {
+		/* Primary */
+		--md-sys-color-primary: #b6c4ff;
+		--md-sys-color-on-primary: #002984;
+		--md-sys-color-primary-container: #0040dd;
+		--md-sys-color-on-primary-container: #dde1ff;
+		
+		/* Secondary */
+		--md-sys-color-secondary: #c7c5dd;
+		--md-sys-color-on-secondary: #30303f;
+		--md-sys-color-secondary-container: #464556;
+		--md-sys-color-on-secondary-container: #e4e1f9;
+		
+		/* Tertiary */
+		--md-sys-color-tertiary: #dfbbf3;
+		--md-sys-color-on-tertiary: #481a64;
+		--md-sys-color-tertiary-container: #61307c;
+		--md-sys-color-on-tertiary-container: #fdd7ff;
+		
+		/* Error */
+		--md-sys-color-error: #ffb4ab;
+		--md-sys-color-on-error: #690005;
+		--md-sys-color-error-container: #93000a;
+		--md-sys-color-on-error-container: #ffdad6;
+		
+		/* Background & Surface */
+		--md-sys-color-background: #141316;
+		--md-sys-color-on-background: #e6e3ea;
+		--md-sys-color-surface: #141316;
+		--md-sys-color-on-surface: #e6e3ea;
+		--md-sys-color-surface-variant: #46464f;
+		--md-sys-color-on-surface-variant: #c7c5d0;
+		--md-sys-color-surface-container: #201f22;
+		--md-sys-color-surface-container-low: #1c1b1f;
+		--md-sys-color-surface-container-lowest: #0f0e11;
+		--md-sys-color-surface-container-high: #2b292d;
+		--md-sys-color-surface-container-highest: #363438;
+		
+		/* Outline */
+		--md-sys-color-outline: #918f99;
+		--md-sys-color-outline-variant: #46464f;
+		
+		/* Inverse */
+		--md-sys-color-inverse-surface: #e6e3ea;
+		--md-sys-color-inverse-on-surface: #313033;
+		--md-sys-color-inverse-primary: #2337ff;
+		
+		/* Shadow & Scrim */
+		--md-sys-color-shadow: #000000;
+		--md-sys-color-scrim: #000000;
+		
+		/* Legacy overrides for dark mode */
+		--accent: #b6c4ff;
+		--accent-dark: #9bb0ff;
+		--black: 230, 227, 234;
+		--gray: 199, 197, 208;
+		--gray-light: 70, 70, 79;
+		--gray-dark: 199, 197, 208;
+		--gray-gradient: rgba(32, 31, 34, 50%), #141316;
+		--box-shadow:
+			0 2px 6px rgba(0, 0, 0, 35%), 0 8px 24px rgba(0, 0, 0, 45%), 0 16px 32px
+			rgba(0, 0, 0, 45%);
+	}
+}
+
+[data-theme="dark"] {
+	/* Primary */
+	--md-sys-color-primary: #b6c4ff;
+	--md-sys-color-on-primary: #002984;
+	--md-sys-color-primary-container: #0040dd;
+	--md-sys-color-on-primary-container: #dde1ff;
+	
+	/* Secondary */
+	--md-sys-color-secondary: #c7c5dd;
+	--md-sys-color-on-secondary: #30303f;
+	--md-sys-color-secondary-container: #464556;
+	--md-sys-color-on-secondary-container: #e4e1f9;
+	
+	/* Tertiary */
+	--md-sys-color-tertiary: #dfbbf3;
+	--md-sys-color-on-tertiary: #481a64;
+	--md-sys-color-tertiary-container: #61307c;
+	--md-sys-color-on-tertiary-container: #fdd7ff;
+	
+	/* Error */
+	--md-sys-color-error: #ffb4ab;
+	--md-sys-color-on-error: #690005;
+	--md-sys-color-error-container: #93000a;
+	--md-sys-color-on-error-container: #ffdad6;
+	
+	/* Background & Surface */
+	--md-sys-color-background: #141316;
+	--md-sys-color-on-background: #e6e3ea;
+	--md-sys-color-surface: #141316;
+	--md-sys-color-on-surface: #e6e3ea;
+	--md-sys-color-surface-variant: #46464f;
+	--md-sys-color-on-surface-variant: #c7c5d0;
+	--md-sys-color-surface-container: #201f22;
+	--md-sys-color-surface-container-low: #1c1b1f;
+	--md-sys-color-surface-container-lowest: #0f0e11;
+	--md-sys-color-surface-container-high: #2b292d;
+	--md-sys-color-surface-container-highest: #363438;
+	
+	/* Outline */
+	--md-sys-color-outline: #918f99;
+	--md-sys-color-outline-variant: #46464f;
+	
+	/* Inverse */
+	--md-sys-color-inverse-surface: #e6e3ea;
+	--md-sys-color-inverse-on-surface: #313033;
+	--md-sys-color-inverse-primary: #2337ff;
+	
+	/* Shadow & Scrim */
+	--md-sys-color-shadow: #000000;
+	--md-sys-color-scrim: #000000;
+	
+	/* Legacy overrides for dark mode */
+	--accent: #b6c4ff;
+	--accent-dark: #9bb0ff;
+	--black: 230, 227, 234;
+	--gray: 199, 197, 208;
+	--gray-light: 70, 70, 79;
+	--gray-dark: 199, 197, 208;
+	--gray-gradient: rgba(32, 31, 34, 50%), #141316;
+	--box-shadow:
+		0 2px 6px rgba(0, 0, 0, 35%), 0 8px 24px rgba(0, 0, 0, 45%), 0 16px 32px
+		rgba(0, 0, 0, 45%);
 }
 @font-face {
 	font-family: "Atkinson";
@@ -30,18 +216,40 @@
 	font-style: normal;
 	font-display: swap;
 }
+
+/* Font family custom properties for easy reuse */
+:root {
+	--font-family-primary: "Atkinson", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	--font-family-logo: "Cal Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	--font-family-mono: "VT323", "SF Mono", Consolas, "Liberation Mono", Menlo, Monaco, "Courier New", monospace;
+	--font-family-display: "Cal Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
 body {
-	font-family: "Atkinson", sans-serif;
+	font-family: var(--font-family-primary);
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background: linear-gradient(var(--gray-gradient)) no-repeat;
-	background-size: 100% 600px;
+	background: var(--md-sys-color-background);
+	color: var(--md-sys-color-on-background);
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-	color: rgb(var(--gray-dark));
 	font-size: 20px;
 	line-height: 1.7;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Font utility classes */
+.font-primary {
+	font-family: var(--font-family-primary);
+}
+
+.font-logo, .font-display {
+	font-family: var(--font-family-logo);
+}
+
+.font-mono {
+	font-family: var(--font-family-mono);
 }
 main {
 	width: 1020px;
@@ -50,11 +258,17 @@ main {
 	padding: 3em 1em;
 }
 
+.hero {
+	padding: 2rem 0;
+}
+
 .hero .hero-content {
 	display: flex;
 	gap: 4rem;
 	align-items: center;
 	flex-wrap: wrap;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 .hero .hero-text {
@@ -72,8 +286,10 @@ main {
 .hero .profile-image {
 	max-width: 100%;
 	height: auto;
-	border-radius: 8px;
+	border-radius: 12px;
 	box-shadow: var(--box-shadow);
+	object-fit: cover;
+	transition: transform 0.3s ease;
 }
 h1,
 h2,
@@ -82,7 +298,7 @@ h4,
 h5,
 h6 {
 	margin: 0 0 0.5rem 0;
-	color: rgb(var(--black));
+	color: var(--md-sys-color-on-surface);
 	line-height: 1.2;
 }
 h1 {
@@ -109,6 +325,34 @@ a {
 }
 a:hover {
 	color: var(--accent);
+}
+
+/* Enhanced focus styles for better accessibility */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+	outline: 3px solid var(--accent);
+	outline-offset: 2px;
+}
+
+/* Touch-friendly tap targets */
+@media (max-width: 480px) {
+	a,
+	button {
+		min-height: 44px;
+		min-width: 44px;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	/* Exception for text links in paragraphs */
+	p a {
+		min-height: unset;
+		min-width: unset;
+		display: inline;
+	}
 }
 p {
 	margin-bottom: 1em;
@@ -153,12 +397,206 @@ hr {
 	border: none;
 	border-top: 1px solid rgb(var(--gray-light));
 }
+/* Tablet breakpoint */
 @media (max-width: 720px) {
 	body {
 		font-size: 18px;
 	}
 	main {
-		padding: 1em;
+		padding: 2em 1em;
+	}
+	
+	.hero .hero-content {
+		gap: 2rem;
+	}
+	
+	h1 {
+		font-size: 2.5em;
+	}
+	
+	h2 {
+		font-size: 2em;
+	}
+}
+
+/* iPhone and small mobile devices */
+@media (max-width: 480px) {
+	body {
+		font-size: 16px;
+		line-height: 1.6;
+	}
+	
+	main {
+		padding: 0.5em 1rem;
+		width: 100%;
+		max-width: none;
+	}
+	
+	.hero {
+		padding: 1rem 0;
+	}
+	
+	h1 {
+		font-size: 2em;
+		line-height: 1.1;
+		margin-bottom: 0.75rem;
+	}
+	
+	h2 {
+		font-size: 1.75em;
+	}
+	
+	h3 {
+		font-size: 1.5em;
+	}
+	
+	.hero .hero-content {
+		flex-direction: column;
+		gap: 1.5rem;
+		text-align: center;
+	}
+	
+	.hero .hero-text {
+		min-width: unset;
+		order: 2;
+		padding: 0 0.5rem;
+	}
+	
+	.hero .hero-text h1 {
+		font-size: 1.8em;
+		margin-bottom: 0.5rem;
+	}
+	
+	.hero .hero-text .subtitle {
+		font-size: 1.1em;
+		margin-bottom: 1rem;
+		font-weight: 500;
+		color: var(--md-sys-color-primary);
+	}
+	
+	.hero .hero-image {
+		min-width: unset;
+		order: 1;
+	}
+	
+	.hero .profile-image {
+		max-width: 200px;
+		width: 100%;
+	}
+	
+	p {
+		margin-bottom: 1.25em;
+	}
+	
+	.prose p {
+		margin-bottom: 1.5em;
+	}
+	
+	.cta-buttons {
+		gap: 0.75rem;
+		margin-top: 1.25rem;
+		justify-content: center;
+	}
+	
+	md-filled-button,
+	md-outlined-button {
+		min-width: 120px;
+		font-size: 0.95rem;
+	}
+}
+
+/* Material Design Button Styles */
+.cta-buttons {
+	display: flex;
+	gap: 1rem;
+	margin-top: 1.5rem;
+	flex-wrap: wrap;
+}
+
+/* Style Material Design buttons to fit our theme */
+md-filled-button {
+	--md-filled-button-container-color: var(--md-sys-color-primary);
+	--md-filled-button-label-text-color: var(--md-sys-color-on-primary);
+	min-width: 140px;
+}
+
+md-outlined-button {
+	--md-outlined-button-outline-color: var(--md-sys-color-primary);
+	--md-outlined-button-label-text-color: var(--md-sys-color-primary);
+	min-width: 140px;
+}
+
+/* Ensure Material buttons are accessible */
+md-filled-button,
+md-outlined-button {
+	height: 48px;
+	font-size: 1rem;
+}
+
+/* Material Design Cards */
+md-elevated-card,
+md-outlined-card,
+md-filled-card {
+	--md-elevated-card-container-color: var(--md-sys-color-surface);
+	--md-outlined-card-container-color: var(--md-sys-color-surface);
+	--md-filled-card-container-color: var(--md-sys-color-surface-variant);
+	border-radius: 12px;
+	overflow: hidden;
+	border: 1px solid rgba(var(--gray-light), 0.6);
+	box-shadow: 0 1px 3px rgba(var(--gray), 0.12), 0 1px 2px rgba(var(--gray), 0.24);
+}
+
+md-outlined-card {
+	border: 1px solid rgba(var(--gray), 0.3);
+}
+
+/* Card hover effects */
+md-elevated-card:hover,
+md-outlined-card:hover,
+md-filled-card:hover {
+	--md-elevated-card-container-elevation: var(--md-sys-elevation-level3);
+	cursor: pointer;
+	box-shadow: var(--box-shadow);
+	border-color: rgba(var(--gray), 0.4);
+}
+
+/* Extra small devices (iPhone SE, small phones) */
+@media (max-width: 375px) {
+	body {
+		font-size: 15px;
+	}
+	
+	main {
+		padding: 0.75em 0.5em;
+	}
+	
+	h1 {
+		font-size: 1.75em;
+	}
+	
+	.hero .profile-image {
+		max-width: 160px;
+	}
+	
+	.hero .hero-content {
+		gap: 1rem;
+	}
+	
+	.hero .hero-text {
+		padding: 0 0.5rem;
+	}
+	
+	.cta-buttons {
+		flex-direction: column;
+		gap: 0.75rem;
+		margin-top: 1rem;
+	}
+	
+	md-filled-button,
+	md-outlined-button {
+		font-size: 0.9rem;
+		min-width: unset;
+		width: 100%;
 	}
 }
 

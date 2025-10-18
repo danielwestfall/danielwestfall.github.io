@@ -1,0 +1,44 @@
+---
+// Material Design Web Components integration for Astro
+---
+
+<script>
+  // Import core Material Design components that are available
+  import '@material/web/button/filled-button.js';
+  import '@material/web/button/outlined-button.js';
+  import '@material/web/button/text-button.js';
+  import '@material/web/iconbutton/icon-button.js';
+  import '@material/web/switch/switch.js';
+  
+  // Additional components (using correct paths)
+  import '@material/web/chips/assist-chip.js';
+  import '@material/web/chips/filter-chip.js';
+  import '@material/web/chips/chip-set.js';
+  import '@material/web/labs/card/outlined-card.js';
+  import '@material/web/labs/card/filled-card.js';
+  import '@material/web/labs/card/elevated-card.js';
+</script>
+
+<style is:global>
+  /* Global Material Design 3 theme customizations */
+  :root {
+    /* Ensure Material components use our custom theme */
+    --md-ref-typeface-brand: 'Atkinson', sans-serif;
+    --md-ref-typeface-plain: 'Atkinson', sans-serif;
+    
+    /* Custom elevation shadows to match our existing design */
+    --md-sys-elevation-level1: var(--box-shadow);
+    --md-sys-elevation-level2: var(--box-shadow);
+    --md-sys-elevation-level3: var(--box-shadow);
+  }
+  
+  /* Ensure Material components inherit our typography */
+  md-filled-button,
+  md-outlined-button,
+  md-text-button,
+  md-icon-button,
+  md-outlined-text-field,
+  md-filled-text-field {
+    font-family: 'Atkinson', sans-serif;
+  }
+</style>

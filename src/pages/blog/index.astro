@@ -18,96 +18,288 @@ const posts = (await getCollection('blog')).sort(
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
 			main {
-				width: 960px;
+				max-width: 800px;
+				margin: 0 auto;
+				padding: 2rem 1rem;
 			}
-			ul {
-				display: flex;
-				flex-wrap: wrap;
-				gap: 2rem;
-				list-style-type: none;
-				margin: 0;
-				padding: 0;
-			}
-			ul li {
-				width: calc(50% - 1rem);
-			}
-			ul li * {
-				text-decoration: none;
-				transition: 0.2s ease;
-			}
-			ul li:first-child {
-				width: 100%;
-				margin-bottom: 1rem;
+			
+			.blog-header {
 				text-align: center;
+				margin-bottom: 2rem;
 			}
-			ul li:first-child img {
-				width: 100%;
-			}
-			ul li:first-child .title {
-				font-size: 2.369rem;
-			}
-			ul li img {
+			
+			.blog-header h1 {
+				font-size: 2.5rem;
 				margin-bottom: 0.5rem;
-				border-radius: 12px;
-			}
-			ul li a {
-				display: block;
-			}
-			.title {
-				margin: 0;
 				color: rgb(var(--black));
-				line-height: 1;
 			}
-			.date {
-				margin: 0;
+			
+			.blog-header p {
 				color: rgb(var(--gray));
+				font-size: 1.1rem;
 			}
-			ul li a:hover h4,
-			ul li a:hover .date {
-				color: rgb(var(--accent));
+			
+			.blog-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+				gap: 2rem;
+				margin-top: 2rem;
 			}
-			ul a:hover img {
+			
+			.featured-post {
+				grid-column: 1 / -1;
+				max-width: 100%;
+			}
+			
+			md-elevated-card {
+				--md-elevated-card-container-color: var(--md-sys-color-surface);
+				--md-elevated-card-container-elevation: var(--md-sys-elevation-level2);
+				display: block;
+				height: 100%;
+				transition: all 0.3s ease;
+				cursor: pointer;
+				border: 1px solid rgba(var(--gray-light), 0.8);
+				border-radius: 12px;
+				overflow: hidden;
+			}
+			
+			md-elevated-card:hover {
+				--md-elevated-card-container-elevation: var(--md-sys-elevation-level3);
+				transform: translateY(-4px);
+				border-color: rgba(var(--gray), 0.3);
 				box-shadow: var(--box-shadow);
 			}
+			
+			md-elevated-card:focus {
+				outline: 3px solid var(--accent);
+				outline-offset: 2px;
+				--md-elevated-card-container-elevation: var(--md-sys-elevation-level3);
+				transform: translateY(-4px);
+				border-color: var(--accent);
+				box-shadow: var(--box-shadow);
+			}
+			
+			.card-content {
+				padding: 0;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+			}
+			
+			.card-image {
+				width: 100%;
+				height: 200px;
+				object-fit: cover;
+				border-radius: 12px 12px 0 0;
+			}
+			
+			.featured-post .card-image {
+				height: 300px;
+			}
+			
+			.card-body {
+				padding: 1.5rem;
+				flex-grow: 1;
+				display: flex;
+				flex-direction: column;
+			}
+			
+			.card-title {
+				font-size: 1.5rem;
+				font-weight: 600;
+				color: rgb(var(--black));
+				margin: 0 0 0.75rem 0;
+				line-height: 1.3;
+			}
+			
+			.featured-post .card-title {
+				font-size: 2rem;
+			}
+			
+			.card-actions {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-top: auto;
+				padding-top: 1rem;
+			}
+			
+			.card-date {
+				color: rgb(var(--gray));
+				font-size: 0.9rem;
+				margin: 0;
+			}
+			
+			.card-excerpt {
+				color: rgb(var(--gray-dark));
+				font-size: 1rem;
+				line-height: 1.5;
+				margin: 0.5rem 0 1rem 0;
+				flex-grow: 1;
+			}
+			
+			/* Mobile responsiveness */
 			@media (max-width: 720px) {
-				ul {
-					gap: 0.5em;
+				main {
+					padding: 1.5rem 0.75rem;
 				}
-				ul li {
-					width: 100%;
-					text-align: center;
+				
+				.blog-grid {
+					grid-template-columns: 1fr;
+					gap: 1.5rem;
+					margin-top: 1.5rem;
 				}
-				ul li:first-child {
-					margin-bottom: 0;
+				
+				.blog-header h1 {
+					font-size: 2rem;
 				}
-				ul li:first-child .title {
-					font-size: 1.563em;
+				
+				.blog-header p {
+					font-size: 1rem;
+				}
+				
+				.card-title {
+					font-size: 1.25rem;
+				}
+				
+				.featured-post .card-title {
+					font-size: 1.5rem;
+				}
+				
+				.featured-post .card-image {
+					height: 250px;
+				}
+			}
+			
+			@media (max-width: 480px) {
+				main {
+					padding: 1rem 0.5rem;
+				}
+				
+				.blog-header {
+					margin-bottom: 1.5rem;
+				}
+				
+				.blog-header h1 {
+					font-size: 1.75rem;
+				}
+				
+				.blog-header p {
+					font-size: 0.95rem;
+				}
+				
+				.blog-grid {
+					gap: 1rem;
+					margin-top: 1rem;
+				}
+				
+				.card-body {
+					padding: 1rem;
+				}
+				
+				.card-image,
+				.featured-post .card-image {
+					height: 180px;
+				}
+				
+				.card-title {
+					font-size: 1.1rem;
+				}
+				
+				.featured-post .card-title {
+					font-size: 1.35rem;
+				}
+				
+				.card-actions {
+					flex-direction: column;
+					align-items: flex-start;
+					gap: 0.5rem;
+				}
+			}
+			
+			/* Extra small devices */
+			@media (max-width: 375px) {
+				main {
+					padding: 0.75rem 0.5rem;
+				}
+				
+				.blog-header h1 {
+					font-size: 1.5rem;
+				}
+				
+				.blog-grid {
+					gap: 0.75rem;
+				}
+				
+				.card-body {
+					padding: 0.75rem;
+				}
+				
+				.card-title {
+					font-size: 1rem;
+					line-height: 1.3;
+				}
+				
+				.featured-post .card-title {
+					font-size: 1.25rem;
 				}
 			}
 		</style>
-		<link href="https://fonts.googleapis.com/css2?family=Cal+Sans&amp;family=Urbanist:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
 	</head>
 	<body>
 		<Header />
 		<main>
 			<section>
-				<ul>
+				<div class="blog-header">
+					<h1>Blog</h1>
+					<p>Thoughts, tutorials, and insights on digital accessibility and inclusive design</p>
+				</div>
+				
+				<div class="blog-grid">
 					{
-						posts.map((post) => (
-							<li>
-								<a href={`/blog/${post.id}/`}>
+						posts.map((post, index) => (
+							<md-elevated-card 
+								class={index === 0 ? 'featured-post' : ''}
+								role="article"
+								tabindex="0"
+								aria-label={`Blog post: ${post.data.title}. Published ${post.data.pubDate.toDateString()}`}
+								onclick={`window.location.href='/blog/${post.id}/'`}
+								onkeydown={`if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); window.location.href='/blog/${post.id}/'; }`}
+							>
+								<div class="card-content">
 									{post.data.heroImage && (
-										<Image width={720} height={360} src={post.data.heroImage} alt="" />
+										<Image 
+											width={index === 0 ? 960 : 400} 
+											height={index === 0 ? 300 : 200} 
+											src={post.data.heroImage} 
+											alt={`Cover image for ${post.data.title}`}
+											class="card-image"
+										/>
 									)}
-									<h4 class="title">{post.data.title}</h4>
-									<p class="date">
-										<FormattedDate date={post.data.pubDate} />
-									</p>
-								</a>
-							</li>
+									<div class="card-body">
+										<h2 class="card-title">{post.data.title}</h2>
+										{post.data.description && (
+											<p class="card-excerpt">{post.data.description}</p>
+										)}
+										<div class="card-actions">
+											<p class="card-date">
+												<time datetime={post.data.pubDate.toISOString()}>
+													<FormattedDate date={post.data.pubDate} />
+												</time>
+											</p>
+											<md-text-button 
+												href={`/blog/${post.id}/`}
+												onclick="event.stopPropagation()"
+											>
+												Read More
+											</md-text-button>
+										</div>
+									</div>
+								</div>
+							</md-elevated-card>
 						))
 					}
-				</ul>
+				</div>
 			</section>
 		</main>
 		<Footer />

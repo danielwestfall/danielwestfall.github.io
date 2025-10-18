@@ -1,0 +1,726 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+
+// Only render this page in development
+if (import.meta.env.PROD) {
+  return Astro.redirect('/404');
+}
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title="Design System & Style Guide" description="Development-only comprehensive style guide and component showcase" />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<div class="style-guide-header">
+				<h1>🎨 Design System & Style Guide</h1>
+				<p class="dev-notice">📍 Development Only - This page is not visible in production</p>
+				<p>Comprehensive overview of design tokens, typography, components, and styling patterns.</p>
+			</div>
+
+			<!-- Color Palette -->
+			<section class="style-section">
+				<h2>🎨 Material Design 3 Color System</h2>
+				<div class="theme-colors">
+					<h4>🌞 Light Theme & 🌙 Dark Theme</h4>
+					<p>Use the theme toggle above to see colors adapt! All colors meet WCAG AA accessibility standards.</p>
+				</div>
+				<div class="color-grid">
+					<div class="color-card">
+						<div class="color-swatch" style="background: var(--md-sys-color-primary);"></div>
+						<div class="color-info">
+							<strong>Primary</strong>
+							<code>--md-sys-color-primary</code>
+							<small>Main brand color for key actions</small>
+						</div>
+					</div>
+					<div class="color-card">
+						<div class="color-swatch" style="background: var(--md-sys-color-secondary);"></div>
+						<div class="color-info">
+							<strong>Secondary</strong>
+							<code>--md-sys-color-secondary</code>
+							<small>Supporting color for less prominent actions</small>
+						</div>
+					</div>
+					<div class="color-card">
+						<div class="color-swatch" style="background: var(--md-sys-color-tertiary);"></div>
+						<div class="color-info">
+							<strong>Tertiary</strong>
+							<code>--md-sys-color-tertiary</code>
+							<small>Accent color for highlights and special elements</small>
+						</div>
+					</div>
+					<div class="color-card">
+						<div class="color-swatch" style="background: var(--md-sys-color-surface);"></div>
+						<div class="color-info">
+							<strong>Surface</strong>
+							<code>--md-sys-color-surface</code>
+							<small>Background for components like cards</small>
+						</div>
+					</div>
+					<div class="color-card">
+						<div class="color-swatch" style="background: var(--md-sys-color-background);"></div>
+						<div class="color-info">
+							<strong>Background</strong>
+							<code>--md-sys-color-background</code>
+							<small>Main page background color</small>
+						</div>
+					</div>
+					<div class="color-card">
+						<div class="color-swatch" style="background: var(--md-sys-color-error);"></div>
+						<div class="color-info">
+							<strong>Error</strong>
+							<code>--md-sys-color-error</code>
+							<small>Error states and warning messages</small>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Typography -->
+			<section class="style-section">
+				<h2>📝 Typography</h2>
+				<div class="typography-showcase">
+					<div class="type-example">
+						<h1>Heading 1 (3.052em)</h1>
+						<code>font-size: 3.052em; font-family: "Atkinson", sans-serif;</code>
+					</div>
+					<div class="type-example">
+						<h2>Heading 2 (2.441em)</h2>
+						<code>font-size: 2.441em;</code>
+					</div>
+					<div class="type-example">
+						<h3>Heading 3 (1.953em)</h3>
+						<code>font-size: 1.953em;</code>
+					</div>
+					<div class="type-example">
+						<h4>Heading 4 (1.563em)</h4>
+						<code>font-size: 1.563em;</code>
+					</div>
+					<div class="type-example">
+						<h5>Heading 5 (1.25em)</h5>
+						<code>font-size: 1.25em;</code>
+					</div>
+					<div class="type-example">
+						<p>Body text paragraph (20px base, line-height: 1.7)</p>
+						<code>font-size: 20px; line-height: 1.7;</code>
+					</div>
+				</div>
+			</section>
+
+			<!-- Font Families -->
+			<section class="style-section">
+				<h2>🔤 Font Families</h2>
+				<p class="section-desc">
+					All fonts are now loaded globally via BaseHead.astro and available site-wide. 
+					Use CSS custom properties or utility classes for consistent typography.
+				</p>
+				<div class="fonts-showcase">
+					<div class="font-example">
+						<div class="font-sample atkinson">
+							<h3>Atkinson Hyperlegible (Primary)</h3>
+							<p>The quick brown fox jumps over the lazy dog</p>
+							<p><strong>ABCDEFGHIJKLMNOPQRSTUVWXYZ</strong></p>
+							<p>abcdefghijklmnopqrstuvwxyz 1234567890</p>
+						</div>
+						<code>font-family: var(--font-family-primary);</code>
+						<code>/* OR use utility class: .font-primary */</code>
+					</div>
+					<div class="font-example">
+						<div class="font-sample cal-sans">
+							<h3>Cal Sans (Display/Logo)</h3>
+							<p>The quick brown fox jumps over the lazy dog</p>
+							<p><strong>codea11y.dev</strong> • Modern & Clean</p>
+							<p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+						</div>
+						<code>font-family: var(--font-family-logo);</code>
+						<code>/* OR use utility class: .font-logo, .font-display */</code>
+					</div>
+					<div class="font-example">
+						<div class="font-sample vt323">
+							<h3>VT323 (Monospace/Retro)</h3>
+							<p>The quick brown fox jumps over the lazy dog</p>
+							<p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+							<p>abcdefghijklmnopqrstuvwxyz 1234567890</p>
+							<p>&lt;code&gt; blocks and terminal text</p>
+						</div>
+						<code>font-family: var(--font-family-mono);</code>
+						<code>/* OR use utility class: .font-mono */</code>
+					</div>
+					
+					<!-- SVG Font Test -->
+					<div class="font-example">
+						<div class="font-sample">
+							<h3>SVG Logo Font Test</h3>
+							<div class="svg-test">
+								<!-- Copy of the logo SVG text elements for testing -->
+								<svg width="120" height="40" viewBox="0 0 200 50" style="border: 1px solid var(--md-sys-color-outline);">
+									<text x="10" y="20" font-family="VT323" font-size="14" fill="currentColor">VT323 Font Test</text>
+									<text x="10" y="35" font-family="Cal Sans" font-size="14" fill="currentColor">Cal Sans Font Test</text>
+								</svg>
+							</div>
+						</div>
+						<code>SVG elements should now render with proper fonts</code>
+					</div>
+				</div>
+			</section>
+
+			<!-- Responsive Breakpoints -->
+			<section class="style-section">
+				<h2>📱 Responsive Breakpoints</h2>
+				<div class="breakpoint-grid">
+					<div class="breakpoint-card">
+						<h4>Tablet</h4>
+						<code>@media (max-width: 720px)</code>
+						<p>Font size: 18px, reduced spacing</p>
+					</div>
+					<div class="breakpoint-card">
+						<h4>iPhone/Mobile</h4>
+						<code>@media (max-width: 480px)</code>
+						<p>Font size: 16px, stacked layouts</p>
+					</div>
+					<div class="breakpoint-card">
+						<h4>Small Mobile</h4>
+						<code>@media (max-width: 375px)</code>
+						<p>Font size: 15px, minimal padding</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Theme System -->
+			<section class="style-section">
+				<h2>🌓 Theme System</h2>
+				<div class="theme-demo">
+					<div class="theme-info">
+						<h4>Automatic Light/Dark Mode</h4>
+						<p>The theme system automatically detects your system preference and switches accordingly. You can also manually override with the toggle in the header.</p>
+						<ul>
+							<li>✅ <strong>System Detection:</strong> Respects <code>prefers-color-scheme</code></li>
+							<li>✅ <strong>Local Storage:</strong> Remembers your preference</li>
+							<li>✅ <strong>WCAG Compliant:</strong> All color combinations meet accessibility standards</li>
+							<li>✅ <strong>Smooth Transitions:</strong> Animated theme switching</li>
+						</ul>
+					</div>
+					<div class="theme-toggle-demo">
+						<p>Try the theme toggle in the header! 👆</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Material Design Buttons -->
+			<section class="style-section">
+				<h2>🔘 Material Design Buttons</h2>
+				<div class="component-showcase">
+					<div class="component-group">
+						<h4>Button States</h4>
+						<div class="component-grid">
+							<md-filled-button>Filled Button</md-filled-button>
+							<md-outlined-button>Outlined Button</md-outlined-button>
+							<md-text-button>Text Button</md-text-button>
+						</div>
+					</div>
+					<div class="component-group">
+						<h4>Icon Buttons</h4>
+						<div class="component-grid">
+							<md-icon-button aria-label="Favorite">
+								<svg viewBox="0 0 24 24" fill="currentColor">
+									<path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+								</svg>
+							</md-icon-button>
+							<md-icon-button aria-label="Like">
+								<svg viewBox="0 0 24 24" fill="currentColor">
+									<path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+								</svg>
+							</md-icon-button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Material Design Cards -->
+			<section class="style-section">
+				<h2>🃏 Material Design Cards</h2>
+				<div class="card-showcase">
+					<md-outlined-card>
+						<div class="card-content">
+							<h3>Outlined Card</h3>
+							<p>Border-based card with subtle outline. Good for secondary content.</p>
+							<code>md-outlined-card</code>
+						</div>
+					</md-outlined-card>
+					
+					<md-filled-card>
+						<div class="card-content">
+							<h3>Filled Card</h3>
+							<p>Surface tinted card with background fill. Provides more emphasis.</p>
+							<code>md-filled-card</code>
+						</div>
+					</md-filled-card>
+
+					<md-elevated-card>
+						<div class="card-content">
+							<h3>Elevated Card</h3>
+							<p>Shadow-based card with elevation. Primary choice for most content.</p>
+							<code>md-elevated-card</code>
+						</div>
+					</md-elevated-card>
+				</div>
+			</section>
+
+			<!-- Material Design Chips -->
+			<section class="style-section">
+				<h2>🍯 Material Design Chips</h2>
+				<div class="component-showcase">
+					<div class="component-group">
+						<h4>Chip Types</h4>
+						<md-chip-set>
+							<md-assist-chip label="Assist Chip">Assist Chip</md-assist-chip>
+							<md-filter-chip label="Filter Chip">Filter Chip</md-filter-chip>
+							<md-assist-chip label="Another Chip">Another Chip</md-assist-chip>
+						</md-chip-set>
+					</div>
+				</div>
+			</section>
+
+			<!-- Focus & Accessibility -->
+			<section class="style-section">
+				<h2>♿ Accessibility Features</h2>
+				<div class="accessibility-showcase">
+					<div class="a11y-item">
+						<h4>Focus Indicators</h4>
+						<p>All interactive elements have 3px accent-colored focus outlines with 2px offset.</p>
+						<md-filled-button>Tab to focus me</md-filled-button>
+					</div>
+					<div class="a11y-item">
+						<h4>Touch Targets</h4>
+						<p>Minimum 44px touch targets for mobile accessibility compliance.</p>
+					</div>
+					<div class="a11y-item">
+						<h4>Color Contrast</h4>
+						<p>All text meets WCAG AA contrast requirements against backgrounds.</p>
+					</div>
+					<div class="a11y-item">
+						<h4>Screen Reader Support</h4>
+						<p>Semantic HTML, ARIA labels, and proper heading hierarchy throughout.</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- CSS Custom Properties -->
+			<section class="style-section">
+				<h2>🎛️ CSS Custom Properties</h2>
+				<div class="css-vars">
+					<div class="css-group">
+						<h4>Material Design Tokens</h4>
+						<ul>
+							<li><code>--md-sys-color-primary</code></li>
+							<li><code>--md-sys-color-on-primary</code></li>
+							<li><code>--md-sys-color-secondary</code></li>
+							<li><code>--md-sys-color-tertiary</code></li>
+							<li><code>--md-sys-color-surface</code></li>
+							<li><code>--md-sys-color-on-surface</code></li>
+							<li><code>--md-sys-color-background</code></li>
+							<li><code>--md-sys-color-outline</code></li>
+						</ul>
+					</div>
+					<div class="css-group">
+						<h4>Site Tokens</h4>
+						<ul>
+							<li><code>--accent</code> / <code>--accent-dark</code></li>
+							<li><code>--black</code> / <code>--gray-dark</code></li>
+							<li><code>--gray</code> / <code>--gray-light</code></li>
+							<li><code>--box-shadow</code></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.style-guide-header {
+		text-align: center;
+		margin-bottom: 3rem;
+		padding: 2rem;
+		background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+		color: white;
+		border-radius: 12px;
+	}
+	
+	.style-guide-header h1 {
+		margin: 0 0 1rem 0;
+		color: white;
+	}
+	
+	.dev-notice {
+		background: rgba(255, 255, 255, 0.2);
+		padding: 0.5rem 1rem;
+		border-radius: 6px;
+		display: inline-block;
+		font-weight: 600;
+		margin-bottom: 1rem;
+	}
+	
+	.style-section {
+		margin: 3rem 0;
+		padding: 2rem;
+		border: 1px solid var(--md-sys-color-outline-variant);
+		border-radius: 12px;
+		background: var(--md-sys-color-surface-container-lowest);
+		transition: background-color 0.3s ease, border-color 0.3s ease;
+	}
+	
+	.style-section h2 {
+		margin-top: 0;
+		color: var(--md-sys-color-on-surface);
+		border-bottom: 2px solid var(--md-sys-color-primary);
+		padding-bottom: 0.5rem;
+	}
+	
+	/* Color Palette */
+	.color-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 1rem;
+		margin-top: 1.5rem;
+	}
+	
+	.color-card {
+		background: var(--md-sys-color-surface);
+		border: 1px solid var(--md-sys-color-outline-variant);
+		border-radius: 8px;
+		overflow: hidden;
+		transition: background-color 0.3s ease, border-color 0.3s ease;
+	}
+	
+	.color-swatch {
+		height: 80px;
+		width: 100%;
+	}
+	
+	.color-info {
+		padding: 1rem;
+	}
+	
+	.color-info strong {
+		display: block;
+		margin-bottom: 0.5rem;
+		color: var(--md-sys-color-on-surface);
+	}
+	
+	.color-info code {
+		font-size: 0.85rem;
+		color: var(--md-sys-color-on-surface-variant);
+		display: block;
+		margin: 0.25rem 0;
+	}
+	
+	.color-info small {
+		color: var(--md-sys-color-on-surface-variant);
+		font-size: 0.8rem;
+		line-height: 1.3;
+	}
+	
+	.theme-colors {
+		margin-bottom: 1rem;
+		padding: 1rem;
+		background: var(--md-sys-color-surface-container);
+		border-radius: 8px;
+		border: 1px solid var(--md-sys-color-outline-variant);
+	}
+	
+	.theme-colors h4 {
+		margin-top: 0;
+		color: var(--md-sys-color-primary);
+	}
+	
+	.theme-demo {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		gap: 2rem;
+		margin-top: 1.5rem;
+	}
+	
+	.theme-info ul {
+		margin: 1rem 0;
+		padding-left: 1rem;
+	}
+	
+	.theme-info li {
+		margin: 0.5rem 0;
+		color: var(--md-sys-color-on-surface);
+	}
+	
+	.theme-toggle-demo {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 2rem;
+		background: var(--md-sys-color-surface-container);
+		border-radius: 8px;
+		border: 1px solid var(--md-sys-color-outline-variant);
+	}
+	
+	/* Typography */
+	.typography-showcase {
+		margin-top: 1.5rem;
+	}
+	
+	.type-example {
+		margin: 1.5rem 0;
+		padding: 1rem;
+		background: white;
+		border: 1px solid rgb(var(--gray-light));
+		border-radius: 8px;
+	}
+	
+	.type-example > *:first-child {
+		margin-top: 0;
+	}
+	
+	.type-example code {
+		display: block;
+		margin-top: 0.5rem;
+		font-size: 0.85rem;
+		color: rgb(var(--gray));
+	}
+	
+	/* Font Families */
+	.fonts-showcase {
+		margin-top: 1.5rem;
+		display: grid;
+		gap: 1.5rem;
+	}
+	
+	.font-example {
+		padding: 1.5rem;
+		background: var(--md-sys-color-surface-container-low);
+		border: 1px solid var(--md-sys-color-outline-variant);
+		border-radius: 12px;
+	}
+	
+	.font-sample {
+		margin-bottom: 1rem;
+	}
+	
+	.font-sample.atkinson {
+		font-family: var(--font-family-primary);
+	}
+	
+	.font-sample.cal-sans {
+		font-family: var(--font-family-logo);
+	}
+	
+	.font-sample.vt323 {
+		font-family: var(--font-family-mono);
+		line-height: 1.4;
+	}
+	
+	.font-sample h3 {
+		margin: 0 0 1rem 0;
+		color: var(--md-sys-color-primary);
+	}
+	
+	.font-sample p {
+		margin: 0.5rem 0;
+		line-height: 1.6;
+	}
+	
+	.svg-test {
+		margin: 1rem 0;
+		padding: 1rem;
+		background: var(--md-sys-color-surface);
+		border-radius: 8px;
+		border: 1px solid var(--md-sys-color-outline-variant);
+	}
+	
+	.font-example code {
+		display: block;
+		margin-top: 1rem;
+		font-size: 0.85rem;
+		color: var(--md-sys-color-on-surface-variant);
+		font-style: italic;
+		background: var(--md-sys-color-surface-container-high);
+		padding: 0.75rem;
+		border-radius: 6px;
+	}
+	
+	/* Breakpoints */
+	.breakpoint-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 1rem;
+		margin-top: 1.5rem;
+	}
+	
+	.breakpoint-card {
+		padding: 1rem;
+		background: white;
+		border: 1px solid rgb(var(--gray-light));
+		border-radius: 8px;
+	}
+	
+	.breakpoint-card h4 {
+		margin-top: 0;
+		color: var(--accent);
+	}
+	
+	.breakpoint-card code {
+		display: block;
+		margin: 0.5rem 0;
+		background: rgb(var(--gray-light));
+		padding: 0.25rem 0.5rem;
+		border-radius: 4px;
+	}
+	
+	/* Components */
+	.component-showcase {
+		margin-top: 1.5rem;
+	}
+	
+	.component-group {
+		margin: 1.5rem 0;
+		padding: 1rem;
+		background: white;
+		border: 1px solid rgb(var(--gray-light));
+		border-radius: 8px;
+	}
+	
+	.component-group h4 {
+		margin-top: 0;
+		color: rgb(var(--black));
+	}
+	
+	.component-grid {
+		display: flex;
+		gap: 1rem;
+		flex-wrap: wrap;
+		margin-top: 1rem;
+	}
+	
+	/* Cards */
+	.card-showcase {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 1.5rem;
+		margin-top: 1.5rem;
+	}
+	
+	.card-content {
+		padding: 1.5rem;
+	}
+	
+	.card-content h3 {
+		margin-top: 0;
+		color: rgb(var(--gray-dark));
+	}
+	
+	.card-content code {
+		display: block;
+		margin-top: 1rem;
+		font-size: 0.85rem;
+		color: rgb(var(--gray));
+	}
+	
+	/* Accessibility */
+	.accessibility-showcase {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 1rem;
+		margin-top: 1.5rem;
+	}
+	
+	.a11y-item {
+		padding: 1rem;
+		background: white;
+		border: 1px solid rgb(var(--gray-light));
+		border-radius: 8px;
+	}
+	
+	.a11y-item h4 {
+		margin-top: 0;
+		color: var(--accent);
+	}
+	
+	/* CSS Variables */
+	.css-vars {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 1rem;
+		margin-top: 1.5rem;
+	}
+	
+	.css-group {
+		padding: 1rem;
+		background: white;
+		border: 1px solid rgb(var(--gray-light));
+		border-radius: 8px;
+	}
+	
+	.css-group h4 {
+		margin-top: 0;
+		color: rgb(var(--black));
+	}
+	
+	.css-group ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	
+	.css-group li {
+		margin: 0.5rem 0;
+	}
+	
+	.css-group code {
+		color: var(--accent);
+		font-weight: 600;
+	}
+	
+	/* Mobile responsiveness */
+	@media (max-width: 720px) {
+		.style-section {
+			padding: 1.5rem;
+		}
+		
+		.color-grid,
+		.breakpoint-grid,
+		.card-showcase,
+		.accessibility-showcase,
+		.css-vars {
+			grid-template-columns: 1fr;
+		}
+		
+		.theme-demo {
+			grid-template-columns: 1fr;
+			gap: 1rem;
+		}
+	}
+	
+	@media (max-width: 480px) {
+		.style-guide-header {
+			padding: 1rem;
+		}
+		
+		.style-section {
+			padding: 1rem;
+		}
+		
+		.component-grid {
+			flex-direction: column;
+		}
+		
+		md-filled-button,
+		md-outlined-button,
+		md-text-button {
+			width: 100%;
+		}
+	}
+</style>

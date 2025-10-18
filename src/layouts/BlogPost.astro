@@ -75,8 +75,96 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			.last-updated-on {
 				font-style: italic;
 			}
+			
+			/* Tablet breakpoint */
+			@media (max-width: 720px) {
+				.layout-container {
+					flex-direction: column;
+					gap: 1rem;
+					padding: 0 0.75rem;
+				}
+				
+				.sidebar {
+					position: static;
+					height: auto;
+					flex: none;
+					padding: 1rem 0;
+				}
+				
+				.sidebar .hero-image {
+					max-width: 400px;
+					margin: 0 auto;
+				}
+				
+				main {
+					padding: 1rem 0;
+				}
+				
+				.prose {
+					padding: 0.75em;
+				}
+				
+				.title h1 {
+					font-size: 1.8rem;
+				}
+			}
+			
+			/* iPhone and small mobile devices */
+			@media (max-width: 480px) {
+				.layout-container {
+					padding: 0 0.5rem;
+				}
+				
+				.sidebar {
+					padding: 0.5rem 0;
+				}
+				
+				.sidebar .hero-image {
+					max-width: 280px;
+				}
+				
+				.prose {
+					padding: 0.5em;
+					max-width: 100%;
+				}
+				
+				.title {
+					padding: 0.75em 0;
+				}
+				
+				.title h1 {
+					font-size: 1.6rem;
+					line-height: 1.2;
+				}
+				
+				.hero-image img {
+					border-radius: 8px;
+				}
+			}
+			
+			/* Extra small devices */
+			@media (max-width: 375px) {
+				.layout-container {
+					padding: 0 0.25rem;
+				}
+				
+				.sidebar .hero-image {
+					max-width: 240px;
+				}
+				
+				.prose {
+					padding: 0.25em;
+				}
+				
+				.title h1 {
+					font-size: 1.4rem;
+				}
+				
+				body {
+					font-size: 16px;
+				}
+			}
 		</style>
-		<link href="https://fonts.googleapis.com/css2?family=Cal+Sans&amp;family=Urbanist:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
 	</head>
 
 	<body>
