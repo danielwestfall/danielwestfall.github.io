@@ -121,16 +121,26 @@ import NavigationDrawer from './NavigationDrawer.astro';
 </header>
 <style>
 	header {
-		position: sticky;
-		top: 0;
+		position: relative; /* Start as relative */
 		z-index: 100;
+		width: 100%;
 		margin: 0;
 		padding: 0 1em;
 		background: var(--md-sys-color-surface);
 		border-bottom: 1px solid var(--md-sys-color-outline-variant);
-		transition: all 0.3s ease;
+		transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 		backdrop-filter: blur(8px);
 		-webkit-backdrop-filter: blur(8px);
+		display: block;
+		box-sizing: border-box;
+	}
+	
+	/* When sticky class is added by JavaScript */
+	header.sticky {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
 	}
 	
 	/* Compact sticky state */
@@ -402,12 +412,17 @@ import NavigationDrawer from './NavigationDrawer.astro';
 </style>
 
 <script>
-	// Handle sticky header state
+	// Handle sticky header state with fixed positioning
 	function handleStickyHeader() {
 		const header = document.querySelector('header');
-		if (!header) return;
+		if (!header) {
+			console.log('Header element not found');
+			return;
+		}
 		
+		console.log('Header found, setting up sticky behavior');
 		let scrolled = false;
+		const headerHeight = header.offsetHeight;
 		
 		function updateStickyState() {
 			if (!header) return;
@@ -416,10 +431,15 @@ import NavigationDrawer from './NavigationDrawer.astro';
 			
 			if (currentlyScrolled !== scrolled) {
 				scrolled = currentlyScrolled;
+				console.log('Scroll state changed:', scrolled ? 'scrolled' : 'at top');
 				if (scrolled) {
 					header.classList.add('sticky');
+					// Add padding to body to prevent content jump
+					document.body.style.paddingTop = headerHeight + 'px';
 				} else {
 					header.classList.remove('sticky');
+					// Remove padding when not sticky
+					document.body.style.paddingTop = '0';
 				}
 			}
 		}
