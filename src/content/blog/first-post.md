@@ -8,16 +8,16 @@ heroImage: '@assets/hero_monologue.png'
 ## Breaking Down Barriers
 The world of gaming has always promised immersion, adventure, and the thrill of overcoming challenges. Yet, for millions, that promise has been marred by barriers – particularly for those who are blind or have severe low vision. For years, "playing" a graphically rich, narrative-driven title often felt like reading a description of a masterpiece without ever truly seeing it.
 
-## A Game-Changing Moment
 Then came God of War Ragnarök.
 
-### Revolutionary Accessibility
+### A Game-Changing Moment
+
 Santa Monica Studio didn't just add a few accessibility settings; they engineered an experience. With over 60 options, Ragnarök delivered something truly revolutionary: a major AAA title completable by players who are blind. This wasn't just a nod; it was a seismic shift, proving that true immersion isn't beholden to sight alone.
 
-## More Than Just Sound: A New Kind of Vision
+### More Than Just Sound: A New Kind of Vision
 Imagine navigating the Nine Realms not by what you see, but by what you hear and feel. Ragnarök achieves this through meticulously designed Audio Cues. Every enemy attack, every interactive object, every crucial environmental detail has a distinct, directional sound. It's an auditory tapestry that paints a vivid picture, allowing players to perceive the world with astonishing detail.
 
-For the first time, many blind players weren't just following instructions; they were truly exploring. The game’s ingenious Navigation Assistance allows players to orient themselves towards the next objective with a simple flick of the stick. This isn't just about getting from point A to point B; it’s about confidently striding through a world, knowing which way to turn without constant visual confirmation.
+For the first time, many blind players weren't just following instructions; they completing the experience. The game’s ingenious Navigation Assistance allows players to orient themselves towards the next objective with a simple flick of the stick. This isn't just about getting from point A to point B; it’s about confidently striding through a world, knowing which way to turn without constant visual confirmation.
 
 Critical features that enabled this monumental leap included:
 
@@ -44,7 +44,7 @@ Perhaps a "Stoic Guardian" whose thoughts are always focused on protection and d
 
 This foundational personality would then subtly, or overtly, influence their primary guide: the Inner Monologue.
 
-## The Inner Monologue: A Dynamic Companion
+### The Inner Monologue: A Dynamic Companion
 The character's internal voice should become the player's primary, optional, and deeply immersive source of information. With a simple key-press, the player could prompt their character to pause their physical journey and speak their mind:
 
 "A chill wind whispers secrets of the mountains above. To my left, the winding path leads to the Whispering Woods—rumors abound of ancient ruins and perhaps some rare herbs. Yet, if I turn to the right, mighty beasts do dwell. By mine own self, I fear I am not yet meet for such a peril."
@@ -59,7 +59,7 @@ Strategic Crossroads: The monologue can clarify choices at a fork in the road: "
 
 This concept elevates navigation assistance from a functional tool to an immersive narrative device. The player, through the character's thoughts, gains not just directions but context, mood, and agency.
 
-## Empowering True Player Agency
+### Empowering True Player Agency
 This inner monologue would further empower player autonomy by making all options explicitly clear. The character menu isn't static; it becomes an interactive dialogue with your avatar's own mind:
 
 "What shall we do next?"

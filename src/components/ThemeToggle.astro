@@ -3,24 +3,31 @@
 ---
 
 <div class="theme-toggle">
-  <span class="theme-label">🌙</span>
+  <md-icon class="theme-icon moon-icon">dark_mode</md-icon>
   <md-switch 
     id="theme-switch" 
     aria-label="Toggle dark mode"
     role="switch"
   ></md-switch>
-  <span class="theme-label">☀️</span>
+  <md-icon class="theme-icon sun-icon">light_mode</md-icon>
 </div>
 
 <script>
   class ThemeManager {
+    themeSwitch: any;
+    moonIcon: any;
+    sunIcon: any;
+    systemPrefersDark: boolean;
+
     constructor() {
       this.init();
     }
 
     init() {
-      // Get the switch element
+      // Get the switch element and icons
       this.themeSwitch = document.getElementById('theme-switch');
+      this.moonIcon = document.querySelector('.moon-icon');
+      this.sunIcon = document.querySelector('.sun-icon');
       
       // Detect system preference
       this.systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -32,13 +39,15 @@
       // Set initial theme
       this.setTheme(initialTheme);
       
-      // Update switch state
+      // Update switch state and icons
       this.themeSwitch.selected = initialTheme === 'dark';
+      this.updateIconStates(initialTheme);
       
       // Listen for switch changes
-      this.themeSwitch.addEventListener('change', (e) => {
+      this.themeSwitch.addEventListener('change', (e: any) => {
         const newTheme = e.target.selected ? 'dark' : 'light';
         this.setTheme(newTheme);
+        this.updateIconStates(newTheme);
         localStorage.setItem('theme', newTheme);
       });
       
@@ -49,18 +58,19 @@
           const newTheme = e.matches ? 'dark' : 'light';
           this.setTheme(newTheme);
           this.themeSwitch.selected = newTheme === 'dark';
+          this.updateIconStates(newTheme);
         }
       });
     }
 
-    setTheme(theme) {
+    setTheme(theme: string) {
       document.documentElement.setAttribute('data-theme', theme);
       
       // Also update the color-scheme for better browser integration
       document.documentElement.style.colorScheme = theme;
       
       // Update meta theme-color for mobile browsers
-      let metaThemeColor = document.querySelector('meta[name="theme-color"]');
+      let metaThemeColor = document.querySelector('meta[name="theme-color"]') as HTMLMetaElement;
       if (!metaThemeColor) {
         metaThemeColor = document.createElement('meta');
         metaThemeColor.name = 'theme-color';
@@ -70,6 +80,19 @@
       // Set theme color based on Material Design tokens
       const themeColor = theme === 'dark' ? '#141316' : '#fefbff';
       metaThemeColor.content = themeColor;
+    }
+
+    updateIconStates(theme: string) {
+      // Remove active class from both icons
+      this.moonIcon?.classList.remove('active');
+      this.sunIcon?.classList.remove('active');
+      
+      // Add active class to current theme icon
+      if (theme === 'dark') {
+        this.moonIcon?.classList.add('active');
+      } else {
+        this.sunIcon?.classList.add('active');
+      }
     }
   }
 
@@ -89,10 +112,36 @@
     padding: 0.25rem;
   }
   
-  .theme-label {
-    font-size: 1.2rem;
-    opacity: 0.7;
-    transition: opacity 0.2s ease;
+  .theme-icon {
+    font-size: 20px;
+    color: var(--md-sys-color-on-surface-variant);
+    opacity: 0.6;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  /* Active state for current theme */
+  .theme-icon.active {
+    color: var(--md-sys-color-primary);
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  
+  /* Sun icon specific styling for better contrast */
+  .sun-icon {
+    color: var(--md-sys-color-on-surface);
+  }
+  
+  /* Moon icon styling */
+  .moon-icon {
+    color: var(--md-sys-color-on-surface);
+  }
+  
+  /* Hover effects */
+  .theme-icon:hover {
+    opacity: 1;
+    color: var(--md-sys-color-primary);
+    transform: scale(1.05);
   }
   
   md-switch {
@@ -102,8 +151,8 @@
     --md-switch-unselected-handle-color: var(--md-sys-color-outline);
   }
   
-  .theme-toggle:hover .theme-label {
-    opacity: 1;
+  .theme-toggle:hover .theme-icon {
+    opacity: 0.8;
   }
   
   @media (max-width: 480px) {
@@ -111,8 +160,8 @@
       gap: 0.25rem;
     }
     
-    .theme-label {
-      font-size: 1rem;
+    .theme-icon {
+      font-size: 18px;
     }
   }
 </style>

@@ -4,176 +4,193 @@ import Layout from "../layouts/BlogPost.astro";
 ---
 
 <Layout
-  title='About Daniel'
-  description="Daniel's Profile"
+  title='About Daniel Westfall'
+  description="Digital Accessibility Manager and CPWA certified professional with expertise in WCAG compliance, accessibility auditing, assistive technologies, and inclusive design. Learn about Daniel's background, certifications, skills, and professional experience in making digital content accessible for everyone."
   pubDate={new Date("October 17 2025")}
   heroImage={AboutHeroImage}
 >
-  <section aria-labelledby="certs-heading">
-    <h2 id="certs-heading">Certifications</h2>
-    <ul>
-      <li>
-        Certified Professional in Web Accessibility (CPWA)
-        <ul>
-          <li>Web Accessibility Specialist (WAS)</li>
-          <li>Certified Professional in Accessibility Core Competencies (CPACC)</li>
-        </ul>
-      </li>
-      <li>Trusted Tester Certification (# TT-2204-02664)</li>
-      <li>JAWS Certified Individual</li>
-      <li>NVDA Expert Certified</li>
-    </ul>
-  </section>
+  <div class="about-content">
+    <md-elevated-card class="about-section">
+      <div class="card-content">
+        <section aria-labelledby="credentials-heading">
+          <h2 id="credentials-heading">Certifications & Education</h2>
+          
+          <div class="profile-section">
+            <h3>Certifications</h3>
+            <ul>
+              <li>
+                Certified Professional in Web Accessibility (CPWA)
+                <ul>
+                  <li>Web Accessibility Specialist (WAS)</li>
+                  <li>Certified Professional in Accessibility Core Competencies (CPACC)</li>
+                </ul>
+              </li>
+              <li>Trusted Tester Certification (# TT-2204-02664)</li>
+              <li>JAWS Certified Individual</li>
+              <li>NVDA Expert Certified</li>
+            </ul>
+          </div>
 
-  <section aria-labelledby="skills-heading">
-    <h2 id="skills-heading">Skills</h2>
-    <ul>
-      <li>
-        Accessibility Standards & Guidelines
-        <ul>
-          <li>WCAG 2.2</li>
-          <li>Section 508</li>
-          <li>EN 301 549</li>
-          <li>ARIA</li>
-          <li>ATAG</li>
-        </ul>
-      </li>
-      <li>
-        Assistive Technologies
-        <ul>
-          <li>JAWS</li>
-          <li>NVDA</li>
-          <li>VoiceOver</li>
-          <li>ChromeVox</li>
-        </ul>
-      </li>
-      <li>
-        Accessibility Testing & Auditing
-        <ul>
-          <li>Manual Testing</li>
-          <li>Automated Testing (WAVE, axe Dev Tools)</li>
-          <li>Accessibility Audits</li>
-          <li>VPAT/ACR Creation</li>
-        </ul>
-      </li>
-      <li>
-        Design & Development
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>Design Systems</li>
-          <li>Accessible UI Components</li>
-          <li>PDF Remediation</li>
-        </ul>
-      </li>
-      <li>
-        Platforms & Tools
-        <ul>
-          <li>Asana</li>
-          <li>VS Code</li>
-          <li>GitHub</li>
-        </ul>
-      </li>
-      <li>
-        Communication & Collaboration
-        <ul>
-          <li>Cross-functional Collaboration</li>
-          <li>Training & Mentoring</li>
-          <li>Documentation & Reporting</li>
-        </ul>
-      </li>
-      <li>
-        Process & Strategy
-        <ul>
-          <li>Process Improvement</li>
-          <li>Strategic Planning</li>
-          <li>Accessibility Roadmaps</li>
-        </ul>
-      </li>
-    </ul>
-  </section>
+          <div class="profile-section">
+            <h3>Education & Professional Development</h3>
+            <ul>
+              <li>Google UX Design Professional Certificate</li>
+              <li>Full Stack Web Development with MERN</li>
+              <li>Associate of Arts in Multimedia and Web Design</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </md-elevated-card>
 
-  <section aria-labelledby="experience-heading">
-    <h2 id="experience-heading">Experience</h2>
+    <md-elevated-card class="about-section">
+      <div class="card-content">
+        <section aria-labelledby="skills-heading">
+          <h2 id="skills-heading">Skills</h2>
+          <ul>
+            <li>
+              Accessibility Standards & Guidelines
+              <ul>
+                <li>WCAG 2.2</li>
+                <li>Section 508</li>
+                <li>EN 301 549</li>
+                <li>ARIA</li>
+                <li>ATAG</li>
+              </ul>
+            </li>
+            <li>
+              Assistive Technologies
+              <ul>
+                <li>JAWS</li>
+                <li>NVDA</li>
+                <li>VoiceOver</li>
+                <li>ChromeVox</li>
+              </ul>
+            </li>
+            <li>
+              Accessibility Testing & Auditing
+              <ul>
+                <li>Manual Testing</li>
+                <li>Automated Testing (WAVE, axe Dev Tools)</li>
+                <li>Accessibility Audits</li>
+                <li>VPAT/ACR Creation</li>
+              </ul>
+            </li>
+            <li>
+              Design & Development
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Design Systems</li>
+                <li>Accessible UI Components</li>
+                <li>PDF Remediation</li>
+              </ul>
+            </li>
+            <li>
+              Platforms & Tools
+              <ul>
+                <li>Asana</li>
+                <li>VS Code</li>
+                <li>GitHub</li>
+              </ul>
+            </li>
+            <li>
+              Communication & Collaboration
+              <ul>
+                <li>Cross-functional Collaboration</li>
+                <li>Training & Mentoring</li>
+                <li>Documentation & Reporting</li>
+              </ul>
+            </li>
+            <li>
+              Process & Strategy
+              <ul>
+                <li>Process Improvement</li>
+                <li>Strategic Planning</li>
+                <li>Accessibility Roadmaps</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </md-elevated-card>
 
-    <article>
-      <header>
-        <h3>Digital Accessibility Manager</h3>
-        <p><strong>QuaverEd</strong> | Nashville, TN</p>
-        <p><time datetime="2024-10">October 2024</time> – <time>Present</time></p>
-      </header>
-      <ul>
-        <li>Led accessibility initiatives, creating policies and frameworks for inclusive design.</li>
-        <li>Ensured UI components were accessible, ensuring usability across complex interfaces.</li>
-        <li>Partnered with AT users and teams to test and refine products, improving accessibility.</li>
-        <li>Audited interactive content (e.g., music tools) for AT functionality, embedding accessibility into design.</li>
-        <li>Delivered precise code samples in HTML, CSS, JavaScript, and WAI-ARIA to ensure accessible page development, enabling teams to implement compliant and inclusive designs effectively.</li>
-      </ul>
-    </article>
+    <md-elevated-card class="about-section">
+      <div class="card-content">
+        <section aria-labelledby="experience-heading">
+          <h2 id="experience-heading">Experience</h2>
 
-    <article>
-      <header>
-        <h3>Accessibility Audit Team Lead</h3>
-        <p><strong>QuaverEd</strong> | Nashville, TN</p>
-        <p><time datetime="2023-04">April 2023</time> – <time datetime="2024-10">October 2024</time></p>
-      </header>
-      <ul>
-        <li>Directed audits of digital assets (art, audio, video, docs) for WCAG 2.2 AA compliance.</li>
-        <li>Trained teams on WCAG, Section 508, best practices, and document accessibility (PDF).</li>
-        <li>Created ACRs/VPATs for digital products, providing accessibility compliance documentation for stakeholders.</li>
-        <li>Developed PDF tagging methods for student and teacher resources.</li>
-        <li>Led workshops that enabled 4 team members achieve CPACC certification, advancing accessibility expertise within the organization.</li>
-      </ul>
-    </article>
-    
-    <article>
-      <header>
-        <h3>Accessibility Auditor</h3>
-        <p><strong>QuaverEd</strong> | Nashville, TN</p>
-        <p><time datetime="2022-08">August 2022</time> – <time datetime="2023-04">April 2023</time></p>
-      </header>
-      <ul>
-        <li>Audited inaccessible web content, providing actionable recommendations for accessible UX.</li>
-        <li>Tested software using Windows, macOS, and ChromeOS with built-in accessible features.</li>
-        <li>Collaborated with contractors and customers with disabilities to ensure screen reader compatibility.</li>
-        <li>Translated WCAG and Section 508 into clear, actionable feedback for development and art teams.</li>
-        <li>Bridged knowledge gaps, elevating teams’ technical expertise in accessibility.</li>
-      </ul>
-    </article>
+          <article class="job-entry">
+            <header>
+              <h3>Digital Accessibility Manager</h3>
+              <p><strong>QuaverEd</strong> | Nashville, TN</p>
+              <p><time datetime="2024-10">October 2024</time> – <time>Present</time></p>
+            </header>
+            <ul>
+              <li>Led accessibility initiatives, creating policies and frameworks for inclusive design.</li>
+              <li>Ensured UI components were accessible, ensuring usability across complex interfaces.</li>
+              <li>Partnered with AT users and teams to test and refine products, improving accessibility.</li>
+              <li>Audited interactive content (e.g., music tools) for AT functionality, embedding accessibility into design.</li>
+              <li>Delivered precise code samples in HTML, CSS, JavaScript, and WAI-ARIA to ensure accessible page development, enabling teams to implement compliant and inclusive designs effectively.</li>
+            </ul>
+          </article>
 
-    <article>
-      <header>
-        <h3>Calibration Technician</h3>
-        <p><strong>K&amp;S Associates</strong> | Nashville, TN</p>
-        <p><time datetime="2022-04">April 2022</time> – <time datetime="2022-08">August 2022</time></p>
-      </header>
-      <ul>
-        <li>Conducted a variety of radiation therapy calibrations with a focus on accuracy and precision.</li>
-        <li>Developed comprehensive reports about completed calibrations, ensuring all relevant stakeholders had access to necessary information.</li>
-      </ul>
-    </article>
+          <article class="job-entry">
+            <header>
+              <h3>Accessibility Audit Team Lead</h3>
+              <p><strong>QuaverEd</strong> | Nashville, TN</p>
+              <p><time datetime="2023-04">April 2023</time> – <time datetime="2024-10">October 2024</time></p>
+            </header>
+            <ul>
+              <li>Directed audits of digital assets (art, audio, video, docs) for WCAG 2.2 AA compliance.</li>
+              <li>Trained teams on WCAG, Section 508, best practices, and document accessibility (PDF).</li>
+              <li>Created ACRs/VPATs for digital products, providing accessibility compliance documentation for stakeholders.</li>
+              <li>Developed PDF tagging methods for student and teacher resources.</li>
+              <li>Led workshops that enabled 4 team members achieve CPACC certification, advancing accessibility expertise within the organization.</li>
+            </ul>
+          </article>
+          
+          <article class="job-entry">
+            <header>
+              <h3>Accessibility Auditor</h3>
+              <p><strong>QuaverEd</strong> | Nashville, TN</p>
+              <p><time datetime="2022-08">August 2022</time> – <time datetime="2023-04">April 2023</time></p>
+            </header>
+            <ul>
+              <li>Audited inaccessible web content, providing actionable recommendations for accessible UX.</li>
+              <li>Tested software using Windows, macOS, and ChromeOS with built-in accessible features.</li>
+              <li>Collaborated with contractors and customers with disabilities to ensure screen reader compatibility.</li>
+              <li>Translated WCAG and Section 508 into clear, actionable feedback for development and art teams.</li>
+              <li>Bridged knowledge gaps, elevating teams' technical expertise in accessibility.</li>
+            </ul>
+          </article>
 
-    <article>
-      <header>
-        <h3>Manager and Founder</h3>
-        <p><strong>Coffee Talk</strong> | Olathe, KS</p>
-        <p><time datetime="2018-03">March 2018</time> – <time datetime="2021-07">July 2021</time></p>
-      </header>
-      <ul>
-        <li>Optimized coffee shop layout for better customer flow, seating capacity, and a welcoming vibe.</li>
-        <li>Built a user-friendly website and managed social media, boosting online engagement and inquiries.</li>
-        <li>Championed accessibility in physical and digital spaces, ensuring ADA compliance and inclusivity.</li>
-      </ul>
-    </article>
-  </section>
+          <article class="job-entry">
+            <header>
+              <h3>Calibration Technician</h3>
+              <p><strong>K&amp;S Associates</strong> | Nashville, TN</p>
+              <p><time datetime="2022-04">April 2022</time> – <time datetime="2022-08">August 2022</time></p>
+            </header>
+            <ul>
+              <li>Conducted a variety of radiation therapy calibrations with a focus on accuracy and precision.</li>
+              <li>Developed comprehensive reports about completed calibrations, ensuring all relevant stakeholders had access to necessary information.</li>
+            </ul>
+          </article>
 
-  <section aria-labelledby="education-heading">
-    <h2 id="education-heading">Education & Professional Development</h2>
-    <ul>
-      <li>Google UX Design Professional Certificate</li>
-      <li>Full Stack Web Development with MERN</li>
-      <li>Associate of Arts in Multimedia and Web Design</li>
-    </ul>
-  </section>
+          <article class="job-entry">
+            <header>
+              <h3>Manager and Founder</h3>
+              <p><strong>Coffee Talk</strong> | Olathe, KS</p>
+              <p><time datetime="2018-03">March 2018</time> – <time datetime="2021-07">July 2021</time></p>
+            </header>
+            <ul>
+              <li>Optimized coffee shop layout for better customer flow, seating capacity, and a welcoming vibe.</li>
+              <li>Built a user-friendly website and managed social media, boosting online engagement and inquiries.</li>
+              <li>Championed accessibility in physical and digital spaces, ensuring ADA compliance and inclusivity.</li>
+            </ul>
+          </article>
+        </section>
+      </div>
+    </md-elevated-card>
 </Layout>

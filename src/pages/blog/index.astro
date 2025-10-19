@@ -15,7 +15,11 @@ const posts = (await getCollection('blog')).sort(
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<BaseHead 
+			title="Blog - Daniel Westfall" 
+			description="Insights, tutorials, and thoughts on digital accessibility, WCAG compliance, assistive technologies, and inclusive design from accessibility professional Daniel Westfall."
+			keywords="accessibility blog, WCAG tutorials, digital accessibility insights, assistive technology tips, inclusive design, accessibility best practices"
+		/>
 		<style>
 			main {
 				max-width: 800px;
@@ -168,6 +172,15 @@ const posts = (await getCollection('blog')).sort(
 				
 				.featured-post .card-image {
 					height: 250px;
+					margin: 0.5rem;
+					width: calc(100% - 1rem);
+					border-radius: 12px;
+				}
+				
+				.card-image {
+					margin: 0.5rem;
+					width: calc(100% - 1rem);
+					border-radius: 12px;
 				}
 			}
 			
@@ -200,6 +213,9 @@ const posts = (await getCollection('blog')).sort(
 				.card-image,
 				.featured-post .card-image {
 					height: 180px;
+					margin: 0.75rem;
+					width: calc(100% - 1.5rem);
+					border-radius: 12px;
 				}
 				
 				.card-title {

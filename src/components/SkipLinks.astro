@@ -1,0 +1,46 @@
+---
+// Skip Links Component
+---
+
+<div class="skip-links">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <a href="#main-navigation" class="skip-link">Skip to navigation</a>
+</div>
+
+<style>
+  .skip-links {
+    position: relative;
+    z-index: 1000;
+  }
+
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-primary);
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    z-index: 1001;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: all 0.2s ease;
+  }
+
+  .skip-link:focus {
+    top: 6px;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    outline: 2px solid var(--md-sys-color-on-primary);
+    outline-offset: 2px;
+  }
+
+  .skip-link:hover {
+    background: var(--md-sys-color-primary-container);
+    color: var(--md-sys-color-on-primary-container);
+  }
+</style>
