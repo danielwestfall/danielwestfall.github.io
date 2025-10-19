@@ -3,7 +3,7 @@ title: "Crafting a Soul, Not Just a Shell: Accessibility and The Future of Chara
 description: 'My thoughts on an accessible game feature can make it much more immersive'
 pubDate: 'Oct 17 2025'
 heroImage: '@assets/hero_monologue.png'
-heroImageAlt: 'A character at a cross roads with a town down the left hand path, and monsters down the path to the right. The dialog box above the character's head says Hark! Should I wend the way the left, perchase I shall find fellows for worthy worthy quest. Yet, if right, mighty beasts do dwell. By mine self, I fear I am not yet yet meet for such the peril.'
+heroImageAlt: 'A character at crossroads choosing between a peaceful town path and a dangerous monster-filled route, with dialogue text showing their internal debate about the choice'
 ---
 
 ## Breaking Down Barriers
