@@ -10,7 +10,7 @@ import SkipLinks from '../components/SkipLinks.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, heroImageAlt } = Astro.props;
 ---
 
 <html lang="en">
@@ -187,7 +187,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 						</div>
 						<section class="hero-section">
 							<div class="hero-image">
-								{heroImage && <Image width={500} height={500} src={heroImage} alt="" />}
+								{heroImage && <Image width={500} height={500} src={heroImage} alt={heroImageAlt || ""} />}
 							</div>
 						</section>
 						<slot />

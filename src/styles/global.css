@@ -432,6 +432,48 @@ input {
 }
 table {
 	width: 100%;
+	border-collapse: collapse;
+	margin: 1.5rem 0;
+	background: var(--md-sys-color-surface);
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 2px 8px rgba(var(--md-sys-color-shadow), 0.1);
+}
+
+th, td {
+	padding: 1rem;
+	text-align: left;
+	vertical-align: top;
+	border-bottom: 1px solid var(--md-sys-color-outline-variant);
+	line-height: 1.6;
+}
+
+th {
+	background: var(--md-sys-color-surface-variant);
+	font-weight: 600;
+	color: var(--md-sys-color-on-surface-variant);
+	font-size: 0.9rem;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+tr:last-child td {
+	border-bottom: none;
+}
+
+tr:hover {
+	background: rgba(var(--md-sys-color-primary), 0.04);
+}
+
+/* Better mobile table handling */
+@media (max-width: 768px) {
+	table {
+		font-size: 0.85rem;
+	}
+	
+	th, td {
+		padding: 0.75rem 0.5rem;
+	}
 }
 img {
 	max-width: 100%;

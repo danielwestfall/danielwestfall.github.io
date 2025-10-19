@@ -1,7 +1,7 @@
 ---
 title: 'Coming Soon'
-description: 'Future content coming in 2024'
-pubDate: 'Dec 31 2024'
+description: 'Future content coming in 2025'
+pubDate: 'Dec 15 2024'
 heroImage: '@assets/teacher_whiteboard.png'
 ---
 
