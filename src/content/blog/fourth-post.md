@@ -1,7 +1,7 @@
 ---
 title: 'Crafting Accessible Dialog Boxes and Modals: A Guide for Inclusive UI'
 description: 'Learn essential principles and practical techniques for building dialog boxes and modals that are accessible to everyone, including focus management, ARIA attributes, and keyboard interactions.'
-pubDate: 'Oct 20 2025'
+pubDate: 'Oct 21 2025'
 heroImage: '@assets/teacher_whiteboard.png'
 heroImageAlt: 'A developer working on accessibility features for modal dialogs, showing proper focus management and ARIA implementation on a whiteboard'
 ---
