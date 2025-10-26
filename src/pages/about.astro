@@ -3,6 +3,12 @@ import AboutHeroImage from "../assets/dw_dogs.jpg";
 import ResumePDF from "../assets/DanielWestfall_Resume.pdf";
 import Layout from "../layouts/BlogPost.astro";
 ---
+<Layout
+  title="About Daniel Westfall"
+  description="Digital Accessibility Manager and CPWA certified professional with expertise in WCAG compliance, accessibility auditing, assistive technologies, and inclusive design. Learn about Daniel's background, certifications, skills, and professional experience in making digital content accessible for everyone."
+  pubDate={new Date("October 17 2025")}
+  heroImage={AboutHeroImage}
+>
   <div class="about-content">
     <div class="resume-actions" style="display:flex;gap:1rem;justify-content:center;margin:1rem 0;">
       <a class="download-resume" href={ResumePDF} download="DanielWestfall_Resume.pdf" rel="noopener noreferrer" aria-label="Download Daniel Westfall resume as PDF">
@@ -115,16 +121,71 @@ import Layout from "../layouts/BlogPost.astro";
       <div class="card-content">
         <section aria-labelledby="certs-heading">
           <h2 id="certs-heading">Certifications & Education</h2>
-          <ul>
-            <li><strong>CPWA</strong> (IAAP) — combined credential demonstrating CPACC + WAS</li>
-            <li><strong>Web Accessibility Specialist (WAS)</strong> — IAAP</li>
-            <li><strong>CPACC</strong> — IAAP</li>
-            <li><strong>Trusted Tester Certification</strong> — U.S. Department of Homeland Security (TT-2204-02664)</li>
-            <li><strong>Assistive Technology Certifications</strong> — Freedom Scientific / NV Access (JAWS, NVDA)</li>
-            <li><strong>Google UX Design Certificate</strong> — Coursera/Google</li>
-            <li><strong>MERN Full Stack Web Development</strong> — MIT xPro</li>
-            <li><strong>Associate of Arts in Multimedia and Web Design</strong> — Art Institute of Atlanta</li>
-          </ul>
+
+          <article class="cert-entry">
+            <header>
+              <h3>January 2025 — CPWA</h3>
+              <p><strong>IAAP</strong></p>
+            </header>
+            <p>The CPWA from the IAAP is a combined credential that recognizes individuals who have earned both the CPACC and WAS certifications, demonstrating comprehensive knowledge of accessibility principles and advanced technical proficiency in web accessibility.</p>
+          </article>
+
+          <article class="cert-entry">
+            <header>
+              <h3>January 2025 — Web Accessibility Specialist (WAS)</h3>
+              <p><strong>IAAP</strong></p>
+            </header>
+            <p>The WAS certification from the IAAP validates advanced technical expertise in evaluating, implementing, and remediating web accessibility in compliance with standards such as WCAG.</p>
+          </article>
+
+          <article class="cert-entry">
+            <header>
+              <h3>May 2024 — CPACC</h3>
+              <p><strong>IAAP</strong></p>
+            </header>
+            <p>The CPACC from the IAAP is a credential that demonstrates broad knowledge of accessibility principles, disability types, and universal design across information and communication technologies, built environments, and services.</p>
+          </article>
+
+          <article class="cert-entry">
+            <header>
+              <h3>April 2022 — Trusted Tester Certification</h3>
+              <p><strong>U.S. Department of Homeland Security</strong></p>
+            </header>
+            <p>The Trusted Tester Certification, offered by the U.S. DHS, validates expertise in applying a standardized testing process to evaluate and verify web content and applications for compliance with the Section 508 accessibility standards (Certification # TT-2204-02664).</p>
+          </article>
+
+          <article class="cert-entry">
+            <header>
+              <h3>August 2023 — Assistive Technology Certifications</h3>
+              <p><strong>Freedom Scientific / NV Access Limited</strong></p>
+            </header>
+            <p>Demonstrates expert-level proficiency in manual testing and troubleshooting with industry-leading screen readers, <strong>JAWS</strong> and <strong>NVDA</strong>, across various operating systems and browsers.</p>
+          </article>
+
+          <article class="cert-entry">
+            <header>
+              <h3>February 2022 — Google UX Design Certificate</h3>
+              <p><strong>Coursera/Google</strong></p>
+            </header>
+            <p>The Google UX Design Professional Certificate, offered through Coursera, prepares learners to design user-centered digital experiences by teaching key skills in user research, wireframing, prototyping, usability testing, and design tools such as Figma and Adobe XD.</p>
+          </article>
+
+          <article class="cert-entry">
+            <header>
+              <h3>September 2021 — MERN Full Stack Web Development</h3>
+              <p><strong>MIT xPro</strong></p>
+            </header>
+            <p>The Full Stack Web Development with MERN program from MIT xPro provides hands-on training in building and deploying web applications using the MERN stack—MongoDB, Express.js, React, and Node.js—while emphasizing scalable architecture, API development, and modern JavaScript practices.</p>
+          </article>
+
+          <article class="cert-entry">
+            <header>
+              <h3>June 2002 — Associate of Arts in Multimedia and Web Design</h3>
+              <p><strong>Art Institute of Atlanta</strong></p>
+            </header>
+            <p>Associate degree focused on multimedia and web design fundamentals, providing a foundation in visual design, web technologies, and multimedia production.</p>
+          </article>
+
         </section>
       </div>
     </md-elevated-card>
