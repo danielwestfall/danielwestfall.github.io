@@ -1,0 +1,106 @@
+---
+import ResumePDF from "../assets/DanielWestfall_Resume.pdf";
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Resume — Daniel Westfall</title>
+    <meta name="robots" content="noindex" />
+    <style>
+      /* Minimal, print-first styles for ATS and printing */
+      :root{color-scheme: light dark}
+      body{font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:#000; background:#fff; margin:0; padding:1rem;}
+      a{color:inherit}
+      .container{max-width:800px;margin:0 auto}
+      h1{font-size:1.25rem;margin-bottom:0}
+      h2{font-size:1rem;margin:1rem 0 0.25rem}
+      p, li{font-size:0.95rem;line-height:1.4;margin:0.25rem 0}
+      header{margin-bottom:0.75rem}
+      .meta{margin-bottom:1rem}
+      ul{padding-left:1.1rem}
+      .section{margin-top:0.75rem}
+      /* Ensure black text for printing */
+      @media print{
+        a:link, a:visited { color: #000; text-decoration: none }
+        * { -webkit-print-color-adjust: exact; print-color-adjust: exact }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container" role="main" aria-label="Printable resume">
+      <header>
+        <h1>Daniel Westfall</h1>
+        <div class="meta">
+          <p>Digital Accessibility Manager</p>
+          <p><a href="/">danielwestfall.github.io</a> • <a href={ResumePDF} download>Download PDF</a></p>
+        </div>
+      </header>
+
+      <section class="section" aria-labelledby="summary">
+        <h2 id="summary">Professional Summary</h2>
+        <p><strong>Certified Digital Accessibility Leader</strong> (CPWA, Trusted Tester) with 4+ years of progressive experience specializing in accessibility governance, inclusive product strategy, and technical execution. Expert in implementing and enforcing WCAG 2.2 AA standards across large-scale digital platforms.</p>
+      </section>
+
+      <section class="section" aria-labelledby="expertise">
+        <h2 id="expertise">Technical Expertise</h2>
+        <ul>
+          <li>Design Systems: Accessible UI Components, documentation, technical specs</li>
+          <li>Testing & Auditing: Manual testing (Trusted Tester), automated scanning (axe, WAVE)</li>
+          <li>Assistive Technology: JAWS, NVDA, VoiceOver, TalkBack</li>
+          <li>Standards: WCAG 2.2, Section 508, ARIA</li>
+          <li>Dev & Tools: HTML, CSS, JavaScript, GitHub</li>
+        </ul>
+      </section>
+
+      <section class="section" aria-labelledby="experience">
+        <h2 id="experience">Professional Experience</h2>
+
+        <h3>Digital Accessibility Manager — QuaverEd</h3>
+        <p>Nashville, TN — October 2024 – Present</p>
+        <ul>
+          <li>Led accessibility strategy and governance; implemented policies to drive inclusive design adoption</li>
+          <li>Provided technical guidance and validated code samples for compliant front-end implementation</li>
+        </ul>
+
+        <h3>Accessibility Audit Team Lead — QuaverEd</h3>
+        <p>Nashville, TN — April 2023 – October 2024</p>
+        <ul>
+          <li>Directed and executed audits for web apps and multimedia to ensure WCAG 2.2 AA compliance</li>
+          <li>Authored Accessibility Conformance Reports (ACRs) and VPATs</li>
+        </ul>
+
+        <h3>Accessibility Auditor — QuaverEd</h3>
+        <p>Nashville, TN — August 2022 – April 2023</p>
+        <ul>
+          <li>Performed manual testing with screen readers across multiple OS and browsers</li>
+        </ul>
+
+        <h3>Calibration Technician — K&amp;S Associates</h3>
+        <p>Nashville, TN — April 2022 – August 2022</p>
+
+        <h3>Manager & Founder — Coffee Talk</h3>
+        <p>Olathe, KS — March 2018 – July 2021</p>
+      </section>
+
+      <section class="section" aria-labelledby="education">
+        <h2 id="education">Certifications & Education</h2>
+        <ul>
+          <li>CPWA — IAAP (January 2025)</li>
+          <li>WAS — IAAP (January 2025)</li>
+          <li>CPACC — IAAP (May 2024)</li>
+          <li>Trusted Tester — U.S. DHS (April 2022)</li>
+          <li>Assistive Technology Certifications — Freedom Scientific / NV Access (Aug 2023)</li>
+          <li>Google UX Design Certificate — Coursera/Google (Feb 2022)</li>
+          <li>MERN Full Stack — MIT xPro (Sep 2021)</li>
+          <li>Associate of Arts in Multimedia and Web Design — Art Institute of Atlanta (June 2002)</li>
+        </ul>
+      </section>
+
+      <footer style="margin-top:1.25rem;font-size:0.9rem;color:#333">
+        <p>Generated for printing / ATS consumption — simplified layout and plain HTML.</p>
+      </footer>
+    </main>
+  </body>
+</html>

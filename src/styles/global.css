@@ -890,6 +890,31 @@ md-elevated-card.about-section {
 	margin-top: 0;
 }
 
+/* Certification entry styling */
+.cert-entry {
+	margin-bottom: 1.25rem;
+	padding-bottom: 1rem;
+	border-bottom: 1px dashed var(--md-sys-color-outline-variant);
+}
+
+.cert-entry header h3 {
+	margin: 0 0 0.25rem 0;
+	font-size: 1rem;
+	color: var(--md-sys-color-on-surface);
+}
+
+.cert-entry p {
+	margin: 0.25rem 0 0.5rem 0;
+	color: var(--md-sys-color-on-surface-variant);
+	font-size: 0.95rem;
+}
+
+.cert-entry header p {
+	margin: 0;
+	font-size: 0.85rem;
+	color: var(--md-sys-color-on-surface-variant);
+}
+
 /* Responsive adjustments for About page cards */
 @media (max-width: 720px) {
 	.about-section .card-content {
@@ -932,4 +957,39 @@ md-elevated-card.about-section {
 		margin-bottom: 1.25rem;
 		padding-bottom: 1rem;
 	}
+}
+
+/* Print-friendly resume adjustments */
+@media print {
+	body {
+		background: #fff !important;
+		color: #000 !important;
+		-webkit-print-color-adjust: exact;
+		print-color-adjust: exact;
+	}
+
+	/* Hide site chrome for printing */
+	header, footer, nav, .skip-link, .site-banner, .material-icons { display: none !important; }
+
+	main {
+		max-width: 100% !important;
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+
+	/* Make cards plain blocks for printing */
+	md-elevated-card, .about-section {
+		border: none !important;
+		box-shadow: none !important;
+		background: transparent !important;
+		padding: 0 !important;
+	}
+
+	.about-section .card-content {
+		padding: 0 !important;
+	}
+
+	.resume-actions { display: none !important; }
+
+	a { color: #000; text-decoration: underline; }
 }
