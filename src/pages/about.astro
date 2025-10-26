@@ -1,116 +1,37 @@
 ---
 import AboutHeroImage from "../assets/dw_dogs.jpg";
+import ResumePDF from "../assets/DanielWestfall_Resume.pdf";
 import Layout from "../layouts/BlogPost.astro";
 ---
-
-<Layout
-  title='About Daniel Westfall'
-  description="Digital Accessibility Manager and CPWA certified professional with expertise in WCAG compliance, accessibility auditing, assistive technologies, and inclusive design. Learn about Daniel's background, certifications, skills, and professional experience in making digital content accessible for everyone."
-  pubDate={new Date("October 17 2025")}
-  heroImage={AboutHeroImage}
->
   <div class="about-content">
+    <div class="resume-actions" style="display:flex;gap:1rem;justify-content:center;margin:1rem 0;">
+      <a class="download-resume" href={ResumePDF} download="DanielWestfall_Resume.pdf" rel="noopener noreferrer" aria-label="Download Daniel Westfall resume as PDF">
+        <md-filled-tonal-button>Download Resume (PDF)</md-filled-tonal-button>
+      </a>
+      <a class="view-resume" href={ResumePDF} target="_blank" rel="noopener noreferrer" aria-label="Open Daniel Westfall resume in new tab">
+        <md-text-button>Open Resume</md-text-button>
+      </a>
+    </div>
+
     <md-elevated-card class="about-section">
       <div class="card-content">
-        <section aria-labelledby="credentials-heading">
-          <h2 id="credentials-heading">Certifications & Education</h2>
-          
-          <div class="profile-section">
-            <h3>Certifications</h3>
-            <ul>
-              <li>
-                Certified Professional in Web Accessibility (CPWA)
-                <ul>
-                  <li>Web Accessibility Specialist (WAS)</li>
-                  <li>Certified Professional in Accessibility Core Competencies (CPACC)</li>
-                </ul>
-              </li>
-              <li>Trusted Tester Certification (# TT-2204-02664)</li>
-              <li>JAWS Certified Individual</li>
-              <li>NVDA Expert Certified</li>
-            </ul>
-          </div>
-
-          <div class="profile-section">
-            <h3>Education & Professional Development</h3>
-            <ul>
-              <li>Google UX Design Professional Certificate</li>
-              <li>Full Stack Web Development with MERN</li>
-              <li>Associate of Arts in Multimedia and Web Design</li>
-            </ul>
-          </div>
+        <section aria-labelledby="summary-heading">
+          <h2 id="summary-heading">Professional Summary</h2>
+          <p><strong>Certified Digital Accessibility Leader</strong> (CPWA, Trusted Tester) with 4+ years of progressive experience specializing in <strong>accessibility governance</strong>, <strong>inclusive product strategy</strong>, and technical execution. Expert in implementing and enforcing compliance with <strong>WCAG 2.2 AA standards</strong> across large-scale digital platforms. Proven ability to lead cross-functional teams by providing expert technical guidance (WAI-ARIA, HTML, CSS, JavaScript) and conducting rigorous manual accessibility testing (JAWS, NVDA, VoiceOver) throughout the entire product development lifecycle.</p>
         </section>
       </div>
     </md-elevated-card>
 
     <md-elevated-card class="about-section">
       <div class="card-content">
-        <section aria-labelledby="skills-heading">
-          <h2 id="skills-heading">Skills</h2>
+        <section aria-labelledby="expertise-heading">
+          <h2 id="expertise-heading">Technical Expertise</h2>
           <ul>
-            <li>
-              Accessibility Standards & Guidelines
-              <ul>
-                <li>WCAG 2.2</li>
-                <li>Section 508</li>
-                <li>EN 301 549</li>
-                <li>ARIA</li>
-                <li>ATAG</li>
-              </ul>
-            </li>
-            <li>
-              Assistive Technologies
-              <ul>
-                <li>JAWS</li>
-                <li>NVDA</li>
-                <li>VoiceOver</li>
-                <li>ChromeVox</li>
-              </ul>
-            </li>
-            <li>
-              Accessibility Testing & Auditing
-              <ul>
-                <li>Manual Testing</li>
-                <li>Automated Testing (WAVE, axe Dev Tools)</li>
-                <li>Accessibility Audits</li>
-                <li>VPAT/ACR Creation</li>
-              </ul>
-            </li>
-            <li>
-              Design & Development
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Design Systems</li>
-                <li>Accessible UI Components</li>
-                <li>PDF Remediation</li>
-              </ul>
-            </li>
-            <li>
-              Platforms & Tools
-              <ul>
-                <li>Asana</li>
-                <li>VS Code</li>
-                <li>GitHub</li>
-              </ul>
-            </li>
-            <li>
-              Communication & Collaboration
-              <ul>
-                <li>Cross-functional Collaboration</li>
-                <li>Training & Mentoring</li>
-                <li>Documentation & Reporting</li>
-              </ul>
-            </li>
-            <li>
-              Process & Strategy
-              <ul>
-                <li>Process Improvement</li>
-                <li>Strategic Planning</li>
-                <li>Accessibility Roadmaps</li>
-              </ul>
-            </li>
+            <li><strong>Design Systems:</strong> Accessible UI Components, design documentation, technical specifications, cross-functional design/eng partnership.</li>
+            <li><strong>Testing & Auditing:</strong> Manual accessibility testing (Trusted Tester methodology), automated scanning (WAVE, axe Dev Tools), compliance audits, usability testing with AT users.</li>
+            <li><strong>Assistive Technology:</strong> JAWS, NVDA, VoiceOver (iOS/macOS), TalkBack, ChromeVox, keyboard-only navigation.</li>
+            <li><strong>Standards & Governance:</strong> WCAG 2.2 (A/AA/AAA), Section 508, ARIA, VPAT/ACR creation, PDF remediation.</li>
+            <li><strong>Development & Tools:</strong> HTML5, CSS3, JavaScript, WAI-ARIA, VS Code, GitHub, Asana.</li>
           </ul>
         </section>
       </div>
@@ -119,7 +40,7 @@ import Layout from "../layouts/BlogPost.astro";
     <md-elevated-card class="about-section">
       <div class="card-content">
         <section aria-labelledby="experience-heading">
-          <h2 id="experience-heading">Experience</h2>
+          <h2 id="experience-heading">Professional Experience</h2>
 
           <article class="job-entry">
             <header>
@@ -128,11 +49,10 @@ import Layout from "../layouts/BlogPost.astro";
               <p><time datetime="2024-10">October 2024</time> – <time>Present</time></p>
             </header>
             <ul>
-              <li>Led accessibility initiatives, creating policies and frameworks for inclusive design.</li>
-              <li>Ensured UI components were accessible, ensuring usability across complex interfaces.</li>
-              <li>Partnered with AT users and teams to test and refine products, improving accessibility.</li>
-              <li>Audited interactive content (e.g., music tools) for AT functionality, embedding accessibility into design.</li>
-              <li>Delivered precise code samples in HTML, CSS, JavaScript, and WAI-ARIA to ensure accessible page development, enabling teams to implement compliant and inclusive designs effectively.</li>
+              <li><strong>Led accessibility strategy and governance</strong>, implementing policies that drove the adoption of inclusive design and development practices across product and engineering teams.</li>
+              <li>Provided expert technical leadership and consulting by delivering validated HTML, CSS, JavaScript, and WAI-ARIA code samples and detailed technical specifications for compliant front-end implementation.</li>
+              <li>Managed the quality assurance of design system components through continuous audit and refinement, ensuring high standards for all new UI components.</li>
+              <li>Conducted extensive manual accessibility testing with multiple ATs (JAWS, NVDA, VoiceOver) to ensure the quality and usability of new features and component updates.</li>
             </ul>
           </article>
 
@@ -143,14 +63,13 @@ import Layout from "../layouts/BlogPost.astro";
               <p><time datetime="2023-04">April 2023</time> – <time datetime="2024-10">October 2024</time></p>
             </header>
             <ul>
-              <li>Directed audits of digital assets (art, audio, video, docs) for WCAG 2.2 AA compliance.</li>
-              <li>Trained teams on WCAG, Section 508, best practices, and document accessibility (PDF).</li>
-              <li>Created ACRs/VPATs for digital products, providing accessibility compliance documentation for stakeholders.</li>
-              <li>Developed PDF tagging methods for student and teacher resources.</li>
-              <li>Led workshops that enabled 4 team members achieve CPACC certification, advancing accessibility expertise within the organization.</li>
+              <li><strong>Directed and executed comprehensive accessibility audits</strong> for large digital resources (web apps, multimedia), ensuring strict adherence to WCAG 2.2 AA and Section 508.</li>
+              <li>Developed and led internal workshops and training programs on WCAG and best practices, significantly building organizational capacity and expertise.</li>
+              <li>Authored and maintained detailed Accessibility Conformance Reports (ACRs) and VPATs, providing essential compliance documentation for large institutional stakeholders.</li>
+              <li>Translated complex compliance requirements into clear, actionable feedback and development priorities for engineering and creative teams.</li>
             </ul>
           </article>
-          
+
           <article class="job-entry">
             <header>
               <h3>Accessibility Auditor</h3>
@@ -158,11 +77,9 @@ import Layout from "../layouts/BlogPost.astro";
               <p><time datetime="2022-08">August 2022</time> – <time datetime="2023-04">April 2023</time></p>
             </header>
             <ul>
-              <li>Audited inaccessible web content, providing actionable recommendations for accessible UX.</li>
-              <li>Tested software using Windows, macOS, and ChromeOS with built-in accessible features.</li>
-              <li>Collaborated with contractors and customers with disabilities to ensure screen reader compatibility.</li>
-              <li>Translated WCAG and Section 508 into clear, actionable feedback for development and art teams.</li>
-              <li>Bridged knowledge gaps, elevating teams' technical expertise in accessibility.</li>
+              <li>Performed hands-on manual testing of web applications using multiple assistive technologies (JAWS, NVDA, VoiceOver) across Windows, macOS, and ChromeOS, validating screen reader compatibility.</li>
+              <li>Collaborated directly with customers and external contractors with disabilities to validate component usability and improve user experience.</li>
+              <li>Created precise, prioritized remediation tickets for development teams, significantly bridging the technical knowledge gap between design and implementation.</li>
             </ul>
           </article>
 
@@ -187,6 +104,32 @@ import Layout from "../layouts/BlogPost.astro";
             <ul>
               <li>Optimized coffee shop layout for better customer flow, seating capacity, and a welcoming vibe.</li>
               <li>Built a user-friendly website and managed social media, boosting online engagement and inquiries.</li>
+              <li>Championed accessibility in both physical and digital spaces, ensuring ADA compliance and inclusivity.</li>
+            </ul>
+          </article>
+        </section>
+      </div>
+    </md-elevated-card>
+
+    <md-elevated-card class="about-section">
+      <div class="card-content">
+        <section aria-labelledby="certs-heading">
+          <h2 id="certs-heading">Certifications & Education</h2>
+          <ul>
+            <li><strong>CPWA</strong> (IAAP) — combined credential demonstrating CPACC + WAS</li>
+            <li><strong>Web Accessibility Specialist (WAS)</strong> — IAAP</li>
+            <li><strong>CPACC</strong> — IAAP</li>
+            <li><strong>Trusted Tester Certification</strong> — U.S. Department of Homeland Security (TT-2204-02664)</li>
+            <li><strong>Assistive Technology Certifications</strong> — Freedom Scientific / NV Access (JAWS, NVDA)</li>
+            <li><strong>Google UX Design Certificate</strong> — Coursera/Google</li>
+            <li><strong>MERN Full Stack Web Development</strong> — MIT xPro</li>
+            <li><strong>Associate of Arts in Multimedia and Web Design</strong> — Art Institute of Atlanta</li>
+          </ul>
+        </section>
+      </div>
+    </md-elevated-card>
+  </div>
+</Layout>
               <li>Championed accessibility in physical and digital spaces, ensuring ADA compliance and inclusivity.</li>
             </ul>
           </article>
