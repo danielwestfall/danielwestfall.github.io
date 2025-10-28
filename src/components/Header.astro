@@ -336,14 +336,11 @@ import NavigationDrawer from './NavigationDrawer.astro';
 	function handleStickyHeader() {
 		const header = document.querySelector('header');
 		if (!header) {
-			console.log('Header element not found');
+			
 			return;
 		}
-		
-		console.log('Header found, setting up sticky behavior');
 		let scrolled = false;
 		const headerHeight = header.offsetHeight;
-		
 		function updateStickyState() {
 			if (!header) return;
 			
@@ -351,7 +348,7 @@ import NavigationDrawer from './NavigationDrawer.astro';
 			
 			if (currentlyScrolled !== scrolled) {
 				scrolled = currentlyScrolled;
-				console.log('Scroll state changed:', scrolled ? 'scrolled' : 'at top');
+				
 				if (scrolled) {
 					header.classList.add('sticky');
 					// Add padding to body to prevent content jump
