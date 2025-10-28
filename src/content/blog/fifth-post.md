@@ -3,6 +3,7 @@ title: 'Coming Soon'
 description: 'Future content coming in 2024'
 pubDate: 'Dec 31 2024'
 heroImage: '@assets/teacher_whiteboard.png'
+heroImageAlt: 'Informative article'
 ---
 
 ## Coming Soon!

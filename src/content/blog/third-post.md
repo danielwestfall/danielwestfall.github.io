@@ -3,7 +3,7 @@ title: 'Ditch the Div-Button: Why Semantic Buttons Win (and When to Reach for AR
 description: 'Learn why the native HTML button element should be your go-to for interactive controls, how to style it from scratch while maintaining accessibility, and when ARIA is actually needed.'
 pubDate: 'Oct 20 2025'
 heroImage: '@assets/teacher_whiteboard.png'
-heroImageAlt: 'A whiteboard showing the difference between semantic HTML buttons and div elements styled as buttons, emphasizing accessibility best practices'
+heroImageAlt: 'Informative article'
 ---
 
 We've all seen it (or perhaps even written it): a `div` or `span` element, perhaps with a click handler, meticulously styled to look exactly like a button. While visually it might pass, beneath the surface lies an accessibility nightmare and a missed opportunity for robust, maintainable code.
