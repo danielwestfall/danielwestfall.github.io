@@ -1,0 +1,208 @@
+---
+title: 'From Disclosure to Accordion: Building a Complex Component'
+description: 'Learn how to build a fully accessible accordion widget with ARIA, semantic HTML, and keyboard navigation. Step-by-step guide with working demo.'
+pubDate: 'Nov 13 2025'
+heroImage: '@assets/teacher_whiteboard.png'
+heroImageAlt: 'A developer building an interactive accordion component with multiple panels'
+---
+
+import AccordionDemo from '../../components/AccordionDemo.astro';
+
+In our [last article](https://www.google.com/search?q=link-to-your-previous-post), we mastered the **Disclosure**, a simple 1-to-1 toggle. Now, we're going to group them together to build one of the web's most common and complex components: the **Accordion**.
+
+An accordion is just a stack of disclosures (or "panels"), but it comes with a new set of rules:
+
+1.  It's a *collection* of items.
+2.  Each item has a header (the button) and a content panel.
+3.  Critically, opening one panel **collapses any other open panel**.
+4.  It requires more advanced keyboard navigation (up/down arrows).
+
+Because an accordion is a "widget" that doesn't exist in native HTML, we **must** use ARIA to describe its structure and behavior to assistive technologies.
+
+## 1. The Blueprint: More Than Just `<div>`s
+
+It's tempting to build an accordion from a pile of `<div>`s. Don't.
+
+An accordion is a *list of content sections*. The best way to code this is with a proper **heading structure**. This gives screen reader users a "table of contents" for your page, allowing them to skip between sections using heading shortcuts.
+
+We will place our `<button>` *inside* the heading. This is the gold-standard, most accessible pattern.
+
+Here is our semantic HTML structure. We'll set the first panel to be open by default.
+
+```html
+<h2>Frequently Asked Questions</h2>
+
+<div class="accordion">
+
+  <h3>
+    <button
+      id="acc-btn-1"
+      aria-expanded="true"
+      aria-controls="acc-panel-1">
+      What is semantic HTML?
+    </button>
+  </h3>
+  <div
+    id="acc-panel-1"
+    role="region"
+    aria-labelledby="acc-btn-1">
+    <p>Semantic HTML means using HTML tags for their
+       meaning, not their appearance...</p>
+  </div>
+
+  <h3>
+    <button
+      id="acc-btn-2"
+      aria-expanded="false"
+      aria-controls="acc-panel-2">
+      What is the first rule of ARIA?
+    </button>
+  </h3>
+  <div
+    id="acc-panel-2"
+    role="region"
+    aria-labelledby="acc-btn-2"
+    hidden>
+    <p>The first rule of ARIA is: don't use ARIA.
+       If a native HTML element exists, use it.</p>
+  </div>
+
+  <h3>
+    <button
+      id="acc-btn-3"
+      aria-expanded="false"
+      aria-controls="acc-panel-3">
+      What is a Disclosure?
+    </button>
+  </h3>
+  <div
+    id="acc-panel-3"
+    role="region"
+    aria-labelledby="acc-btn-3"
+    hidden>
+    <p>A disclosure is a simple widget that shows
+       or hides content, like a "Read More" button.</p>
+  </div>
+
+</div>
+```
+
+## 2. New ARIA: Naming Our Regions
+
+We've seen `aria-expanded` and `aria-controls` before. But we added two new attributes to the **content panel** (`<div>`):
+
+  * **`role="region"`**: This is a landmark **Role**. It tells a screen reader, "This `<div>` is an important, self-contained section of the page."
+  * **`aria-labelledby="acc-btn-1"`**: This is the magic. It's a **Property** that answers, "What is the *name* of this region?" We point its value to the `id` of the `<button>` that controls it.
+
+**The Payoff:** When a screen reader user navigates into the open panel, the screen reader will announce, "What is semantic HTML?, **region**," before reading the content. The user *knows* what section they've entered.
+
+## 3. The JavaScript, Part 1: The Click Logic
+
+This is where our accordion logic lives. We need to add a click listener to *every* button. When a button is clicked, we must:
+
+1.  Check if the panel it controls is *already* open.
+2.  **Close all other panels.**
+3.  If the panel was closed, open it. (If it was already open, the previous step will have closed it, and we're done).
+
+```javascript
+// Get all accordion buttons
+const allAccordionButtons = document.querySelectorAll('.accordion button');
+
+allAccordionButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    
+    // Check if the panel is already expanded
+    const isExpanded = button.getAttribute('aria-expanded') === 'true';
+    
+    // --- This is the new accordion logic ---
+    // First, close ALL panels
+    allAccordionButtons.forEach(btn => {
+      btn.setAttribute('aria-expanded', 'false');
+      const panel = document.getElementById(btn.getAttribute('aria-controls'));
+      panel.hidden = true;
+    });
+    // ----------------------------------------
+
+    // Now, if the clicked panel was closed, open it.
+    // (If it was already open, the loop above just closed it.)
+    if (!isExpanded) {
+      button.setAttribute('aria-expanded', 'true');
+      const panel = document.getElementById(button.getAttribute('aria-controls'));
+      panel.hidden = false;
+    }
+    
+  });
+});
+```
+
+With this, we have a functional accordion! But it's not *fully* accessible yet.
+
+## 4. The JavaScript, Part 2: Keyboard Navigation
+
+A screen reader user or keyboard-only user expects to navigate an accordion like a "widget," not like a normal part of the page. This means we must enable the **Arrow Keys**.
+
+The official WAI-ARIA pattern specifies this behavior:
+
+  * `ArrowDown`: Move focus to the next accordion button.
+  * `ArrowUp`: Move focus to the previous accordion button.
+  * `Home`: Move focus to the first accordion button.
+  * `End`: Move focus to the last accordion button.
+
+We do this by adding a `keydown` event listener to each button.
+
+```javascript
+// Get all accordion buttons from the DOM
+const buttons = document.querySelectorAll('.accordion button');
+
+// Store them in an array
+const accordionButtons = Array.from(buttons);
+
+accordionButtons.forEach((button, index) => {
+  button.addEventListener('keydown', (e) => {
+    
+    // We only care about Arrow keys, Home, and End
+    switch (e.key) {
+      case 'ArrowDown':
+        e.preventDefault(); // Stop page from scrolling
+        const nextIndex = (index + 1) % accordionButtons.length;
+        accordionButtons[nextIndex].focus();
+        break;
+        
+      case 'ArrowUp':
+        e.preventDefault(); // Stop page from scrolling
+        const prevIndex = (index - 1 + accordionButtons.length) % accordionButtons.length;
+        accordionButtons[prevIndex].focus();
+        break;
+        
+      case 'Home':
+        e.preventDefault();
+        accordionButtons[0].focus();
+        break;
+        
+      case 'End':
+        e.preventDefault();
+        accordionButtons[accordionButtons.length - 1].focus();
+        break;
+    }
+  });
+});
+```
+
+*(Note: The `%` (modulo) operator is a clever way to handle wrapping. If you're at the last item and press Down, `(index + 1)` will equal the array length, and `length % length` is `0`—which sends you back to the start!)*
+
+### Try It Yourself
+
+Here's a working demo of the accordion we just built. Try clicking the buttons and using arrow keys to navigate:
+
+<AccordionDemo />
+
+## We're Done!
+
+You've now built a robust, fully accessible accordion that not only *works* for all users but provides a superior experience by:
+
+  * Using semantic headings for SEO and page structure.
+  * Correctly informing screen readers of the state (`aria-expanded`).
+  * Naming content regions (`role="region"`, `aria-labelledby`).
+  * Implementing full keyboard navigation.
+
+In our next post, we'll tackle another web staple: the **Tabbed Interface**.

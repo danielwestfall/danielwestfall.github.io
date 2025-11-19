@@ -1,0 +1,37 @@
+---
+// Demo component for the disclosure pattern
+---
+
+<div style="border: 2px solid #ccc; padding: 1.5rem; margin: 2rem 0; border-radius: 8px; background: #f9f9f9;">
+  <button
+    id="disclosure-button-demo"
+    aria-expanded="false"
+    aria-controls="disclosure-panel-demo"
+    style="padding: 0.5rem 1rem; font-size: 1rem; cursor: pointer; background: #0066cc; color: white; border: none; border-radius: 4px;">
+    Toggle Details
+  </button>
+  
+  <div id="disclosure-panel-demo" hidden style="margin-top: 1rem; padding: 1rem; background: white; border-radius: 4px; border: 1px solid #ddd;">
+    <p style="margin: 0;">This is the secret content. It is now revealed!</p>
+  </div>
+</div>
+
+<script>
+  const disclosureButton = document.getElementById('disclosure-button-demo');
+  
+  if (disclosureButton) {
+    disclosureButton.addEventListener('click', () => {
+      const isExpanded = disclosureButton.getAttribute('aria-expanded') === 'true';
+      const panelId = disclosureButton.getAttribute('aria-controls');
+      const panel = document.getElementById(panelId);
+
+      if (isExpanded) {
+        disclosureButton.setAttribute('aria-expanded', 'false');
+        panel.hidden = true;
+      } else {
+        disclosureButton.setAttribute('aria-expanded', 'true');
+        panel.hidden = false;
+      }
+    });
+  }
+</script>

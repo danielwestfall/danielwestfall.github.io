@@ -1,0 +1,141 @@
+---
+title: 'Your First ARIA Component: Building a Disclosure (Accordion)'
+description: 'Learn how to build an accessible disclosure widget with ARIA. Step-by-step guide with HTML, JavaScript, and screen reader considerations.'
+pubDate: 'Nov 15 2025'
+heroImage: '@assets/teacher_whiteboard.png'
+heroImageAlt: 'A developer building an interactive disclosure component'
+---
+
+import DisclosureDemo from '../../components/DisclosureDemo.astro';
+
+Welcome to part two of our ARIA series! In the [last post](https://www.google.com/search?q=link-to-your-previous-post), we learned the "what" of ARIA: the vocabulary of **Roles**, **Properties**, and **States**.
+
+Today, we learn the "how." We're going to build the most common component on the web: a **Disclosure**.
+
+You've seen these a thousand times. You click a "Show Details" button, and *poof*, content appears. You click it again, and it vanishes. It's the pattern used for FAQs, "Read More" toggles, and individual accordion panels.
+
+### The First Rule: Can Native HTML Do This?
+
+Yes\! And it's awesome. The "First Rule of ARIA" is to not use ARIA if a native HTML element already exists. For a disclosure, HTML5 gives us the `<details>` and `<summary>` elements.
+
+It works right out of the box with zero JavaScript:
+
+```html
+<details>
+  <summary>What is the First Rule of ARIA?</summary>
+  <p>The first rule of ARIA is: don't use ARIA. If a native HTML element or attribute exists, use it instead.</p>
+</details>
+```
+
+This is semantic, keyboard-accessible, and screen-reader-friendly.
+
+So, why build one ourselves?
+
+1.  **Styling:** The `<summary>` element comes with a marker (usually a triangle) that is notoriously difficult to style consistently across browsers.
+2.  **Animation:** Animating the `open`/`close` transition of a `<details>` element is tricky.
+3.  **Legacy:** You might be working in a codebase that already uses `<div>`s and `<span>`s, and you need to make them accessible.
+
+For these reasons, building a custom one with ARIA is extremely common.
+
+## 1. The ARIA Blueprint (The HTML)
+
+Let's build a simple disclosure. It has two parts: the **trigger** (a button) and the **panel** (the content).
+
+Here's the semantic HTML we'll use. Notice we're starting with a real `<button>` element—this gives us keyboard focus and click events for free.
+
+```html
+<div>
+  <button
+    id="disclosure-button"
+    aria-expanded="false"
+    aria-controls="disclosure-panel">
+    Toggle Details
+  </button>
+  
+  <div id="disclosure-panel" hidden>
+    <p>This is the secret content. It is now revealed!</p>
+  </div>
+</div>
+```
+
+Let's break down the ARIA:
+
+  * **`aria-expanded="false"`**: This is our **State**. We're telling screen readers that the element this button controls is currently "collapsed" or "false" (not expanded). This is the single most important piece of information for the user.
+  * **`aria-controls="disclosure-panel"`**: This is our **Property**. It "connects" the button to the panel. Its value **must** be the `id` of the element it controls. A screen reader user can now jump directly from the button to the content.
+  * **`id="disclosure-panel"`**: This is the hook for `aria-controls`.
+  * **`hidden`**: This is a standard HTML attribute. It visually hides the element and, just as importantly, removes it from the accessibility tree. A screen reader will not see or read it.
+
+Right now, this button does nothing. We've just written the blueprint. Now, we have to make it work.
+
+## 2. Making It Work (The JavaScript)
+
+Our JavaScript has one simple job: **keep the `aria-expanded` state in sync with the `hidden` attribute.**
+
+When a user clicks the button, we need to:
+
+1.  Check the *current* state of `aria-expanded`.
+2.  If it's "false," change it to "true" and remove the `hidden` attribute from the panel.
+3.  If it's "true," change it to "false" and add the `hidden` attribute back.
+
+Here’s the complete JavaScript code:
+
+```javascript
+// Get a reference to our button
+const disclosureButton = document.getElementById('disclosure-button');
+
+// Add a click event listener
+disclosureButton.addEventListener('click', () => {
+  
+  // 1. Get the current state
+  // We use getAttribute to read the string "true" or "false"
+  const isExpanded = disclosureButton.getAttribute('aria-expanded') === 'true';
+  
+  // 2. Get the panel this button controls
+  const panelId = disclosureButton.getAttribute('aria-controls');
+  const panel = document.getElementById(panelId);
+
+  // 3. If it's expanded, collapse it. If it's collapsed, expand it.
+  if (isExpanded) {
+    // A. Update the button's ARIA state
+    disclosureButton.setAttribute('aria-expanded', 'false');
+    
+    // B. Hide the panel
+    panel.hidden = true;
+  } else {
+    // A. Update the button's ARIA state
+    disclosureButton.setAttribute('aria-expanded', 'true');
+    
+    // B. Show the panel
+    panel.hidden = false;
+  }
+});
+```
+
+### Try It Yourself
+
+Here's a working demo of the disclosure we just built. Click the button to see it in action:
+
+<DisclosureDemo />
+
+## 3. The Payoff: What Does a Screen Reader Say?
+
+By adding just two ARIA attributes and some simple JS, we've completely changed the experience for an assistive technology user.
+
+**Without ARIA:**
+
+> "Toggle Details, button."
+> *(User presses Enter)*
+> *(Content appears, but the screen reader says nothing. The user is confused and doesn't know anything changed.)*
+
+**With ARIA (Our Version):**
+
+> "Toggle Details, button, **collapsed**."
+> *(User presses Enter)*
+> "**Expanded**."
+> *(Because of `aria-controls`, the screen reader knows the new content is related and will often start reading it automatically, or the user can easily navigate to it.)*
+
+The user is now fully aware of the button's purpose, its current state, and what happens when they interact with it.
+
+## What's Next
+
+You just built an accessible disclosure! This simple pattern is the building block for more complex components. In our next article, we'll see how to group several of these disclosures together to create one of the most-requested components: a complete **Accordion**.

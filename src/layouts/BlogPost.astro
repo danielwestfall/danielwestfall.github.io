@@ -1,200 +1,212 @@
 ---
-import { Image } from 'astro:assets';
-import type { CollectionEntry } from 'astro:content';
-import BaseHead from '../components/BaseHead.astro';
-import Footer from '../components/Footer.astro';
-import FormattedDate from '../components/FormattedDate.astro';
-import Header from '../components/Header.astro';
-import SkipLinks from '../components/SkipLinks.astro';
+import { Image } from "astro:assets";
+import type { CollectionEntry } from "astro:content";
+import BaseHead from "../components/BaseHead.astro";
+import Footer from "../components/Footer.astro";
+import FormattedDate from "../components/FormattedDate.astro";
+import Header from "../components/Header.astro";
+import SkipLinks from "../components/SkipLinks.astro";
 
+type Props = CollectionEntry<"blog">["data"];
 
-type Props = CollectionEntry<'blog'>['data'];
-
-const { title, description, pubDate, updatedDate, heroImage, heroImageAlt } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, heroImageAlt } =
+  Astro.props;
 ---
 
+<!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead 
-			title={title} 
-			description={description}
-			image={heroImage}
-			type="article"
-			publishedTime={pubDate}
-			modifiedTime={updatedDate}
-			keywords="accessibility, digital accessibility, WCAG, inclusive design, assistive technology"
-		/>
-		<style>
-			.layout-container {
-				max-width: 1400px;
-				margin: 0 auto;
-				padding: 0 1rem;
-				min-height: calc(100vh - 200px); /* Adjust based on header/footer height */
-			}
-			
-			.hero-section {
-				width: 100%;
-				max-width: 720px;
-				margin: 2rem auto;
-				padding: 0;
-			}
-			
-			main {
-				width: 100%;
-				max-width: 720px;
-				margin: 0 auto;
-				padding: 2rem 1rem;
-			}
-			
-			.hero-image {
-				width: 100%;
-				max-width: 720px;
-				margin: 0 auto;
-			}
-			
-			.hero-image img {
-				display: block;
-				width: 100%;
-				height: auto;
-				border-radius: 12px;
-				box-shadow: var(--box-shadow);
-			}
-			
-			.prose {
-				max-width: 720px;
-				margin: 0 auto;
-				padding: 1em;
-				color: rgb(var(--gray-dark));
-			}
-			.title {
-				margin-bottom: 1em;
-				padding: 1em 0;
-				text-align: center;
-				line-height: 1;
-			}
-			.title h1 {
-				margin: 0 0 0.5em 0;
-			}
-			.date {
-				margin-bottom: 0.5em;
-				color: rgb(var(--gray));
-			}
-			.last-updated-on {
-				font-style: italic;
-			}
-			
-			/* Tablet breakpoint */
-			@media (max-width: 720px) {
-				.layout-container {
-					padding: 0 0.75rem;
-				}
-				
-				.hero-section {
-					margin: 1.5rem auto;
-				}
-				
-				main {
-					padding: 1.5rem 0.75rem;
-				}
-				
-				.prose {
-					padding: 0.75em;
-				}
-				
-				.title h1 {
-					font-size: 1.8rem;
-				}
-			}
-			
-			/* iPhone and small mobile devices */
-			@media (max-width: 480px) {
-				.layout-container {
-					padding: 0 0.5rem;
-				}
-				
-				.hero-section {
-					margin: 1rem auto;
-				}
-				
-				main {
-					padding: 1rem 0.5rem;
-				}
-				
-				.prose {
-					padding: 0.5em;
-					max-width: 100%;
-				}
-				
-				.title {
-					padding: 0.75em 0;
-				}
-				
-				.title h1 {
-					font-size: 1.6rem;
-					line-height: 1.2;
-				}
-				
-				.hero-image img {
-					border-radius: 8px;
-				}
-			}
-			
-			/* Extra small devices */
-			@media (max-width: 375px) {
-				.layout-container {
-					padding: 0 0.25rem;
-				}
-				
-				main {
-					padding: 0.75rem 0.25rem;
-				}
-				
-				.prose {
-					padding: 0.25em;
-				}
-				
-				.title h1 {
-					font-size: 1.4rem;
-				}
-				
-				body {
-					font-size: 16px;
-				}
-			}
-		</style>
-	</head>
+  <head>
+    <BaseHead
+      title={title}
+      description={description}
+      image={heroImage}
+      type="article"
+      publishedTime={pubDate}
+      modifiedTime={updatedDate}
+      keywords="accessibility, digital accessibility, WCAG, inclusive design, assistive technology"
+    />
+    <style>
+      .layout-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 1rem;
+        min-height: calc(
+          100vh - 200px
+        ); /* Adjust based on header/footer height */
+      }
 
-	<body>
-		<SkipLinks />
-		<Header />
-		<div class="layout-container">
-			<main id="main-content" role="main">
-				<article>
-					<div class="prose">
-						<div class="title">
-							<div class="date">
-								<FormattedDate date={pubDate} />
-								{
-									updatedDate && (
-										<div class="last-updated-on">
-											Last updated on <FormattedDate date={updatedDate} />
-										</div>
-									)
-								}
-							</div>
-							<h1>{title}</h1>
-							<hr />
-						</div>
-						<section class="hero-section">
-							<div class="hero-image">
-								{heroImage && <Image width={500} height={500} src={heroImage} alt={heroImageAlt || ""} />}
-							</div>
-						</section>
-						<slot />
-					</div>
-				</article>
-			</main>
-		</div>
-		<Footer />
-	</body>
+      .hero-section {
+        width: 100%;
+        max-width: 720px;
+        margin: 2rem auto;
+        padding: 0;
+      }
+
+      main {
+        width: 100%;
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+      }
+
+      .hero-image {
+        width: 100%;
+        max-width: 720px;
+        margin: 0 auto;
+      }
+
+      .hero-image img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: var(--box-shadow);
+      }
+
+      .prose {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 1em;
+        color: rgb(var(--gray-dark));
+      }
+      .title {
+        margin-bottom: 1em;
+        padding: 1em 0;
+        text-align: center;
+        line-height: 1;
+      }
+      .title h1 {
+        margin: 0 0 0.5em 0;
+      }
+      .date {
+        margin-bottom: 0.5em;
+        color: rgb(var(--gray));
+      }
+      .last-updated-on {
+        font-style: italic;
+      }
+
+      /* Tablet breakpoint */
+      @media (max-width: 720px) {
+        .layout-container {
+          padding: 0 0.75rem;
+        }
+
+        .hero-section {
+          margin: 1.5rem auto;
+        }
+
+        main {
+          padding: 1.5rem 0.75rem;
+        }
+
+        .prose {
+          padding: 0.75em;
+        }
+
+        .title h1 {
+          font-size: 1.8rem;
+        }
+      }
+
+      /* iPhone and small mobile devices */
+      @media (max-width: 480px) {
+        .layout-container {
+          padding: 0 0.5rem;
+        }
+
+        .hero-section {
+          margin: 1rem auto;
+        }
+
+        main {
+          padding: 1rem 0.5rem;
+        }
+
+        .prose {
+          padding: 0.5em;
+          max-width: 100%;
+        }
+
+        .title {
+          padding: 0.75em 0;
+        }
+
+        .title h1 {
+          font-size: 1.6rem;
+          line-height: 1.2;
+        }
+
+        .hero-image img {
+          border-radius: 8px;
+        }
+      }
+
+      /* Extra small devices */
+      @media (max-width: 375px) {
+        .layout-container {
+          padding: 0 0.25rem;
+        }
+
+        main {
+          padding: 0.75rem 0.25rem;
+        }
+
+        .prose {
+          padding: 0.25em;
+        }
+
+        .title h1 {
+          font-size: 1.4rem;
+        }
+
+        body {
+          font-size: 16px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <SkipLinks />
+    <Header />
+    <div class="layout-container">
+      <main id="main-content" role="main">
+        <article>
+          <div class="prose">
+            <div class="title">
+              <div class="date">
+                <FormattedDate date={pubDate} />
+                {
+                  updatedDate && (
+                    <div class="last-updated-on">
+                      Last updated on <FormattedDate date={updatedDate} />
+                    </div>
+                  )
+                }
+              </div>
+              <h1>{title}</h1>
+              <hr />
+            </div>
+            <section class="hero-section">
+              <div class="hero-image">
+                {
+                  heroImage && (
+                    <Image
+                      width={500}
+                      height={500}
+                      src={heroImage}
+                      alt={heroImageAlt || ""}
+                    />
+                  )
+                }
+              </div>
+            </section>
+            <slot />
+          </div>
+        </article>
+      </main>
+    </div>
+    <Footer />
+  </body>
 </html>
