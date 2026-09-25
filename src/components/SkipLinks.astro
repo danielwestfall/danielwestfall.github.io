@@ -24,8 +24,8 @@
     border-radius: 4px;
     font-weight: 500;
     z-index: 1001;
+    /* Off-screen until focused. Not visibility:hidden, which would make it unfocusable. */
     opacity: 0;
-    visibility: hidden;
     transform: translateY(-20px);
     transition: all 0.2s ease;
   }
@@ -33,7 +33,6 @@
   .skip-link:focus {
     top: 6px;
     opacity: 1;
-    visibility: visible;
     transform: translateY(0);
     outline: 2px solid var(--md-sys-color-on-primary);
     outline-offset: 2px;

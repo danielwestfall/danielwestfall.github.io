@@ -2,6 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
+import SkipLinks from '../components/SkipLinks.astro';
 
 // Only render this page in development
 if (import.meta.env.PROD) {
@@ -15,8 +16,9 @@ if (import.meta.env.PROD) {
 		<BaseHead title="Design System & Style Guide" description="Development-only comprehensive style guide and component showcase" />
 	</head>
 	<body>
+		<SkipLinks />
 		<Header />
-		<main>
+		<main id="main-content" tabindex="-1">
 			<div class="style-guide-header">
 				<h1>🎨 Design System & Style Guide</h1>
 				<p class="dev-notice">📍 Development Only - This page is not visible in production</p>

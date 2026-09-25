@@ -18,8 +18,10 @@
   //   layout    – with mount: 'inline' (expands in the page flow) or 'dropdown' (drops down over the page,
   //               e.g. from a button in a site header)
   //   label     – text of the inline toggle button
-  //   nativeTheme – { attr: 'data-theme', light: 'light', dark: 'dark' }: the site has its own light/dark
-  //               theme; the Colors row then offers Auto / Light / Dark that set that attribute on <html>
+  //   nativeTheme – { attr: 'data-theme', light: 'light', dark: 'dark', lightClass?, legacyKey? }: the site
+  //               has its own light/dark theme; the Colors row then offers Auto / Light / Dark that set that
+  //               attribute (and optional class) on <html>. legacyKey = localStorage key of an old theme toggle
+  //               whose saved 'light'/'dark' choice should carry over (default 'theme').
   const CFG = Object.assign({ autoOpen: true, removable: true, mount: null, layout: 'inline', label: 'Reading & accessibility options', nativeTheme: null }, window.a11yPanelConfig || {});
   const NT = CFG.nativeTheme;
   const doc = document;
@@ -77,7 +79,7 @@
     let s = {};
     try { s = JSON.parse(localStorage.getItem(STORE_KEY)) || {}; } catch (e) { /* private mode etc. */ }
     if (NT && !s.theme) { // carry over a choice made with the site's old theme toggle
-      try { const t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') s.theme = 'site-' + t; } catch (e) { /* ignore */ }
+      try { const t = localStorage.getItem(NT.legacyKey || 'theme'); if (t === 'light' || t === 'dark') s.theme = 'site-' + t; } catch (e) { /* ignore */ }
     }
     const out = Object.assign({}, DEFAULTS, s);
     STEPPERS.forEach(st => { out[st.key] = Math.max(0, Math.min(st.steps.length - 1, out[st.key] | 0)); });
@@ -97,6 +99,7 @@
       : t === 'site-light' || t === 'light' || t === 'sepia' ? 'light'
       : (darkMQ && darkMQ.matches ? 'dark' : 'light');
     doc.documentElement.setAttribute(NT.attr || 'data-theme', NT[mode] || mode);
+    if (NT.lightClass) doc.documentElement.classList.toggle(NT.lightClass, mode === 'light');
     doc.documentElement.style.colorScheme = mode;
   }
   if (NT && darkMQ && darkMQ.addEventListener) darkMQ.addEventListener('change', applyNativeTheme);
@@ -609,7 +612,12 @@ footer { display: flex; align-items: center; justify-content: space-between; gap
   window.__a11yPanel = { open: () => openPanel(true), close: () => closePanel(false), toggle: togglePanel, reset, destroy, get state() { return Object.assign({}, state); } };
 
   apply();
+  // Only the in-page (inline) layout remembers being expanded. A dropdown or popover never opens
+  // by itself: it waits for a click or Alt+Shift+A. Clear any flag left by an earlier inline layout.
   let wasOpen = false;
-  if (INLINE) try { wasOpen = localStorage.getItem(OPEN_KEY) === '1'; } catch (e) { /* ignore */ }
+  try {
+    if (INLINE && !DROPDOWN) wasOpen = localStorage.getItem(OPEN_KEY) === '1';
+    else localStorage.removeItem(OPEN_KEY);
+  } catch (e) { /* ignore */ }
   if (CFG.autoOpen || wasOpen) openPanel(false);
 })();
