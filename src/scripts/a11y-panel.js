@@ -15,8 +15,13 @@
   //   removable – show the "Remove panel" button (default true)
   //   mount     – CSS selector or element: render the panel inline inside it (collapsible)
   //               instead of as a floating button + popover
+  //   layout    – with mount: 'inline' (expands in the page flow) or 'dropdown' (drops down over the page,
+  //               e.g. from a button in a site header)
   //   label     – text of the inline toggle button
-  const CFG = Object.assign({ autoOpen: true, removable: true, mount: null, label: 'Reading & accessibility options' }, window.a11yPanelConfig || {});
+  //   nativeTheme – { attr: 'data-theme', light: 'light', dark: 'dark' }: the site has its own light/dark
+  //               theme; the Colors row then offers Auto / Light / Dark that set that attribute on <html>
+  const CFG = Object.assign({ autoOpen: true, removable: true, mount: null, layout: 'inline', label: 'Reading & accessibility options', nativeTheme: null }, window.a11yPanelConfig || {});
+  const NT = CFG.nativeTheme;
   const doc = document;
   const HOST_ID = 'a11yp-host';
   const FS_ATTR = 'data-a11yp-fs';
@@ -31,7 +36,9 @@
   ];
   const SEGMENTS = [
     { key: 'font', label: 'Font', opts: [['default', 'Site'], ['legible', 'Hyperlegible'], ['lexend', 'Lexend'], ['dyslexic', 'Dyslexia-friendly']] },
-    { key: 'theme', label: 'Colors', opts: [['none', 'Site'], ['dark', 'Dark'], ['light', 'High contrast'], ['sepia', 'Sepia'], ['yellow', 'Yellow on black']] },
+    { key: 'theme', label: 'Colors', opts: NT
+      ? [['none', 'Auto'], ['site-light', 'Light'], ['site-dark', 'Dark'], ['light', 'High contrast'], ['sepia', 'Sepia'], ['yellow', 'Yellow on black']]
+      : [['none', 'Site'], ['dark', 'Dark'], ['light', 'High contrast'], ['sepia', 'Sepia'], ['yellow', 'Yellow on black']] },
     { key: 'sat', label: 'Saturation', opts: [['normal', 'Normal'], ['low', 'Low'], ['gray', 'Grayscale'], ['high', 'High']] },
     { key: 'guide', label: 'Reading guide', opts: [['off', 'Off'], ['ruler', 'Ruler'], ['mask', 'Focus mask']] },
     { key: 'rate', label: 'Speed', opts: [['0.8', '0.8×'], ['1', '1×'], ['1.25', '1.25×'], ['1.5', '1.5×']] },
@@ -69,14 +76,30 @@
   const load = () => {
     let s = {};
     try { s = JSON.parse(localStorage.getItem(STORE_KEY)) || {}; } catch (e) { /* private mode etc. */ }
+    if (NT && !s.theme) { // carry over a choice made with the site's old theme toggle
+      try { const t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') s.theme = 'site-' + t; } catch (e) { /* ignore */ }
+    }
     const out = Object.assign({}, DEFAULTS, s);
     STEPPERS.forEach(st => { out[st.key] = Math.max(0, Math.min(st.steps.length - 1, out[st.key] | 0)); });
+    SEGMENTS.forEach(sg => { if (!sg.opts.some(o => o[0] === String(out[sg.key]))) out[sg.key] = DEFAULTS[sg.key]; });
     return out;
   };
   const save = () => { try { localStorage.setItem(STORE_KEY, JSON.stringify(state)); } catch (e) { /* ignore */ } };
   let state = load();
   const stepVal = k => { const s = STEPPERS.find(x => x.key === k); return s.steps[state[k]]; };
-  const isModified = () => Object.keys(DEFAULTS).some(k => k !== 'rate' && state[k] !== DEFAULTS[k]);
+  const isModified = () => Object.keys(DEFAULTS).some(k => k !== 'rate' && state[k] !== DEFAULTS[k] && !(k === 'theme' && /^site-/.test(state[k])));
+  // Site's own light/dark theme (nativeTheme): Auto follows the OS; forced themes pick the closer base.
+  const darkMQ = window.matchMedia ? matchMedia('(prefers-color-scheme: dark)') : null;
+  function applyNativeTheme() {
+    if (!NT) return;
+    const t = state.theme;
+    const mode = t === 'site-dark' || t === 'yellow' ? 'dark'
+      : t === 'site-light' || t === 'light' || t === 'sepia' ? 'light'
+      : (darkMQ && darkMQ.matches ? 'dark' : 'light');
+    doc.documentElement.setAttribute(NT.attr || 'data-theme', NT[mode] || mode);
+    doc.documentElement.style.colorScheme = mode;
+  }
+  if (NT && darkMQ && darkMQ.addEventListener) darkMQ.addEventListener('change', applyNativeTheme);
 
   // ---------- DOM helper (no innerHTML: safe under Trusted Types / CSP) ----------
   function h(tag, attrs, kids) {
@@ -308,13 +331,14 @@
 :host { all: initial; }
 * { box-sizing: border-box; }
 .root { --accent:var(--a11yp-accent,#1a56db); --on-accent:var(--a11yp-on-accent,#fff); --bg:var(--a11yp-bg,#fff); --fg:var(--a11yp-fg,#1f2328);
-  --muted:var(--a11yp-muted,#57606a); --line:var(--a11yp-line,#d0d7de); --chip:var(--a11yp-chip,#f3f4f6);
+  --muted:var(--a11yp-muted,#57606a); --line:var(--a11yp-line,#d0d7de); --chip:var(--a11yp-chip,#f3f4f6); --track:var(--a11yp-track,#6e7781); --ring:var(--a11yp-ring,#1a56db);
   font: 15px/1.4 var(--a11yp-font, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif); color: var(--fg);
   letter-spacing: normal; word-spacing: normal; text-align: left; }
-@media (prefers-color-scheme: dark) { .root:not([data-scheme="light"]) { --accent:var(--a11yp-accent,#7aa7ff); --on-accent:var(--a11yp-on-accent,#0b1220); --bg:var(--a11yp-bg,#1c1f24); --fg:var(--a11yp-fg,#e6edf3); --muted:var(--a11yp-muted,#9aa4af); --line:var(--a11yp-line,#3a414a); --chip:var(--a11yp-chip,#2a2f36); } }
-.root[data-scheme="dark"] { --accent:var(--a11yp-accent,#7aa7ff); --on-accent:var(--a11yp-on-accent,#0b1220); --bg:var(--a11yp-bg,#1c1f24); --fg:var(--a11yp-fg,#e6edf3); --muted:var(--a11yp-muted,#9aa4af); --line:var(--a11yp-line,#3a414a); --chip:var(--a11yp-chip,#2a2f36); }
+@media (prefers-color-scheme: dark) { .root:not([data-scheme="light"]) { --accent:var(--a11yp-accent,#7aa7ff); --on-accent:var(--a11yp-on-accent,#0b1220); --bg:var(--a11yp-bg,#1c1f24); --fg:var(--a11yp-fg,#e6edf3); --muted:var(--a11yp-muted,#9aa4af); --line:var(--a11yp-line,#3a414a); --chip:var(--a11yp-chip,#2a2f36); --track:var(--a11yp-track,#8b949e); --ring:var(--a11yp-ring,#7aa7ff); } }
+.root[data-scheme="dark"] { --accent:var(--a11yp-accent,#7aa7ff); --on-accent:var(--a11yp-on-accent,#0b1220); --bg:var(--a11yp-bg,#1c1f24); --fg:var(--a11yp-fg,#e6edf3); --muted:var(--a11yp-muted,#9aa4af); --line:var(--a11yp-line,#3a414a); --chip:var(--a11yp-chip,#2a2f36); --track:var(--a11yp-track,#8b949e); --ring:var(--a11yp-ring,#7aa7ff); }
 button { font: inherit; color: inherit; }
-button:focus-visible { outline: 3px solid #f59e0b; outline-offset: 2px; }
+button:focus-visible { outline: 3px solid var(--ring); outline-offset: 2px; }
+.fab:focus-visible { outline-color: #1a56db; box-shadow: 0 0 0 3px #fff; }
 .fab { position: fixed; right: 20px; bottom: 20px; width: 54px; height: 54px; border-radius: 50%; border: 2px solid #fff;
   background: #1a56db; color: #fff; cursor: pointer; display: grid; place-items: center; z-index: 2147483647;
   box-shadow: 0 4px 16px rgba(0,0,0,.35); padding: 0; }
@@ -341,7 +365,7 @@ legend + * { clear: both; }
 .seg button { padding: 6px 11px; border-radius: 999px; border: 1px solid var(--line); background: var(--chip); cursor: pointer; font-size: 13.5px; }
 .seg button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--on-accent); font-weight: 600; }
 .sw { display: flex; width: 100%; align-items: center; justify-content: space-between; gap: 10px; padding: 7px 0; background: none; border: 0; cursor: pointer; text-align: left; }
-.track { flex: none; width: 40px; height: 22px; border-radius: 11px; background: var(--line); position: relative; transition: background .15s; }
+.track { flex: none; width: 40px; height: 22px; border-radius: 11px; background: var(--track); position: relative; transition: background .15s; }
 .track::after { content: ""; position: absolute; top: 3px; left: 3px; width: 16px; height: 16px; border-radius: 50%; background: #fff; transition: transform .15s; box-shadow: 0 1px 2px rgba(0,0,0,.3); }
 .sw[aria-checked="true"] .track { background: var(--accent); }
 .sw[aria-checked="true"] .track::after { transform: translateX(18px); }
@@ -375,6 +399,14 @@ footer { display: flex; align-items: center; justify-content: space-between; gap
 .inline .grid { columns: 4 260px; column-gap: 0; }
 .inline fieldset { border-bottom: 0; padding: 14px 18px 10px; break-inside: avoid; }
 .inline footer { border-top: 1px solid var(--line); padding: 10px 18px 12px; }
+/* Dropdown mode (mounted in a site header) */
+.dropdown .barwrap { display: flex; }
+.dropdown .bar { padding: 8px 12px 8px 9px; }
+.dropdown .panel { position: absolute; top: 100%; bottom: auto; left: 12px; right: 12px; width: auto; max-width: 1180px; margin: 6px 0 0 auto;
+  overflow: auto; overscroll-behavior: contain; box-shadow: 0 14px 44px rgba(0,0,0,.28); z-index: 1000; }
+.sr { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+@media (max-width: 640px) { .dropdown .bar .txt { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .dropdown .bar { padding: 9px; } .dropdown .panel { left: 8px; right: 8px; } }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 @media (forced-colors: active) { .seg button[aria-pressed="true"], .sw[aria-checked="true"] .track { forced-color-adjust: none; background: Highlight; color: HighlightText; } }
 `;
@@ -417,11 +449,12 @@ footer { display: flex; align-items: center; justify-content: space-between; gap
 
   const mountEl = CFG.mount ? (typeof CFG.mount === 'string' ? doc.querySelector(CFG.mount) : CFG.mount) : null;
   const INLINE = !!mountEl;
+  const DROPDOWN = INLINE && CFG.layout === 'dropdown';
   const personIcon = size => svg([['circle', { cx: 12, cy: 4.2, r: 2.2 }], ['path', { d: 'M20.2 8.3a1.1 1.1 0 0 1-.95 1.2L15 10.1v3.1l1.95 6.95a1.1 1.1 0 0 1-2.1.62L12.5 15h-1l-2.35 5.77a1.1 1.1 0 0 1-2.1-.62L9 13.2v-3.1l-4.25-.6a1.1 1.1 0 1 1 .3-2.18l5.1.68h3.7l5.1-.68a1.1 1.1 0 0 1 1.25.98z' }]], size);
   // Floating mode: round button. Inline mode: a disclosure button that expands the panel in the page flow.
   const trigger = INLINE
     ? h('button', { type: 'button', class: 'bar', 'aria-expanded': 'false', 'aria-controls': 'a11yp-panel', onclick: () => togglePanel() },
-        [personIcon(22), h('span', { text: CFG.label }), (() => { const c = svg([['path', { d: 'M7 10l5 5 5-5z' }]], 20); c.classList.add('chev'); return c; })()])
+        [personIcon(22), h('span', { class: 'txt', text: CFG.label }), (() => { const c = svg([['path', { d: 'M7 10l5 5 5-5z' }]], 20); c.classList.add('chev'); return c; })()])
     : h('button', {
         type: 'button', class: 'fab', 'aria-label': 'Accessibility & reading options', 'aria-expanded': 'false', 'aria-controls': 'a11yp-panel',
         title: 'Accessibility & reading options (Alt+Shift+A)', onclick: () => togglePanel(),
@@ -453,7 +486,7 @@ footer { display: flex; align-items: center; justify-content: space-between; gap
       segment('rate'), refs.status,
     ]),
     fs('Navigate', [
-      h('div', { class: 'btns' }, [h('button', { type: 'button', class: 'btn', onclick: () => { if (!INLINE) closePanel(false); goTo(findMain()); } }, ['Jump to main content']), outlineBtn]),
+      h('div', { class: 'btns' }, [h('button', { type: 'button', class: 'btn', onclick: () => { if (!INLINE || DROPDOWN) closePanel(false); goTo(findMain()); } }, ['Jump to main content']), outlineBtn]),
       refs.outline,
     ]),
   ];
@@ -476,7 +509,7 @@ footer { display: flex; align-items: center; justify-content: space-between; gap
   refs.maskTop = h('div', { class: 'mask top' });
   refs.maskBot = h('div', { class: 'mask bot' });
   const uiRoot = INLINE
-    ? h('div', { class: 'root inline' }, [refs.maskTop, refs.maskBot, refs.ruler, h('div', { class: 'barwrap' }, [trigger]), panel])
+    ? h('div', { class: DROPDOWN ? 'root inline dropdown' : 'root inline' }, [refs.maskTop, refs.maskBot, refs.ruler, h('div', { class: 'barwrap' }, [trigger]), panel])
     : h('div', { class: 'root' }, [refs.maskTop, refs.maskBot, refs.ruler, panel, trigger]);
   root.appendChild(uiRoot);
   // If the site has its own light/dark switch (html[data-theme] or .dark), match it.
@@ -504,6 +537,7 @@ footer { display: flex; align-items: center; justify-content: space-between; gap
   }
 
   function apply(changed) {
+    applyNativeTheme();
     setPageCSS(buildCSS());
     if (!changed || changed === 'text') scaleText();
     if (FONTS[state.font]) loadFont(state.font);
@@ -521,13 +555,26 @@ footer { display: flex; align-items: center; justify-content: space-between; gap
 
   // ---------- Open / close ----------
   const OPEN_KEY = STORE_KEY + ':open';
-  const rememberOpen = v => { if (INLINE) try { localStorage.setItem(OPEN_KEY, v ? '1' : ''); } catch (e) { /* ignore */ } };
+  const rememberOpen = v => { if (INLINE && !DROPDOWN) try { localStorage.setItem(OPEN_KEY, v ? '1' : ''); } catch (e) { /* ignore */ } };
   function openPanel(fromKey) {
     panel.hidden = false;
     trigger.setAttribute('aria-expanded', 'true');
     rememberOpen(true);
     if (!INLINE) title.focus();
+    else if (DROPDOWN) { fitDropdown(); if (fromKey) trigger.focus({ preventScroll: true }); }
     else if (fromKey) { host.scrollIntoView({ block: 'start' }); trigger.focus({ preventScroll: true }); }
+  }
+  // Dropdown: keep it within the viewport, close on Escape or a click elsewhere.
+  function fitDropdown() {
+    if (!DROPDOWN || panel.hidden) return;
+    const top = panel.getBoundingClientRect().top;
+    panel.style.maxHeight = Math.max(200, innerHeight - Math.max(top, 0) - 12) + 'px';
+  }
+  if (DROPDOWN) {
+    addEventListener('resize', fitDropdown, { passive: true });
+    addEventListener('scroll', () => requestAnimationFrame(fitDropdown), { passive: true });
+    doc.addEventListener('pointerdown', e => { if (!panel.hidden && !e.composedPath().includes(host)) closePanel(false); }, true);
+    doc.addEventListener('keydown', e => { if (e.key === 'Escape' && !panel.hidden) closePanel(doc.activeElement === host); }, true);
   }
   function closePanel(returnFocus) {
     panel.hidden = true;

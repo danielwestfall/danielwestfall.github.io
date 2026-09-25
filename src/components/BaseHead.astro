@@ -150,5 +150,20 @@ const fullTitle = title === SITE_TITLE ? title : `${title} | ${AUTHOR_NAME}`;
   ]
 })} />
 
+<!-- Apply the saved light/dark choice before first paint (set in the reading panel) -->
+<script is:inline>
+	(function () {
+		try {
+			var s = JSON.parse(localStorage.getItem('a11yp:' + location.hostname) || '{}');
+			var t = s.theme || (localStorage.getItem('theme') ? 'site-' + localStorage.getItem('theme') : '');
+			var d = t === 'site-dark' || t === 'yellow' ? 'dark'
+				: t === 'site-light' || t === 'light' || t === 'sepia' ? 'light'
+				: window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+			document.documentElement.setAttribute('data-theme', d);
+			document.documentElement.style.colorScheme = d;
+		} catch (e) {}
+	})();
+</script>
+
 <!-- Material Design Web Components -->
 <MaterialDesign />

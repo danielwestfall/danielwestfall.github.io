@@ -1,7 +1,7 @@
 ---
 import { SITE_TITLE } from '../consts';
 import HeaderLink from './HeaderLink.astro';
-import ThemeToggle from './ThemeToggle.astro';
+import ReadingPanel from './ReadingPanel.astro';
 import NavigationDrawer from './NavigationDrawer.astro';
 ---
 
@@ -68,10 +68,11 @@ import NavigationDrawer from './NavigationDrawer.astro';
         <md-text-button href="/components">Style Guide</md-text-button>
       )}
       <md-text-button href="/about">About</md-text-button>
+      <md-text-button href="https://danielwestfall.github.io/trackingwcag3/">WCAG Hub</md-text-button>
     </div>
     
     <div class="header-actions">
-      <ThemeToggle />
+      <ReadingPanel />
     </div>
   </nav>
 </header>

@@ -1,17 +1,19 @@
 ---
-// Inline reading & accessibility panel, rendered under the header on every page.
-// Collapsed by default; Alt+Shift+A jumps to it. Source: src/scripts/a11y-panel.js
-// Visitors' settings (and whether it's expanded) are saved per browser.
+// Reading & accessibility panel: a button in the site header that drops a panel down under the top bar.
+// Also owns the site's light/dark theme (Auto / Light / Dark in its Colors row).
+// Alt+Shift+A opens it. Source: src/scripts/a11y-panel.js. Settings are saved per browser.
 ---
 
-<div id="reading-options" class="reading-options" tabindex="-1"></div>
+<div id="reading-options" class="reading-options"></div>
 
 <script is:inline>
 	window.a11yPanelConfig = {
 		mount: '#reading-options',
+		layout: 'dropdown',
 		autoOpen: false,
 		removable: false,
-		label: 'Reading & accessibility options',
+		label: 'Reading options',
+		nativeTheme: { attr: 'data-theme', light: 'light', dark: 'dark' },
 	};
 </script>
 <script>
@@ -20,9 +22,8 @@
 
 <style>
 	.reading-options {
-		max-width: 1200px;
-		margin: 0.75rem auto 0;
-		padding: 0 1rem;
+		display: flex;
+		align-items: center;
 		/* Match the panel to the site's Material color tokens (follows light/dark theme) */
 		--a11yp-accent: var(--md-sys-color-primary);
 		--a11yp-on-accent: var(--md-sys-color-on-primary);
@@ -31,8 +32,7 @@
 		--a11yp-muted: var(--md-sys-color-on-surface-variant);
 		--a11yp-line: var(--md-sys-color-outline-variant);
 		--a11yp-chip: var(--md-sys-color-surface-container-high);
-	}
-	.reading-options:focus {
-		outline: none;
+		--a11yp-track: var(--md-sys-color-outline);
+		--a11yp-ring: var(--md-sys-color-primary);
 	}
 </style>

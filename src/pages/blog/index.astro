@@ -5,7 +5,6 @@ import BaseHead from '../../components/BaseHead.astro';
 import Footer from '../../components/Footer.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
 import Header from '../../components/Header.astro';
-import ReadingPanel from '../../components/ReadingPanel.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
 
 const posts = (await getCollection('blog')).sort(
@@ -265,7 +264,6 @@ const posts = (await getCollection('blog')).sort(
 	</head>
 	<body>
 		<Header />
-		<ReadingPanel />
 		<main>
 			<section>
 				<div class="blog-header">
